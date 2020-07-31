@@ -10,7 +10,7 @@ public class TimeChange : MonoBehaviour
     public static int TimetoGo { get => timetoGo;}
     private static int leftOutTime = 0;
     public static int LeftOutTime { get => leftOutTime;}
-
+    public static int[] layersIDS = { 0, -10, -20 };
     int Temp = 0;
 
     public static Action UpdateLayers;
@@ -44,11 +44,6 @@ public class TimeChange : MonoBehaviour
         timetoGo = currentTime;
         currentTime = Temp;
         UpdateLayers();
-        Debug.Log("Id: 002");
     }
-    //private void Update()
-    //{
-    //    Debug.Log("L: " + leftOutTime +" C: " + currentTime + "  G: " + timetoGo);
-    //}
 
 }

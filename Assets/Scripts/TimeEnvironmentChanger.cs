@@ -9,49 +9,48 @@ public class TimeEnvironmentChanger : MonoBehaviour
     /// Este script se encarga de cambiar el mapa en los saltos temporales. Como tambien se encarga de cambiar las layer
     /// para el escenario de otro tiempo que esta en el fondo.
     /// </summary>
-    int[] layersIDS = { 0, -1, -2 };
+    
     string stencilVariable = "_StencilMask";
-    public GameObject sourceMap;
+
+    public List<SourceMapGenerator> SOURCEMAPS;
     public Transform grid;
-    public List<VariableSprite> Sprites;
-    List<GameObject> tilemapsObjs = new List<GameObject>();
-    List<Tilemap> Tilemaps = new List<Tilemap>();
-    List<TilemapRenderer> TilemapRenderers = new List<TilemapRenderer>();
-    List<Collider2D> TilemapsColliders = new List<Collider2D>();
+    [SerializeField]
+    Material inside2d;
+    [SerializeField]
+    Material inside2dv2;
+
     private void Awake()
     {
-        GameObject pastMap = Instantiate(sourceMap, grid);
-        GameObject futureMap = Instantiate(sourceMap, grid);
-        sourceMap.name = "Presente";
-        pastMap.name = "Pasado";
-        futureMap.name = "Futuro";
-        tilemapsObjs.Add(pastMap);
-        tilemapsObjs.Add(sourceMap);
-        tilemapsObjs.Add(futureMap);
-
-        for (int i = 0; i < tilemapsObjs.Count; i++)
+        //Crear otros tilemaps
+        for (int i = 0; i < SOURCEMAPS.Count; i++)
         {
-            Tilemaps.Add(tilemapsObjs[i].GetComponent<Tilemap>());
-            TilemapRenderers.Add(tilemapsObjs[i].GetComponent<TilemapRenderer>());
-            TilemapsColliders.Add(tilemapsObjs[i].GetComponent<Collider2D>());
+            GameObject pastMap = Instantiate(SOURCEMAPS[i].SourceMap, grid);
+            GameObject futureMap = Instantiate(SOURCEMAPS[i].SourceMap, grid);
+            SOURCEMAPS[i].SourceMap.name += "Presente";
+            pastMap.name += "Pasado";
+            futureMap.name += "Futuro";
+            SOURCEMAPS[i].AddTilemapsobjs(pastMap,futureMap);
+            for (int u = 0; u < SOURCEMAPS[i].TilemapsObjs.Count; u++)
+            {
+                SOURCEMAPS[i].AddOtherComponents(
+                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<Tilemap>(),
+                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<TilemapRenderer>(),
+                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<Collider2D>());
+            }
+            SOURCEMAPS[i].SetLayers();
+            SOURCEMAPS[i].Swaptiles();
         }
-        TilemapRenderers[2].sortingOrder = -1;
-        TilemapRenderers[0].sortingOrder = -2;
-        for (int i = 0; i < Sprites.Count; i++)
-        {
-            Tilemaps[0].SwapTile(Sprites[i].presente, Sprites[i].pasado);
-            Tilemaps[2].SwapTile(Sprites[i].presente, Sprites[i].Futuro);
-        }
-        
         TimeChange.UpdateLayers += UpdateLayers;
     }
 
 
     public void UpdateLayers()
     {
-        TilemapRenderers[TimeChange.CurrentTime].sortingOrder = 0;
-        TilemapRenderers[TimeChange.TimetoGo].sortingOrder = -1;
-        TilemapRenderers[TimeChange.LeftOutTime].sortingOrder = -2;
+        for (int i = 0; i < SOURCEMAPS.Count; i++)
+        {
+            SOURCEMAPS[i].UpdateLayers();
+            SOURCEMAPS[i].UpdateMaterials(inside2d, inside2dv2);
+        }
     }
 
 }

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: _InsideMaterial
-  m_Shader: {fileID: 4800000, guid: 3eb4547c4571ec845b7cf9fa052f6f08, type: 3}
+  m_Name: _InsideMaterialV2
+  m_Shader: {fileID: 4800000, guid: 80af9678a14d80749b2df781131477a2, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -71,10 +71,9 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _StencilMask: 1
+    - _StencilMask: 0
     - _UVSec: 0
     - _ZWrite: 1
-    - _name: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

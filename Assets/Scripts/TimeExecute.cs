@@ -9,7 +9,6 @@ public class TimeExecute : MonoBehaviour
     public void endAnim()//2ndo Paso
     {
         EndTimeChange();
-        Debug.Log("id: 0001");
         transform.gameObject.SetActive(false);
     }
 }
