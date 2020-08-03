@@ -10,6 +10,7 @@ public class Movement2D : MonoBehaviour
     //valores
     float jumpForce = 5f;
     int speed = 12;
+    public int jumpNumber = 0;
     //Componentes
     Rigidbody2D rb;
     [SerializeField]
@@ -53,9 +54,13 @@ public class Movement2D : MonoBehaviour
         //    rb.velocity = new Vector2(rb.velocity.x, 0);
         //    rb.velocity = Vector2.up * jumpForce;
         //}
+        if (jumpNumber < 1) rb.AddForce(Vector2.up * 6, ForceMode2D.Impulse);
 
-        rb.AddForce(Vector2.up * 6,ForceMode2D.Impulse);
+        jumpNumber++;
     }
 
-
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground")) jumpNumber = 0;
+    }*/
 }
