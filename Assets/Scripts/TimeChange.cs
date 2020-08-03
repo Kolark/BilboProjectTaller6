@@ -12,11 +12,13 @@ public class TimeChange : MonoBehaviour
     public static int LeftOutTime { get => leftOutTime;}
     public static int[] layersIDS = { 0, -10, -20 };
     int Temp = 0;
-
+    private static bool isTimeTraveling = false;
+    public static bool IsTimeTraveling { get => isTimeTraveling; }
     public static Action UpdateLayers;
+    public static Action MiniUpdate;
     [SerializeField]
     Animator stencilGrowerAnim;
-
+   
     private void Awake()
     {
         TimeExecute.EndTimeChange += EndChangeTime;
@@ -24,26 +26,36 @@ public class TimeChange : MonoBehaviour
 
     public void StartChangeTime(int setTime)//1er paso
     {
+        isTimeTraveling = true;
         Temp = setTime;
         if (setTime == leftOutTime)
         {
             leftOutTime = timetoGo;
             timetoGo = setTime;
         }
-
         UpdateLayers();
         stencilGrowerAnim.transform.localScale = Vector3.zero;
         stencilGrowerAnim.gameObject.SetActive(true);
-        
         stencilGrowerAnim.SetTrigger("ExGrowAnim");
-
-        
     }
     public void EndChangeTime()
     {
         timetoGo = currentTime;
         currentTime = Temp;
         UpdateLayers();
+        isTimeTraveling = false;
     }
 
+    public static void Swap()
+    {
+        int tem = timetoGo;
+        timetoGo = leftOutTime;
+        leftOutTime = tem;
+        MiniUpdate();
+    }
+
+    //void MiniUpdt()
+    //{
+    //    MiniUpdate();
+    //}
 }

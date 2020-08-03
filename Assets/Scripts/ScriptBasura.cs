@@ -6,20 +6,20 @@ using UnityEngine.Tilemaps;
 public class ScriptBasura : MonoBehaviour
 {
     
-    public LayerMask LM;
+    public LayerMask LM; //Layermask donde es importante detectar algo.
     //Testear con touch en el celular, si no cambiarlo por mouse.position
     private void Update()
     {
         if (Input.touchCount> 0)
         {
-            
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 xd = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //Input.touches[0].position
+            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+            Vector3 xd = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
             RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 100, LM);
 
             if (hit2D.collider != null)
             {
-                hit2D.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Debug.Log("aaaaaaaaaaaaaaaaa");
             }
         }
         

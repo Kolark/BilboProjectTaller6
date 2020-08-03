@@ -49,8 +49,11 @@ public class SourceMapGenerator
     public void UpdateLayers()
     {
         tileMapRenderers[TimeChange.CurrentTime].sortingOrder = TimeChange.layersIDS[0]+OrderInTileMaps;
+        tileMapRenderers[TimeChange.TimetoGo].enabled = true;
         tileMapRenderers[TimeChange.TimetoGo].sortingOrder = TimeChange.layersIDS[1]+ OrderInTileMaps;
         tileMapRenderers[TimeChange.LeftOutTime].sortingOrder = TimeChange.layersIDS[2]+ OrderInTileMaps;
+
+        tileMapRenderers[TimeChange.LeftOutTime].enabled = false;
     }
     public void UpdateMaterials(Material inside2d, Material inside2dV2)
     {

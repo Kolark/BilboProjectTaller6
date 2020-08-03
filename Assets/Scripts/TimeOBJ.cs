@@ -7,18 +7,25 @@ public class TimeOBJ : MonoBehaviour
     Material inside2d;
     [SerializeField]
     Material inside2dv2;
+    [SerializeField]
+    Material SprDefault;
     Collider2D col2d;
     Rigidbody2D rb2d;
     SpriteRenderer spRend;
     public int TimeToExist = 1;
     public int order = 1;
     int c = 0;
+
+    public int testL;
+    public int teleport;
+    public int ignore;
     private void Awake()
     {
         col2d = GetComponent<Collider2D>();
         rb2d = GetComponent<Rigidbody2D>();
         spRend = GetComponent<SpriteRenderer>();
         TimeChange.UpdateLayers += UpdateOBJ;
+        TimeChange.MiniUpdate += OnMiniupdate;
     }
 
     void UpdateOBJ()
@@ -35,6 +42,13 @@ public class TimeOBJ : MonoBehaviour
                 spRend.enabled = true;
                 spRend.sortingOrder = TimeChange.layersIDS[1] + order;
             }
+            else if(TimeToExist == TimeChange.LeftOutTime)
+            {
+                spRend.material = inside2dv2;
+                spRend.sortingOrder = TimeChange.layersIDS[2] + order;
+                spRend.enabled = false;
+                gameObject.layer = ignore;
+            }
         }
         else
         {
@@ -45,14 +59,30 @@ public class TimeOBJ : MonoBehaviour
                 spRend.sortingOrder = TimeChange.layersIDS[0] + order;
                 rb2d.bodyType = RigidbodyType2D.Dynamic;
                 col2d.isTrigger = false;
-                spRend.enabled = true;
+                //spRend.enabled = true;
+                gameObject.layer = testL;
             }
             else
             {
                 rb2d.bodyType = RigidbodyType2D.Static;
                 col2d.isTrigger = true;
-                spRend.enabled = false;
-                spRend.sortingOrder = -50;
+                if(TimeToExist == TimeChange.TimetoGo)
+                {
+                    spRend.material = inside2dv2;
+                    spRend.sortingOrder = TimeChange.layersIDS[1] + order;
+                    gameObject.layer = teleport;
+                }
+                else if(TimeToExist == TimeChange.LeftOutTime)
+                {
+                    
+                    spRend.material = inside2dv2;
+                    spRend.sortingOrder = TimeChange.layersIDS[2] + order;
+                    spRend.enabled = false;
+                    gameObject.layer = ignore;
+                }
+                //spRend.enabled = false;
+                //spRend.material = inside2dv2;
+                //spRend.sortingOrder = -50;
                 //Da igual el layer, hay que apagar el render y todo
             }
         }
@@ -71,5 +101,39 @@ public class TimeOBJ : MonoBehaviour
         GetComponent<Rigidbody2D>().bodyType = type;
         GetComponent<Collider2D>().isTrigger = istrigger;
         GetComponent<SpriteRenderer>().enabled = rend;
+    }
+
+    public void SetRenderOn()
+    {
+        spRend.material = SprDefault;
+        spRend.sortingOrder = TimeChange.layersIDS[0] + order;
+        col2d.isTrigger = false;
+    }
+    public void EndAnim()
+    {
+        rb2d.bodyType = RigidbodyType2D.Dynamic;
+        
+        spRend.material = inside2d;
+        TimeToExist = TimeChange.CurrentTime;
+}
+
+    public void OnMiniupdate()
+    {
+        if (TimeToExist == TimeChange.TimetoGo)
+        {
+            
+            spRend.material = inside2dv2;
+            spRend.enabled = true;
+            spRend.sortingOrder = TimeChange.layersIDS[1] + order;
+            gameObject.layer = teleport;
+        }
+        else if (TimeToExist == TimeChange.LeftOutTime)
+        {
+
+            spRend.material = inside2dv2;
+            spRend.enabled = false;
+            spRend.sortingOrder = TimeChange.layersIDS[2] + order;
+            gameObject.layer = ignore;
+        }
     }
 }
