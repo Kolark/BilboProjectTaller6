@@ -9,9 +9,12 @@ public class TimeChangeManager : MonoBehaviour
     private void Awake()
     {
         objs = GetComponentsInChildren<Button>();
-        TimeExecute.EndTimeChange += MakeActiveAgain;
+        //TimeExecute.EndTimeChange += MakeActiveAgain;
     }
-
+    private void Start()
+    {
+        TimeExecute.EndTimeChange += MakeActiveAgain; //tiene que estar obligatoriamente en el start
+    }
     public void SetInteractableFalse()
     {
         for (int i = 0; i < objs.Length; i++)
@@ -27,5 +30,8 @@ public class TimeChangeManager : MonoBehaviour
             objs[i].interactable = true;
         }
         objs[TimeChange.CurrentTime].interactable = false;
+        //Debug.Log("------ " + TimeChange.CurrentTime);
+
+        Debug.Log("SE HIZOOO 2");
     }
 }

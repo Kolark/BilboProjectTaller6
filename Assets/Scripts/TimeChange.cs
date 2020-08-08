@@ -40,6 +40,7 @@ public class TimeChange : MonoBehaviour
     }
     public void EndChangeTime()
     {
+        Debug.Log("SE HIZOOOOO  1");
         timetoGo = currentTime;
         currentTime = Temp;
         UpdateLayers();
