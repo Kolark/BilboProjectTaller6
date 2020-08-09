@@ -2511,8 +2511,8 @@ MonoBehaviour:
     future: {fileID: 21300000, guid: ffce5ef77102a634ea14aaf7ddc50650, type: 3}
   - order: 2
     SourceSprite: {fileID: 1343336742}
-    past: {fileID: 21300000, guid: 5f27632b09e76f24e840f070429f738f, type: 3}
-    future: {fileID: 21300000, guid: 5f27632b09e76f24e840f070429f738f, type: 3}
+    past: {fileID: 21300000, guid: 990aae2d963eaa348a0a3dd41a673d7f, type: 3}
+    future: {fileID: 21300000, guid: e02af7531f1ac6649ac58660439e1e3b, type: 3}
   - order: 2
     SourceSprite: {fileID: 631014735}
     past: {fileID: 21300000, guid: 44347fc17961f2a41bb374a021ad3f0c, type: 3}
@@ -2527,8 +2527,8 @@ MonoBehaviour:
     future: {fileID: 21300000, guid: 44347fc17961f2a41bb374a021ad3f0c, type: 3}
   - order: 2
     SourceSprite: {fileID: 330181101}
-    past: {fileID: 21300000, guid: dcdfb3d2c8d69784dbcd28dc79020ced, type: 3}
-    future: {fileID: 21300000, guid: dcdfb3d2c8d69784dbcd28dc79020ced, type: 3}
+    past: {fileID: 21300000, guid: 6d3050a1c8c30544580fd3aa7463d084, type: 3}
+    future: {fileID: 21300000, guid: 486a06c8083ba9f408c5a796d0bd74cc, type: 3}
   inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
   inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
 --- !u!4 &1448749526
