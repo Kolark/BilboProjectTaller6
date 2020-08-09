@@ -1012,7 +1012,7 @@ MonoBehaviour:
     - pasado: {fileID: 11400000, guid: 890288c60b2d8354bba514b18cc5a40c, type: 2}
       presente: {fileID: 11400000, guid: 2419074b29cb0a3458e27044c36bac2a, type: 2}
       Futuro: {fileID: 11400000, guid: 5b68023523dc71840859591c28d74495, type: 2}
-  - OrderInTileMaps: 0
+  - OrderInTileMaps: 2
     SourceMap: {fileID: 1633421401}
     Sprites:
     - pasado: {fileID: 11400000, guid: ae3598ba20545d147bf279c401addd35, type: 2}
