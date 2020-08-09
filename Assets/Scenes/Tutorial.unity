@@ -572,6 +572,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1200958417578257089, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.187
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200958417578257089, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.528
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401465955547758082, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.8952714
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401465955547758082, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.33292
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157975595984585992, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157975595984585992, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585993, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_SortingOrder
