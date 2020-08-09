@@ -13,7 +13,7 @@ public class TimeChange : MonoBehaviour
     public static int[] layersIDS = { 0, -10, -20 };
     int Temp = 0;
     private static bool isTimeTraveling = false;
-    public static bool IsTimeTraveling { get => isTimeTraveling; }
+    public static bool IsTimeTraveling { get => isTimeTraveling;}
     public static Action UpdateLayers;
     public static Action MiniUpdate;
     [SerializeField]
@@ -40,7 +40,6 @@ public class TimeChange : MonoBehaviour
     }
     public void EndChangeTime()
     {
-        Debug.Log("SE HIZOOOOO  1");
         timetoGo = currentTime;
         currentTime = Temp;
         UpdateLayers();

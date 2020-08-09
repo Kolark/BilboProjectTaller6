@@ -51,6 +51,7 @@ public class TouchManager : MonoBehaviour
 
    Vector3 POSinScreen()
     {
+        
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
         pos.z = 0;
         return pos;
