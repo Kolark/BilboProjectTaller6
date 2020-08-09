@@ -20,7 +20,7 @@ public class SpritesGenerator : MonoBehaviour
             GameObject futureSprite = Instantiate(spritesTimeChangers[i].SourceSprite, parent);
             spritesTimeChangers[i].SourceSprite.name += "Presente " + i.ToString();
             pastSprite.name += "Pasado " + i.ToString();
-            pastSprite.name += "Futuro " + i.ToString();
+            futureSprite.name += "Futuro " + i.ToString();
 
             spritesTimeChangers[i].SetSpritesRenderers
                 (pastSprite.GetComponent<SpriteRenderer>(),
@@ -30,6 +30,7 @@ public class SpritesGenerator : MonoBehaviour
             spritesTimeChangers[i].SetSprites();
         }
         TimeChange.UpdateLayers += UpdateSprites;
+        UpdateSprites();
     }
 
     void UpdateSprites()

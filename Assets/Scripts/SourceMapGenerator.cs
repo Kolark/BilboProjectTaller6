@@ -19,6 +19,7 @@ public class SourceMapGenerator
     //public int size { get => TilemapsObjs.Count;}
     
 
+        
     public void AddTilemapsobjs(GameObject past, GameObject Future)
     {
         TilemapsObjs.Add(past);
@@ -59,7 +60,6 @@ public class SourceMapGenerator
     {
         tileMapRenderers[TimeChange.CurrentTime].material = inside2d;
         tileMapRenderers[TimeChange.TimetoGo].material = inside2dV2;
-        
     }
 
 }
