@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class OBJteleporter : MonoBehaviour
 {
+    //curvas
     public AnimationCurve scaleDown;
     public AnimationCurve scaleUp;
+    //Escalas
     Vector3 actualScale;
     Vector3 zero = Vector3.zero;
+    //Valores del Eje X
     float xaxis1 = 0;
     float xaxis2 = 0;
-    bool growing = true;
-    bool locked = false;
+
+    bool growing = false; //Si esta creciendo o no
+    bool locked = false; //Si crecio hasta un punto maximo
+
     float length = 0;
     bool hasPosition = false;
     public LayerMask LM;
+    //Renderer
     SpriteRenderer spRend;
+    //Material
     Material normal;
     [SerializeField]
     Material Stencil;
@@ -23,19 +30,18 @@ public class OBJteleporter : MonoBehaviour
     [SerializeField]
     Transform retrievepos;
 
-    TimeOBJ tObj;
+    TimeOBJ tObj; //Guardo el objeto
 
+    float threshold = 1;
 
-     [SerializeField]
+    [SerializeField]
     TimeEnvironmentChanger tEG;
 
     private void Awake()
     {
-        
         spRend = GetComponent<SpriteRenderer>();
         normal = spRend.material;
         actualScale = transform.localScale;
-        
     }
     private void Update()
     {  
@@ -50,10 +56,11 @@ public class OBJteleporter : MonoBehaviour
         xaxis2 += Time.deltaTime;
         transform.localScale = actualScale * scaleDown.Evaluate(xaxis2);
         xaxis1 = 0;
-        hasPosition = false;
+       
         if(scaleDown.Evaluate(xaxis2) < 0.15f)
         {
-            if(tObj != null)
+            hasPosition = false; // puede volver a tener una posicion
+            if (tObj != null)
             {
                 transform.position = retrievepos.position;
                 tObj.EndAnim();
@@ -61,57 +68,15 @@ public class OBJteleporter : MonoBehaviour
             }
         }
     }
-    public void GrowAnim(Vector3 pos)
-    {
-        if (!hasPosition)
-        {
-            transform.position = pos;
-            hasPosition = true;
-        }
-        float lx = pos.x - transform.position.x;
-                if(lx > 0)
-                {
-                    if (!swap)
-                    {
-                        spRend.sortingOrder = -100;
-                        TimeChange.Swap();
-                        tEG.UpdateLayers();
-                        swap = true;
-                        spRend.material = Stencil;
-                    }   
-                }
-                else if (lx < 0)
-                {
-                    if (swap)
-                    {
-                        spRend.sortingOrder = -100;
-                        TimeChange.Swap();
-                        tEG.UpdateLayers();
-                        swap = false;
-                        spRend.material = Stencil;
-                    }
-                    Debug.Log("IZQUIERDA");
-                }
 
-        growing = true;
-        xaxis1 += Time.deltaTime;
-        transform.localScale = Vector3.one *3* scaleUp.Evaluate(xaxis1);
-        if(scaleUp.Evaluate(xaxis1) > 0.9)
-        {
-            locked = true;
-        }
-        actualScale = transform.localScale;
-        xaxis2 = 0;
-    }
-
-    public void notGrowing()
+    public void CheckIfObj()
     {
-        growing = false;
+        growing = false; //Para que closeanim lo cierre
         if (locked)
         {
             //Significa que va a hacer tp
-            Collider2D objtotp = Physics2D.OverlapCircle(transform.position,0.05f, LM);
-            if(objtotp != null)
+            Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.05f, LM);
+            if (objtotp != null)
             {
                 tObj = objtotp.transform.GetComponent<TimeOBJ>();
                 tObj.SetRenderOn();
@@ -120,10 +85,63 @@ public class OBJteleporter : MonoBehaviour
             locked = false;
         }
     }
-    public void setLength(float l)
+
+
+
+
+
+    public void GGG(Vector3 pos)
     {
-        length = 0;
+        if (!hasPosition)
+        {
+            transform.position = pos;
+            hasPosition = true;
+        }
+
+        float lx = pos.x - transform.position.x; //Para Swapear los tiempos
+
+        Swap(lx);
+        growing = true;
+
+        xaxis1 += Time.deltaTime;
+        transform.localScale = Vector3.one * 3 * scaleUp.Evaluate(xaxis1);
+        if (scaleUp.Evaluate(xaxis1) > 0.9)
+        {
+            locked = true;
+        }
+        actualScale = transform.localScale;
+        xaxis2 = 0;
     }
+
+
+    void Swap(float length)
+    {
+        if (length > threshold)
+        {
+            if (!swap)
+            {
+                spRend.sortingOrder = -100;
+                TimeChange.Swap();
+                tEG.UpdateLayers();
+                swap = true;
+                spRend.material = Stencil;
+            }
+        }
+        else if (length < -threshold)
+        {
+            if (swap)
+            {
+                spRend.sortingOrder = -100;
+                TimeChange.Swap();
+                tEG.UpdateLayers();
+                swap = false;
+                spRend.material = Stencil;
+            }
+            Debug.Log("IZQUIERDA");
+        }
+    }
+    
+   
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere((Vector2)transform.position,0.05f);
