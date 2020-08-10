@@ -9,7 +9,9 @@ public class Movement2D : MonoBehaviour
 
 
     //valores
+    [SerializeField]
     float jumpForce = 5f;
+    [SerializeField]
     int speed = 12;
     public int jumpNumber = 0;
     bool facingRight = true;
@@ -77,7 +79,7 @@ public class Movement2D : MonoBehaviour
         if (jumpNumber < 1)
         {
             animator.SetBool("IsJumping", true);
-            rb.AddForce(Vector2.up * 6, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
         jumpNumber++;
