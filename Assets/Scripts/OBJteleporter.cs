@@ -122,7 +122,7 @@ public class OBJteleporter : MonoBehaviour
             {
                 spRend.sortingOrder = -100;
                 TimeChange.Swap();
-                //tEG.UpdateLayers();
+                tEG.UpdateLayers();
                 swap = true;
                 spRend.material = Stencil;
             }
@@ -133,7 +133,7 @@ public class OBJteleporter : MonoBehaviour
             {
                 spRend.sortingOrder = -100;
                 TimeChange.Swap();
-                //tEG.UpdateLayers();
+                tEG.UpdateLayers();
                 swap = false;
                 spRend.material = Stencil;
             }

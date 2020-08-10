@@ -16,9 +16,9 @@ public class TimeOBJ : MonoBehaviour
     public int order = 1;
     int c = 0;
 
-    int testL = 9;
-    int teleport = 10;
-    int ignore = 11;
+    public int testL;
+    public int teleport;
+    public int ignore;
     private void Awake()
     {
         col2d = GetComponent<Collider2D>();
@@ -26,7 +26,6 @@ public class TimeOBJ : MonoBehaviour
         spRend = GetComponent<SpriteRenderer>();
         TimeChange.UpdateLayers += UpdateOBJ;
         TimeChange.MiniUpdate += OnMiniupdate;
-        OnMiniupdate();
     }
 
     void UpdateOBJ()
@@ -126,7 +125,7 @@ public class TimeOBJ : MonoBehaviour
             spRend.material = inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-            //gameObject.layer = teleport;
+            gameObject.layer = teleport;
         }
         else if (TimeToExist == TimeChange.LeftOutTime)
         {
@@ -134,7 +133,7 @@ public class TimeOBJ : MonoBehaviour
             spRend.material = inside2dv2;
             spRend.enabled = false;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
-            //gameObject.layer = ignore;
+            gameObject.layer = ignore;
         }
     }
 }
