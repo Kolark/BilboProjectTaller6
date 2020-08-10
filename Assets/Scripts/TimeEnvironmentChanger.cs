@@ -41,6 +41,7 @@ public class TimeEnvironmentChanger : MonoBehaviour
             SOURCEMAPS[i].Swaptiles();
         }
         TimeChange.UpdateLayers += UpdateLayers;
+        TimeChange.MiniUpdate += UpdateLayers;
         UpdateLayers();
     }
 

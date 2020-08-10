@@ -30,6 +30,7 @@ public class SpritesGenerator : MonoBehaviour
             spritesTimeChangers[i].SetSprites();
         }
         TimeChange.UpdateLayers += UpdateSprites;
+        TimeChange.MiniUpdate += UpdateSprites;
         UpdateSprites();
     }
 
