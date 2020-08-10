@@ -154,7 +154,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 14
+=======
+  m_RootOrder: 10
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 10
 >>>>>>> parent of d6da6dd... .
@@ -322,6 +326,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Children: []
   m_Father: {fileID: 617120161}
   m_RootOrder: 2
@@ -359,11 +364,16 @@ Transform:
 =======
 =======
 >>>>>>> parent of d6da6dd... .
+=======
+>>>>>>> parent of d6da6dd... .
   m_Children:
   - {fileID: 141039865}
   m_Father: {fileID: 0}
   m_RootOrder: 8
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d6da6dd... .
+=======
 >>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
@@ -449,7 +459,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 16
+=======
+  m_RootOrder: 11
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 11
 >>>>>>> parent of d6da6dd... .
@@ -734,6 +748,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &562469116
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,6 +951,8 @@ Transform:
 >>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
+=======
+>>>>>>> parent of d6da6dd... .
 --- !u!1 &659783622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1105,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
+=======
+  m_RootOrder: 5
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 5
 >>>>>>> parent of d6da6dd... .
@@ -1162,7 +1183,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 6
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 6
 >>>>>>> parent of d6da6dd... .
@@ -2027,7 +2052,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 17
+=======
+  m_RootOrder: 12
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 12
 >>>>>>> parent of d6da6dd... .
@@ -2151,6 +2180,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229699740
@@ -2234,6 +2264,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
 =======
+=======
+>>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
   m_RootOrder: 14
@@ -2375,6 +2407,7 @@ MonoBehaviour:
   inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1343336742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2489,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
 =======
@@ -2700,6 +2735,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1552631534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,6 +2817,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
 =======
@@ -2894,7 +2932,11 @@ RectTransform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 4
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 4
 >>>>>>> parent of d6da6dd... .
@@ -7675,7 +7717,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 18
+=======
+  m_RootOrder: 13
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 13
 >>>>>>> parent of d6da6dd... .
@@ -7700,6 +7746,7 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 1204531194}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1914024892
@@ -7902,6 +7949,8 @@ Transform:
 >>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
+=======
+>>>>>>> parent of d6da6dd... .
 --- !u!1 &2030778685
 GameObject:
   m_ObjectHideFlags: 0
@@ -7946,7 +7995,11 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+  m_RootOrder: 3
+>>>>>>> parent of d6da6dd... .
 =======
   m_RootOrder: 3
 >>>>>>> parent of d6da6dd... .
@@ -8983,7 +9036,10 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
 --- !u!1001 &6604341593820442398
@@ -9056,6 +9112,9 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aac2bdf45d7c2b142b28a2eb25e9980b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d6da6dd... .
+=======
 >>>>>>> parent of d6da6dd... .
 =======
 >>>>>>> parent of d6da6dd... .
