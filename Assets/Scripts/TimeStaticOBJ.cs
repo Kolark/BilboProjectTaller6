@@ -14,7 +14,8 @@ public class TimeStaticOBJ : MonoBehaviour
     Material inside2d;
     [SerializeField]
     Material inside2dv2;
-
+    [SerializeField]
+    int timePivot = 0;
 
     private void Awake()
     {
@@ -32,27 +33,72 @@ public class TimeStaticOBJ : MonoBehaviour
 
     void UpdateObjs()
     {
-        //CurrenTime
-        spriteRenderers[TimeChange.CurrentTime].sortingOrder = TimeChange.layersIDS[0] + order;
-        spriteRenderers[TimeChange.CurrentTime].material = inside2d;
-        spriteRenderers[TimeChange.CurrentTime].enabled = true;
-        colliders[TimeChange.CurrentTime].enabled = true;
-        colliders[TimeChange.CurrentTime].isTrigger = false;
 
-        //Timetogo
-        spriteRenderers[TimeChange.TimetoGo].sortingOrder = TimeChange.layersIDS[1] + order;
-        spriteRenderers[TimeChange.TimetoGo].material = inside2dv2;
-        spriteRenderers[TimeChange.TimetoGo].enabled = true;
-        colliders[TimeChange.TimetoGo].enabled = true;
-        colliders[TimeChange.TimetoGo].isTrigger = true;
-        //LeftOutTime
-        spriteRenderers[TimeChange.LeftOutTime].sortingOrder = TimeChange.layersIDS[2] + order;
-        spriteRenderers[TimeChange.LeftOutTime].enabled = false;
-        colliders[TimeChange.LeftOutTime].enabled = false;
-        colliders[TimeChange.LeftOutTime].isTrigger = true;
+        int indexCurrent = TimeChange.CurrentTime - timePivot;
+        int indexTogo = TimeChange.TimetoGo - timePivot;
+        int indexLeftOut = TimeChange.LeftOutTime - timePivot;
 
+
+        if (isclamped(indexCurrent))
+        {
+            //CurrenTime
+            spriteRenderers[indexCurrent].sortingOrder = TimeChange.layersIDS[0] + order;
+            spriteRenderers[indexCurrent].material = inside2d;
+            spriteRenderers[indexCurrent].enabled = true;
+            colliders[indexCurrent].enabled = true;
+            colliders[indexCurrent].isTrigger = false;
+        }
+        else
+        {
+            Dissapear(indexCurrent+3);
+        }
+
+        if (isclamped(indexTogo))
+        {
+            //Timetogo
+            spriteRenderers[indexTogo].sortingOrder = TimeChange.layersIDS[1] + order;
+            spriteRenderers[indexTogo].material = inside2dv2;
+            spriteRenderers[indexTogo].enabled = true;
+            colliders[indexTogo].enabled = true;
+            colliders[indexTogo].isTrigger = true;
+        }
+        else
+        {
+            Dissapear(indexTogo + 3);
+        }
+        if (isclamped(indexLeftOut))
+        {
+            //LeftOutTime
+            spriteRenderers[indexLeftOut].sortingOrder = TimeChange.layersIDS[2] + order;
+            spriteRenderers[indexLeftOut].enabled = false;
+            colliders[indexLeftOut].enabled = false;
+            colliders[indexLeftOut].isTrigger = true;
+        }
+        else
+        {
+            Dissapear(indexLeftOut + 3);
+        }
     }
 
+    void Dissapear(int index)
+    {
+        spriteRenderers[index].sortingOrder = -250;
+        spriteRenderers[index].material = null;
+        spriteRenderers[index].enabled = false;
+        colliders[index].enabled = false;
+    }
+
+    bool isclamped(float n)
+    {
+        if(n >= 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
     
 }
