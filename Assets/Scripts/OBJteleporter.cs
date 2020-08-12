@@ -104,7 +104,7 @@ public class OBJteleporter : MonoBehaviour
         growing = true;
 
         xaxis1 += Time.deltaTime;
-        transform.localScale = Vector3.one * 3 * scaleUp.Evaluate(xaxis1);
+        transform.localScale = Vector3.one * 9 * scaleUp.Evaluate(xaxis1);
         if (scaleUp.Evaluate(xaxis1) > 0.9)
         {
             locked = true;
