@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class TimeStaticOBJ : MonoBehaviour
 {
-    
+
+    /// <summary>
+    /// Se encarga de los objetos que poseen collider diferente para cada tiempo.
+    /// </summary>
+   
     Collider2D[] colliders = new Collider2D[3];
     SpriteRenderer[] spriteRenderers = new SpriteRenderer[3];
 
@@ -22,10 +26,6 @@ public class TimeStaticOBJ : MonoBehaviour
         
         colliders = transform.GetComponentsInChildren<Collider2D>();
         spriteRenderers = transform.GetComponentsInChildren<SpriteRenderer>();
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            Debug.Log(colliders[i].transform.name);
-        }
         TimeChange.UpdateLayers += UpdateObjs;
         TimeChange.MiniUpdate += UpdateObjs;
         UpdateObjs();

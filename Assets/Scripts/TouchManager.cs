@@ -8,8 +8,8 @@ public class TouchManager : MonoBehaviour
     public LayerMask LM;
     //Testear con touch en el celular, si no cambiarlo por mouse.position
 
-    public int TP;
-    public int MOVEOBJ;
+    //public int TP;
+    //public int MOVEOBJ;
     bool canInteract = true;
 
     ITouchable touchable;
@@ -30,8 +30,10 @@ public class TouchManager : MonoBehaviour
 
                         if (hit2D.collider != null)
                         {
+                            Debug.Log(hit2D.collider.name);
                             if (hit2D.collider.GetComponent<ITouchable>() != null)
                             {
+                                
                                 touchable = hit2D.collider.GetComponent<ITouchable>();
                                 touchable.touch(POSinScreen());
                             }
@@ -51,7 +53,7 @@ public class TouchManager : MonoBehaviour
         
     }
 
-   Vector3 POSinScreen()
+   public static Vector3 POSinScreen()
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
         pos.z = 0;

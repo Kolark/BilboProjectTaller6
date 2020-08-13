@@ -4,6 +4,9 @@ using UnityEngine;
 [System.Serializable]
 public class SpritesTimeChanger
 {
+    /// <summary>
+    /// Clase serializada usada por SpritesGenerator
+    /// </summary>
     public int order = 0;
     public GameObject SourceSprite;
     SpriteRenderer[] spriteRenderers = new SpriteRenderer[3];

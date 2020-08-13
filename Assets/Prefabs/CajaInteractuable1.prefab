@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5964798384862463157}
   - component: {fileID: 5658290743590392027}
   - component: {fileID: 7805371583004473813}
-  - component: {fileID: 7707463655807873064}
-  m_Layer: 9
+  - component: {fileID: 3545164218018886971}
+  m_Layer: 13
   m_Name: CajaInteractuable1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &7707463655807873064
+--- !u!114 &3545164218018886971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -4,6 +4,12 @@ using UnityEngine;
 using System;
 public class TimeChange : MonoBehaviour
 {
+    /// <summary>
+    /// Este script es la columna vertebral de la mecanica del Tiempo. 
+    /// Se encarga de realizar el evento mas importante que es el UpdateLayers que actualiza las layers
+    /// Declara las layersIds a las que se cambiaran los sprites.
+    /// </summary>
+
     private static int currentTime = 1;
     public static int CurrentTime { get => currentTime; }
     private static int timetoGo = 2;
@@ -26,6 +32,7 @@ public class TimeChange : MonoBehaviour
 
     public void StartChangeTime(int setTime)//1er paso
     {
+        SlowTime();
         isTimeTraveling = true;
         Temp = setTime;
         if (setTime == leftOutTime)
@@ -44,6 +51,7 @@ public class TimeChange : MonoBehaviour
         currentTime = Temp;
         UpdateLayers();
         isTimeTraveling = false;
+        NormalTime();
     }
 
     public static void Swap()
@@ -52,10 +60,19 @@ public class TimeChange : MonoBehaviour
         timetoGo = leftOutTime;
         leftOutTime = tem;
         MiniUpdate();
+        
     }
 
-    //void MiniUpdt()
-    //{
-    //    MiniUpdate();
-    //}
+
+    void SlowTime()
+    {
+        Time.timeScale = 0.5f;
+        Time.fixedDeltaTime = Time.timeScale * 0.02f;
+    }
+
+    void NormalTime()
+    {
+        Time.timeScale = 1;
+        //Time.fixedDeltaTime = Time.timeScale/0.02f;
+    }
 }
