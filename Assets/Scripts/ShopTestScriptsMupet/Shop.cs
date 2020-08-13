@@ -13,6 +13,8 @@ public class Shop : MonoBehaviour
     }
 
     [SerializeField] List<ShopItem> shopItemsList;
+    [SerializeField] Animator noCoinsAnim;
+    [SerializeField] Text coinstText;
 
     GameObject itemTemplate;
     GameObject g;
@@ -50,10 +52,20 @@ public class Shop : MonoBehaviour
 
             //change text
             buyBtn.transform.GetChild(0).GetComponent<Text>().text = "PURCHASED";
+
+            //change UI text: coins
+            setCoinsUI();
         }
+
         else
         {
+            noCoinsAnim.SetTrigger("NoCoins");
             Debug.Log("You don't have enough coins!!");
         }
+    }
+
+    void setCoinsUI()
+    {
+        coinstText.text = Wallet.instance.coins.ToString();
     }
 }
