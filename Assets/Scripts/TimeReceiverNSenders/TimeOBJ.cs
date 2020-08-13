@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeOBJ : MonoBehaviour
-{   [SerializeField]
+{
+    /// <summary>
+    /// Este script es para los objetos dinamicos que solo pertenecen a un tiempo.
+    /// </summary>
+
+
+    [SerializeField]
     Material inside2d;
     [SerializeField]
     Material inside2dv2;
@@ -81,10 +87,6 @@ public class TimeOBJ : MonoBehaviour
                     spRend.enabled = false;
                     gameObject.layer = ignore;
                 }
-                //spRend.enabled = false;
-                //spRend.material = inside2dv2;
-                //spRend.sortingOrder = -50;
-                //Da igual el layer, hay que apagar el render y todo
             }
         }
 
@@ -126,7 +128,7 @@ public class TimeOBJ : MonoBehaviour
             spRend.material = inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-            //gameObject.layer = teleport;
+            gameObject.layer = teleport;
         }
         else if (TimeToExist == TimeChange.LeftOutTime)
         {
@@ -134,7 +136,7 @@ public class TimeOBJ : MonoBehaviour
             spRend.material = inside2dv2;
             spRend.enabled = false;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
-            //gameObject.layer = ignore;
+            gameObject.layer = ignore;
         }
     }
 }

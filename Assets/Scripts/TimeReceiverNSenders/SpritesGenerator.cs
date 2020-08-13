@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SpritesGenerator : MonoBehaviour
 {
-   
+   /// <summary>
+   /// Se encarga de manejar con respecto al TimeChange los Sprites que no tienen Collider
+   /// </summary>
 
     public Transform parent;
     public List<SpritesTimeChanger> spritesTimeChangers = new List<SpritesTimeChanger>();

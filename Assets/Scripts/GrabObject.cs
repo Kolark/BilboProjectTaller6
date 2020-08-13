@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class GrabObject : MonoBehaviour, ITouchable
 {
+    /// <summary>
+    /// Este script implemente la interfaz Itouchable.
+    /// Se le añade a los objetos que yo quiera agarrar
+    /// </summary>
+
     public void OnTouchUp()
     {
         

@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TimeChangeManager : MonoBehaviour
 {
+
+    /// <summary>
+    /// Se encarga de activar y desactivar los botones de cambiar el tiempo.
+    /// </summary>
     Button[] objs;
 
     private void Awake()
