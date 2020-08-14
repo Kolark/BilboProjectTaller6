@@ -28,9 +28,13 @@ public class TimeStaticOBJ : MonoBehaviour
         spriteRenderers = transform.GetComponentsInChildren<SpriteRenderer>();
         TimeChange.UpdateLayers += UpdateObjs;
         TimeChange.MiniUpdate += UpdateObjs;
-        UpdateObjs();
+        
     }
 
+    private void Start()
+    {
+        UpdateObjs();
+    }
     void UpdateObjs()
     {
 
@@ -106,4 +110,8 @@ public class TimeStaticOBJ : MonoBehaviour
         TimeChange.MiniUpdate -= UpdateObjs;
     }
 
+    public void SetPivot(int _pivot)
+    {
+        timePivot = _pivot;
+    }
 }

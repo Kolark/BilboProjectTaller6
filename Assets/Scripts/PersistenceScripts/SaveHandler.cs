@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class SaveHandler : MonoBehaviour
 {
-    public void Save()
+    public void saveGame()
     {
-        SaveObject currentSave;
+        SaveObject Sobj = GameInfo.Instance.GetSaveObj();
+        string json = JsonUtility.ToJson(Sobj);
+        SaveSystem.Save(json);
     }
 }
 
-public class SaveObject
-{
-    public bool HasBeenInTutorial;
-    public int levelsUnlocked;
-
-    public SaveObject(bool hasBeenInTutorial, int levelsUnlocked)
-    {
-        HasBeenInTutorial = hasBeenInTutorial;
-        this.levelsUnlocked = levelsUnlocked;
-    }
-}

@@ -26,6 +26,30 @@ TextureImporter:
   - first:
       213: -3033455866435720905
     second: TierraFertil_Presente_7
+  - first:
+      213: -7743612133523066534
+    second: TierraFertil_Presente_0
+  - first:
+      213: 6617878122082502901
+    second: TierraFertil_Presente_1
+  - first:
+      213: -5933846603468698729
+    second: TierraFertil_Presente_2
+  - first:
+      213: -431495995471723272
+    second: TierraFertil_Presente_3
+  - first:
+      213: -1732261190180093584
+    second: TierraFertil_Presente_4
+  - first:
+      213: -2457772806444811525
+    second: TierraFertil_Presente_5
+  - first:
+      213: 6566055774599263776
+    second: TierraFertil_Presente_6
+  - first:
+      213: -812736036693830495
+    second: TierraFertil_Presente_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -71,7 +95,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -128,17 +152,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 16
-        width: 16
+        width: 64
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abcd16ba806f6e910800000000000000
-      internalID: 1866449612687137978
+      spriteID: a51f3febac9298490800000000000000
+      internalID: -7743612133523066534
       vertices: []
       indices: 
       edges: []
@@ -147,145 +171,19 @@ TextureImporter:
       name: TierraFertil_Presente_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06ddd1cd6d3d14da0800000000000000
-      internalID: -5962251511892419232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TierraFertil_Presente_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa4c4afda72009590800000000000000
-      internalID: -7669627438650571601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TierraFertil_Presente_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f81b22cc525134050800000000000000
-      internalID: 5783489598556647823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TierraFertil_Presente_4
-      rect:
-        serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 64
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 261e4dc084df70640800000000000000
-      internalID: 5046280393386680674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TierraFertil_Presente_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df166fc1b3c280120800000000000000
-      internalID: 2380201035465908733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TierraFertil_Presente_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b55a14a09b058c20800000000000000
-      internalID: 3207983025427731889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TierraFertil_Presente_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 739264f16fff6e5d0800000000000000
-      internalID: -3033455866435720905
+      spriteID: 5f88e89c61d67db50800000000000000
+      internalID: 6617878122082502901
       vertices: []
       indices: 
       edges: []

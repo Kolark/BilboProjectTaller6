@@ -25,6 +25,10 @@ public class TimeOBJ : MonoBehaviour
     int testL = 9;
     int teleport = 10;
     int ignore = 11;
+
+    [SerializeField]
+    RigidbodyType2D NormalType;
+
     private void Awake()
     {
         col2d = GetComponent<Collider2D>();
@@ -64,7 +68,8 @@ public class TimeOBJ : MonoBehaviour
                 //Existo , Tener Render prendido, layer correcto una vez mas
                 spRend.material = inside2d;
                 spRend.sortingOrder = TimeChange.layersIDS[0] + order;
-                rb2d.bodyType = RigidbodyType2D.Dynamic;
+                //rb2d.bodyType = RigidbodyType2D.Dynamic;//Fix
+                rb2d.bodyType = NormalType;//Fix
                 col2d.isTrigger = false;
                 //spRend.enabled = true;
                 gameObject.layer = testL;
