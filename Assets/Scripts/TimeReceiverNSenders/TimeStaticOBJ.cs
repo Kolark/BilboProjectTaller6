@@ -100,5 +100,10 @@ public class TimeStaticOBJ : MonoBehaviour
         }
     }
 
-    
+    private void OnDestroy()
+    {
+        TimeChange.UpdateLayers -= UpdateObjs;
+        TimeChange.MiniUpdate -= UpdateObjs;
+    }
+
 }

@@ -55,4 +55,9 @@ public class TimeEnvironmentChanger : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        TimeChange.UpdateLayers -= UpdateLayers;
+        TimeChange.MiniUpdate -= UpdateLayers;
+    }
 }

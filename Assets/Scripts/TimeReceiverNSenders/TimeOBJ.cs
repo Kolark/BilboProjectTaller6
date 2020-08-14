@@ -139,4 +139,10 @@ public class TimeOBJ : MonoBehaviour
             gameObject.layer = ignore;
         }
     }
+
+    private void OnDestroy()
+    {
+        TimeChange.UpdateLayers -= UpdateOBJ;
+        TimeChange.MiniUpdate -= OnMiniupdate;
+    }
 }

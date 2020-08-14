@@ -38,4 +38,9 @@ public class TimeChangeManager : MonoBehaviour
 
         Debug.Log("SE HIZOOO 2");
     }
+
+    private void OnDestroy()
+    {
+        TimeExecute.EndTimeChange -= MakeActiveAgain;
+    }
 }
