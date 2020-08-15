@@ -22,7 +22,10 @@ public class TimeOBJ : MonoBehaviour
     public int order = 1;
     int c = 0;
 
-    int testL = 9;
+    [SerializeField]
+    bool shouldChangeLayers;
+
+    int layerToexist = 9;
     int teleport = 10;
     int ignore = 11;
 
@@ -58,7 +61,8 @@ public class TimeOBJ : MonoBehaviour
                 spRend.material = inside2dv2;
                 spRend.sortingOrder = TimeChange.layersIDS[2] + order;
                 spRend.enabled = false;
-                gameObject.layer = ignore;
+                if (shouldChangeLayers) { gameObject.layer = ignore; }
+                
             }
         }
         else
@@ -72,7 +76,7 @@ public class TimeOBJ : MonoBehaviour
                 rb2d.bodyType = NormalType;//Fix
                 col2d.isTrigger = false;
                 //spRend.enabled = true;
-                gameObject.layer = testL;
+                if (shouldChangeLayers){ gameObject.layer = layerToexist; }
             }
             else
             {
@@ -82,7 +86,8 @@ public class TimeOBJ : MonoBehaviour
                 {
                     spRend.material = inside2dv2;
                     spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-                    gameObject.layer = teleport;
+                    if (shouldChangeLayers){ gameObject.layer = teleport; }
+                    
                 }
                 else if(TimeToExist == TimeChange.LeftOutTime)
                 {
@@ -90,7 +95,8 @@ public class TimeOBJ : MonoBehaviour
                     spRend.material = inside2dv2;
                     spRend.sortingOrder = TimeChange.layersIDS[2] + order;
                     spRend.enabled = false;
-                    gameObject.layer = ignore;
+                    if (shouldChangeLayers) { gameObject.layer = ignore; }
+                        
                 }
             }
         }
@@ -133,7 +139,8 @@ public class TimeOBJ : MonoBehaviour
             spRend.material = inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-            gameObject.layer = teleport;
+            if (shouldChangeLayers) { gameObject.layer = teleport; }
+                
         }
         else if (TimeToExist == TimeChange.LeftOutTime)
         {
@@ -141,7 +148,8 @@ public class TimeOBJ : MonoBehaviour
             spRend.material = inside2dv2;
             spRend.enabled = false;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
-            gameObject.layer = ignore;
+            if (shouldChangeLayers) { gameObject.layer = ignore; }
+                
         }
     }
 
