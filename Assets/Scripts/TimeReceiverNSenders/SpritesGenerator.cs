@@ -45,5 +45,10 @@ public class SpritesGenerator : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        TimeChange.UpdateLayers -= UpdateSprites;
+        TimeChange.MiniUpdate -= UpdateSprites;
+    }
 
 }

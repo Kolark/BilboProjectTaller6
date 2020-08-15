@@ -75,4 +75,9 @@ public class TimeChange : MonoBehaviour
         Time.timeScale = 1;
         //Time.fixedDeltaTime = Time.timeScale/0.02f;
     }
+
+    private void OnDestroy()
+    {
+        TimeExecute.EndTimeChange -= EndChangeTime;
+    }
 }

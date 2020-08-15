@@ -10,6 +10,7 @@ public class Shop : MonoBehaviour
         public Sprite Image;
         public int price;
         public bool isPurchased = false;
+        public Sprite[] HUDassigned;
     }
 
     [SerializeField] List<ShopItem> shopItemsList;
@@ -20,9 +21,15 @@ public class Shop : MonoBehaviour
     GameObject g;
     [SerializeField]Transform scrollViewItems;
     Button buyBtn;
+    Button equipBtn;
+
+    Image imageBuyBtn;
+    Image imageEquipBtn;
 
     private void Start()
     {
+        setCoinsUI();
+
         itemTemplate = scrollViewItems.GetChild(0).gameObject;
 
         for (int i = 0; i < shopItemsList.Count; i++)
@@ -31,8 +38,13 @@ public class Shop : MonoBehaviour
             g.transform.GetChild(0).GetComponent<Image>().sprite = shopItemsList[i].Image;
             g.transform.GetChild(1).GetChild(0).GetComponent<Text>().text = shopItemsList[i].price.ToString();
             buyBtn = g.transform.GetChild(2).GetComponent<Button>();
+            equipBtn = g.transform.GetChild(3).GetComponent<Button>();
             buyBtn.interactable = !shopItemsList[i].isPurchased;
             buyBtn.AddEventListener(i, OnscrollViewItemsClicked);
+            equipBtn.AddEventListener(i, EquipBtnClicked);
+            imageBuyBtn = g.transform.GetChild(2).GetComponent<Image>();
+            imageEquipBtn = g.transform.GetChild(3).GetComponent<Image>();
+
         }
 
         Destroy(itemTemplate);
@@ -47,24 +59,35 @@ public class Shop : MonoBehaviour
             shopItemsList[itemIndex].isPurchased = true;
 
             //disable the button
-            buyBtn = scrollViewItems.GetChild(itemIndex).GetChild(2).GetComponent<Button>();
-            buyBtn.interactable = false;
+            imageBuyBtn = scrollViewItems.GetChild(itemIndex).GetChild(2).GetComponent<Image>();
+            imageEquipBtn = scrollViewItems.GetChild(itemIndex).GetChild(3).GetComponent<Image>();
+
+            //buyBtn = scrollViewItems.GetChild(itemIndex).GetChild(2).GetComponent<Button>();
+            imageBuyBtn.gameObject.SetActive(false);
+            imageEquipBtn.gameObject.SetActive(true);
 
             //change text
-            buyBtn.transform.GetChild(0).GetComponent<Text>().text = "PURCHASED";
+            //buyBtn.transform.GetChild(0).GetComponent<Text>().text = "PURCHASED";
 
             //change UI text: coins
             setCoinsUI();
         }
-
         else
         {
             noCoinsAnim.SetTrigger("NoCoins");
             Debug.Log("You don't have enough coins!!");
         }
     }
+    void EquipBtnClicked(int itemIndex)
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            HUDChanger.instance.imagenesHUD[i] = shopItemsList[itemIndex].HUDassigned[i];
+        }
+       
+    }
 
-    void setCoinsUI()
+        void setCoinsUI()
     {
         coinstText.text = Wallet.instance.coins.ToString();
     }
