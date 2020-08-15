@@ -6,7 +6,8 @@ using UnityEngine;
 public class Movement2D : MonoBehaviour
 {
     //Script que se encarga del movimiento en 2d del personaje, esto es Movimiento en el eje x como el salto.
-
+    private static Movement2D instance;
+    public static Movement2D Instance { get => instance; }
 
     //valores
     [SerializeField]
@@ -26,12 +27,17 @@ public class Movement2D : MonoBehaviour
     {
         rb = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
     }
     //Updates
-    private void Update()
-    {
-   
-    }
+
+
+
     void FixedUpdate()
     {
         float x = joystick.Horizontal;
