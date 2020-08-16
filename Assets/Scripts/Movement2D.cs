@@ -105,11 +105,17 @@ public class Movement2D : MonoBehaviour
         transform.localScale = theScale;
     }
 
+    public void TimeTravelAnimation()
+    {
+        animator.SetBool("IsTimeTraveling", true);
+    }
+
     void AnimatorReseter()
     {
         //No me peguen por favor, es necesario ya que el animator de Unity esta drogado :(
         if (rb.velocity.y > .01) animator.SetBool("IsJumping", false);
         if (rb.velocity.y < -.01) animator.SetBool("IsFalling", true);
         if (rb.velocity.y < -.2) animator.SetBool("IsFalling", false);
+        animator.SetBool("IsTimeTraveling", false);
     }
 }
