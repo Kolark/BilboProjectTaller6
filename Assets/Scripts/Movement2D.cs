@@ -41,7 +41,7 @@ public class Movement2D : MonoBehaviour
     void FixedUpdate()
     {
         float x = joystick.Horizontal;
-
+        Debug.Log(x);
         Vector2 dir = new Vector2(x, 0);
         Walk(dir);
 
