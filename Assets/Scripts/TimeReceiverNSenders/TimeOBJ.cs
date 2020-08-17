@@ -24,8 +24,8 @@ public class TimeOBJ : MonoBehaviour
 
     [SerializeField]
     bool shouldChangeLayers;
-
-    int layerToexist = 9;
+    [SerializeField]
+    int layerToexist;
     int teleport = 10;
     int ignore = 11;
 

@@ -10,22 +10,28 @@ public class GrabObject : MonoBehaviour, ITouchable
     /// </summary>
     int Ignore = 11;
     int Grab = 13;
-
+    TimeOBJ timeOBJ;
     private void Awake()
     {
-        TeleportManager.IsTpActive += ChangeLayer; 
+        timeOBJ = GetComponent<TimeOBJ>();
+        TeleportManager.IsTpActive += ChangeLayer;
+        
     }
 
     void ChangeLayer(bool isTpActive)
     {
-        if (isTpActive)
+        if(timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
-            gameObject.layer = Ignore;
+            if (isTpActive)
+            {
+                gameObject.layer = Ignore;
+            }
+            else
+            {
+                gameObject.layer = Grab;
+            }
         }
-        else
-        {
-            gameObject.layer = Grab;
-        }
+        
     }
 
     public void OnTouchUp()

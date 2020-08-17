@@ -61,7 +61,7 @@ public class Movement2D : MonoBehaviour
 
         AnimatorReseter();
 
-        Debug.Log(rb.velocity.y);
+        //Debug.Log(rb.velocity.y);
     }
 
    //Metodos
