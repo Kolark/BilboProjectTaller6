@@ -22,6 +22,13 @@ public class Movement2D : MonoBehaviour
     [SerializeField]
     Joystick joystick;
 
+    bool onGround;
+    public Vector2 bottomOffset;
+    [SerializeField]
+    Transform GroundCheckPos;
+    public float collisionRadius = 0.25f;
+    public LayerMask groundLayer;
+
     //Awake
     void Awake()
     {
@@ -36,7 +43,11 @@ public class Movement2D : MonoBehaviour
     }
     //Updates
 
-
+    private void Update()
+    {
+        onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
+        Debug.Log(onGround);
+    }
 
     void FixedUpdate()
     {
@@ -50,7 +61,7 @@ public class Movement2D : MonoBehaviour
 
         AnimatorReseter();
 
-        //Debug.Log(rb.velocity.y);
+        Debug.Log(rb.velocity.y);
     }
 
    //Metodos
@@ -73,16 +84,8 @@ public class Movement2D : MonoBehaviour
 
     public void Jump()
     {
-        //if (Input.GetKeyDown(KeyCode.H))
-        //{
-        //    rb.AddForce(Vector2.left * 250);
-        //}
-        //if (Input.GetKeyDown(KeyCode.J))
-        //{
-        //    rb.velocity = new Vector2(rb.velocity.x, 0);
-        //    rb.velocity = Vector2.up * jumpForce;
-        //}
-        if (jumpNumber < 1)
+
+        if (onGround && Math.Abs(rb.velocity.y) < 0.1f)
         {
             animator.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -90,11 +93,6 @@ public class Movement2D : MonoBehaviour
 
         jumpNumber++;
     }
-
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground")) jumpNumber = 0;
-    }*/
 
     void Flip()
     {
@@ -117,5 +115,10 @@ public class Movement2D : MonoBehaviour
         if (rb.velocity.y < -.01) animator.SetBool("IsFalling", true);
         if (rb.velocity.y < -.2) animator.SetBool("IsFalling", false);
         animator.SetBool("IsTimeTraveling", false);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere((Vector2)GroundCheckPos.position, collisionRadius);
     }
 }
