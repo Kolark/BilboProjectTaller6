@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 5665947243947622921, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622921, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -159,7 +159,7 @@ PrefabInstance:
     - target: {fileID: 5665947243947622922, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622923, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -42551,31 +42551,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja_Futuro (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006576, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006576, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006588, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006589, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006589, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42629,11 +42604,6 @@ PrefabInstance:
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006591, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -43577,12 +43547,12 @@ PrefabInstance:
     - target: {fileID: 7580819407358006588, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006589, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006589, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
@@ -43926,40 +43896,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 188381205}
     m_Modifications:
-    - target: {fileID: 5665947243947622921, guid: 699a50c7bcf16e847ae99efc17d5f236,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665947243947622921, guid: 699a50c7bcf16e847ae99efc17d5f236,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665947243947622922, guid: 699a50c7bcf16e847ae99efc17d5f236,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665947243947622923, guid: 699a50c7bcf16e847ae99efc17d5f236,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622926, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_Name
       value: Caja_Pasado (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665947243947622926, guid: 699a50c7bcf16e847ae99efc17d5f236,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5665947243947622926, guid: 699a50c7bcf16e847ae99efc17d5f236,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -45009,7 +44949,7 @@ PrefabInstance:
     - target: {fileID: 5665947243947622921, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_BodyType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622921, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -45019,7 +44959,7 @@ PrefabInstance:
     - target: {fileID: 5665947243947622922, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622923, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -45442,31 +45382,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caja_Futuro
       objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006576, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006576, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_TagString
-      value: Ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006588, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006589, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006589, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45520,11 +45435,6 @@ PrefabInstance:
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7580819407358006591, guid: a0f87593079d3544e9f74e0dc9561399,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
