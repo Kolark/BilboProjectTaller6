@@ -46,13 +46,12 @@ public class Movement2D : MonoBehaviour
     private void Update()
     {
         onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
-        Debug.Log(onGround);
+        //Debug.Log(onGround);
     }
 
     void FixedUpdate()
     {
         float x = joystick.Horizontal;
-        Debug.Log(x);
         Vector2 dir = new Vector2(x, 0);
         Walk(dir);
 

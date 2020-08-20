@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class LoadHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        LoadGameInfo();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LoadGameInfo()
     {
-        
+        string json = SaveSystem.Load();
+        GameInfoStats gameInfoStats = JsonUtility.FromJson<GameInfoStats>(json);
+        GameInfo.Instance.LoadStats(gameInfoStats);
     }
 }

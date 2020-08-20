@@ -1,11 +1,18 @@
-﻿public class SaveObject
+﻿//public class SaveObject
+//{
+//    public string gameInfoStats;
+//    public SaveObject(string gameInfoStats)
+//    {
+//        this.gameInfoStats = gameInfoStats;
+//    }
+//}
+public class GameInfoStats
 {
-    public bool HasBeenInTutorial;
-    public int levelsUnlocked;
-
-    public SaveObject(bool hasBeenInTutorial, int levelsUnlocked)
+    public GameInfoStats(bool hasBeenInTutorial, int levelsUnlocked)
     {
-        HasBeenInTutorial = hasBeenInTutorial;
+        this.HasBeenInTutorial = hasBeenInTutorial;
         this.levelsUnlocked = levelsUnlocked;
     }
+    public bool HasBeenInTutorial;
+    public int levelsUnlocked;
 }

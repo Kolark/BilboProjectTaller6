@@ -27,26 +27,4 @@ public static class SaveSystem
         else return null;
 
     }
-
-    //public static InfoSave infodata(string rawData)
-    //{
-    //    if (rawData == null) return null;
-    //    string[] separateclasses = rawData.Split('$');
-
-    //    InfoSave infoSave = JsonUtility.FromJson<InfoSave>(separateclasses[0]);
-    //    return infoSave;
-    //}
-
-    //public static SaveObject[] infoPlayers(string rawData)
-    //{
-    //    if (rawData == null) return null;
-    //    string[] separateclasses = rawData.Split('$');
-    //    string[] players = separateclasses[1].Split('|');
-    //    SaveObject[] playersInfo = new SaveObject[players.Length];
-    //    for (int i = 0; i < players.Length; i++)
-    //    {
-    //        playersInfo[i] = JsonUtility.FromJson<SaveObject>(players[i]);
-    //    }
-    //    return playersInfo;
-    //}
 }
