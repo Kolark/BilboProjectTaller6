@@ -36,6 +36,9 @@ public class PuertaTutorial : MonoBehaviour
                 }
                 else
                 {
+                    GameInfo.HasBeenInTutorial = true;
+                    SaveHandler.saveGame();
+                    
                     SceneManager.LoadScene(sceneIndex);
                 }
             }

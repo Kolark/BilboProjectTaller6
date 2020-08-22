@@ -8,7 +8,7 @@ public class GameInfo : MonoBehaviour
     private static GameInfo instance;
     public static GameInfo Instance { get => instance; }
 
-    public static bool HasBeenInTutorial { get => hasBeenInTutorial;}
+    public static bool HasBeenInTutorial { get => hasBeenInTutorial; set => hasBeenInTutorial = value; }
     public static int LevelsUnlocked { get => levelsUnlocked;}
 
     private static bool hasBeenInTutorial = false;
@@ -29,5 +29,7 @@ public class GameInfo : MonoBehaviour
         hasBeenInTutorial = stats.HasBeenInTutorial;
         levelsUnlocked = stats.levelsUnlocked;
     }
+
+
 }
 

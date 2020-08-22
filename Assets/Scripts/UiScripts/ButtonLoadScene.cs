@@ -9,4 +9,16 @@ public class ButtonLoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    public void LoadFromTutorial()
+    {
+        if (GameInfo.HasBeenInTutorial)
+        {
+            SceneManager.LoadScene(2);
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
 }

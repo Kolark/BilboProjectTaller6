@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class SaveHandler : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
+        SaveSystem.Init();
         saveGame();
     }
-    public void saveGame()
+    private void Start()
+    {
+        
+    }
+    public static void saveGame()
     {
         GameInfoStats gameinfostats = new GameInfoStats(GameInfo.HasBeenInTutorial, GameInfo.LevelsUnlocked);
         string gameinfostring = JsonUtility.ToJson(gameinfostats);
@@ -17,7 +22,7 @@ public class SaveHandler : MonoBehaviour
         //string json = JsonUtility.ToJson(gameinfostring);
 
         Debug.Log(gameinfostring);
-        //SaveSystem.Save(json);
+        SaveSystem.Save(gameinfostring);
     }
 }
 
