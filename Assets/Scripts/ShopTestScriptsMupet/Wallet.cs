@@ -12,7 +12,7 @@ public class Wallet : MonoBehaviour
         if(instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -24,7 +24,7 @@ public class Wallet : MonoBehaviour
     public int coins;
 
     public void UseCoins(int amount)
-    {
+    { 
         coins -= amount;
     }
 

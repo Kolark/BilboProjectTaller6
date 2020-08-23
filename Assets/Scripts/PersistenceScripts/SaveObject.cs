@@ -1,18 +1,16 @@
-﻿//public class SaveObject
-//{
-//    public string gameInfoStats;
-//    public SaveObject(string gameInfoStats)
-//    {
-//        this.gameInfoStats = gameInfoStats;
-//    }
-//}
+﻿using System.Collections;
+using System.Collections.Generic;
 public class GameInfoStats
 {
-    public GameInfoStats(bool hasBeenInTutorial, int levelsUnlocked)
+    public GameInfoStats(int levelsUnlocked,int _itemEquiped,List<int> _shopItemsUnlocked,int coins)
     {
-        this.HasBeenInTutorial = hasBeenInTutorial;
         this.levelsUnlocked = levelsUnlocked;
+        this.ItemEquiped = _itemEquiped;
+        this.shopItemsUnlocked = _shopItemsUnlocked;
+        this.coins = coins;
     }
-    public bool HasBeenInTutorial;
     public int levelsUnlocked;
+    public int ItemEquiped;
+    public List<int> shopItemsUnlocked;
+    public int coins;
 }

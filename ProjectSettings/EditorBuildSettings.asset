@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DanielTestingTutorial.unity
     guid: c2aba3f6c24040a41b7146c9ef9d8a11
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: 707c80f64b247a742a008241283ee798
   m_configObjects: {}

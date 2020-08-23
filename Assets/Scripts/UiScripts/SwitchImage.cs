@@ -4,10 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SwitchImage : MonoBehaviour
 {
-    [SerializeField]
-    Sprite Move;
-    [SerializeField]
-    Sprite Teleport;
+    public Sprite Move;
+    public Sprite Teleport;
     bool move = true;
     Image image;
     private void Awake()
@@ -18,6 +16,10 @@ public class SwitchImage : MonoBehaviour
     public void Switch()
     {
         move = !move;
+        UpdateSprites();
+    }
+    public void UpdateSprites()
+    {
         if (move)
         {
             image.sprite = Move;

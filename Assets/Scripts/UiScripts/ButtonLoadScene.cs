@@ -12,7 +12,7 @@ public class ButtonLoadScene : MonoBehaviour
 
     public void LoadFromTutorial()
     {
-        if (GameInfo.HasBeenInTutorial)
+        if (GameInfo.LevelsUnlocked > 0)
         {
             SceneManager.LoadScene(2);
         }

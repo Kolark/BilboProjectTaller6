@@ -4,7 +4,11 @@ using UnityEngine;
 using System.IO;
 public static class SaveSystem
 {
+    #if UNITY_EDITOR
     public static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
+    #elif UNITY_ANDROID
+    public static readonly string SAVE_FOLDER = Application.persistentDataPath + "/Saves/";
+    #endif
     public static void Init()
     {
         if (!Directory.Exists(SAVE_FOLDER))

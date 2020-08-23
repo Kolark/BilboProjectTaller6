@@ -2,24 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 public class ScriptBasura : MonoBehaviour
 {
-    Rigidbody2D rb2d;
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        Touch xd;
-        if (Input.touchCount > 0/* && Input.GetTouch(0).phase == TouchPhase.Began*/)
-        {
-            if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-            {
-                Debug.Log("OBJJJJ");
-            }
-
-                
-        }
+        SceneManager.LoadScene(3);
     }
-           
 }
 
 

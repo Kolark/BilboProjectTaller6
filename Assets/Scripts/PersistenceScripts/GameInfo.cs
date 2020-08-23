@@ -8,11 +8,17 @@ public class GameInfo : MonoBehaviour
     private static GameInfo instance;
     public static GameInfo Instance { get => instance; }
 
-    public static bool HasBeenInTutorial { get => hasBeenInTutorial; set => hasBeenInTutorial = value; }
-    public static int LevelsUnlocked { get => levelsUnlocked;}
-
-    private static bool hasBeenInTutorial = false;
     private static int levelsUnlocked = 0;
+    public static int LevelsUnlocked { get => levelsUnlocked; set => levelsUnlocked = value;}
+
+    private static int itemEquiped = 0;
+    public static int ItemEquiped { get => itemEquiped; set => itemEquiped = value; }
+
+    private static List<int> shopItemsUnlocked = new List<int> {0};
+    public static List<int> ShopItemsUnlocked { get => shopItemsUnlocked;}
+
+    public _ShopItem shopItem;
+
 
     private void Awake()
     {
@@ -21,15 +27,32 @@ public class GameInfo : MonoBehaviour
             Destroy(this);
         }
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject); 
+        
     }
-
+    private void Start()
+    {
+        if (SaveSystem.Load() != null) //Si ya hay un save pues lo carga
+        {
+            SaveNLoadHandler.LoadGameInfo();
+        }
+        else //de lo contrario crea uno nuevo
+        {
+            SaveNLoadHandler.saveGame();
+        }
+        GetShopItem();
+    }
     public void LoadStats(GameInfoStats stats)
     {
-        hasBeenInTutorial = stats.HasBeenInTutorial;
         levelsUnlocked = stats.levelsUnlocked;
+        itemEquiped = stats.ItemEquiped;
+        shopItemsUnlocked = stats.shopItemsUnlocked;
+        Wallet.instance.coins = stats.coins;
     }
 
-
+    public void GetShopItem()
+    {
+        shopItem = Items.Instance.ShopItemsList[itemEquiped];
+    }
 }
 
