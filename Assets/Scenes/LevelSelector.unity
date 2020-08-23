@@ -521,6 +521,7 @@ MonoBehaviour:
   - {fileID: 1904669996}
   - {fileID: 1446275028}
   - {fileID: 838226682}
+  Scenes: 01000000030000000400000005000000
 --- !u!4 &732221046
 Transform:
   m_ObjectHideFlags: 0

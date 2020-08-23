@@ -7,8 +7,8 @@ public class RedButton : MonoBehaviour, ITouchable
     public AnimationCurve curve;
     float axis = 0;
 
-    [SerializeField]
-    int SceneToLoad;
+
+    public int SceneToLoad;
 
     [SerializeField]
     Transform stencil;

@@ -6,7 +6,7 @@ public class LevelTeleportersManager : MonoBehaviour
 {
     [SerializeField]
     List<GameObject> LevelTeleporters;
-
+    public int[] Scenes;
     List<RedButton> redButtons = new List<RedButton>();
     private void Awake()
     {
@@ -15,6 +15,11 @@ public class LevelTeleportersManager : MonoBehaviour
             redButtons.Add(LevelTeleporters[i].transform.GetChild(1).GetComponent<RedButton>());
 
         }
+        for (int i = 0; i < redButtons.Count; i++)
+        {
+            redButtons[i].SceneToLoad = Scenes[i];
+        }
+
         for (int i = 0; i < GameInfo.LevelsUnlocked; i++)
         {
             redButtons[0].SetActive();
