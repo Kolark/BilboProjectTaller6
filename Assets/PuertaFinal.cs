@@ -11,9 +11,10 @@ public class PuertaFinal : MonoBehaviour
     string text;
     public int sceneIndex;
     [SerializeField]
-    int LevelUnlocked;
+    int levelUnlocked;
     private static PuertaFinal instance;
     public static PuertaFinal Instance { get => instance; }
+    public int LevelUnlocked { get => levelUnlocked;}
 
     private void Awake()
     {
@@ -29,7 +30,11 @@ public class PuertaFinal : MonoBehaviour
         {
             if (canEnd)
             {
-                GameInfo.LevelsUnlocked = LevelUnlocked;
+                if(LevelUnlocked > GameInfo.LevelsUnlocked)
+                {
+                    GameInfo.LevelsUnlocked = LevelUnlocked;
+                }
+                
                 SaveNLoadHandler.saveGame();
                 SceneManager.LoadScene(sceneIndex);
             }

@@ -18,8 +18,7 @@ public class TouchManager : MonoBehaviour
 
     private void Update()
     {
-        
-            if (!TimeChange.IsTimeTraveling)
+        if (!TimeChange.IsTimeTraveling)
             {
                 if (Input.touchCount > 0 && canInteract)//Esta tocando
                 {
