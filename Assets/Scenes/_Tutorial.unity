@@ -1299,6 +1299,23 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: TimeTravelAnimation
       objectReference: {fileID: 0}
+    - target: {fileID: 4017977303590120308, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017977303590120308, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 9132960978312168615, guid: d7f9bd1fe98a3494f9dd6c558a2bef69,
+        type: 3}
+    - target: {fileID: 4017977303590120309, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3283491428163012180, guid: d7f9bd1fe98a3494f9dd6c558a2bef69,
+        type: 3}
     - target: {fileID: 4017977303590120311, guid: 4dd3e0536b02b5b41821811e07961f7d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1354,6 +1371,23 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: TimeTravelAnimation
       objectReference: {fileID: 0}
+    - target: {fileID: 4017977303657098752, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017977303657098752, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 1826266112649840907, guid: 8f78e6465a2279b46a7f4dde53c049f9,
+        type: 3}
+    - target: {fileID: 4017977303657098753, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1967005914616676265, guid: 8f78e6465a2279b46a7f4dde53c049f9,
+        type: 3}
     - target: {fileID: 4017977303657098755, guid: 4dd3e0536b02b5b41821811e07961f7d,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1449,6 +1483,23 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: TimeTravelAnimation
       objectReference: {fileID: 0}
+    - target: {fileID: 4017977303708876213, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017977303708876213, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 4728118126654355678, guid: 49edeedc9ab31d149927e6633181d15c,
+        type: 3}
+    - target: {fileID: 4017977303708876218, guid: 4dd3e0536b02b5b41821811e07961f7d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4177828386055299072, guid: 49edeedc9ab31d149927e6633181d15c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dd3e0536b02b5b41821811e07961f7d, type: 3}
 --- !u!4 &531545892 stripped
