@@ -16,6 +16,7 @@ public class Coin : MonoBehaviour
         if (collision.gameObject.tag == "Player" && timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
             Wallet.instance.coins += 10;
+            HUDChanger.Instance.UpdateCoinText();
             Destroy(this.gameObject);
         }
     }

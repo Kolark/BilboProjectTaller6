@@ -6,14 +6,18 @@ using UnityEngine.UI;
 
 public class HUDChanger : MonoBehaviour
 {
-    private void Awake()
-    {
-        
-    }
+    private static HUDChanger instance;
+    public static HUDChanger Instance { get => instance; }
+
     private void Start()
     {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
         SetEquipedHUD();
-        Debug.Log("Se hizo el cambio de hud");
+        UpdateCoinText();
     }
     [SerializeField]
     Image leftArrow,rightArrow;
@@ -22,6 +26,8 @@ public class HUDChanger : MonoBehaviour
     [SerializeField]
     SwitchImage switchImage;
 
+    [SerializeField]
+    Text monedas;
 
 
     
@@ -41,4 +47,8 @@ public class HUDChanger : MonoBehaviour
         
     }
 
+    public void UpdateCoinText()
+    {
+        monedas.text = Wallet.instance.coins.ToString();
+    }
 }

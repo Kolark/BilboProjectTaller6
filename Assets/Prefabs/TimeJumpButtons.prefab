@@ -401,10 +401,10 @@ RectTransform:
   m_Father: {fileID: 4017977302442997883}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -122.09999, y: -11.2}
-  m_SizeDelta: {x: 117.55829, y: 117.55829}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -52.490234, y: -100}
+  m_SizeDelta: {x: 68.93042, y: 68.93039}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4017977303590120314
 CanvasRenderer:
@@ -433,7 +433,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56f8c4c0afb3b914b8661c94b290291d, type: 3}
+  m_Sprite: {fileID: -3283491428163012180, guid: d7f9bd1fe98a3494f9dd6c558a2bef69,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -461,7 +462,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -474,7 +475,8 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 9132960978312168615, guid: d7f9bd1fe98a3494f9dd6c558a2bef69,
+      type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -508,8 +510,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: TimeTravelAnimation
         m_Mode: 1
         m_Arguments:
@@ -554,10 +555,10 @@ RectTransform:
   m_Father: {fileID: 4017977302442997883}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -11.2}
-  m_SizeDelta: {x: 117.55829, y: 117.55829}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -53.08008, y: 0}
+  m_SizeDelta: {x: 67.75574, y: 67.75577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4017977303657098758
 CanvasRenderer:
@@ -586,7 +587,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 21766a5945975dd4999285b98e06beb1, type: 3}
+  m_Sprite: {fileID: 1967005914616676265, guid: 8f78e6465a2279b46a7f4dde53c049f9,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -614,7 +616,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -627,7 +629,8 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 1826266112649840907, guid: 8f78e6465a2279b46a7f4dde53c049f9,
+      type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -661,8 +664,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: TimeTravelAnimation
         m_Mode: 1
         m_Arguments:
@@ -707,10 +709,10 @@ RectTransform:
   m_Father: {fileID: 4017977302442997883}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 128.1, y: -11.2}
-  m_SizeDelta: {x: 117.55829, y: 117.55829}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -52.48877, y: 100}
+  m_SizeDelta: {x: 68.93323, y: 68.93326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4017977303708876219
 CanvasRenderer:
@@ -739,7 +741,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1e6036e85f579924e84af4fbf2f25e2a, type: 3}
+  m_Sprite: {fileID: -4177828386055299072, guid: 49edeedc9ab31d149927e6633181d15c,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -767,7 +770,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -780,7 +783,8 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 4728118126654355678, guid: 49edeedc9ab31d149927e6633181d15c,
+      type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -814,8 +818,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: TimeTravelAnimation
         m_Mode: 1
         m_Arguments:

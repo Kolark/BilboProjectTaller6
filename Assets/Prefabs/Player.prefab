@@ -314,6 +314,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 10241
+  fallMultiplier: 5
+  lowJumpMultiplier: 2
 --- !u!95 &651358978
 Animator:
   serializedVersion: 3
