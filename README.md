@@ -1,5 +1,11 @@
 # BilboProjectTaller6
- 
+
+Proyecto realizado por
+- Christian Andrade
+- Daniel Muñoz
+- Juan Camilo Sierra
+- Felipe Loaiza
+
 Link de la carpeta que contiene Alfa y documentación: https://drive.google.com/drive/folders/1nhW8zoJiDXsHp3udR18IiVRAje2cI_rY?usp=sharing
 
 Materiales:
