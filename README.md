@@ -17,5 +17,6 @@ Posibles bugs:
 Notas: 
 - Por ahora solo es jugable el Tutorial, desde el Nivel 1 al 3 solo son utilizados para mostrar que hay data persistance respecto a si ya se entró a estos (el selector se torna a verde), así que como tal estos no son jugables ni aplican las mecánicas del juego, solo el nivel 1 pero está incompleto aún.
 - Como cambiamos de proyecto, en la documentación está el GDD de este y el respectivo checklist para esta entrega.
+- En la tienda los recuadros blancos son los placeholders para las imagenes que mostraran lo que estoy comprando.
 
 
