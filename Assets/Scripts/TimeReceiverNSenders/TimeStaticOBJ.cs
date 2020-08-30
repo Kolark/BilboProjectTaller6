@@ -26,7 +26,8 @@ public class TimeStaticOBJ : MonoBehaviour
         
         colliders = transform.GetComponentsInChildren<Collider2D>();
         spriteRenderers = transform.GetComponentsInChildren<SpriteRenderer>();
-        TimeChange.UpdateLayers += UpdateObjs;
+        TimeChange.StartTimeChange += UpdateObjs;
+        TimeChange.EndTimeChange += UpdateObjs;
         TimeChange.MiniUpdate += UpdateObjs;
         
     }
@@ -106,7 +107,8 @@ public class TimeStaticOBJ : MonoBehaviour
 
     private void OnDestroy()
     {
-        TimeChange.UpdateLayers -= UpdateObjs;
+        TimeChange.StartTimeChange -= UpdateObjs;
+        TimeChange.EndTimeChange -= UpdateObjs;
         TimeChange.MiniUpdate -= UpdateObjs;
     }
 

@@ -9,13 +9,32 @@ public class HUDChanger : MonoBehaviour
     private static HUDChanger instance;
     public static HUDChanger Instance { get => instance; }
 
-    private void Start()
+    ///Buscar al jugador y darle en joystick.
+    ///Buscar al boton y darle el evento
+    ///
+    [SerializeField]
+    Joystick joystick;
+    [SerializeField]
+    LongButtonClick jumpButton;
+    [SerializeField]
+    TimeChangeManager timeChangeManager;
+
+    private void Awake()
     {
         if (instance != null)
         {
             Destroy(this);
         }
         instance = this;
+    }
+
+    private void Start()
+    {
+        if(Movement2D.Instance != null)
+        {
+            Movement2D.Instance.SetJoystick(joystick);
+            jumpButton.onClick.AddListener(() => Movement2D.Instance.Jump());
+        }
         SetEquipedHUD();
         UpdateCoinText();
     }
@@ -50,5 +69,16 @@ public class HUDChanger : MonoBehaviour
     public void UpdateCoinText()
     {
         monedas.text = Wallet.instance.coins.ToString();
+    }
+
+    public void TimeButton(int time)
+    {
+        TimeChange.Instance.StartChangeTime(time);
+        timeChangeManager.SetInteractableFalse();
+        if(Movement2D.Instance != null)
+        {
+            Movement2D.Instance.TimeTravelAnimation();
+        }
+        
     }
 }

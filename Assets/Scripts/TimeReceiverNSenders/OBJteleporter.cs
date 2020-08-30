@@ -34,8 +34,8 @@ public class OBJteleporter : MonoBehaviour
 
     float threshold = 1;
 
-    [SerializeField]
-    TimeEnvironmentChanger tEG;
+    //[SerializeField]
+    //TimeEnvironmentChanger tEG;
 
     private void Awake()
     {
@@ -122,7 +122,6 @@ public class OBJteleporter : MonoBehaviour
             {
                 spRend.sortingOrder = -100;
                 TimeChange.Swap();
-                //tEG.UpdateLayers();
                 swap = true;
                 spRend.material = Stencil;
             }
@@ -137,7 +136,6 @@ public class OBJteleporter : MonoBehaviour
                 swap = false;
                 spRend.material = Stencil;
             }
-            Debug.Log("IZQUIERDA");
         }
     }
     

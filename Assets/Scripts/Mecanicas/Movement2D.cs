@@ -19,7 +19,6 @@ public class Movement2D : MonoBehaviour
     //Componentes
     Rigidbody2D rb;
     Animator animator;
-    [SerializeField]
     Joystick joystick;
 
     bool onGround;
@@ -44,6 +43,11 @@ public class Movement2D : MonoBehaviour
         }
         instance = this;
     }
+
+    public void SetJoystick(Joystick _joystick)
+    {
+        joystick = _joystick;
+    }
     //Updates
 
     private void Update()
@@ -52,13 +56,7 @@ public class Movement2D : MonoBehaviour
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
-        //else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
-        //{
-        //    rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
-        //}
-
         onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
-        //Debug.Log(onGround);
     }
 
     void FixedUpdate()
@@ -66,23 +64,18 @@ public class Movement2D : MonoBehaviour
         float x = joystick.Horizontal;
         Vector2 dir = new Vector2(x, 0);
         Walk(dir);
-
         animator.SetFloat("Speed", Mathf.Abs(x));
         animator.SetFloat("Fall", rb.velocity.y);
-
         AnimatorReseter();
 
-        //Debug.Log(rb.velocity.y);
     }
 
    //Metodos
 
     void Walk(Vector2 direccion)
     {
-        
         if (Mathf.Abs(direccion.x) > 0.5) { rb.velocity = new Vector2(0, rb.velocity.y); }
         transform.Translate(direccion*Time.deltaTime*speed);
-
         if (direccion.x > 0 && !facingRight)
         {
             Flip();
@@ -95,20 +88,17 @@ public class Movement2D : MonoBehaviour
 
     public void Jump()
     {
-
         if (onGround && Math.Abs(rb.velocity.y) < 0.1f)
         {
             animator.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-
         jumpNumber++;
     }
 
     void Flip()
     {
         facingRight = !facingRight;
-
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;

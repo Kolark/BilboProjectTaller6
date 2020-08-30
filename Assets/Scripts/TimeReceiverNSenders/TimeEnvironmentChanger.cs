@@ -40,7 +40,8 @@ public class TimeEnvironmentChanger : MonoBehaviour
             SOURCEMAPS[i].SetLayers();
             SOURCEMAPS[i].Swaptiles();
         }
-        TimeChange.UpdateLayers += UpdateLayers;
+        TimeChange.StartTimeChange += UpdateLayers;
+        TimeChange.EndTimeChange += UpdateLayers;
         TimeChange.MiniUpdate += UpdateLayers;
         UpdateLayers();
     }
@@ -57,7 +58,8 @@ public class TimeEnvironmentChanger : MonoBehaviour
 
     private void OnDestroy()
     {
-        TimeChange.UpdateLayers -= UpdateLayers;
+        TimeChange.StartTimeChange -= UpdateLayers;
+        TimeChange.EndTimeChange -= UpdateLayers;
         TimeChange.MiniUpdate -= UpdateLayers;
     }
 }

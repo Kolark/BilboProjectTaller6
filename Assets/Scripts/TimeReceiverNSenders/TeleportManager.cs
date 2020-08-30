@@ -16,7 +16,7 @@ public class TeleportManager : MonoBehaviour, ITouchable
     private void Awake()
     {
         col2d = GetComponent<Collider2D>();
-        TimeExecute.EndTimeChange += updatetpStatus;
+        TimeChange.EndTimeChange += updatetpStatus;
     }
 
 
@@ -46,5 +46,9 @@ public class TeleportManager : MonoBehaviour, ITouchable
     void updatetpStatus()
     {
         IsTpActive(col2d.enabled);
+    }
+    private void OnDestroy()
+    {
+        TimeChange.EndTimeChange -= updatetpStatus;
     }
 }

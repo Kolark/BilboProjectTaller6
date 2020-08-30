@@ -11,19 +11,10 @@ public class CoinSpawner : MonoBehaviour
     private void Awake()
     {
         spawnPositions = GetComponentsInChildren<Transform>();
-        for (int i = 1; i < spawnPositions.Length; i++)
-        {
-            Debug.Log(spawnPositions[i].name);
-        }
     }
 
-    private void Start()
-    {
-        Debug.Log("P: " + PuertaFinal.Instance.LevelUnlocked);
-        Debug.Log("G: " + GameInfo.LevelsUnlocked);
-        if (PuertaFinal.Instance.LevelUnlocked > GameInfo.LevelsUnlocked)
-        {
-            Debug.Log("Se hizo");
+    private void Start(){
+        if (PuertaFinal.Instance.LevelUnlocked > GameInfo.LevelsUnlocked){
             for (int i = 1; i < spawnPositions.Length; i++)
             {
                 Instantiate(coin, spawnPositions[i]);

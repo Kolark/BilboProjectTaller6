@@ -9,6 +9,10 @@ public class TimeChange : MonoBehaviour
     /// Se encarga de realizar el evento mas importante que es el UpdateLayers que actualiza las layers
     /// Declara las layersIds a las que se cambiaran los sprites.
     /// </summary>
+    #region singleton
+    private static TimeChange instance;
+    public static TimeChange Instance { get => instance; }
+    #endregion
 
     private static int currentTime = 1;
     public static int CurrentTime { get => currentTime; }
@@ -20,14 +24,23 @@ public class TimeChange : MonoBehaviour
     int Temp = 0;
     private static bool isTimeTraveling = false;
     public static bool IsTimeTraveling { get => isTimeTraveling;}
-    public static Action UpdateLayers;
+
+    public static Action StartTimeChange;
+    public static Action EndTimeChange;
+
     public static Action MiniUpdate;
     [SerializeField]
     Animator stencilGrowerAnim;
    
     private void Awake()
     {
-        TimeExecute.EndTimeChange += EndChangeTime;
+        #region singleton
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
+        #endregion
     }
 
     public void StartChangeTime(int setTime)//1er paso
@@ -40,7 +53,7 @@ public class TimeChange : MonoBehaviour
             leftOutTime = timetoGo;
             timetoGo = setTime;
         }
-        UpdateLayers();
+        StartTimeChange();
         stencilGrowerAnim.transform.localScale = Vector3.zero;
         stencilGrowerAnim.gameObject.SetActive(true);
         stencilGrowerAnim.SetTrigger("ExGrowAnim");
@@ -49,7 +62,8 @@ public class TimeChange : MonoBehaviour
     {
         timetoGo = currentTime;
         currentTime = Temp;
-        UpdateLayers();
+        //StartTimeChange();
+        EndTimeChange();
         isTimeTraveling = false;
         NormalTime();
     }
@@ -73,11 +87,5 @@ public class TimeChange : MonoBehaviour
     void NormalTime()
     {
         Time.timeScale = 1;
-        //Time.fixedDeltaTime = Time.timeScale/0.02f;
-    }
-
-    private void OnDestroy()
-    {
-        TimeExecute.EndTimeChange -= EndChangeTime;
     }
 }

@@ -18,31 +18,23 @@ public class TouchManager : MonoBehaviour
     
     private void Update()
     {
-        if (!TimeChange.IsTimeTraveling)
-            {
+        if (!TimeChange.IsTimeTraveling){
         #if UNITY_EDITOR
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
-                
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
 
                     if (hit2D.collider != null)
                     {
-                        Debug.Log(hit2D.collider.name);
-                        if (hit2D.collider.GetComponent<ITouchable>() != null)
-                        {
-
+                        if (hit2D.collider.GetComponent<ITouchable>() != null){
                             touchable = hit2D.collider.GetComponent<ITouchable>();
                             touchable.touch(POSinScreen());
                         }
                     }
-                
             }
-            else if (!Input.GetMouseButton(0))//No esta tocando
-            {
-                if (touchable != null)
-                {
+            else if (!Input.GetMouseButton(0)){//No esta tocando
+                if (touchable != null){
                     touchable.OnTouchUp();
                     touchable = null;
                 }

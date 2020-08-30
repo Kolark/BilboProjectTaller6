@@ -31,7 +31,8 @@ public class SpritesGenerator : MonoBehaviour
 
             spritesTimeChangers[i].SetSprites();
         }
-        TimeChange.UpdateLayers += UpdateSprites;
+        TimeChange.StartTimeChange += UpdateSprites;
+        TimeChange.EndTimeChange += UpdateSprites;
         TimeChange.MiniUpdate += UpdateSprites;
         UpdateSprites();
     }
@@ -47,7 +48,8 @@ public class SpritesGenerator : MonoBehaviour
 
     private void OnDestroy()
     {
-        TimeChange.UpdateLayers -= UpdateSprites;
+        TimeChange.StartTimeChange -= UpdateSprites;
+        TimeChange.EndTimeChange -= UpdateSprites;
         TimeChange.MiniUpdate -= UpdateSprites;
     }
 
