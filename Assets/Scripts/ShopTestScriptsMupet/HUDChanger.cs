@@ -26,6 +26,7 @@ public class HUDChanger : MonoBehaviour
             Destroy(this);
         }
         instance = this;
+        
     }
 
     private void Start()
@@ -35,7 +36,7 @@ public class HUDChanger : MonoBehaviour
             Movement2D.Instance.SetJoystick(joystick);
             jumpButton.onClick.AddListener(() => Movement2D.Instance.Jump());
         }
-        SetEquipedHUD();
+        SetEquipedHUD(GameInfo.Instance.ShopItemsList[GameInfo.ItemEquiped]);
         UpdateCoinText();
     }
     [SerializeField]
@@ -51,16 +52,17 @@ public class HUDChanger : MonoBehaviour
 
     
 
-    public void SetEquipedHUD()
+    public void SetEquipedHUD(_ShopItem shopItem)
     {
-        leftArrow.sprite = GameInfo.Instance.shopItem.ArrowLeft;
-        rightArrow.sprite = GameInfo.Instance.shopItem.ArrowRight;
+        leftArrow.sprite = shopItem.ArrowLeft;
+        rightArrow.sprite = shopItem.ArrowRight;
 
-        jump.sprite = GameInfo.Instance.shopItem.JumpButton;
-        if(switchImage != null)
+        jump.sprite = shopItem.JumpButton;
+        Debug.Log("b: " + switchImage.gameObject.activeSelf); 
+        if(switchImage != null && switchImage.gameObject.activeSelf == true)
         {
-            switchImage.Move = GameInfo.Instance.shopItem.SwitchMove;
-            switchImage.Teleport = GameInfo.Instance.shopItem.SwitchTeleport;
+            switchImage.Move = shopItem.SwitchMove;
+            switchImage.Teleport = shopItem.SwitchTeleport;
             switchImage.UpdateSprites();
         }
         

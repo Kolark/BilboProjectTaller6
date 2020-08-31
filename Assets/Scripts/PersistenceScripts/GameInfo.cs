@@ -17,21 +17,17 @@ public class GameInfo : MonoBehaviour
     private static List<int> shopItemsUnlocked = new List<int> {0};
     public static List<int> ShopItemsUnlocked { get => shopItemsUnlocked;}
 
-    public _ShopItem shopItem;
+    public _ShopItem[] ShopItemsList;
 
 
     private void Awake()
     {
         if (instance != null)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         instance = this;
-        DontDestroyOnLoad(this.gameObject); 
-        
-    }
-    private void Start()
-    {
+        DontDestroyOnLoad(this.gameObject);
         if (SaveSystem.Load() != null) //Si ya hay un save pues lo carga
         {
             SaveNLoadHandler.LoadGameInfo();
@@ -40,7 +36,11 @@ public class GameInfo : MonoBehaviour
         {
             SaveNLoadHandler.saveGame();
         }
-        GetShopItem();
+
+    }
+    private void Start()
+    {
+        
     }
     public void LoadStats(GameInfoStats stats)
     {
@@ -50,9 +50,5 @@ public class GameInfo : MonoBehaviour
         Wallet.instance.coins = stats.coins;
     }
 
-    public void GetShopItem()
-    {
-        shopItem = Items.Instance.ShopItemsList[itemEquiped];
-    }
 }
 

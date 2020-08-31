@@ -52,7 +52,7 @@ public class _ShopTemplate : MonoBehaviour
     public void Equip()
     {
         GameInfo.ItemEquiped = index;
-        GameInfo.Instance.GetShopItem();
+        //GameInfo.Instance.GetShopItem();
         SaveNLoadHandler.saveGame();
     }
 
