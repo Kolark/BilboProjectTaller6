@@ -31,6 +31,7 @@ public class Movement2D : MonoBehaviour
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
+    public LayerMask layersToCheck;
     //Awake
     void Awake()
     {
@@ -121,5 +122,22 @@ public class Movement2D : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere((Vector2)GroundCheckPos.position, collisionRadius);
+        Gizmos.DrawWireSphere((Vector2)transform.position, 0.75f);
     }
+
+    public bool IsthereAnObjectBehind()
+    {
+        Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.75f, layersToCheck);
+        if(objtotp != null)
+        {
+            //Hay un objeto detras y no puede hacer tp
+            return true;
+        }
+        else
+        {
+            //No hay ningun objeto detras y puede hacer tp
+            return false;
+        }
+    }
+
 }

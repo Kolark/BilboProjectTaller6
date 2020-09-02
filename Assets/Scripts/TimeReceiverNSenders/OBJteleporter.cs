@@ -29,13 +29,8 @@ public class OBJteleporter : MonoBehaviour
     bool swap = false;
     [SerializeField]
     Transform retrievepos;
-
     TimeOBJ tObj; //Guardo el objeto
-
     float threshold = 1;
-
-    //[SerializeField]
-    //TimeEnvironmentChanger tEG;
 
     private void Awake()
     {
@@ -92,12 +87,12 @@ public class OBJteleporter : MonoBehaviour
 
     public void GGG(Vector3 pos)
     {
-        if (!hasPosition)
-        {
-            transform.position = pos;
-            hasPosition = true;
-        }
-
+        //if (!hasPosition)
+        //{
+        //    transform.position = pos;
+        //    hasPosition = true;
+        //}
+        //transform.position = pos;
         float lx = pos.x - transform.position.x; //Para Swapear los tiempos
 
         Swap(lx);
@@ -108,6 +103,10 @@ public class OBJteleporter : MonoBehaviour
         if (scaleUp.Evaluate(xaxis1) > 0.9)
         {
             locked = true;
+        }
+        else
+        {
+            transform.position = pos;
         }
         actualScale = transform.localScale;
         xaxis2 = 0;

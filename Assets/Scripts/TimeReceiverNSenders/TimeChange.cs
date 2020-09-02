@@ -45,18 +45,26 @@ public class TimeChange : MonoBehaviour
 
     public void StartChangeTime(int setTime)//1er paso
     {
-        SlowTime();
-        isTimeTraveling = true;
-        Temp = setTime;
-        if (setTime == leftOutTime)
+        if (!Movement2D.Instance.IsthereAnObjectBehind())
         {
-            leftOutTime = timetoGo;
-            timetoGo = setTime;
+            SlowTime();
+            isTimeTraveling = true;
+            Temp = setTime;
+            if (setTime == leftOutTime)
+            {
+                leftOutTime = timetoGo;
+                timetoGo = setTime;
+            }
+            StartTimeChange();
+            stencilGrowerAnim.transform.localScale = Vector3.zero;
+            stencilGrowerAnim.gameObject.SetActive(true);
+            stencilGrowerAnim.SetTrigger("ExGrowAnim");
         }
-        StartTimeChange();
-        stencilGrowerAnim.transform.localScale = Vector3.zero;
-        stencilGrowerAnim.gameObject.SetActive(true);
-        stencilGrowerAnim.SetTrigger("ExGrowAnim");
+        else
+        {
+            Debug.Log("OBJECTBEHINDD");
+        }
+
     }
     public void EndChangeTime()
     {

@@ -21,6 +21,9 @@ public class TimeStaticOBJ : MonoBehaviour
     [SerializeField]
     int timePivot = 0;
 
+    int defaultLayer = 0;
+    int timeTogoLayer = 15;
+
     private void Awake()
     {
         
@@ -52,6 +55,7 @@ public class TimeStaticOBJ : MonoBehaviour
             spriteRenderers[indexCurrent].enabled = true;
             colliders[indexCurrent].enabled = true;
             colliders[indexCurrent].isTrigger = false;
+            colliders[indexCurrent].gameObject.layer = defaultLayer;
         }
         else
         {
@@ -66,6 +70,7 @@ public class TimeStaticOBJ : MonoBehaviour
             spriteRenderers[indexTogo].enabled = true;
             colliders[indexTogo].enabled = true;
             colliders[indexTogo].isTrigger = true;
+            colliders[indexTogo].gameObject.layer = timeTogoLayer;
         }
         else
         {
@@ -78,6 +83,7 @@ public class TimeStaticOBJ : MonoBehaviour
             spriteRenderers[indexLeftOut].enabled = false;
             colliders[indexLeftOut].enabled = false;
             colliders[indexLeftOut].isTrigger = true;
+            colliders[indexLeftOut].gameObject.layer = defaultLayer;
         }
         else
         {
@@ -91,6 +97,7 @@ public class TimeStaticOBJ : MonoBehaviour
         spriteRenderers[index].material = null;
         spriteRenderers[index].enabled = false;
         colliders[index].enabled = false;
+        colliders[index].gameObject.layer = defaultLayer;
     }
 
     bool isclamped(float n)

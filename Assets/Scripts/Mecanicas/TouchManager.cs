@@ -19,12 +19,13 @@ public class TouchManager : MonoBehaviour
     private void Update()
     {
         if (!TimeChange.IsTimeTraveling){
-        #if UNITY_EDITOR
+        #if false
+            
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
-
+                    
                     if (hit2D.collider != null)
                     {
                         if (hit2D.collider.GetComponent<ITouchable>() != null){
@@ -40,11 +41,13 @@ public class TouchManager : MonoBehaviour
                 }
                 canInteract = true;
             }
-        #elif UNITY_ANDROID
+#elif true
+
                 if (Input.touchCount > 0 && canInteract)//Esta tocando
                     {
                         if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                         {
+                    Debug.Log("Haciendo");
                             Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
                             RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
 
@@ -59,6 +62,10 @@ public class TouchManager : MonoBehaviour
                                 }
                             }
                         }
+                        else
+                        {
+                    Debug.Log("No Haciendo");
+                        }
                     }
                     else if (Input.touchCount == 0)//No esta tocando
                     {
@@ -69,7 +76,7 @@ public class TouchManager : MonoBehaviour
                         }
                         canInteract = true;
                     }
-        #endif
+#endif
 
         }
 
@@ -87,4 +94,10 @@ public class TouchManager : MonoBehaviour
         return pos;
     }
 
+    //public bool isPointerOverUI()
+    //{
+    //    List<RaycastResult> raycastResults = new List<RaycastResult>();
+    //    EventSystem.current.RaycastAll()
+    //    return false;
+    //}
 }

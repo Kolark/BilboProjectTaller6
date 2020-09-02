@@ -76,11 +76,20 @@ public class HUDChanger : MonoBehaviour
     public void TimeButton(int time)
     {
         TimeChange.Instance.StartChangeTime(time);
-        timeChangeManager.SetInteractableFalse();
-        if(Movement2D.Instance != null)
+        if (TimeChange.IsTimeTraveling)
         {
-            Movement2D.Instance.TimeTravelAnimation();
+            timeChangeManager.SetInteractableFalse();
+
+            if (Movement2D.Instance != null)
+            {
+                Movement2D.Instance.TimeTravelAnimation();
+            }
         }
+        else
+        {
+            //CAMERA SHAKE
+        }
+
         
     }
 }
