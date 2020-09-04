@@ -19,8 +19,8 @@ public class TouchManager : MonoBehaviour
     private void Update()
     {
         if (!TimeChange.IsTimeTraveling){
-        #if false
-            
+#if UNITY_EDITOR
+
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -41,7 +41,7 @@ public class TouchManager : MonoBehaviour
                 }
                 canInteract = true;
             }
-#elif true
+#elif UNITY_ANDROID
 
                 if (Input.touchCount > 0 && canInteract)//Esta tocando
                     {
