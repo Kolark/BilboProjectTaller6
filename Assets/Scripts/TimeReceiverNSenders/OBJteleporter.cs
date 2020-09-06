@@ -29,7 +29,7 @@ public class OBJteleporter : MonoBehaviour
     bool swap = false;
     [SerializeField]
     Transform retrievepos;
-    TimeOBJ tObj; //Guardo el objeto
+    TimeOBJ[] tObj; //Guardo el objeto
     float threshold = 1;
 
     private void Awake()
@@ -58,7 +58,10 @@ public class OBJteleporter : MonoBehaviour
             if (tObj != null)
             {
                 transform.position = retrievepos.position;
-                tObj.EndAnim();
+                for (int i = 0; i < tObj.Length; i++)
+                {
+                    tObj[i].EndAnim();
+                }
                 tObj = null;
             }
         }
@@ -70,13 +73,27 @@ public class OBJteleporter : MonoBehaviour
         if (locked)
         {
             //Significa que va a hacer tp
-            Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.05f, LM);
+            //Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.05f, LM);
+            //if (objtotp != null)
+            //{
+            //    tObj = objtotp.transform.GetComponent<TimeOBJ>();
+            //    tObj.SetRenderOn();
+            //    Debug.Log(objtotp.name);
+            //}
+
+            Collider2D[] objtotp = Physics2D.OverlapCircleAll(transform.position, 1.25f, LM);
             if (objtotp != null)
             {
-                tObj = objtotp.transform.GetComponent<TimeOBJ>();
-                tObj.SetRenderOn();
-                Debug.Log(objtotp.name);
+                tObj = new TimeOBJ[objtotp.Length];
+                
+                for (int i = 0; i < objtotp.Length; i++)
+                {
+                    tObj[i] = objtotp[i].transform.GetComponent<TimeOBJ>();
+                    tObj[i].SetRenderOn();
+                }
+
             }
+
             locked = false;
         }
     }
@@ -87,12 +104,6 @@ public class OBJteleporter : MonoBehaviour
 
     public void GGG(Vector3 pos)
     {
-        //if (!hasPosition)
-        //{
-        //    transform.position = pos;
-        //    hasPosition = true;
-        //}
-        //transform.position = pos;
         float lx = pos.x - transform.position.x; //Para Swapear los tiempos
 
         Swap(lx);
@@ -141,6 +152,6 @@ public class OBJteleporter : MonoBehaviour
    
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere((Vector2)transform.position,0.05f);
+        Gizmos.DrawWireSphere((Vector2)transform.position,1.25f);
     }
 }
