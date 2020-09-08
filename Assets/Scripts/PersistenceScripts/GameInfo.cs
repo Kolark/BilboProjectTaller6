@@ -38,10 +38,7 @@ public class GameInfo : MonoBehaviour
         }
 
     }
-    private void Start()
-    {
-        
-    }
+
     public void LoadStats(GameInfoStats stats)
     {
         levelsUnlocked = stats.levelsUnlocked;

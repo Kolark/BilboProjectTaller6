@@ -12,14 +12,27 @@ public class HUDChanger : MonoBehaviour
     ///Buscar al jugador y darle en joystick.
     ///Buscar al boton y darle el evento
     ///
+    [Space]
+    [Header("Buttons")]
     [SerializeField]
     Joystick joystick;
     [SerializeField]
     LongButtonClick jumpButton;
     [SerializeField]
     TimeChangeManager timeChangeManager;
+
+    [Space]
+    [Header("Panels")]
     [SerializeField]
-    RectTransform pausePanel,pControls,pButtons,pPauseButton;
+    RectTransform pausePanel;
+    [SerializeField]
+    RectTransform pControls;
+    [SerializeField]
+    RectTransform pButtons;
+    [SerializeField]
+    RectTransform pPauseButton;
+    [SerializeField]
+    RectTransform shopPanel;
 
     Button buttonPause;
     public static bool isPaused = false;
@@ -41,11 +54,15 @@ public class HUDChanger : MonoBehaviour
             Movement2D.Instance.SetJoystick(joystick);
             jumpButton.onClick.AddListener(() => Movement2D.Instance.Jump());
         }
-        SetEquipedHUD(GameInfo.Instance.ShopItemsList[GameInfo.ItemEquiped]);
-        UpdateCoinText();
+        HUDupdate();
     }
+
+    [Space]
+    [Header("Imgs")]
     [SerializeField]
-    Image leftArrow, rightArrow;
+    Image leftArrow;
+    [SerializeField]
+    Image  rightArrow;
     [SerializeField]
     Image jump;
     [SerializeField]
@@ -54,7 +71,11 @@ public class HUDChanger : MonoBehaviour
     [SerializeField]
     Text monedas;
 
-
+    public void HUDupdate()
+    {
+        SetEquipedHUD(GameInfo.Instance.ShopItemsList[GameInfo.ItemEquiped]);
+        UpdateCoinText();
+    }
 
 
     public void SetEquipedHUD(_ShopItem shopItem)
@@ -94,7 +115,6 @@ public class HUDChanger : MonoBehaviour
         {
             //CAMERA SHAKE
             DotweenCamera.Instance.DoCameraShake();
-
         }
     }
 
@@ -107,7 +127,6 @@ public class HUDChanger : MonoBehaviour
             isPaused = !isPaused;
             if (isPaused)
             {
-
                 buttonPause.interactable = false;
                 pButtons.DOAnchorPos(new Vector2(300, 0), 0.5f, false);
                 pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y + 300), 0.5f, false);
@@ -118,7 +137,6 @@ public class HUDChanger : MonoBehaviour
                         Time.timeScale = 0;
                     });
                 });
-
             }
             else
             {
@@ -130,22 +148,36 @@ public class HUDChanger : MonoBehaviour
                     pControls.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
                     pButtons.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
                     pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y  - 300), 0.5f, false);
-                   
                 });
                 //Entran paneles
-                
             }
         }
     }
 
+    public void ShopIn()
+    {
+        shopPanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).SetUpdate(true);
+    }
+    public void ShopOut()
+    {
+        shopPanel.DOAnchorPos(new Vector2(2500, 0), 0.5f, false).SetUpdate(true);
+    }
+
+
     public void LevelSelector()
     {
         Time.timeScale = 1;
+        isPaused = false;
         SceneManager.LoadScene(2);
     }
 
     public void QuitApp()
     {
         Application.Quit();
+    }
+
+    private void OnDestroy()
+    {
+        DOTween.KillAll(false);
     }
 }

@@ -31,7 +31,12 @@ public class Shop : MonoBehaviour
         }
         instance = this;
         #endregion
-        for (int i = 0; i <GameInfo.Instance.ShopItemsList.Length; i++)
+
+    }
+
+    private void Start()
+    {
+        for (int i = 0; i < GameInfo.Instance.ShopItemsList.Length; i++)
         {
             newTemplate = Instantiate(template, scrollViewItems);
             _ShopTemplate shopTemplate = newTemplate.GetComponent<_ShopTemplate>();
@@ -46,7 +51,6 @@ public class Shop : MonoBehaviour
         }
         setCoinsUI();
     }
-
 
     void setCoinsUI()
     {
