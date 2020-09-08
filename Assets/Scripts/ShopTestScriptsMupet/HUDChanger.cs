@@ -115,6 +115,7 @@ public class HUDChanger : MonoBehaviour
         {
             //CAMERA SHAKE
             DotweenCamera.Instance.DoCameraShake();
+            TextDisplayer.Instance.DisplayText("Hay un obstaculo!");
         }
     }
 

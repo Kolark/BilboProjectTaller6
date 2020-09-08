@@ -140,6 +140,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3616479869588570520, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30526,6 +30531,11 @@ MonoBehaviour:
   joystick: {fileID: 0}
   jumpButton: {fileID: 0}
   timeChangeManager: {fileID: 0}
+  pausePanel: {fileID: 0}
+  pControls: {fileID: 0}
+  pButtons: {fileID: 0}
+  pPauseButton: {fileID: 0}
+  shopPanel: {fileID: 0}
   leftArrow: {fileID: 1961546126}
   rightArrow: {fileID: 1961546127}
   jump: {fileID: 1961546125}

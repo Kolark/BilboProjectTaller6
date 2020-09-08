@@ -121,18 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &6852731 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7235676206454604293, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-    type: 3}
-  m_PrefabInstance: {fileID: 3616479869493352157}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &68918144
 GameObject:
   m_ObjectHideFlags: 0
@@ -41231,23 +41219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 505212185, guid: 5529dce4f689c64498e733e36f462633, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 027e390a5268c754f9dd518102035428, type: 2}
-    - target: {fileID: 1640815699, guid: 5529dce4f689c64498e733e36f462633, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 027e390a5268c754f9dd518102035428, type: 2}
     - target: {fileID: 8157975595984585994, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157975595984585995, guid: 5529dce4f689c64498e733e36f462633,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -41303,26 +41278,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-        type: 3}
-      propertyPath: layerMasks.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-        type: 3}
-      propertyPath: joystick
-      value: 
-      objectReference: {fileID: 6852731}
-    - target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-        type: 3}
-      propertyPath: jumpForce
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157975595984585999, guid: 5529dce4f689c64498e733e36f462633,
-        type: 3}
-      propertyPath: layersToCheck.m_Bits
-      value: 33792
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5529dce4f689c64498e733e36f462633, type: 3}
@@ -43814,6 +43769,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3616479868740749274, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

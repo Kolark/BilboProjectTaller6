@@ -1,1 +1,1 @@
-{"levelsUnlocked":2,"ItemEquiped":1,"shopItemsUnlocked":[0,1],"coins":10}
+{"levelsUnlocked":2,"ItemEquiped":0,"shopItemsUnlocked":[0,1],"coins":10}
