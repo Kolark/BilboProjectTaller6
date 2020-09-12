@@ -6,11 +6,13 @@ public static class SaveSystem
 {
     #if UNITY_EDITOR
     public static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
-    #elif UNITY_ANDROID
+    
+#elif UNITY_ANDROID
     public static readonly string SAVE_FOLDER = Application.persistentDataPath + "/Saves/";
-    #endif
+#endif
     public static void Init()
     {
+        Debug.Log(Application.persistentDataPath);
         if (!Directory.Exists(SAVE_FOLDER))
         {
             Debug.Log("NO HAY DIRECTORIO DUMMY");

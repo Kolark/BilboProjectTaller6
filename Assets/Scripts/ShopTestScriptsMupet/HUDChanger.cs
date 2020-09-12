@@ -37,6 +37,8 @@ public class HUDChanger : MonoBehaviour
     Button buttonPause;
     public static bool isPaused = false;
 
+    RectTransform canvas;
+    int kAnchura;
     private void Awake()
     {
         if (instance != null)
@@ -45,6 +47,12 @@ public class HUDChanger : MonoBehaviour
         }
         instance = this;
         buttonPause = pPauseButton.GetComponent<Button>();
+
+        canvas = GetComponent<RectTransform>();
+
+        kAnchura = 3000;
+
+        shopPanel.anchoredPosition = new Vector2(kAnchura, 0);
     }
 
     private void Start()
@@ -144,8 +152,8 @@ public class HUDChanger : MonoBehaviour
                 //mueve el panel de izq a derecha, out
                 Time.timeScale = 1;
                 buttonPause.interactable = true;
-                pausePanel.DOAnchorPos(new Vector2(2500, 0), 0.5f, false).OnComplete(()=> 
-                { pausePanel.anchoredPosition = new Vector2(-2500,0);
+                pausePanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).OnComplete(()=> 
+                { pausePanel.anchoredPosition = new Vector2(-kAnchura, 0);
                     pControls.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
                     pButtons.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
                     pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y  - 300), 0.5f, false);
@@ -161,7 +169,7 @@ public class HUDChanger : MonoBehaviour
     }
     public void ShopOut()
     {
-        shopPanel.DOAnchorPos(new Vector2(2500, 0), 0.5f, false).SetUpdate(true);
+        shopPanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).SetUpdate(true);
     }
 
 

@@ -38520,6 +38520,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3616479869588570520, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38579,26 +38584,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hud
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616479869936700936, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616479869936700936, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616479869936700936, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3616479869936700936, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ba8f2e9e82281248a0b04db8a2b9f19, type: 3}
@@ -40399,5 +40384,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canEnd: 1
   text: -------------
-  sceneIndex: 2
   levelUnlocked: 2

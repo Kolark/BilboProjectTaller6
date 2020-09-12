@@ -31793,10 +31793,10 @@ PolygonCollider2D:
       - {x: -11.238086, y: 31.186407}
       - {x: -11.395995, y: 20.508236}
       - {x: -11.236942, y: -5.747916}
-      - {x: 12.116126, y: -5.676999}
-      - {x: 57.175724, y: -5.2487226}
-      - {x: 60.2478, y: -4.8904395}
-      - {x: 77.59644, y: -3.112023}
+      - {x: 3.2632592, y: -13.581341}
+      - {x: 25.242184, y: -17.895672}
+      - {x: 58.034576, y: -21.963818}
+      - {x: 79.809654, y: -22.39862}
       - {x: 153.64915, y: -2.9717178}
       - {x: 182.01549, y: 0.5685173}
       - {x: 207.82529, y: 0.50243276}
@@ -31987,7 +31987,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.898054, y: 4.5297256, z: -10}
+  m_LocalPosition: {x: 8.899186, y: 4.342839, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -32299,7 +32299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canEnd: 0
   text: 
-  sceneIndex: 0
   levelUnlocked: 0
 --- !u!61 &1759254954
 BoxCollider2D:
@@ -33168,7 +33167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canEnd: 1
   text: ----
-  sceneIndex: 2
   levelUnlocked: 4
 --- !u!61 &4945206659705975166
 BoxCollider2D:
