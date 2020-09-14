@@ -82,7 +82,6 @@ public class HUDChanger : MonoBehaviour
     public void HUDupdate()
     {
         SetEquipedHUD(GameInfo.Instance.ShopItemsList[GameInfo.ItemEquiped]);
-        UpdateCoinText();
     }
 
 
@@ -102,9 +101,9 @@ public class HUDChanger : MonoBehaviour
 
     }
 
-    public void UpdateCoinText()
+    public void UpdateCoinText(int current,int amount)
     {
-        monedas.text = Wallet.instance.coins.ToString();
+        monedas.text = current.ToString() + " / " + amount.ToString();
     }
 
     public void TimeButton(int time)

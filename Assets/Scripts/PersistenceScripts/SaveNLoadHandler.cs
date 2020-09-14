@@ -10,16 +10,38 @@ public class SaveNLoadHandler : MonoBehaviour
     }
     public static void saveGame()
     {
-        GameInfoStats gameinfostats = new GameInfoStats(GameInfo.LevelsUnlocked,GameInfo.ItemEquiped,GameInfo.ShopItemsUnlocked,Wallet.instance.coins);
-        string gameinfostring = JsonUtility.ToJson(gameinfostats);
-        SaveSystem.Save(gameinfostring);
+        GameInfoObj gameInfoObj;
+        List<LevelCoinInfo> levelCoins;
+        string json;
+        JsonToSave jsonToSave;
+        if (SaveSystem.Load() == null)//1st time save
+        {
+            gameInfoObj = new GameInfoObj();
+            levelCoins = new List<LevelCoinInfo>();
+            levelCoins.Add(new LevelCoinInfo());
+            jsonToSave = new JsonToSave(gameInfoObj, levelCoins);
+
+        }
+        else//anytimeSave
+        {
+            gameInfoObj = new GameInfoObj(GameInfo.LevelsUnlocked, GameInfo.ItemEquiped, GameInfo.ShopItemsUnlocked, Wallet.instance.coins);
+            levelCoins = GameInfo.Instance.LevelCoins;
+            jsonToSave = new JsonToSave(gameInfoObj, levelCoins);
+        }
+        json = JsonUtility.ToJson(jsonToSave, true);
+        SaveSystem.Save(json);
+
     }
     public static void LoadGameInfo()
     {
         string json = SaveSystem.Load();
+        
+
         if (json != null)
         {
-            GameInfoStats gameInfoStats = JsonUtility.FromJson<GameInfoStats>(json);
+            JsonToSave jsonToSave = JsonUtility.FromJson<JsonToSave>(json);
+
+            GameInfoStats gameInfoStats = new GameInfoStats(jsonToSave.gameInfoObj, jsonToSave.levelCoins);
             GameInfo.Instance.LoadStats(gameInfoStats);
         }
     }

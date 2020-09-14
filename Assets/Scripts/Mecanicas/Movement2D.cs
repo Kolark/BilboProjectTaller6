@@ -58,6 +58,11 @@ public class Movement2D : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
         onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
+        //    Debug.Log("donee");
+        //}
     }
 
     void FixedUpdate()
