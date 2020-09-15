@@ -40,7 +40,8 @@ public class CoinSpawner : MonoBehaviour
     }
 
     private void Start(){
-        while (GameInfo.Instance.LevelCoins[index] == null)
+        if(GameInfo.Instance.LevelCoins.Count < index+1) { Debug.Log("null"); }
+        while (GameInfo.Instance.LevelCoins.Count < index + 1)
         {
             GameInfo.Instance.LevelCoins.Add(new LevelCoinInfo());
         }

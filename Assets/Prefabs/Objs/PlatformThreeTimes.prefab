@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 3958446908462425785}
   - component: {fileID: 3726323496028714377}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: PlatformFuture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,9 +169,8 @@ GameObject:
   - component: {fileID: 7207634874927160978}
   - component: {fileID: 7268316353501384031}
   - component: {fileID: 7027737687771717231}
-  - component: {fileID: 4535643832987631311}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: PlatformPast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,26 +266,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4535643832987631311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5632933964208830833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inside2d: {fileID: 0}
-  inside2dv2: {fileID: 0}
-  SprDefault: {fileID: 0}
-  TimeToExist: 1
-  order: 5
-  shouldChangeLayers: 0
-  layerToexist: 0
-  NormalType: 0
 --- !u!1 &7275591367384115838
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +278,7 @@ GameObject:
   - component: {fileID: 5623337198111596112}
   - component: {fileID: 5427873723827899744}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: PlatformPresent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

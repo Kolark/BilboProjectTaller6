@@ -8,35 +8,32 @@ public class TimeOBJ : MonoBehaviour
     /// Este script es para los objetos dinamicos que solo pertenecen a un tiempo.
     /// </summary>
 
+    [Header("Materiales")]
+    [SerializeField] Material inside2d;
+    [SerializeField] Material inside2dv2;
+    [SerializeField] Material SprDefault;
 
-    [SerializeField]
-    Material inside2d;
-    [SerializeField]
-    Material inside2dv2;
-    [SerializeField]
-    Material SprDefault;
     Collider2D col2d;
     Rigidbody2D rb2d;
     SpriteRenderer spRend;
+    [Header("TimeStuff")]
     public int TimeToExist = 1;
     public int order = 1;
     int c = 0;
-
-    [SerializeField]
-    bool shouldChangeLayers;
-    [SerializeField]
-    int layerToexist;
+    [Header("Layers")]
+    [SerializeField] bool shouldChangeLayers;
+    [SerializeField] int layerToexist;
     int teleport = 10;
     int ignore = 11;
 
-    [SerializeField]
-    RigidbodyType2D NormalType;
+    [SerializeField] RigidbodyType2D NormalType;
 
     private void Awake()
     {
         col2d = GetComponent<Collider2D>();
         rb2d = GetComponent<Rigidbody2D>();
         spRend = GetComponent<SpriteRenderer>();
+        rb2d.bodyType = NormalType;
         TimeChange.StartTimeChange += StartTC;
         TimeChange.EndTimeChange += EndTC;
         TimeChange.MiniUpdate += OnMiniupdate;
