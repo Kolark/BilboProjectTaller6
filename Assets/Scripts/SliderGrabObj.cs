@@ -13,17 +13,17 @@ public class SliderGrabObj : GrabObject
     public override void touch(Vector3 pos)
     {
         float x = Mathf.Clamp(pos.x, PivotPos.x - freemovement, PivotPos.x + freemovement);
-        transform.position = new Vector3(x, 0);
+        transform.position = new Vector3(x, transform.position.y);
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere((Vector2)transform.position, 1f);
+        Gizmos.DrawWireSphere((Vector2)PivotPos, 1f);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position + Vector2.right* freemovement, 1f);
+        Gizmos.DrawWireSphere((Vector2)PivotPos + Vector2.right* freemovement, 1f);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)transform.position - Vector2.right * freemovement, 1f);
+        Gizmos.DrawWireSphere((Vector2)PivotPos - Vector2.right * freemovement, 1f);
     }
 
 }
