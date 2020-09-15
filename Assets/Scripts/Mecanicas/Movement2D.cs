@@ -9,30 +9,35 @@ public class Movement2D : MonoBehaviour
     private static Movement2D instance;
     public static Movement2D Instance { get => instance; }
 
-    //valores
-    [SerializeField]
-    float jumpForce = 5f;
-    [SerializeField]
-    int speed = 12;
+    [Header("Values")]
+    [SerializeField] float jumpForce = 5f;
+    [SerializeField] int speed = 12;
     public int jumpNumber = 0;
     bool facingRight = true;
-    //Componentes
+
+    [Header("Components")]
     Rigidbody2D rb;
     Animator animator;
     Joystick joystick;
 
+    [Header("Collision")]
     bool onGround;
-    public Vector2 bottomOffset;
-    [SerializeField]
-    Transform GroundCheckPos;
+    [SerializeField] Transform GroundCheckPos;
     public float collisionRadius = 0.25f;
     public LayerMask groundLayer;
-
+    [Header("Multipliers")]
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
 
     public LayerMask layersToCheck;
-    //Awake
+
+
+    //----------------------------------------------------------
+    public bool OnStair = false;
+
+    //----------------------------------------------------------
+
+
     void Awake()
     {
         rb = GetComponentInChildren<Rigidbody2D>();
@@ -58,11 +63,6 @@ public class Movement2D : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
         onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
-        //if (Input.GetButtonDown("Jump"))
-        //{
-        //    transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
-        //    Debug.Log("donee");
-        //}
     }
 
     void FixedUpdate()
@@ -144,5 +144,37 @@ public class Movement2D : MonoBehaviour
             return false;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            OnStair = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            OnStair = false;
+        }
+    }
 }
+//interface ICommand
+//{
+//    void Execute();
+//}
+//class JumpCommand : ICommand
+//{
+//    Rigidbody2D rb2d;
+//    public void Execute()
+//    {
+//        throw new NotImplementedException();
+//    }
+//}
+//class ClimbLadderCommand : ICommand
+//{
+//    public void Execute()
+//    {
+//        throw new NotImplementedException();
+//    }
+//}
