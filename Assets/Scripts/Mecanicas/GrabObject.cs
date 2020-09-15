@@ -11,7 +11,7 @@ public class GrabObject : MonoBehaviour, ITouchable
     int Ignore = 11;
     int Grab = 13;
     TimeOBJ timeOBJ;
-    private void Awake()
+    protected virtual void Awake()
     {
         timeOBJ = GetComponent<TimeOBJ>();
         TeleportManager.IsTpActive += ChangeLayer;
@@ -39,7 +39,7 @@ public class GrabObject : MonoBehaviour, ITouchable
         
     }
 
-    public void touch(Vector3 pos)
+    public virtual void touch(Vector3 pos)
     {
         transform.position = pos;
     }
