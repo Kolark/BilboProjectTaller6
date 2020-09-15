@@ -4,12 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
-public class LongButtonClick : MonoBehaviour, IPointerDownHandler
+public class LongButtonClick : MonoBehaviour
 {
     public UnityEvent onClick;
-    public void OnPointerDown(PointerEventData eventData)
+    public UnityEvent onHold;
+    bool Hold = false;
+
+    public void OnPointerDown()
     {
         onClick.Invoke();
+        Hold = true;
+    }
+    public void OnPointerUp()
+    {
+        Hold = false;
+    }
+
+    private void Update()
+    {
+        if (Hold)
+        {
+            onHold.Invoke();
+        }
     }
 
 }

@@ -33,7 +33,7 @@ public class Movement2D : MonoBehaviour
 
 
     //----------------------------------------------------------
-    public bool OnStair = false;
+    public bool OnLadder = false;
 
     //----------------------------------------------------------
 
@@ -144,37 +144,13 @@ public class Movement2D : MonoBehaviour
             return false;
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Climb()
     {
-        if (collision.CompareTag("Ladder"))
+        if (OnLadder)
         {
-            OnStair = true;
+            rb.velocity = Vector2.up * 8;
         }
+        
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ladder"))
-        {
-            OnStair = false;
-        }
-    }
+
 }
-//interface ICommand
-//{
-//    void Execute();
-//}
-//class JumpCommand : ICommand
-//{
-//    Rigidbody2D rb2d;
-//    public void Execute()
-//    {
-//        throw new NotImplementedException();
-//    }
-//}
-//class ClimbLadderCommand : ICommand
-//{
-//    public void Execute()
-//    {
-//        throw new NotImplementedException();
-//    }
-//}

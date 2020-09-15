@@ -61,6 +61,7 @@ public class HUDChanger : MonoBehaviour
         {
             Movement2D.Instance.SetJoystick(joystick);
             jumpButton.onClick.AddListener(() => Movement2D.Instance.Jump());
+            jumpButton.onHold.AddListener(() => Movement2D.Instance.Climb());
         }
         HUDupdate();
     }
