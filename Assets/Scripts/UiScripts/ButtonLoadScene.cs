@@ -12,6 +12,7 @@ public class ButtonLoadScene : MonoBehaviour
 
     public void LoadFromTutorial()
     {
+        AudioManager.instance.Play("Button");
         if (GameInfo.LevelsUnlocked > 0)
         {
             SceneManager.LoadScene(1);
