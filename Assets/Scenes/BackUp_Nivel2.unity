@@ -69304,6 +69304,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Teleporter
       objectReference: {fileID: 0}
+    - target: {fileID: 7320383833190793069, guid: 7abf1ffc1be563a4e83363d331a418fc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7abf1ffc1be563a4e83363d331a418fc, type: 3}
 --- !u!1 &8850546394821551316
