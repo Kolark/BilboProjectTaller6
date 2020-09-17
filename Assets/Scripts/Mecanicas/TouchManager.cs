@@ -28,6 +28,8 @@ public class TouchManager : MonoBehaviour
                     
                     if (hit2D.collider != null)
                     {
+                    Debug.Log(hit2D.collider.name);
+                    
                         if (hit2D.collider.GetComponent<ITouchable>() != null){
                             touchable = hit2D.collider.GetComponent<ITouchable>();
                             touchable.touch(POSinScreen());

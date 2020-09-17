@@ -16,6 +16,7 @@ public class SwitchImage : MonoBehaviour
     public void Switch()
     {
         move = !move;
+        TeleportManager.Instance.Switch();
         UpdateSprites();
     }
     public void UpdateSprites()

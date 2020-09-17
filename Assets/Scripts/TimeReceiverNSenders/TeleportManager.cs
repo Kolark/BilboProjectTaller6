@@ -7,7 +7,8 @@ public class TeleportManager : MonoBehaviour, ITouchable
     /// <summary>
     /// Implementa la interfaz y se comunica con el ObjTeleporter
     /// </summary>
-
+    private static TeleportManager instance;
+    public static TeleportManager Instance { get => instance; }
     public static Action<bool> IsTpActive;
 
     [SerializeField]
@@ -15,6 +16,13 @@ public class TeleportManager : MonoBehaviour, ITouchable
     Collider2D col2d;
     private void Awake()
     {
+        #region Singleton
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
+        #endregion
         col2d = GetComponent<Collider2D>();
         TimeChange.EndTimeChange += updatetpStatus;
     }
@@ -41,6 +49,7 @@ public class TeleportManager : MonoBehaviour, ITouchable
     {   
         col2d.enabled = !col2d.enabled;
         IsTpActive(col2d.enabled);
+        Debug.Log("Switch");
     }
 
     void updatetpStatus()
