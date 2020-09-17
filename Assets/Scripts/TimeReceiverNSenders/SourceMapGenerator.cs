@@ -15,7 +15,7 @@ public class SourceMapGenerator
     List<TilemapRenderer> tileMapRenderers = new List<TilemapRenderer>();
     List<Tilemap> Tilemaps = new List<Tilemap>();
     List<Collider2D> TilemapsColliders = new List<Collider2D>();
-
+    
     //public int size { get => TilemapsObjs.Count;}
     
 

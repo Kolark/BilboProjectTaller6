@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class TimeStaticOBJ : MonoBehaviour
 {
-
+    
     /// <summary>
     /// Se encarga de los objetos que poseen collider diferente para cada tiempo.
     /// </summary>
    
     Collider2D[] colliders = new Collider2D[3];
-    SpriteRenderer[] spriteRenderers = new SpriteRenderer[3];
+    Renderer[] spriteRenderers = new Renderer[3];
 
     [SerializeField]
     int order = 0;
@@ -26,12 +26,16 @@ public class TimeStaticOBJ : MonoBehaviour
 
     private void Awake()
     {
-        
-        colliders = transform.GetComponentsInChildren<Collider2D>();
-        spriteRenderers = transform.GetComponentsInChildren<SpriteRenderer>();
+
+        //colliders = transform.GetComponentsInChildren<Collider2D>();
+        colliders[0] = transform.GetChild(0).GetComponent<Collider2D>();
+        colliders[1] = transform.GetChild(1).GetComponent<Collider2D>();
+        colliders[2] = transform.GetChild(2).GetComponent<Collider2D>();
+        spriteRenderers = transform.GetComponentsInChildren<Renderer>();
         TimeChange.StartTimeChange += UpdateObjs;
         TimeChange.EndTimeChange += UpdateObjs;
         TimeChange.MiniUpdate += UpdateObjs;
+        Debug.Log("n : " + transform.name + ": " + colliders.Length + " r: " + spriteRenderers.Length);
         
     }
 

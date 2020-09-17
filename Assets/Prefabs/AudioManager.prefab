@@ -43,4 +43,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a98d88a12cf3543ab80f4cd2db65b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Background
+    clip: {fileID: 8300000, guid: b92830372347e9c4f9a45f167ac69645, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 8300000, guid: e07f0da33117d8d429960b0a82868f06, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BilboWalk
+    clip: {fileID: 8300000, guid: 071ffaf47b818e246aa0373319795650, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BilboJump
+    clip: {fileID: 8300000, guid: adb1b3e7963f32747b5eb6c153687bf9, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Portal
+    clip: {fileID: 8300000, guid: 54ee1813c9788ff4da1a854f64aa283b, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
