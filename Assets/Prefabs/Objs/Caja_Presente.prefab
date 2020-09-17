@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7805371583004473813}
   - component: {fileID: 3545164218018886971}
   m_Layer: 13
-  m_Name: CajaInteractuable1
+  m_Name: Caja_Presente
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5964798384862463144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 38.93, y: 0.48, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1.0620443}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
