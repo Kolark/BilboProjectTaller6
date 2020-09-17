@@ -35,7 +35,7 @@ public class TimeStaticOBJ : MonoBehaviour
         TimeChange.StartTimeChange += UpdateObjs;
         TimeChange.EndTimeChange += UpdateObjs;
         TimeChange.MiniUpdate += UpdateObjs;
-        Debug.Log("n : " + transform.name + ": " + colliders.Length + " r: " + spriteRenderers.Length);
+        //Debug.Log("n : " + transform.name + ": " + colliders.Length + " r: " + spriteRenderers.Length);
         
     }
 

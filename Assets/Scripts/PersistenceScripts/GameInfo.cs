@@ -24,6 +24,8 @@ public class GameInfo : MonoBehaviour
     public List<LevelCoinInfo> LevelCoins { get => levelCoins; set => levelCoins = value; }
     #endregion
 
+    Wallet wallet;
+
     private void Awake()
     {
         #region Singleton
@@ -33,6 +35,8 @@ public class GameInfo : MonoBehaviour
         }
         instance = this;
         #endregion
+        wallet = GetComponent<Wallet>();
+        wallet.Init();
         DontDestroyOnLoad(this.gameObject);
         if (SaveSystem.Load() != null) //Si ya hay un save pues lo carga
         {
@@ -51,6 +55,7 @@ public class GameInfo : MonoBehaviour
         levelsUnlocked = stats.gameInfo.levelsUnlocked;
         itemEquiped = stats.gameInfo.itemEquiped;
         shopItemsUnlocked = stats.gameInfo.shopItemsUnlocked;
+
         Wallet.instance.coins = stats.gameInfo.coins;
         levelCoins = stats.levelCoins;
 

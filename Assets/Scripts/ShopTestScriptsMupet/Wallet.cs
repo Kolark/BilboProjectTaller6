@@ -7,9 +7,9 @@ public class Wallet : MonoBehaviour
     #region Singleton.Wallet
     public static Wallet instance;
 
-    private void Awake()
+    public void Init()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             //DontDestroyOnLoad(gameObject);
@@ -19,6 +19,11 @@ public class Wallet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    //private void Awake()
+    //{
+       
+    //}
     #endregion
 
     public int coins;

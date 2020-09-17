@@ -33,7 +33,11 @@ public class TimeOBJ : MonoBehaviour
         col2d = GetComponent<Collider2D>();
         rb2d = GetComponent<Rigidbody2D>();
         spRend = GetComponent<SpriteRenderer>();
-        rb2d.bodyType = NormalType;
+        if(TimeToExist == TimeChange.CurrentTime)
+        {
+            rb2d.bodyType = NormalType;
+        }
+
         TimeChange.StartTimeChange += StartTC;
         TimeChange.EndTimeChange += EndTC;
         TimeChange.MiniUpdate += OnMiniupdate;
