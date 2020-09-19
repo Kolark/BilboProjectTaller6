@@ -98,10 +98,14 @@ public class Movement2D : MonoBehaviour
         {
             animator.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            Invoke("AfterJump", .75f);
         }
         jumpNumber++;
     }
-
+    void AfterJump()
+    {
+        rb.velocity = Vector2.zero;
+    }
     void Flip()
     {
         facingRight = !facingRight;
