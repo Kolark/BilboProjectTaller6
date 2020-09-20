@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEditor;
 public class TimeOBJ : MonoBehaviour
 {
     /// <summary>
@@ -123,6 +123,24 @@ public class TimeOBJ : MonoBehaviour
         TimeChange.StartTimeChange -= StartTC;
         TimeChange.EndTimeChange -= EndTC;
         TimeChange.MiniUpdate -= OnMiniupdate;
+    }
+
+    private void OnDrawGizmos()
+    {
+        if(TimeToExist == 0)
+        {
+            Gizmos.color = Color.red;
+        }
+        else if(TimeToExist == 1)
+        {
+            Gizmos.color = Color.blue;
+        }
+        else{
+            Gizmos.color = Color.green;
+        }
+
+        
+        Gizmos.DrawCube(transform.position, new Vector3(2f, 1.6f, 1));
     }
 }
 

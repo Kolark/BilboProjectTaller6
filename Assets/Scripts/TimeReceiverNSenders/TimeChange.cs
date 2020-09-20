@@ -29,7 +29,6 @@ public class TimeChange : MonoBehaviour
     public static Action EndTimeChange;
 
     public static Action MiniUpdate;
-    [SerializeField]
     Animator stencilGrowerAnim;
    
     private void Awake()
@@ -41,6 +40,10 @@ public class TimeChange : MonoBehaviour
         }
         instance = this;
         #endregion
+    }
+    private void Start()
+    {
+        stencilGrowerAnim = Movement2D.Instance.StencilGrowerAnim;
     }
 
     public void StartChangeTime(int setTime)//1er paso

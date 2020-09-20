@@ -34,12 +34,14 @@ public class Movement2D : MonoBehaviour
 
     //----------------------------------------------------------
     public bool OnLadder = false;
-
+    Animator stencilGrowerAnim;
+    public Animator StencilGrowerAnim { get => stencilGrowerAnim;}
     //----------------------------------------------------------
 
 
     void Awake()
     {
+        stencilGrowerAnim = transform.GetChild(0).GetComponent<Animator>();
         rb = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
@@ -137,16 +139,17 @@ public class Movement2D : MonoBehaviour
     public bool IsthereAnObjectBehind()
     {
         Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.75f, layersToCheck);
-        if(objtotp != null)
-        {
-            //Hay un objeto detras y no puede hacer tp
-            return true;
-        }
-        else
-        {
-            //No hay ningun objeto detras y puede hacer tp
-            return false;
-        }
+        return objtotp != null;
+        //if (objtotp != null)
+        //{
+        //    //Hay un objeto detras y no puede hacer tp
+        //    return true;
+        //}
+        //else
+        //{
+        //    //No hay ningun objeto detras y puede hacer tp
+        //    return false;
+        //}
     }
     public void Climb()
     {
