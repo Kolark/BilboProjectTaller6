@@ -55510,7 +55510,7 @@ PrefabInstance:
     - target: {fileID: 8157975595048385679, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585994, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -55522,15 +55522,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8157975595984585995, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157975595984585995, guid: 5529dce4f689c64498e733e36f462633,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 256.91
+      value: 111.04
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9
+      value: 1.36
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -55872,7 +55882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 264.27164, y: -1.7380605, z: -9.268555}
+  m_LocalPosition: {x: 118.40162, y: -6.2780604, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -57435,7 +57445,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 256.8919, y: 10.070635, z: -10}
+  m_LocalPosition: {x: 110.94203, y: 5.6422925, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -59110,12 +59120,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b39eb4663509e43bceb64c6a58f958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: Hola que tal mi gente
-  UpPos: 5
-  DownPos: -5
+  msg: '--------------------------------------------------------
+
+'
+  UpPos: 10
+  DownPos: -10
   timingUp: 1
-  timingDown: 1
-  ShouldGoDown: 0
+  timingDown: 0.5
+  ShouldGoDown: 1
 --- !u!61 &2091514984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -59150,7 +59162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091514982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.6, y: 2.6, z: 0}
+  m_LocalPosition: {x: 26.93, y: 0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 133894111}
@@ -59648,7 +59660,7 @@ PrefabInstance:
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
