@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1200958417578257089}
   - component: {fileID: 1640815699}
   - component: {fileID: 1640815700}
+  - component: {fileID: 2038830920}
   m_Layer: 11
   m_Name: GroundChecker
   m_TagString: Player
@@ -39,7 +40,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6191753593997808877}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 027e390a5268c754f9dd518102035428, type: 2}
   m_IsTrigger: 0
@@ -70,6 +71,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ec8d3700b45bf42831941b8a78233d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &2038830920
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191753593997808877}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 027e390a5268c754f9dd518102035428, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.0053085387, y: 0.41580892}
+      - {x: -0.42667237, y: 0.4202497}
+      - {x: -0.42921296, y: 0.14647114}
+      - {x: -0.15063325, y: 0.14928782}
 --- !u!1 &8157975595048385679
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +227,7 @@ GameObject:
   - component: {fileID: 8157975595984585995}
   - component: {fileID: 8157975595984585999}
   - component: {fileID: 651358978}
-  - component: {fileID: 505212185}
+  - component: {fileID: 1071508802}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -337,8 +367,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!70 &505212185
-CapsuleCollider2D:
+--- !u!60 &1071508802
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -350,6 +380,25 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.46788025, y: 0.003985882}
-  m_Size: {x: 1.3263855, y: 2.0152693}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.13173676, y: 1.0452652}
+      - {x: -0.21916962, y: 0.5632565}
+      - {x: -0.1947403, y: 0.03353131}
+      - {x: -0.2061081, y: -0.40563524}
+      - {x: -0.122413635, y: -0.9658094}
+      - {x: 0.08596039, y: -0.96703684}
+      - {x: 0.41060638, y: -0.9668335}
+      - {x: 1.1272125, y: 0.030840874}
+      - {x: 1.1300964, y: 0.6377413}
+      - {x: 0.83197784, y: 0.97032547}

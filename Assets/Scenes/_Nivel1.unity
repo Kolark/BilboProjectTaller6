@@ -73280,7 +73280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b7658b73604be42863ce78805cc6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stencilGrowerAnim: {fileID: 843386049}
 --- !u!1001 &623055651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73616,12 +73615,12 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.25
+      value: 207.38
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.7
+      value: -7.62
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -73726,12 +73725,6 @@ Transform:
   m_Father: {fileID: 1785710783}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &843386049 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8157975595048385666, guid: 5529dce4f689c64498e733e36f462633,
-    type: 3}
-  m_PrefabInstance: {fileID: 785745018}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &869580255
 GameObject:
   m_ObjectHideFlags: 0
@@ -73841,7 +73834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.611621, y: 5.0619397, z: -9.268555}
+  m_LocalPosition: {x: 214.74162, y: -15.25806, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -77443,7 +77436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.25, y: 12.7, z: -10}
+  m_LocalPosition: {x: 207.38, y: -7.6200004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81861,8 +81854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   order: 7
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
   timePivot: 0
 --- !u!4 &2013257657 stripped
 Transform:
@@ -83171,8 +83162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   order: 7
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
   timePivot: 0
 --- !u!1001 &690313873620936850
 PrefabInstance:
