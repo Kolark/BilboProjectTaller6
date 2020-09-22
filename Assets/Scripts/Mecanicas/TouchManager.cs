@@ -23,18 +23,23 @@ public class TouchManager : MonoBehaviour
 
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
+                if(touchable != null)
+                {
+                    touchable.touch(POSinScreen());
+                }
+                else
+                {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
-                    
+
                     if (hit2D.collider != null)
                     {
-                    Debug.Log(hit2D.collider.name);
-                    
-                        if (hit2D.collider.GetComponent<ITouchable>() != null){
+                        if (hit2D.collider.GetComponent<ITouchable>() != null)
+                        {
                             touchable = hit2D.collider.GetComponent<ITouchable>();
-                            touchable.touch(POSinScreen());
                         }
                     }
+                }
             }
             else if (!Input.GetMouseButton(0)){//No esta tocando
                 if (touchable != null){
@@ -49,20 +54,25 @@ public class TouchManager : MonoBehaviour
                     {
                         if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
                         {
-                    Debug.Log("Haciendo");
-                            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-                            RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
-
-                            if (hit2D.collider != null)
-                            {
-                                Debug.Log(hit2D.collider.name);
-                                if (hit2D.collider.GetComponent<ITouchable>() != null)
+                           //--
+                             if(touchable != null)
                                 {
-                                
-                                    touchable = hit2D.collider.GetComponent<ITouchable>();
                                     touchable.touch(POSinScreen());
                                 }
-                            }
+                                else
+                                {
+                                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                                    RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
+
+                                    if (hit2D.collider != null)
+                                    {
+                                        if (hit2D.collider.GetComponent<ITouchable>() != null)
+                                        {
+                                            touchable = hit2D.collider.GetComponent<ITouchable>();
+                                        }
+                                    }
+                                }
+                           //--
                         }
                         else
                         {
@@ -95,11 +105,27 @@ public class TouchManager : MonoBehaviour
         pos.z = 0;
         return pos;
     }
-
+}
     //public bool isPointerOverUI()
     //{
     //    List<RaycastResult> raycastResults = new List<RaycastResult>();
     //    EventSystem.current.RaycastAll()
     //    return false;
     //}
-}
+//Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+//RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
+
+//                            if (hit2D.collider != null)
+//                            {
+//                                if(touchable != null)
+//                                {
+//                                    touchable.touch(POSinScreen());
+//                                }
+//                                else
+//                                {
+//                                    if (hit2D.collider.GetComponent<ITouchable>() != null)
+//                                    {
+//                                        touchable = hit2D.collider.GetComponent<ITouchable>();
+//                                    }
+//                                }
+//                            }

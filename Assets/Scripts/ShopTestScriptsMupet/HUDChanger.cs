@@ -39,6 +39,11 @@ public class HUDChanger : MonoBehaviour
 
     RectTransform canvas;
     int kAnchura;
+
+    [Space]
+    [Header("Loading")]
+    [SerializeField] Image LoadCircle;
+
     private void Awake()
     {
         if (instance != null)
@@ -64,6 +69,8 @@ public class HUDChanger : MonoBehaviour
             jumpButton.onHold.AddListener(() => Movement2D.Instance.Climb());
         }
         HUDupdate();
+        LoadCircle.rectTransform.localScale = Vector3.one * 25;
+        EnterScene();
     }
 
     [Space]
@@ -71,7 +78,7 @@ public class HUDChanger : MonoBehaviour
     [SerializeField]
     Image leftArrow;
     [SerializeField]
-    Image  rightArrow;
+    Image rightArrow;
     [SerializeField]
     Image jump;
     [SerializeField]
@@ -102,7 +109,7 @@ public class HUDChanger : MonoBehaviour
 
     }
 
-    public void UpdateCoinText(int current,int amount)
+    public void UpdateCoinText(int current, int amount)
     {
         monedas.text = current.ToString() + " / " + amount.ToString();
     }
@@ -139,9 +146,9 @@ public class HUDChanger : MonoBehaviour
                 buttonPause.interactable = false;
                 pButtons.DOAnchorPos(new Vector2(300, 0), 0.5f, false);
                 pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y + 300), 0.5f, false);
-                pControls.DOAnchorPos(new Vector2(0, -500), 0.5f, false).OnComplete(() => 
+                pControls.DOAnchorPos(new Vector2(0, -500), 0.5f, false).OnComplete(() =>
                 {
-                    pausePanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).OnComplete(() => 
+                    pausePanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).OnComplete(() =>
                     {
                         Time.timeScale = 0;
                     });
@@ -152,11 +159,11 @@ public class HUDChanger : MonoBehaviour
                 //mueve el panel de izq a derecha, out
                 Time.timeScale = 1;
                 buttonPause.interactable = true;
-                pausePanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).OnComplete(()=> 
+                pausePanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).OnComplete(() =>
                 { pausePanel.anchoredPosition = new Vector2(-kAnchura, 0);
                     pControls.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
                     pButtons.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
-                    pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y  - 300), 0.5f, false);
+                    pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y - 300), 0.5f, false);
                 });
                 //Entran paneles
             }
@@ -185,6 +192,20 @@ public class HUDChanger : MonoBehaviour
         Application.Quit();
     }
 
+    public void EnterScene()
+    {
+        LoadCircle.rectTransform.DOScale(0f, .75f);
+        //DOTween.Sequence()
+        // .Append(DOTween.To(() => LoadCircle.color, x => LoadCircle.color = x, new Color(0,0,0,0), 2f).SetEase(Ease.InSine));
+        
+
+    }
+    public void ExitScene()
+    {
+        LoadCircle.rectTransform.DOScale(25f, .75f);
+    //    DOTween.Sequence()
+    //    .Append(DOTween.To(() => LoadCircle.color, x => LoadCircle.color = x, new Color(0, 0, 0, 0), 2f).SetEase(Ease.OutSine));
+    }
     private void OnDestroy()
     {
         DOTween.KillAll(false);

@@ -11,6 +11,9 @@ public class GrabObject : MonoBehaviour, ITouchable
     int Ignore = 11;
     int Grab = 13;
     TimeOBJ timeOBJ;
+
+    bool Locked = false;
+
     protected virtual void Awake()
     {
         timeOBJ = GetComponent<TimeOBJ>();
