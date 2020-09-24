@@ -986,7 +986,7 @@ Transform:
   - {fileID: 386092746}
   - {fileID: 1467288240}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &236790666
 GameObject:
@@ -1748,7 +1748,7 @@ Transform:
   - {fileID: 673321747}
   - {fileID: 393506777}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &431866031 stripped
 GameObject:
@@ -1989,7 +1989,7 @@ Transform:
   - {fileID: 6020836918752193983}
   - {fileID: 2098696154}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495877495
 GameObject:
@@ -55648,7 +55648,7 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -57350,7 +57350,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1271947080
 GameObject:
@@ -57539,7 +57539,7 @@ Transform:
   - {fileID: 288157515}
   - {fileID: 1823570875}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1324088962
 MonoBehaviour:
@@ -57583,7 +57583,7 @@ Transform:
   - {fileID: 931597694}
   - {fileID: 2011308046}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1338041367 stripped
 Transform:
@@ -59261,7 +59261,7 @@ Transform:
   - {fileID: 1566564175}
   - {fileID: 681195003}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1916398786 stripped
 Transform:
@@ -60199,6 +60199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00024414062
       objectReference: {fileID: 0}
     - target: {fileID: 2953767089244349395, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
