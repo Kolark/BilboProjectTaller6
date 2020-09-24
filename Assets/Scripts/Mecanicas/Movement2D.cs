@@ -98,6 +98,7 @@ public class Movement2D : MonoBehaviour
     {
         if (onGround && Math.Abs(rb.velocity.y) < 0.1f)
         {
+            AudioManager.instance.Play("BilboJump");
             animator.SetBool("IsJumping", true);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             Invoke("AfterJump", .75f);

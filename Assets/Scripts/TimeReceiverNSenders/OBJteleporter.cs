@@ -42,6 +42,7 @@ public class OBJteleporter : MonoBehaviour
     {  
         if (!growing)
         {
+            AudioManager.instance.StopPlaying("Portal");
             CloseAnim();
         }
     }

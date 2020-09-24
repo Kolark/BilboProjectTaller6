@@ -116,6 +116,7 @@ public class HUDChanger : MonoBehaviour
 
     public void TimeButton(int time)
     {
+        AudioManager.instance.Play("ButtonJump");
         TimeChange.Instance.StartChangeTime(time);
         if (TimeChange.IsTimeTraveling)
         {

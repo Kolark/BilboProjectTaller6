@@ -50,6 +50,7 @@ public class TimeChange : MonoBehaviour
     {
         if (!Movement2D.Instance.IsthereAnObjectBehind())
         {
+            AudioManager.instance.Play("TimeTravel");
             SlowTime();
             isTimeTraveling = true;
             Temp = setTime;
@@ -71,6 +72,7 @@ public class TimeChange : MonoBehaviour
     }
     public void EndChangeTime()
     {
+        AudioManager.instance.StopPlaying("TimeTravel");
         timetoGo = currentTime;
         currentTime = Temp;
         //StartTimeChange();

@@ -12,6 +12,7 @@ public class LongButtonClick : MonoBehaviour
 
     public void OnPointerDown()
     {
+        AudioManager.instance.Play("ButtonJump");
         onClick.Invoke();
         Hold = true;
     }

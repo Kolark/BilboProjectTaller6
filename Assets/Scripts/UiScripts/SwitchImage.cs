@@ -15,6 +15,7 @@ public class SwitchImage : MonoBehaviour
 
     public void Switch()
     {
+        AudioManager.instance.Play("Button");
         move = !move;
         TeleportManager.Instance.Switch();
         UpdateSprites();
