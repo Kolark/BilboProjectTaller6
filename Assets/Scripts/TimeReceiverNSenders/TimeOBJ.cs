@@ -8,11 +8,6 @@ public class TimeOBJ : MonoBehaviour
     /// Este script es para los objetos dinamicos que solo pertenecen a un tiempo.
     /// </summary>
 
-    [Header("Materiales")]
-    [SerializeField] Material inside2d;
-    [SerializeField] Material inside2dv2;
-    [SerializeField] Material SprDefault;
-
     Collider2D col2d;
     Rigidbody2D rb2d;
     SpriteRenderer spRend;
@@ -41,19 +36,21 @@ public class TimeOBJ : MonoBehaviour
         TimeChange.StartTimeChange += StartTC;
         TimeChange.EndTimeChange += EndTC;
         TimeChange.MiniUpdate += OnMiniupdate;
+    }
+    private void Start()
+    {
         OnMiniupdate();
     }
-
     public void StartTC(){
         if (TimeToExist == TimeChange.TimetoGo){
             //Voy a existir en la segunda iteración. Asegurarse de tener render prendido y layer correcta para aparecer 
             //en la animación del grow
-            spRend.material = inside2dv2;
+            spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
         }
         else if (TimeToExist == TimeChange.LeftOutTime){
-            spRend.material = inside2dv2;
+            spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
             spRend.enabled = false;
             if (shouldChangeLayers) { gameObject.layer = ignore; }
@@ -63,7 +60,7 @@ public class TimeOBJ : MonoBehaviour
     public void EndTC()
     {
         if (TimeToExist == TimeChange.CurrentTime){//Existo , Tener Render prendido, layer correcto una vez mas
-            spRend.material = inside2d;
+            spRend.material = GameInfo.Instance.Inside2d;
             spRend.sortingOrder = TimeChange.layersIDS[0] + order;
             rb2d.bodyType = NormalType;//Fix
             col2d.isTrigger = false;
@@ -73,12 +70,12 @@ public class TimeOBJ : MonoBehaviour
             rb2d.bodyType = RigidbodyType2D.Static;
             col2d.isTrigger = true;
             if (TimeToExist == TimeChange.TimetoGo){
-                spRend.material = inside2dv2;
+                spRend.material = GameInfo.Instance.Inside2dv2;
                 spRend.sortingOrder = TimeChange.layersIDS[1] + order;
                 if (shouldChangeLayers) { gameObject.layer = teleport;}
             }
             else if (TimeToExist == TimeChange.LeftOutTime){
-                spRend.material = inside2dv2;
+                spRend.material = GameInfo.Instance.Inside2dv2;
                 spRend.sortingOrder = TimeChange.layersIDS[2] + order;
                 spRend.enabled = false;
                 if (shouldChangeLayers) { gameObject.layer = ignore;}
@@ -94,25 +91,25 @@ public class TimeOBJ : MonoBehaviour
     }
 
     public void SetRenderOn(){
-        spRend.material = SprDefault;
+        spRend.material = GameInfo.Instance.SpriteDefault;
         spRend.sortingOrder = TimeChange.layersIDS[0] + order;
         col2d.isTrigger = false;
     }
     public void EndAnim(){
         rb2d.bodyType = RigidbodyType2D.Dynamic;
-        spRend.material = inside2d;
+        spRend.material = GameInfo.Instance.Inside2d;
         TimeToExist = TimeChange.CurrentTime;
     }
 
     public void OnMiniupdate(){
         if (TimeToExist == TimeChange.TimetoGo){
-            spRend.material = inside2dv2;
+            spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
             if (shouldChangeLayers) { gameObject.layer = teleport; }
         }
         else if (TimeToExist == TimeChange.LeftOutTime){
-            spRend.material = inside2dv2;
+            spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = false;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
             if (shouldChangeLayers) { gameObject.layer = ignore; }
@@ -143,68 +140,3 @@ public class TimeOBJ : MonoBehaviour
         Gizmos.DrawCube(transform.position, new Vector3(2f, 1.6f, 1));
     }
 }
-
-//void UpdateOBJ()
-//{
-//    c++;
-
-//    if (c == 1)
-//    {
-//        if (TimeToExist == TimeChange.TimetoGo)
-//        {
-//            //Voy a existir en la segunda iteración. Asegurarse de tener render prendido y layer correcta para aparecer 
-//            //en la animación del grow
-//            spRend.material = inside2dv2;
-//            spRend.enabled = true;
-//            spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-//        }
-//        else if(TimeToExist == TimeChange.LeftOutTime)
-//        {
-//            spRend.material = inside2dv2;
-//            spRend.sortingOrder = TimeChange.layersIDS[2] + order;
-//            spRend.enabled = false;
-//            if (shouldChangeLayers) { gameObject.layer = ignore; }
-
-//        }
-//    }
-//    else
-//    {
-//        if(TimeToExist == TimeChange.CurrentTime)
-//        {
-//            //Existo , Tener Render prendido, layer correcto una vez mas
-//            spRend.material = inside2d;
-//            spRend.sortingOrder = TimeChange.layersIDS[0] + order;
-//            //rb2d.bodyType = RigidbodyType2D.Dynamic;//Fix
-//            rb2d.bodyType = NormalType;//Fix
-//            col2d.isTrigger = false;
-//            //spRend.enabled = true;
-//            if (shouldChangeLayers){ gameObject.layer = layerToexist; }
-//        }
-//        else
-//        {
-//            rb2d.bodyType = RigidbodyType2D.Static;
-//            col2d.isTrigger = true;
-//            if(TimeToExist == TimeChange.TimetoGo)
-//            {
-//                spRend.material = inside2dv2;
-//                spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-//                if (shouldChangeLayers){ gameObject.layer = teleport; }
-
-//            }
-//            else if(TimeToExist == TimeChange.LeftOutTime)
-//            {
-
-//                spRend.material = inside2dv2;
-//                spRend.sortingOrder = TimeChange.layersIDS[2] + order;
-//                spRend.enabled = false;
-//                if (shouldChangeLayers) { gameObject.layer = ignore; }
-
-//            }
-//        }
-//    }
-
-//    if (c > 1)
-//    {
-//        c =0;
-//    }
-//}

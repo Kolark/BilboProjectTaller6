@@ -20,7 +20,6 @@ public class TouchManager : MonoBehaviour
     {
         if (!TimeChange.IsTimeTraveling){
 #if UNITY_EDITOR
-
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
                 if(touchable != null)
@@ -31,7 +30,7 @@ public class TouchManager : MonoBehaviour
                 {
                     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                     RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
-
+                    
                     if (hit2D.collider != null)
                     {
                         if (hit2D.collider.GetComponent<ITouchable>() != null)
