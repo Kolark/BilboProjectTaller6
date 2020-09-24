@@ -30,7 +30,6 @@ public class TeleportManager : MonoBehaviour, ITouchable
 
     private void Start()
     {
-        AudioManager.instance.Play("Portal");
         IsTpActive(col2d.enabled);
     }
 
