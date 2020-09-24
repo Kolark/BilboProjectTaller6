@@ -18,7 +18,6 @@ public class ZoomOutCam : MonoBehaviour
         {
             DotweenCamera.Instance.SetCamera(_camera, noise);
             _camera.Priority = 11;
-            Debug.Log("Entro");
         }
         
 
