@@ -1,0 +1,1652 @@
+fileFormatVersion: 2
+guid: fcdc9921385ce874bb2abaa52c3aea19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7002208364381583776
+    second: MoveTutorialV2_0
+  - first:
+      213: 2429167631581236107
+    second: MoveTutorialV2_1
+  - first:
+      213: -6991555013574821003
+    second: MoveTutorialV2_2
+  - first:
+      213: -9072734031169771418
+    second: MoveTutorialV2_3
+  - first:
+      213: 2931480207548360680
+    second: MoveTutorialV2_4
+  - first:
+      213: 3320548202794710283
+    second: MoveTutorialV2_5
+  - first:
+      213: 8482062825588027569
+    second: MoveTutorialV2_6
+  - first:
+      213: 3908782019081793579
+    second: MoveTutorialV2_7
+  - first:
+      213: 9056137575868853333
+    second: MoveTutorialV2_8
+  - first:
+      213: -2645561721563587302
+    second: MoveTutorialV2_9
+  - first:
+      213: 6438764772153172021
+    second: MoveTutorialV2_10
+  - first:
+      213: -3315442324333914879
+    second: MoveTutorialV2_11
+  - first:
+      213: -5314888861881015804
+    second: MoveTutorialV2_12
+  - first:
+      213: -6174645688214842366
+    second: MoveTutorialV2_13
+  - first:
+      213: 6932588843210544479
+    second: MoveTutorialV2_14
+  - first:
+      213: 7321949175307532111
+    second: MoveTutorialV2_15
+  - first:
+      213: 1649308764268971244
+    second: MoveTutorialV2_16
+  - first:
+      213: 6012319829352859152
+    second: MoveTutorialV2_17
+  - first:
+      213: 6341011482961274902
+    second: MoveTutorialV2_18
+  - first:
+      213: -6979475780926714784
+    second: MoveTutorialV2_19
+  - first:
+      213: -7025318427821069978
+    second: MoveTutorialV2_20
+  - first:
+      213: -6960798054711988921
+    second: MoveTutorialV2_21
+  - first:
+      213: 8554571444646417419
+    second: MoveTutorialV2_22
+  - first:
+      213: -568213560768605793
+    second: MoveTutorialV2_23
+  - first:
+      213: 919022038527498295
+    second: MoveTutorialV2_24
+  - first:
+      213: -2322205527259059460
+    second: MoveTutorialV2_25
+  - first:
+      213: -3940913403529178130
+    second: MoveTutorialV2_26
+  - first:
+      213: 6242239531099210173
+    second: MoveTutorialV2_27
+  - first:
+      213: -4583950772764584456
+    second: MoveTutorialV2_28
+  - first:
+      213: 6682713916944850176
+    second: MoveTutorialV2_29
+  - first:
+      213: -915584461870225039
+    second: MoveTutorialV2_30
+  - first:
+      213: 4178862582022735516
+    second: MoveTutorialV2_31
+  - first:
+      213: 6470617087265689270
+    second: MoveTutorialV2_32
+  - first:
+      213: 5497492482158337132
+    second: MoveTutorialV2_33
+  - first:
+      213: -3335106269954170431
+    second: MoveTutorialV2_34
+  - first:
+      213: -8354004863937708181
+    second: MoveTutorialV2_35
+  - first:
+      213: 6266441455197267637
+    second: MoveTutorialV2_36
+  - first:
+      213: 8239326358922670605
+    second: MoveTutorialV2_37
+  - first:
+      213: 3724603757142940799
+    second: MoveTutorialV2_38
+  - first:
+      213: 4747916686210625070
+    second: MoveTutorialV2_39
+  - first:
+      213: 1021912523073401153
+    second: MoveTutorialV2_40
+  - first:
+      213: 210767072759306182
+    second: MoveTutorialV2_41
+  - first:
+      213: -4756556190106606216
+    second: MoveTutorialV2_42
+  - first:
+      213: 2625053488808636124
+    second: MoveTutorialV2_43
+  - first:
+      213: 8542999375383082485
+    second: MoveTutorialV2_44
+  - first:
+      213: 4632287574554752145
+    second: MoveTutorialV2_45
+  - first:
+      213: -2313359768504970277
+    second: MoveTutorialV2_46
+  - first:
+      213: -9207749242068419571
+    second: MoveTutorialV2_47
+  - first:
+      213: -3810570137932865386
+    second: MoveTutorialV2_48
+  - first:
+      213: 8000868528403045232
+    second: MoveTutorialV2_49
+  - first:
+      213: 8176144317692965156
+    second: MoveTutorialV2_50
+  - first:
+      213: 2287781150523706530
+    second: MoveTutorialV2_51
+  - first:
+      213: -8553102051228562897
+    second: MoveTutorialV2_52
+  - first:
+      213: -9170391585859405581
+    second: MoveTutorialV2_53
+  - first:
+      213: -2503042107683646995
+    second: MoveTutorialV2_54
+  - first:
+      213: 850242107919003805
+    second: MoveTutorialV2_55
+  - first:
+      213: 1208449680194044258
+    second: MoveTutorialV2_56
+  - first:
+      213: 4644592547033239293
+    second: MoveTutorialV2_57
+  - first:
+      213: -7657093418057167814
+    second: MoveTutorialV2_58
+  - first:
+      213: 7268520019707248003
+    second: MoveTutorialV2_59
+  - first:
+      213: -3405973096664934597
+    second: MoveTutorialV2_60
+  - first:
+      213: -3469437560647632459
+    second: MoveTutorialV2_61
+  - first:
+      213: -4435002757355867489
+    second: MoveTutorialV2_62
+  - first:
+      213: -6350333469217583008
+    second: MoveTutorialV2_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MoveTutorialV2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06644c5879823de90800000000000000
+      internalID: -7002208364381583776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bc644371326b120800000000000000
+      internalID: 2429167631581236107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b754c02c109fe90800000000000000
+      internalID: -6991555013574821003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6682782d77c271280800000000000000
+      internalID: -9072734031169771418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7220597b5bea820800000000000000
+      internalID: 2931480207548360680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05f3275ff4f41e20800000000000000
+      internalID: 3320548202794710283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_6
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b078b1333756b570800000000000000
+      internalID: 8482062825588027569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_7
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20fdc76988ce3630800000000000000
+      internalID: 3908782019081793579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_8
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ceabec42dddad70800000000000000
+      internalID: 9056137575868853333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_9
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dd4da81a3194bd0800000000000000
+      internalID: -2645561721563587302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5302d7c32761b5950800000000000000
+      internalID: 6438764772153172021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10518c0a5ce2df1d0800000000000000
+      internalID: -3315442324333914879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_12
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 402e6e65db8bd36b0800000000000000
+      internalID: -5314888861881015804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2049e0416704f4aa0800000000000000
+      internalID: -6174645688214842366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_14
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55966d82d0853060800000000000000
+      internalID: 6932588843210544479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f477ba94bf9cc9560800000000000000
+      internalID: 7321949175307532111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4c03b259583e610800000000000000
+      internalID: 1649308764268971244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_17
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0164d98b70d007350800000000000000
+      internalID: 6012319829352859152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_18
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618649ef85ccff750800000000000000
+      internalID: 6341011482961274902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_19
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ccb6f81cbe32f90800000000000000
+      internalID: -6979475780926714784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66928b39c1e018e90800000000000000
+      internalID: -7025318427821069978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d69a39c07466f90800000000000000
+      internalID: -6960798054711988921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_22
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0499d3a761f7b670800000000000000
+      internalID: 8554571444646417419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_23
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91d3d9e6cc4d18f0800000000000000
+      internalID: -568213560768605793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_24
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738df23cca501cc00800000000000000
+      internalID: 919022038527498295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa6644606ed5cfd0800000000000000
+      internalID: -2322205527259059460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_26
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3511ca3201f49c0800000000000000
+      internalID: -3940913403529178130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_27
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1c11ed7c3e0a650800000000000000
+      internalID: 6242239531099210173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_28
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f55d791f098260c0800000000000000
+      internalID: -4583950772764584456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_29
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d9e03a6e4cdbc50800000000000000
+      internalID: 6682713916944850176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179ab5c68c03b43f0800000000000000
+      internalID: -915584461870225039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9603a6b06d4ef930800000000000000
+      internalID: 4178862582022735516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be4b0445ff3cc950800000000000000
+      internalID: 6470617087265689270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_33
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c9d6a19440b4c40800000000000000
+      internalID: 5497492482158337132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_34
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c12433848257b1d0800000000000000
+      internalID: -3335106269954170431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f7b1176dc901c80800000000000000
+      internalID: -8354004863937708181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_36
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6a0de6d4fd6f650800000000000000
+      internalID: 6266441455197267637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_37
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02391c6ba7f75270800000000000000
+      internalID: 8239326358922670605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_38
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c1791226370b330800000000000000
+      internalID: 3724603757142940799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_39
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2eebb0121df3e140800000000000000
+      internalID: 4747916686210625070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141305186009e2e00800000000000000
+      internalID: 1021912523073401153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_41
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7da26398bcce200800000000000000
+      internalID: 210767072759306182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_42
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875a28ea8515dfdb0800000000000000
+      internalID: -4756556190106606216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_43
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdea6dc6d301e6420800000000000000
+      internalID: 2625053488808636124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_44
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5b71e4ba4de8670800000000000000
+      internalID: 8542999375383082485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194bac29101394040800000000000000
+      internalID: 4632287574554752145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_46
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3d4981c8b45efd0800000000000000
+      internalID: -2313359768504970277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_47
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cb3ad59d0873080800000000000000
+      internalID: -9207749242068419571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_48
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690ecc816a22e1bc0800000000000000
+      internalID: -3810570137932865386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_49
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bd012498bc80f60800000000000000
+      internalID: 8000868528403045232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421fa6810ff777170800000000000000
+      internalID: 8176144317692965156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_51
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acccc0d5d4dfbf10800000000000000
+      internalID: 2287781150523706530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_52
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a4bdc20074d4980800000000000000
+      internalID: -8553102051228562897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_53
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f87e9180793cb080800000000000000
+      internalID: -9170391585859405581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_54
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1dba9f678634dd0800000000000000
+      internalID: -2503042107683646995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90779f31baaccb00800000000000000
+      internalID: 850242107919003805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_56
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26186ecd49645c010800000000000000
+      internalID: 1208449680194044258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_57
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfec75c3058e47040800000000000000
+      internalID: 4644592547033239293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_58
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c88b4fa1a8cb590800000000000000
+      internalID: -7657093418057167814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_59
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d37799278fed460800000000000000
+      internalID: 7268520019707248003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37dfb2a38d8bb0d0800000000000000
+      internalID: -3405973096664934597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_61
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b93333abe41adfc0800000000000000
+      internalID: -3469437560647632459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_62
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92fce56d74b372c0800000000000000
+      internalID: -4435002757355867489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MoveTutorialV2_63
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0601302fa551fd7a0800000000000000
+      internalID: -6350333469217583008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
