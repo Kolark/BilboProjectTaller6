@@ -402,6 +402,7 @@ MonoBehaviour:
   pButtons: {fileID: 0}
   pPauseButton: {fileID: 0}
   shopPanel: {fileID: 0}
+  LoadCircle: {fileID: 0}
   leftArrow: {fileID: 573052631}
   rightArrow: {fileID: 573052632}
   jump: {fileID: 573052633}
@@ -7795,6 +7796,7 @@ MonoBehaviour:
   pButtons: {fileID: 3616479869546636576}
   pPauseButton: {fileID: 8971054189812677470}
   shopPanel: {fileID: 5482312446231490378}
+  LoadCircle: {fileID: 0}
   leftArrow: {fileID: 3616479868907664613}
   rightArrow: {fileID: 3616479868907664612}
   jump: {fileID: 3616479868907664611}
@@ -9782,7 +9784,7 @@ GameObject:
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &8537121502439885201
 SpriteRenderer:
   m_ObjectHideFlags: 0

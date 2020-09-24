@@ -72934,9 +72934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
-  SprDefault: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   TimeToExist: 1
   order: 8
   shouldChangeLayers: 0
@@ -73615,12 +73612,12 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 207.38
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.62
+      value: 12.85
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -73788,7 +73785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 0}
+  m_BoundingShape2D: {fileID: 1249676872}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &908633893
@@ -73834,7 +73831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 214.74162, y: -15.25806, z: -9.268555}
+  m_LocalPosition: {x: 6.0616207, y: 5.2119403, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -77043,9 +77040,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
-  SprDefault: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   TimeToExist: 2
   order: 5
   shouldChangeLayers: 0
@@ -77436,7 +77430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 207.38, y: -7.6200004, z: -10}
+  m_LocalPosition: {x: 7.193512, y: 16.996721, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78241,9 +78235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
-  SprDefault: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   TimeToExist: 1
   order: 5
   shouldChangeLayers: 0
@@ -78422,9 +78413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
-  SprDefault: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   TimeToExist: 1
   order: 5
   shouldChangeLayers: 0
@@ -83643,9 +83631,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
-  SprDefault: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   TimeToExist: 0
   order: 5
   shouldChangeLayers: 0
@@ -83753,9 +83738,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 0}
-  inside2dv2: {fileID: 0}
-  SprDefault: {fileID: 0}
   TimeToExist: 1
   order: 5
   shouldChangeLayers: 0
