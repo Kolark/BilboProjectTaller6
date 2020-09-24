@@ -1,0 +1,3236 @@
+fileFormatVersion: 2
+guid: 0b7262861d74f10499db1be1c6686e9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9097812035748221961
+    second: SwitchesTutorialV2_0
+  - first:
+      213: 7968866122504711943
+    second: SwitchesTutorialV2_1
+  - first:
+      213: -934323601380386663
+    second: SwitchesTutorialV2_2
+  - first:
+      213: 3772165199741396312
+    second: SwitchesTutorialV2_3
+  - first:
+      213: -7821624376490316135
+    second: SwitchesTutorialV2_4
+  - first:
+      213: -6016542476045945669
+    second: SwitchesTutorialV2_5
+  - first:
+      213: -3295021825817919081
+    second: SwitchesTutorialV2_6
+  - first:
+      213: -2997522602067409487
+    second: SwitchesTutorialV2_7
+  - first:
+      213: 1511185155086478928
+    second: SwitchesTutorialV2_8
+  - first:
+      213: 8336893461491250585
+    second: SwitchesTutorialV2_9
+  - first:
+      213: 7462348924988321258
+    second: SwitchesTutorialV2_10
+  - first:
+      213: 962346985673480497
+    second: SwitchesTutorialV2_11
+  - first:
+      213: 7621155703505884940
+    second: SwitchesTutorialV2_12
+  - first:
+      213: 1214211093929871528
+    second: SwitchesTutorialV2_13
+  - first:
+      213: -2349613788623514241
+    second: SwitchesTutorialV2_14
+  - first:
+      213: -4471712353202007697
+    second: SwitchesTutorialV2_15
+  - first:
+      213: 2063819013769567778
+    second: SwitchesTutorialV2_16
+  - first:
+      213: -1984626668489056394
+    second: SwitchesTutorialV2_17
+  - first:
+      213: -8239812775753085453
+    second: SwitchesTutorialV2_18
+  - first:
+      213: 2556508400238645046
+    second: SwitchesTutorialV2_19
+  - first:
+      213: 5630981349491363672
+    second: SwitchesTutorialV2_20
+  - first:
+      213: -4751326907554342090
+    second: SwitchesTutorialV2_21
+  - first:
+      213: -3521696838503079488
+    second: SwitchesTutorialV2_22
+  - first:
+      213: 135021545758424252
+    second: SwitchesTutorialV2_23
+  - first:
+      213: -7527087755186106882
+    second: SwitchesTutorialV2_24
+  - first:
+      213: -6453124265621987130
+    second: SwitchesTutorialV2_25
+  - first:
+      213: -8933772428696637400
+    second: SwitchesTutorialV2_26
+  - first:
+      213: -3022965355062401422
+    second: SwitchesTutorialV2_27
+  - first:
+      213: -8423083380406154138
+    second: SwitchesTutorialV2_28
+  - first:
+      213: 6933226643154912543
+    second: SwitchesTutorialV2_29
+  - first:
+      213: 1232096193889983356
+    second: SwitchesTutorialV2_30
+  - first:
+      213: 6974617702143654993
+    second: SwitchesTutorialV2_31
+  - first:
+      213: -6300387295326300844
+    second: SwitchesTutorialV2_32
+  - first:
+      213: -8762692732537044183
+    second: SwitchesTutorialV2_33
+  - first:
+      213: -4237835218144713533
+    second: SwitchesTutorialV2_34
+  - first:
+      213: 8681242917219525272
+    second: SwitchesTutorialV2_35
+  - first:
+      213: 6746535473394471225
+    second: SwitchesTutorialV2_36
+  - first:
+      213: -5377142391650974045
+    second: SwitchesTutorialV2_37
+  - first:
+      213: 3037734651796837903
+    second: SwitchesTutorialV2_38
+  - first:
+      213: -4127020291290000099
+    second: SwitchesTutorialV2_39
+  - first:
+      213: -4037265914542776930
+    second: SwitchesTutorialV2_40
+  - first:
+      213: -675300533003638357
+    second: SwitchesTutorialV2_41
+  - first:
+      213: -7042293035999905776
+    second: SwitchesTutorialV2_42
+  - first:
+      213: 2171427504335765967
+    second: SwitchesTutorialV2_43
+  - first:
+      213: -5799767865430746523
+    second: SwitchesTutorialV2_44
+  - first:
+      213: -7986419152922557521
+    second: SwitchesTutorialV2_45
+  - first:
+      213: 5070859092053857629
+    second: SwitchesTutorialV2_46
+  - first:
+      213: 2783784495759765917
+    second: SwitchesTutorialV2_47
+  - first:
+      213: 8717036188953845682
+    second: SwitchesTutorialV2_48
+  - first:
+      213: -868360457079079426
+    second: SwitchesTutorialV2_49
+  - first:
+      213: -9017725875280847168
+    second: SwitchesTutorialV2_50
+  - first:
+      213: -5236052687188743386
+    second: SwitchesTutorialV2_51
+  - first:
+      213: -594868561085357526
+    second: SwitchesTutorialV2_52
+  - first:
+      213: -6230037519781452667
+    second: SwitchesTutorialV2_53
+  - first:
+      213: 4883719415221172042
+    second: SwitchesTutorialV2_54
+  - first:
+      213: 8913587046034290419
+    second: SwitchesTutorialV2_55
+  - first:
+      213: -7003171060837271435
+    second: SwitchesTutorialV2_56
+  - first:
+      213: 3753894597532888095
+    second: SwitchesTutorialV2_57
+  - first:
+      213: -4323626040429460907
+    second: SwitchesTutorialV2_58
+  - first:
+      213: -3104382321063751636
+    second: SwitchesTutorialV2_59
+  - first:
+      213: -1896647328578310206
+    second: SwitchesTutorialV2_60
+  - first:
+      213: 2553415919063558540
+    second: SwitchesTutorialV2_61
+  - first:
+      213: 5971683579468255474
+    second: SwitchesTutorialV2_62
+  - first:
+      213: 185476976344849848
+    second: SwitchesTutorialV2_63
+  - first:
+      213: -2118603043038122864
+    second: SwitchesTutorialV2_64
+  - first:
+      213: 2954081687151305951
+    second: SwitchesTutorialV2_65
+  - first:
+      213: 3641263579982476081
+    second: SwitchesTutorialV2_66
+  - first:
+      213: -6650159213763855612
+    second: SwitchesTutorialV2_67
+  - first:
+      213: -5545883081937433439
+    second: SwitchesTutorialV2_68
+  - first:
+      213: 738327320351745975
+    second: SwitchesTutorialV2_69
+  - first:
+      213: 1183357056943329426
+    second: SwitchesTutorialV2_70
+  - first:
+      213: 4585254350469084645
+    second: SwitchesTutorialV2_71
+  - first:
+      213: 796094352464473740
+    second: SwitchesTutorialV2_72
+  - first:
+      213: 2908830365058257308
+    second: SwitchesTutorialV2_73
+  - first:
+      213: 8558072192780343837
+    second: SwitchesTutorialV2_74
+  - first:
+      213: -5614097892523638830
+    second: SwitchesTutorialV2_75
+  - first:
+      213: 2842664792563582214
+    second: SwitchesTutorialV2_76
+  - first:
+      213: -8675156957606851396
+    second: SwitchesTutorialV2_77
+  - first:
+      213: -1468650809660122138
+    second: SwitchesTutorialV2_78
+  - first:
+      213: -1012099576921331366
+    second: SwitchesTutorialV2_79
+  - first:
+      213: 2040585629587069214
+    second: SwitchesTutorialV2_80
+  - first:
+      213: 4076688121477298187
+    second: SwitchesTutorialV2_81
+  - first:
+      213: 1169622001386070921
+    second: SwitchesTutorialV2_82
+  - first:
+      213: -5901333399345917658
+    second: SwitchesTutorialV2_83
+  - first:
+      213: 2537128312176168877
+    second: SwitchesTutorialV2_84
+  - first:
+      213: -7521736017720497697
+    second: SwitchesTutorialV2_85
+  - first:
+      213: -1983895233952705242
+    second: SwitchesTutorialV2_86
+  - first:
+      213: -7643184892983365205
+    second: SwitchesTutorialV2_87
+  - first:
+      213: 9007791627266082824
+    second: SwitchesTutorialV2_88
+  - first:
+      213: -5450900703776971524
+    second: SwitchesTutorialV2_89
+  - first:
+      213: -5044204098826102520
+    second: SwitchesTutorialV2_90
+  - first:
+      213: -7807207918659689623
+    second: SwitchesTutorialV2_91
+  - first:
+      213: 7766378189825472412
+    second: SwitchesTutorialV2_92
+  - first:
+      213: -5541363653255325801
+    second: SwitchesTutorialV2_93
+  - first:
+      213: -8720220593605310149
+    second: SwitchesTutorialV2_94
+  - first:
+      213: -176327173428867634
+    second: SwitchesTutorialV2_95
+  - first:
+      213: 6093862603366368205
+    second: SwitchesTutorialV2_96
+  - first:
+      213: 7539792592513239692
+    second: SwitchesTutorialV2_97
+  - first:
+      213: 5330151003470810132
+    second: SwitchesTutorialV2_98
+  - first:
+      213: -101043711743570455
+    second: SwitchesTutorialV2_99
+  - first:
+      213: -8995686672720990262
+    second: SwitchesTutorialV2_100
+  - first:
+      213: 4751124329906904944
+    second: SwitchesTutorialV2_101
+  - first:
+      213: -7681363830922041405
+    second: SwitchesTutorialV2_102
+  - first:
+      213: -1653132469722470812
+    second: SwitchesTutorialV2_103
+  - first:
+      213: -8445252938196396445
+    second: SwitchesTutorialV2_104
+  - first:
+      213: 8291568941429451234
+    second: SwitchesTutorialV2_105
+  - first:
+      213: -4750623445138671488
+    second: SwitchesTutorialV2_106
+  - first:
+      213: -176705248241651128
+    second: SwitchesTutorialV2_107
+  - first:
+      213: -4241501066522316529
+    second: SwitchesTutorialV2_108
+  - first:
+      213: -1107651708173201008
+    second: SwitchesTutorialV2_109
+  - first:
+      213: -7173541200086748356
+    second: SwitchesTutorialV2_110
+  - first:
+      213: -4961623098985078727
+    second: SwitchesTutorialV2_111
+  - first:
+      213: 2901876958419914216
+    second: SwitchesTutorialV2_112
+  - first:
+      213: -1628259227833955239
+    second: SwitchesTutorialV2_113
+  - first:
+      213: -3821303681802552764
+    second: SwitchesTutorialV2_114
+  - first:
+      213: -410705358542079560
+    second: SwitchesTutorialV2_115
+  - first:
+      213: -5383561713406304890
+    second: SwitchesTutorialV2_116
+  - first:
+      213: -2413434955306458062
+    second: SwitchesTutorialV2_117
+  - first:
+      213: -4194184548497902330
+    second: SwitchesTutorialV2_118
+  - first:
+      213: 4862046209349234797
+    second: SwitchesTutorialV2_119
+  - first:
+      213: 6809935509680471747
+    second: SwitchesTutorialV2_120
+  - first:
+      213: -8760796227343263395
+    second: SwitchesTutorialV2_121
+  - first:
+      213: -1188087648413168880
+    second: SwitchesTutorialV2_122
+  - first:
+      213: -6257490318632017776
+    second: SwitchesTutorialV2_123
+  - first:
+      213: 3612735935743987704
+    second: SwitchesTutorialV2_124
+  - first:
+      213: 255373069885836208
+    second: SwitchesTutorialV2_125
+  - first:
+      213: -2777570443174958781
+    second: SwitchesTutorialV2_126
+  - first:
+      213: 8058729641325104098
+    second: SwitchesTutorialV2_127
+  - first:
+      213: -3968453166395378724
+    second: SwitchesTutorialV2_128
+  - first:
+      213: -3767591582112268500
+    second: SwitchesTutorialV2_129
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904db0028dbe14e70800000000000000
+      internalID: 9097812035748221961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fa98e7489179e60800000000000000
+      internalID: 7968866122504711943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998557282ad9803f0800000000000000
+      internalID: -934323601380386663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8552dac634c695430800000000000000
+      internalID: 3772165199741396312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e22c00212047390800000000000000
+      internalID: -7821624376490316135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb47b3bbe72f08ca0800000000000000
+      internalID: -6016542476045945669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_6
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791c6f07b1bb542d0800000000000000
+      internalID: -3295021825817919081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b541913319a666d0800000000000000
+      internalID: -2997522602067409487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_8
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1680
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ee5c654eec8f410800000000000000
+      internalID: 1511185155086478928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9957676be6892b370800000000000000
+      internalID: 8336893461491250585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_10
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed62ff5fc69f8760800000000000000
+      internalID: 7462348924988321258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_11
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1395cb71c71fa5d00800000000000000
+      internalID: 962346985673480497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_12
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c071965dbb8c3c960800000000000000
+      internalID: 7621155703505884940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_13
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a847088e8eb9d010800000000000000
+      internalID: 1214211093929871528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_14
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f755cb145be746fd0800000000000000
+      internalID: -2349613788623514241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_15
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f611ba19e4941f1c0800000000000000
+      internalID: -4471712353202007697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_16
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e9e6c557824ac10800000000000000
+      internalID: 2063819013769567778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_17
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1560
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f51fc5f803574e0800000000000000
+      internalID: -1984626668489056394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd0385dfed46ad80800000000000000
+      internalID: -8239812775753085453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_19
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fc68558da8a7320800000000000000
+      internalID: 2556508400238645046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_20
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f484104b3452e40800000000000000
+      internalID: 5630981349491363672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_21
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bd777e955ef0eb0800000000000000
+      internalID: -4751326907554342090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_22
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c16866526b602fc0800000000000000
+      internalID: -3521696838503079488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_23
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc74f76161bfd100800000000000000
+      internalID: 135021545758424252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_24
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd80fe11996a8790800000000000000
+      internalID: -7527087755186106882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_25
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0e528aba5e176a0800000000000000
+      internalID: -6453124265621987130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_26
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1440
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820bb5b2f4dd40480800000000000000
+      internalID: -8933772428696637400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2766133a6054c06d0800000000000000
+      internalID: -3022965355062401422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_28
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c056dfa423b1b80800000000000000
+      internalID: -8423083380406154138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_29
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15c58ce5e4c73060800000000000000
+      internalID: 6933226643154912543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_30
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b5cedd5f8491110800000000000000
+      internalID: 1232096193889983356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_31
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c7c64d8d1dac060800000000000000
+      internalID: 6974617702143654993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_32
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45511b2c2278098a0800000000000000
+      internalID: -6300387295326300844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_33
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9238b31f269a46680800000000000000
+      internalID: -8762692732537044183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_34
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c428d5725f2035c0800000000000000
+      internalID: -4237835218144713533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_35
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892eeb12078f97870800000000000000
+      internalID: 8681242917219525272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931df34b44280ad50800000000000000
+      internalID: 6746535473394471225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_37
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a603feeb7d8065b0800000000000000
+      internalID: -5377142391650974045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_38
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06de3a3293382a20800000000000000
+      internalID: 3037734651796837903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_39
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1594d439e0e9b6c0800000000000000
+      internalID: -4127020291290000099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_40
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d92e38a00c8f7c0800000000000000
+      internalID: -4037265914542776930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_41
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9afad3eb9d0a6f0800000000000000
+      internalID: -675300533003638357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_42
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018b401abcfb44e90800000000000000
+      internalID: -7042293035999905776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_43
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1427b7fc5722e10800000000000000
+      internalID: 2171427504335765967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_44
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a5649dad5138fa0800000000000000
+      internalID: -5799767865430746523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3cca2281a8a2190800000000000000
+      internalID: -7986419152922557521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_46
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d551ee74a7f4f5640800000000000000
+      internalID: 5070859092053857629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_47
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d913001ff3df1a620800000000000000
+      internalID: 2783784495759765917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_48
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf91d0aa3229f870800000000000000
+      internalID: 8717036188953845682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_49
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd3ecad3c6f2f3f0800000000000000
+      internalID: -868360457079079426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_50
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce590a281a9ad280800000000000000
+      internalID: -9017725875280847168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_51
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ba2e2a2ddc557b0800000000000000
+      internalID: -5236052687188743386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_52
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22a578023a9eb7f0800000000000000
+      internalID: -594868561085357526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_53
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584221842e57a89a0800000000000000
+      internalID: -6230037519781452667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47bfeedee476c340800000000000000
+      internalID: 4883719415221172042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_55
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6b561313c63bb70800000000000000
+      internalID: 8913587046034290419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_56
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578bf79460dbfce90800000000000000
+      internalID: -7003171060837271435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_57
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ca43a5f33881430800000000000000
+      internalID: 3753894597532888095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_58
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552c29616056ff3c0800000000000000
+      internalID: -4323626040429460907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_59
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c201ef90ab40be4d0800000000000000
+      internalID: -3104382321063751636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_60
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf65e3bd41cda5e0800000000000000
+      internalID: -1896647328578310206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_61
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c896c93ff3e8f6320800000000000000
+      internalID: 2553415919063558540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_62
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f01d31839eafd250800000000000000
+      internalID: 5971683579468255474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd5c09c352f29200800000000000000
+      internalID: 185476976344849848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_64
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ca6a7d1c53992e0800000000000000
+      internalID: -2118603043038122864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_65
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4e320a4a10ff820800000000000000
+      internalID: 2954081687151305951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_66
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1333c6a0fed588230800000000000000
+      internalID: 3641263579982476081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_67
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b70dbdd63e5b3a0800000000000000
+      internalID: -6650159213763855612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_68
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac454768b01903b0800000000000000
+      internalID: -5545883081937433439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_69
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7288939c01f3a00800000000000000
+      internalID: 738327320351745975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_70
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2901f8d39f02c6010800000000000000
+      internalID: 1183357056943329426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_71
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5368cb98812af30800000000000000
+      internalID: 4585254350469084645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ee65e789b4c0b00800000000000000
+      internalID: 796094352464473740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_73
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91da2d2ecd3e5820800000000000000
+      internalID: 2908830365058257308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_74
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a12d4115164c670800000000000000
+      internalID: 8558072192780343837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_75
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dffbd526b7b612b0800000000000000
+      internalID: -5614097892523638830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_76
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6050348519c237720800000000000000
+      internalID: 2842664792563582214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_77
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcc513c5b6ab9780800000000000000
+      internalID: -8675156957606851396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_78
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb5e1faedd4e9be0800000000000000
+      internalID: -1468650809660122138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_79
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59e7401ccc44f1f0800000000000000
+      internalID: -1012099576921331366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_80
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19dd4191dd915c10800000000000000
+      internalID: 2040585629587069214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0875bc4f3e439830800000000000000
+      internalID: 4076688121477298187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_82
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983291a63055b3010800000000000000
+      internalID: 1169622001386070921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_83
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62196d63a804a1ea0800000000000000
+      internalID: -5901333399345917658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_84
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafc8d4f1c0b53320800000000000000
+      internalID: 2537128312176168877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_85
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9228991fc6d9790800000000000000
+      internalID: -7521736017720497697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_86
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62598acbbc9c774e0800000000000000
+      internalID: -1983895233952705242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_87
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1381dc5d3fde590800000000000000
+      internalID: -7643184892983365205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_88
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808cee972ca120d70800000000000000
+      internalID: 9007791627266082824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_89
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf46275a0b28a54b0800000000000000
+      internalID: -5450900703776971524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80996e2f8136ff9b0800000000000000
+      internalID: -5044204098826102520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_91
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9632ca823c937a390800000000000000
+      internalID: -7807207918659689623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_92
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9773ebc0d7b7cb60800000000000000
+      internalID: 7766378189825472412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_93
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7979474ed1f1913b0800000000000000
+      internalID: -5541363653255325801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_94
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b390c13629d8bf680800000000000000
+      internalID: -8720220593605310149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_95
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd0687be5f8d8df0800000000000000
+      internalID: -176327173428867634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_96
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc380b740cfb19450800000000000000
+      internalID: 6093862603366368205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_97
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a8fd45a69b2a860800000000000000
+      internalID: 7539792592513239692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_98
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cc119e81088f940800000000000000
+      internalID: 5330151003470810132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9edccbe8745099ef0800000000000000
+      internalID: -101043711743570455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_100
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfefb1e1a6e82380800000000000000
+      internalID: -8995686672720990262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_101
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f11dfc7626fe140800000000000000
+      internalID: 4751124329906904944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_102
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7ab5b1b40566590800000000000000
+      internalID: -7681363830922041405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_103
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466278707c4ee09e0800000000000000
+      internalID: -1653132469722470812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_104
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366da74923f6cca80800000000000000
+      internalID: -8445252938196396445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_105
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e960988502911370800000000000000
+      internalID: 8291568941429451234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_106
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088fdd28525621eb0800000000000000
+      internalID: -4750623445138671488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_107
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842fb9053873c8df0800000000000000
+      internalID: -176705248241651128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f013f7f90492325c0800000000000000
+      internalID: -4241501066522316529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_109
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0915b77d3a4d0a0f0800000000000000
+      internalID: -1107651708173201008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_110
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33333b1946727c90800000000000000
+      internalID: -7173541200086748356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_111
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9302f9b4416c42bb0800000000000000
+      internalID: -4961623098985078727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_112
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed828808b9854820800000000000000
+      internalID: 2901876958419914216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_113
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c84b2fbd24769e0800000000000000
+      internalID: -1628259227833955239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_114
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a344b2c8008fac0800000000000000
+      internalID: -3821303681802552764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_115
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9ffb407a1ec4af0800000000000000
+      internalID: -410705358542079560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_116
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d160e152fb945b0800000000000000
+      internalID: -5383561713406304890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234a270f1b1c18ed0800000000000000
+      internalID: -2413434955306458062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_118
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605b958ff534bc5c0800000000000000
+      internalID: -4194184548497902330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_119
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60bbc56445797340800000000000000
+      internalID: 4862046209349234797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_120
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ceb2d5f340c18e50800000000000000
+      internalID: 6809935509680471747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_121
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d595f977f366b6680800000000000000
+      internalID: -8760796227343263395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_122
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bcd4a1490138fe0800000000000000
+      internalID: -1188087648413168880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_123
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0902e7475bde829a0800000000000000
+      internalID: -6257490318632017776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_124
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff0f454134032230800000000000000
+      internalID: 3612735935743987704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_125
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb0fbb34744b8300800000000000000
+      internalID: 255373069885836208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349aeebe5661479d0800000000000000
+      internalID: -2777570443174958781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_127
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb081c69eb56df60800000000000000
+      internalID: 8058729641325104098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_128
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3ba35fed83de8c0800000000000000
+      internalID: -3968453166395378724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwitchesTutorialV2_129
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f3279ea63d6bbc0800000000000000
+      internalID: -3767591582112268500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
