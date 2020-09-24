@@ -12,7 +12,6 @@ public static class SaveSystem
 #endif
     public static void Init()
     {
-        Debug.Log(Application.persistentDataPath);
         if (!Directory.Exists(SAVE_FOLDER))
         {
             Debug.Log("NO HAY DIRECTORIO DUMMY");

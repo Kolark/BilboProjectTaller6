@@ -99,7 +99,6 @@ public class HUDChanger : MonoBehaviour
         rightArrow.sprite = shopItem.ArrowRight;
 
         jump.sprite = shopItem.JumpButton;
-        Debug.Log("b: " + switchImage.gameObject.activeSelf);
         if (switchImage != null && switchImage.gameObject.activeSelf == true)
         {
             switchImage.Move = shopItem.SwitchMove;

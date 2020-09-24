@@ -11,13 +11,13 @@ public class Seed : MonoBehaviour
     {
         
         SpawnObj Sobj = collision.gameObject.GetComponent<SpawnObj>();
-        Debug.Log(collision.gameObject.name);
         if (Sobj != null)
         {
             GameObject spawned = Sobj.Spawn(toSpawn);
             if(spawned != null)
             {
                 spawned.GetComponent<TimeStaticOBJ>().SetPivot(TimeChange.CurrentTime);
+                TouchManager.Instance.eraseReference();
                 Destroy(this.gameObject);
             }            
         }

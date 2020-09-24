@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class TouchManager : MonoBehaviour
 {
+
+    private static TouchManager instance;
+    public static TouchManager Instance { get => instance; }
+
     Touch xd;
     public LayerMask LM;
     //Testear con touch en el celular, si no cambiarlo por mouse.position
@@ -15,7 +19,16 @@ public class TouchManager : MonoBehaviour
     ITouchable touchable;
     
     Vector3 pos;
-    
+    private void Awake()
+    {
+        #region Singleton
+        if (instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        instance = this;
+        #endregion 
+    }
     private void Update()
     {
         if (!TimeChange.IsTimeTraveling){
@@ -40,7 +53,8 @@ public class TouchManager : MonoBehaviour
                     }
                 }
             }
-            else if (!Input.GetMouseButton(0)){//No esta tocando
+            else if (!Input.GetMouseButton(0)){
+            //No esta tocando
                 if (touchable != null){
                     touchable.OnTouchUp();
                     touchable = null;
@@ -51,33 +65,33 @@ public class TouchManager : MonoBehaviour
 
                 if (Input.touchCount > 0 && canInteract)//Esta tocando
                     {
-                        if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-                        {
-                           //--
-                             if(touchable != null)
-                                {
-                                    touchable.touch(POSinScreen());
-                                }
-                                else
-                                {
-                                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                                    RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
 
-                                    if (hit2D.collider != null)
-                                    {
-                                        if (hit2D.collider.GetComponent<ITouchable>() != null)
-                                        {
-                                            touchable = hit2D.collider.GetComponent<ITouchable>();
-                                        }
-                                    }
-                                }
-                           //--
-                        }
-                        else
+                //if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+                //{
+
+                //    //--
+                //    Debug.Log("Aaaa");
+
+                //}
+                if (touchable != null)
+                {
+                    touchable.touch(POSinScreen());
+                    
+                }
+                else
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
+
+                    if (hit2D.collider != null)
+                    {
+                        if (hit2D.collider.GetComponent<ITouchable>() != null)
                         {
-                    Debug.Log("No Haciendo");
+                            touchable = hit2D.collider.GetComponent<ITouchable>();
                         }
                     }
+                }
+            }
                     else if (Input.touchCount == 0)//No esta tocando
                     {
                         if (touchable != null)
@@ -103,6 +117,11 @@ public class TouchManager : MonoBehaviour
 
         pos.z = 0;
         return pos;
+    }
+
+    public void eraseReference()
+    {
+        touchable = null;
     }
 }
     //public bool isPointerOverUI()

@@ -18,7 +18,7 @@ public class Estalactita : MonoBehaviour
     {
         col2d.enabled = true;
         rb2d.bodyType = RigidbodyType2D.Dynamic;
-        rb2d.AddForce(-Vector2.up*10, ForceMode2D.Impulse);
+        rb2d.AddForce(-Vector2.up*45, ForceMode2D.Impulse);
 
     }
 
@@ -26,6 +26,8 @@ public class Estalactita : MonoBehaviour
     {
         if (collision.transform.CompareTag("Ground"))
         {
+            Debug.Log(collision.transform.name);
+            
             rb2d.bodyType = RigidbodyType2D.Static;
         };
     }
