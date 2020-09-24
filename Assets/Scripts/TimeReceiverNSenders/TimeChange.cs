@@ -83,6 +83,7 @@ public class TimeChange : MonoBehaviour
 
     public static void Swap()
     {
+        AudioManager.instance.Play("Swap");
         int tem = timetoGo;
         timetoGo = leftOutTime;
         leftOutTime = tem;

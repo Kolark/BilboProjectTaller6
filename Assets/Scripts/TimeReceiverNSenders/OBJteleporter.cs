@@ -16,6 +16,8 @@ public class OBJteleporter : MonoBehaviour
 
     bool growing = false; //Si esta creciendo o no
     bool locked = false; //Si crecio hasta un punto maximo
+    bool hasPlayed = false;
+
 
     float length = 0;
     bool hasPosition = false;
@@ -42,13 +44,17 @@ public class OBJteleporter : MonoBehaviour
     {  
         if (!growing)
         {
-            AudioManager.instance.StopPlaying("Portal");
             CloseAnim();
         }
     }
 
     void CloseAnim()
     {
+        if (hasPlayed)
+        {
+            hasPlayed = false;
+            AudioManager.instance.StopPlaying("Portal");
+        }
         xaxis2 += Time.deltaTime;
         transform.localScale = actualScale * scaleDown.Evaluate(xaxis2);
         xaxis1 = 0;
@@ -109,6 +115,11 @@ public class OBJteleporter : MonoBehaviour
 
         Swap(lx);
         growing = true;
+        if (!hasPlayed)
+        {
+            AudioManager.instance.Play("Portal");
+            hasPlayed = true;
+        }
 
         xaxis1 += Time.deltaTime;
         transform.localScale = Vector3.one * 9 * scaleUp.Evaluate(xaxis1);
