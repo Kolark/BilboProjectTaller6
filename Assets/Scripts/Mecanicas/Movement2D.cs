@@ -100,14 +100,20 @@ public class Movement2D : MonoBehaviour
         {
             AudioManager.instance.Play("BilboJump");
             animator.SetBool("IsJumping", true);
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            Invoke("AfterJump", .75f);
+            rb.velocity = new Vector2(rb.velocity.x, 15);
+            //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            Invoke("AfterJump", .25f);
         }
         jumpNumber++;
     }
     void AfterJump()
     {
-        rb.velocity = Vector2.zero;
+        if(rb.velocity.y > 0)
+        {
+            rb.velocity = rb.velocity*0.2f;
+            //rb.AddForce(-Vector2.up * 0.25f, ForceMode2D.Force);
+        }
+
     }
     void Flip()
     {

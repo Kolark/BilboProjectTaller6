@@ -35,6 +35,7 @@ public class TimeChangeManager : MonoBehaviour
         objs[TimeChange.CurrentTime].interactable = false;
     }
 
+    
     private void OnDestroy()
     {
         TimeChange.EndTimeChange -= MakeActiveAgain;

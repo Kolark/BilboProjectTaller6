@@ -79,14 +79,6 @@ public class OBJteleporter : MonoBehaviour
         growing = false; //Para que closeanim lo cierre
         if (locked)
         {
-            //Significa que va a hacer tp
-            //Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.05f, LM);
-            //if (objtotp != null)
-            //{
-            //    tObj = objtotp.transform.GetComponent<TimeOBJ>();
-            //    tObj.SetRenderOn();
-            //    Debug.Log(objtotp.name);
-            //}
 
             Collider2D[] objtotp = Physics2D.OverlapCircleAll(transform.position, 1.25f, LM);
             if (objtotp != null)

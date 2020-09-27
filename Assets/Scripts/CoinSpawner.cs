@@ -47,7 +47,7 @@ public class CoinSpawner : MonoBehaviour
         }
         levelCoinInfo = GameInfo.Instance.LevelCoins[index];
         SpawnCoins();
-        HUDChanger.Instance.UpdateCoinText(CurrentCoins, CoinsAmount);
+        HUDChanger.Instance.UpdateCoins();
 
     }
 
@@ -92,6 +92,21 @@ public class CoinSpawner : MonoBehaviour
     public void AddCoin()
     {
         currentCoins++;
-        HUDChanger.Instance.UpdateCoinText(CurrentCoins, CoinsAmount);
+        HUDChanger.Instance.UpdateCoins();
+    }
+
+    private void OnDrawGizmos()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+       
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            for (int u = 0; u < transform.GetChild(i).childCount; u++)
+            {
+                Gizmos.DrawSphere(transform.GetChild(i).GetChild(u).position,0.75f);
+                
+            }
+        }
     }
 }

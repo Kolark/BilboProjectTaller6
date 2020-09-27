@@ -54,7 +54,7 @@ public class _ShopTemplate : MonoBehaviour
         GameInfo.ItemEquiped = index;
         //GameInfo.Instance.GetShopItem();
         SaveNLoadHandler.saveGame();
-        HUDChanger.Instance.HUDupdate();
+        HUDChanger.Instance.UpdateHud();
     }
 
     public void UpdateButtonUi()

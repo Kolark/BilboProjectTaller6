@@ -9,32 +9,16 @@ public class HUDChanger : MonoBehaviour
     private static HUDChanger instance;
     public static HUDChanger Instance { get => instance; }
 
-    ///Buscar al jugador y darle en joystick.
-    ///Buscar al boton y darle el evento
-    ///
-    [Space]
-    [Header("Buttons")]
-    [SerializeField]
-    Joystick joystick;
-    [SerializeField]
-    LongButtonClick jumpButton;
-    [SerializeField]
-    TimeChangeManager timeChangeManager;
+
+    Ui_MainControls ui_MainControls;
 
     [Space]
     [Header("Panels")]
     [SerializeField]
     RectTransform pausePanel;
     [SerializeField]
-    RectTransform pControls;
-    [SerializeField]
-    RectTransform pButtons;
-    [SerializeField]
-    RectTransform pPauseButton;
-    [SerializeField]
     RectTransform shopPanel;
 
-    Button buttonPause;
     public static bool isPaused = false;
 
     RectTransform canvas;
@@ -51,88 +35,39 @@ public class HUDChanger : MonoBehaviour
             Destroy(this);
         }
         instance = this;
-        buttonPause = pPauseButton.GetComponent<Button>();
 
-        canvas = GetComponent<RectTransform>();
+        ui_MainControls = GetComponentInChildren<Ui_MainControls>();
+
+
+          canvas = GetComponent<RectTransform>();
 
         kAnchura = 3000;
 
         shopPanel.anchoredPosition = new Vector2(kAnchura, 0);
     }
-
-    private void Start()
+    public void __INIT(UiMainConfig config)
     {
-        if (Movement2D.Instance != null)
-        {
-            Movement2D.Instance.SetJoystick(joystick);
-            jumpButton.onClick.AddListener(() => Movement2D.Instance.Jump());
-            jumpButton.onHold.AddListener(() => Movement2D.Instance.Climb());
-        }
-        HUDupdate();
+        ui_MainControls.INIT(config);
         LoadCircle.rectTransform.localScale = Vector3.one * 25;
         EnterScene();
     }
 
-    [Space]
-    [Header("Imgs")]
-    [SerializeField]
-    Image leftArrow;
-    [SerializeField]
-    Image rightArrow;
-    [SerializeField]
-    Image jump;
-    [SerializeField]
-    SwitchImage switchImage;
 
-    [SerializeField]
-    Text monedas;
-
-    public void HUDupdate()
+    #region mainControlsMethods
+    public void UpdateCoins()
     {
-        SetEquipedHUD(GameInfo.Instance.ShopItemsList[GameInfo.ItemEquiped]);
+        ui_MainControls.UpdateCoinText();
+    }
+    public void UpdateHud()
+    {
+        ui_MainControls.HUDupdate();
+    }
+    public void UiAnimEnter(config config)
+    {
+        ui_MainControls.ControlsEnter(config);
     }
 
-
-    public void SetEquipedHUD(_ShopItem shopItem)
-    {
-        leftArrow.sprite = shopItem.ArrowLeft;
-        rightArrow.sprite = shopItem.ArrowRight;
-
-        jump.sprite = shopItem.JumpButton;
-        if (switchImage != null && switchImage.gameObject.activeSelf == true)
-        {
-            switchImage.Move = shopItem.SwitchMove;
-            switchImage.Teleport = shopItem.SwitchTeleport;
-            switchImage.UpdateSprites();
-        }
-
-    }
-
-    public void UpdateCoinText(int current, int amount)
-    {
-        monedas.text = current.ToString() + " / " + amount.ToString();
-    }
-
-    public void TimeButton(int time)
-    {
-        AudioManager.instance.Play("ButtonJump");
-        TimeChange.Instance.StartChangeTime(time);
-        if (TimeChange.IsTimeTraveling)
-        {
-            timeChangeManager.SetInteractableFalse();
-
-            if (Movement2D.Instance != null)
-            {
-                Movement2D.Instance.TimeTravelAnimation();
-            }
-        }
-        else
-        {
-            //CAMERA SHAKE
-            DotweenCamera.Instance.DoCameraShake();
-            TextDisplayer.Instance.DisplayText("Hay un obstaculo!");
-        }
-    }
+    #endregion
 
 
 
@@ -143,11 +78,7 @@ public class HUDChanger : MonoBehaviour
             isPaused = !isPaused;
             if (isPaused)
             {
-                buttonPause.interactable = false;
-                pButtons.DOAnchorPos(new Vector2(300, 0), 0.5f, false);
-                pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y + 300), 0.5f, false);
-                pControls.DOAnchorPos(new Vector2(0, -500), 0.5f, false).OnComplete(() =>
-                {
+                ui_MainControls.Hide_UI(() => {
                     pausePanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).OnComplete(() =>
                     {
                         Time.timeScale = 0;
@@ -156,16 +87,11 @@ public class HUDChanger : MonoBehaviour
             }
             else
             {
-                //mueve el panel de izq a derecha, out
                 Time.timeScale = 1;
-                buttonPause.interactable = true;
                 pausePanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).OnComplete(() =>
                 { pausePanel.anchoredPosition = new Vector2(-kAnchura, 0);
-                    pControls.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
-                    pButtons.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
-                    pPauseButton.DOAnchorPos(new Vector2(pPauseButton.anchoredPosition.x, pPauseButton.anchoredPosition.y - 300), 0.5f, false);
+                    ui_MainControls.Unhide_UI();
                 });
-                //Entran paneles
             }
         }
     }
