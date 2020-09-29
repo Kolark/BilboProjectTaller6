@@ -36,7 +36,8 @@ public class PuertaFinal : MonoBehaviour
                 }
                 
                 SaveNLoadHandler.saveGame();
-                SceneManager.LoadScene(sceneIndex);
+                HUDChanger.Instance.ExitScene(loadScene);
+                
             }
             else
             {
@@ -44,4 +45,10 @@ public class PuertaFinal : MonoBehaviour
             }
         }
     }
+
+    void loadScene()
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
 }

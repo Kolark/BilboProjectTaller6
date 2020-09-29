@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using System;
 public class HUDChanger : MonoBehaviour
 {
     private static HUDChanger instance;
@@ -126,9 +127,9 @@ public class HUDChanger : MonoBehaviour
         
 
     }
-    public void ExitScene()
+    public void ExitScene(Action toDoOnComplete)
     {
-        LoadCircle.rectTransform.DOScale(25f, .75f);
+        LoadCircle.rectTransform.DOScale(25f, .75f).OnComplete(()=> { toDoOnComplete();});
     //    DOTween.Sequence()
     //    .Append(DOTween.To(() => LoadCircle.color, x => LoadCircle.color = x, new Color(0, 0, 0, 0), 2f).SetEase(Ease.OutSine));
     }
