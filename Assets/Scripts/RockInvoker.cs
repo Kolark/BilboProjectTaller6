@@ -6,7 +6,7 @@ public class RockInvoker : MonoBehaviour
 {
     RockPool rockPool;
     [SerializeField] Transform SpawnArea;
-    WaitForSeconds second = new WaitForSeconds(1);
+    WaitForSeconds second = new WaitForSeconds(2);
     private void Awake()
     {
         rockPool = GetComponentInParent<RockPool>();

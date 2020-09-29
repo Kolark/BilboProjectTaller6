@@ -235,7 +235,7 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 1
-  length: 25
+  length: 40
   TimeDependant: 0
 --- !u!114 &8254231200997971578
 MonoBehaviour:
