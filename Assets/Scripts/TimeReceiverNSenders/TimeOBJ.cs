@@ -126,14 +126,14 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
     {
         if(TimeToExist == 0)
         {
-            Gizmos.color = Color.red - Color.black*0.25f;
+            Gizmos.color = Color.red - Color.black*0.65f;
         }
         else if(TimeToExist == 1)
         {
-            Gizmos.color = Color.blue - Color.black * 0.25f; ;
+            Gizmos.color = Color.blue - Color.black * 0.65f; ;
         }
         else{
-            Gizmos.color = Color.green - Color.black * 0.25f; ;
+            Gizmos.color = Color.green - Color.black * 0.65f; ;
         }
 
         
