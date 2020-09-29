@@ -11,7 +11,13 @@ public class SpikeHazard : MonoBehaviour
             ResetPlayer();
         }
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            ResetPlayer();
+        }
+    }
     void ResetPlayer()
     {
         Movement2D.Instance.transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;

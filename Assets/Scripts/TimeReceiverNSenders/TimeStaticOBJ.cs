@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeStaticOBJ : MonoBehaviour
+public class TimeStaticOBJ : MonoBehaviour,ICurrentState
 {
     
     /// <summary>
@@ -118,7 +118,13 @@ public class TimeStaticOBJ : MonoBehaviour
     {
         timePivot = _pivot;
     }
-   
+
+    public bool IsCurrent(int index)
+    {
+        return index == GETCurrent;
+    }
+
+    public int GETCurrent { get => TimeChange.CurrentTime - timePivot;}
 }
 
 
@@ -143,6 +149,11 @@ public struct ObjState
     public static ObjState CurrentTime { get {return new ObjState(TimeChange.layersIDS[0],GameInfo.Instance.Inside2d,true,true,false,0);} }
     public static ObjState TimeToGo    { get {return new ObjState(TimeChange.layersIDS[1], GameInfo.Instance.Inside2dv2, true,false,true,15); } }
     public static ObjState LeftOutTime { get {return new ObjState(TimeChange.layersIDS[2], GameInfo.Instance.SpriteDefault, false,false,true,0); } }
+}
+
+public interface ICurrentState
+{
+    bool IsCurrent(int index);
 }
 
 //void UpdateObjs()

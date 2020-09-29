@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Spike
   - Ladder
+  - EstalactitaDrill
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - Spawner
   - Timetogo
   - ZoomOutAreas
-  - 
+  - Spikes
   - 
   - 
   - 

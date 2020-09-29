@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-public class TimeOBJ : MonoBehaviour
+public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
 {
     /// <summary>
     /// Este script es para los objetos dinamicos que solo pertenecen a un tiempo.
@@ -126,17 +126,27 @@ public class TimeOBJ : MonoBehaviour
     {
         if(TimeToExist == 0)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.red - Color.black*0.25f;
         }
         else if(TimeToExist == 1)
         {
-            Gizmos.color = Color.blue;
+            Gizmos.color = Color.blue - Color.black * 0.25f; ;
         }
         else{
-            Gizmos.color = Color.green;
+            Gizmos.color = Color.green - Color.black * 0.25f; ;
         }
 
         
         Gizmos.DrawCube(transform.position, new Vector3(2f, 1.6f, 1));
+    }
+
+    public bool IsCurrent(int index)
+    {
+        return TimeToExist == TimeChange.CurrentTime;
+    }
+
+    public void ActivateDestroy()
+    {
+        Destroy(gameObject);
     }
 }
