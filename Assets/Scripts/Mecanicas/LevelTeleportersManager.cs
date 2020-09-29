@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Cinemachine;
 public class LevelTeleportersManager : MonoBehaviour
 {
     GameObject[] LevelTeleporters;
     public int[] Scenes;
     //List<RedButton> redButtons = new List<RedButton>();
     RedButton[]  redButtons;
-    
+    WaitForSeconds second = new WaitForSeconds(1f);
     [SerializeField]
     Text text;
-
+    [SerializeField]
+    CinemachineVirtualCamera cam;
     private void Awake()
     {
         LevelTeleporters = new GameObject[transform.childCount];
@@ -43,7 +45,16 @@ public class LevelTeleportersManager : MonoBehaviour
         //Propenso a tirar error si no hay mas de 1 nivel
         redButtons[GameInfo.LevelsUnlocked].SetActive();
         redButtons[GameInfo.LevelsUnlocked].ChangeColor(Color.red);
+        cam.Follow = LevelTeleporters[GameInfo.LevelsUnlocked].transform;
+        StartCoroutine(initcam());
+    }
 
+    IEnumerator initcam()
+    {
+        cam.Priority = 11;
+        
+        yield return second;
+        cam.Priority = 9;
     }
 
 
