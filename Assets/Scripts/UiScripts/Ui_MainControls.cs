@@ -55,19 +55,19 @@ public class Ui_MainControls : MonoBehaviour
     {
         if (!config.JumpButton)
         {
-            jumpButton.anchoredPosition -= Vector2.up * 300;
+            jumpButton.anchoredPosition -= Vector2.up * 500;
         }
         if (!config.Switch)
         {
-            Switch.anchoredPosition -= Vector2.up * 300;
+            Switch.anchoredPosition -= Vector2.up * 500;
         }
         if (!config.TimeJumpButtons)
         {
-            timeJumpButtons.anchoredPosition += Vector2.right * 300;
+            timeJumpButtons.anchoredPosition += Vector2.right * 500;
         }
         if (!config.Coins)
         {
-            coins.anchoredPosition += Vector2.up * 300;
+            coins.anchoredPosition += Vector2.up * 500;
         }
     }
 
@@ -76,13 +76,13 @@ public class Ui_MainControls : MonoBehaviour
         switch (config)
         {
             case config.JumpButton:
-                jumpButton.DOAnchorPos(jumpButton.anchoredPosition + Vector2.up*300, 0.5f, false);
+                jumpButton.DOAnchorPos(jumpButton.anchoredPosition + Vector2.up* 500, 0.5f, false);
                 break;
             case config.Switch:
-                Switch.DOAnchorPos(Switch.anchoredPosition + Vector2.up * 300, 0.5f, false);
+                Switch.DOAnchorPos(Switch.anchoredPosition + Vector2.up * 500, 0.5f, false);
                 break;
             case config.TimeJumpButtons:
-                timeJumpButtons.DOAnchorPos(timeJumpButtons.anchoredPosition - Vector2.right * 300, 0.5f, false);
+                timeJumpButtons.DOAnchorPos(timeJumpButtons.anchoredPosition - Vector2.right * 500, 0.5f, false);
                 break;
             default:
                 break;
