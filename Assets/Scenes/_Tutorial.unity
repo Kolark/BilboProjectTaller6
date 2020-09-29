@@ -1527,7 +1527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111.08, y: -3.45}
+  m_AnchoredPosition: {x: 136.42, y: -3.45}
   m_SizeDelta: {x: 24.615345, y: 4.7744713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410527258
@@ -1549,7 +1549,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Escanea el pasado y el futuro, encuentra m\xE1s cajas y traelas"
+  m_text: Ve al pasado y el futuro, encuentra las cajas y traelas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1618,7 +1618,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 410527258}
-    characterCount: 60
+    characterCount: 55
     spriteCount: 0
     spaceCount: 10
     wordCount: 11
@@ -58041,7 +58041,7 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 462.69
+      value: 287.7
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -58452,7 +58452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 470.05164, y: 0.26193953, z: -9.268555}
+  m_LocalPosition: {x: 295.06165, y: 0.26193953, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -60245,7 +60245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 462.69, y: 7.8999996, z: -10}
+  m_LocalPosition: {x: 287.70285, y: 11.584776, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -61389,9 +61389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b39eb4663509e43bceb64c6a58f958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: "Escanea el pasado y el futuro, encuentra m\xE1s cajas y traelas"
-  UpPos: 4.5
-  DownPos: 4.5
+  msg: Ve al pasado y el futuro, encuentra las cajas y traelas
+  UpPos: 14
+  DownPos: 14
   timingUp: 1
   timingDown: 1
   ShouldGoDown: 1
@@ -61408,7 +61408,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 112.087906, y: 0}
+  m_Offset: {x: 136.01846, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -61419,7 +61419,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.30127, y: 5}
+  m_Size: {x: 24.435394, y: 5}
   m_EdgeRadius: 0
 --- !u!1 &1677603334
 GameObject:
