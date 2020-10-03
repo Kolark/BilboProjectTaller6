@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-public class ScriptBasura : MonoBehaviour
+public class ScriptBasura : MonoBehaviour, ITouchable
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTouchUp()
     {
-        SceneManager.LoadScene(6);
+
+    }
+
+    public void touch(Vector3 pos)
+    {
+
     }
 }
 

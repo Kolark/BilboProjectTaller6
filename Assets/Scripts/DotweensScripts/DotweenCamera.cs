@@ -26,9 +26,10 @@ public class DotweenCamera : MonoBehaviour
         instance = this;
         Default_camera = transform.GetChild(0).GetComponent<CinemachineVirtualCamera>();
         Default_noise = Default_camera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-
+    }
+    private void Start()
+    {
         SetDefaultCamera();
-        
     }
     public void DoCameraShake()
     {
@@ -42,12 +43,15 @@ public class DotweenCamera : MonoBehaviour
     {
         _camera = Default_camera;
         noise = Default_noise;
+
+        AdjustUiBlockerScale.Instance.Adjust();//Solución pocha
     }
 
     public void SetCamera(CinemachineVirtualCamera cam, CinemachineBasicMultiChannelPerlin noise)
     {
         _camera = cam;
         this.noise = noise;
+        AdjustUiBlockerScale.Instance.Adjust();//Solución pocha
     }
 
 }
