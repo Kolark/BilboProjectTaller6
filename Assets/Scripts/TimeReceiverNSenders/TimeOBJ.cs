@@ -10,7 +10,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
 
     Collider2D col2d;
     Rigidbody2D rb2d;
-    SpriteRenderer spRend;
+    Renderer spRend;
     [Header("TimeStuff")]
     public int TimeToExist = 1;
     public int order = 1;
@@ -27,7 +27,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
     {
         col2d = GetComponent<Collider2D>();
         rb2d = GetComponent<Rigidbody2D>();
-        spRend = GetComponent<SpriteRenderer>();
+        spRend = GetComponent<Renderer>();
         if(TimeToExist == TimeChange.CurrentTime)
         {
             rb2d.bodyType = NormalType;
