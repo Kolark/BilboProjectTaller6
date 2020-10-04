@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 8827842805213055911}
   - component: {fileID: 8827842805213055910}
   - component: {fileID: 8827842805213055909}
+  - component: {fileID: 3690635325265175933}
   m_Layer: 0
-  m_Name: Stone
+  m_Name: StonePresent
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 12
-  m_Sprite: {fileID: 21300000, guid: 0f76f2fda7a637c47a8783184571332f, type: 3}
-  m_Color: {r: 0.7840517, g: 0.8490566, b: 0.25231397, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4aaeb1f108f31f24db2b3bee86e0467d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,3 +134,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ea87f03e80f7dd469c268cb9088e24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3690635325265175933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827842805213055908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeToExist: 1
+  order: 5
+  shouldChangeLayers: 0
+  layerToexist: 0
+  NormalType: 0

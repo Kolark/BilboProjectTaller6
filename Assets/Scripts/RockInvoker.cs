@@ -7,11 +7,15 @@ public class RockInvoker : MonoBehaviour
     RockPool rockPool;
     [SerializeField] Transform SpawnArea;
     WaitForSeconds second = new WaitForSeconds(2);
+    [SerializeField] int timeToExist;
+    [SerializeField] int amountToSpawn;
+    int spawned = 0;
+
     private void Awake()
     {
         rockPool = GetComponentInParent<RockPool>();
+        TimeChange.EndTimeChange += spawnRocks;
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,15 +28,35 @@ public class RockInvoker : MonoBehaviour
     }
     private void Start()
     {
-        StartCoroutine(spawnRoutine());
+        spawnRocks();
+    }
+
+    void spawnRocks()
+    {
+        if (timeToExist == TimeChange.CurrentTime)
+        {
+            StartCoroutine(spawnRoutine());
+        }
+        else
+        {
+            StopCoroutine(spawnRoutine());
+        }
+        
     }
     IEnumerator spawnRoutine()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = spawned; i < amountToSpawn; i++)
         {
-            Spawn();
-            yield return second;
+            if(timeToExist == TimeChange.CurrentTime)
+            {
+                Spawn();
+                
+                spawned++;
+                Debug.Log(spawned + "i : " + i);
+                yield return second;
+            }
         }
+
     }
 
     public void Spawn()

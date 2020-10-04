@@ -70,7 +70,6 @@ public class CoinSpawner : MonoBehaviour
                     //Should be instatiated
                     GameObject _coin = Instantiate(coinOBJ[i], coinsTime_Pos[c]);
                     _coin.GetComponent<Coin>().INIT(c);
-                    Debug.Log("spawned");
                 }
                 else
                 {
@@ -80,7 +79,7 @@ public class CoinSpawner : MonoBehaviour
                 c++;
             }
         }
-        Debug.Log("c: " + c);
+     
     }
     public void AddCoin(int _id)
     {

@@ -49,8 +49,6 @@ public class RayActivatedEvent : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, length, layer);
         if (hit.collider != null)
         {
-            
-            Debug.Log(hit.transform.tag);
             if (hit.transform.CompareTag(Tag))
             {
                 

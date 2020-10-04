@@ -103,3 +103,7 @@ public class TimeChange : MonoBehaviour
         Time.timeScale = 1;
     }
 }
+enum TimeState
+{
+    Past,Present,Future
+}
