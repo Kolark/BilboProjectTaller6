@@ -10,15 +10,12 @@ public class HUDChanger : MonoBehaviour
     private static HUDChanger instance;
     public static HUDChanger Instance { get => instance; }
 
-
     Ui_MainControls ui_MainControls;
 
     [Space]
     [Header("Panels")]
-    [SerializeField]
-    RectTransform pausePanel;
-    [SerializeField]
-    RectTransform shopPanel;
+    [SerializeField] RectTransform pausePanel;
+    [SerializeField] RectTransform shopPanel;
 
     public static bool isPaused = false;
 
@@ -46,19 +43,19 @@ public class HUDChanger : MonoBehaviour
 
         shopPanel.anchoredPosition = new Vector2(kAnchura, 0);
     }
+
     public void __INIT(UiMainConfig config)
     {
         ui_MainControls.INIT(config);
         LoadCircle.rectTransform.localScale = Vector3.one * 25;
         EnterScene();
     }
-
-
-    #region mainControlsMethods
     public void UpdateCoins()
     {
         ui_MainControls.UpdateCoinText();
     }
+    #region mainControlsMethods
+
     public void UpdateHud()
     {
         ui_MainControls.HUDupdate();
@@ -70,8 +67,18 @@ public class HUDChanger : MonoBehaviour
 
     #endregion
 
+    #region ShopMethods
+    public void ShopIn()
+    {
+        shopPanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).SetUpdate(true);
+    }
+    public void ShopOut()
+    {
+        shopPanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).SetUpdate(true);
+    }
+    #endregion
 
-
+    #region pausemenumethods
     public void DoPause_Unpause()
     {
         if (!TimeChange.IsTimeTraveling)
@@ -97,35 +104,24 @@ public class HUDChanger : MonoBehaviour
         }
     }
 
-    public void ShopIn()
-    {
-        shopPanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).SetUpdate(true);
-    }
-    public void ShopOut()
-    {
-        shopPanel.DOAnchorPos(new Vector2(kAnchura, 0), 0.5f, false).SetUpdate(true);
-    }
-
-
     public void LevelSelector()
     {
         Time.timeScale = 1;
         isPaused = false;
         SceneManager.LoadScene(2);
     }
+    #endregion
 
     public void QuitApp()
     {
         Application.Quit();
     }
-
+    #region sceneMethods
     public void EnterScene()
     {
         LoadCircle.rectTransform.DOScale(0f, .75f);
         //DOTween.Sequence()
         // .Append(DOTween.To(() => LoadCircle.color, x => LoadCircle.color = x, new Color(0,0,0,0), 2f).SetEase(Ease.InSine));
-        
-
     }
     public void ExitScene(Action toDoOnComplete)
     {
@@ -133,6 +129,7 @@ public class HUDChanger : MonoBehaviour
     //    DOTween.Sequence()
     //    .Append(DOTween.To(() => LoadCircle.color, x => LoadCircle.color = x, new Color(0, 0, 0, 0), 2f).SetEase(Ease.OutSine));
     }
+    #endregion
     private void OnDestroy()
     {
         DOTween.KillAll(false);
