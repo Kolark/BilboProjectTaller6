@@ -728,10 +728,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 65d1dfcc-2b2e-4a47-a807-e949af6956cc
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: BilboProjectTaller6 (1)
+  organizationId: danielmupe123
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
