@@ -96,7 +96,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
         col2d.isTrigger = false;
     }
     public void EndAnim(){
-        rb2d.bodyType = RigidbodyType2D.Dynamic;
+        rb2d.bodyType = NormalType;
         spRend.material = GameInfo.Instance.Inside2d;
         TimeToExist = TimeChange.CurrentTime;
     }
