@@ -156,6 +156,6 @@ public class OBJteleporter : MonoBehaviour
    
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere((Vector2)transform.position,1.25f);
+        Gizmos.DrawWireSphere((Vector2)transform.position,8f);
     }
 }
