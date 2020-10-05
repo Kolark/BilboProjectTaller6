@@ -23,8 +23,16 @@ public class RockPool : MonoBehaviour, IPool<Rock>
 
     public Rock GetObject()
     {
-        Rock _rock = rocks[0];
-        rocks.RemoveAt(0);
+        Rock _rock;
+        if(rocks.Count > 0)
+        {
+            _rock = rocks[0];
+            rocks.RemoveAt(0);
+        }
+        else
+        {
+            _rock = null;
+        }
         return _rock;
     }
 
