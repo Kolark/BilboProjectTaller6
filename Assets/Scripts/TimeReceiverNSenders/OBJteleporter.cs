@@ -80,7 +80,7 @@ public class OBJteleporter : MonoBehaviour
         if (locked)
         {
 
-            Collider2D[] objtotp = Physics2D.OverlapCircleAll(transform.position, 1.25f, LM);
+            Collider2D[] objtotp = Physics2D.OverlapCircleAll(transform.position, 8f, LM);
             if (objtotp != null)
             {
                 tObj = new TimeOBJ[objtotp.Length];
@@ -114,7 +114,7 @@ public class OBJteleporter : MonoBehaviour
         }
 
         xaxis1 += Time.deltaTime;
-        transform.localScale = Vector3.one * 15 * scaleUp.Evaluate(xaxis1);
+        transform.localScale = Vector3.one * 20 * scaleUp.Evaluate(xaxis1);
         if (scaleUp.Evaluate(xaxis1) > 0.9)
         {
             locked = true;
@@ -156,6 +156,6 @@ public class OBJteleporter : MonoBehaviour
    
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere((Vector2)transform.position,1.25f);
+        Gizmos.DrawWireSphere((Vector2)transform.position,8f);
     }
 }
