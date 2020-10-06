@@ -510,7 +510,7 @@ MonoBehaviour:
   lowJumpMultiplier: 2
   layersToCheck:
     serializedVersion: 2
-    m_Bits: 33792
+    m_Bits: 33793
   OnLadder: 0
 --- !u!95 &651358978
 Animator:
