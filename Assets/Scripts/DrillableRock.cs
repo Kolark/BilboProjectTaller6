@@ -13,6 +13,7 @@ public class DrillableRock : MonoBehaviour,IDrillable
     private void Awake()
     {
         timeOBJ = GetComponent<TimeOBJ>();
+        tilemap = GetComponent<Tilemap>();
         rockPool = GetComponentInParent<RockPool>();
     }
 
@@ -35,7 +36,7 @@ public class DrillableRock : MonoBehaviour,IDrillable
         }
         else
         {
-
+            tilemap.SwapTile(NormalRuleTile, DestroyedRuletile);  
         }
 
     }

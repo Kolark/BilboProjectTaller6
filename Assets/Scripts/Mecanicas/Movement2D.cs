@@ -8,7 +8,7 @@ public class Movement2D : MonoBehaviour
     //Script que se encarga del movimiento en 2d del personaje, esto es Movimiento en el eje x como el salto.
     private static Movement2D instance;
     public static Movement2D Instance { get => instance; }
-
+    
     [Header("Values")]
     [SerializeField] float jumpForce = 5f;
     [SerializeField] int speed = 12;
