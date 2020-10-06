@@ -34,7 +34,7 @@ public class EstalactitaSpike : MonoBehaviour
         else if (collision.transform.CompareTag("Ground"))
         {
             col2d.isTrigger = false;
-             HasFallen = true;
+            HasFallen = true;
             Destroy(SpikeHazard);
             rb2d.bodyType = RigidbodyType2D.Static;
         }
