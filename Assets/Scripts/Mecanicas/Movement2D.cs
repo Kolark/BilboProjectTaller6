@@ -146,17 +146,19 @@ public class Movement2D : MonoBehaviour
     public bool IsthereAnObjectBehind()
     {
         Collider2D objtotp = Physics2D.OverlapCircle(transform.position, 0.75f, layersToCheck);
-        return objtotp != null;
-        //if (objtotp != null)
-        //{
-        //    //Hay un objeto detras y no puede hacer tp
-        //    return true;
-        //}
-        //else
-        //{
-        //    //No hay ningun objeto detras y puede hacer tp
-        //    return false;
-        //}
+        //return objtotp != null;
+        if (objtotp != null)
+        {
+            //Hay un objeto detras y no puede hacer tp
+            Debug.Log("Obj: " + objtotp.name);
+            return true;
+        }
+        else
+        {
+            //No hay ningun objeto detras y puede hacer tp
+            Debug.Log("Falso");
+            return false;
+        }
     }
     public void Climb()
     {

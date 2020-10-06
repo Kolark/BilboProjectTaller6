@@ -48,6 +48,12 @@ public class TimeChange : MonoBehaviour
 
     public void StartChangeTime(int setTime)//1er paso
     {
+        if (setTime == leftOutTime)
+        {
+            leftOutTime = timetoGo;
+            timetoGo = setTime;
+            MiniUpdate();
+        }
         if (!Movement2D.Instance.IsthereAnObjectBehind())
         {
             AudioManager.instance.Play("TimeTravel");
