@@ -31,7 +31,8 @@ public class TouchManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!TimeChange.IsTimeTraveling){
+        if (!TimeChange.IsTimeTraveling)
+        {
 #if UNITY_EDITOR
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
@@ -63,16 +64,8 @@ public class TouchManager : MonoBehaviour
             }
 #elif UNITY_ANDROID
 
-                if (Input.touchCount > 0 && canInteract)//Esta tocando
-                    {
-
-                //if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
-                //{
-
-                //    //--
-                //    Debug.Log("Aaaa");
-
-                //}
+            if (Input.touchCount > 0 && canInteract)//Esta tocando
+            {
                 if (touchable != null)
                 {
                     touchable.touch(POSinScreen());
@@ -92,15 +85,15 @@ public class TouchManager : MonoBehaviour
                     }
                 }
             }
-                    else if (Input.touchCount == 0)//No esta tocando
-                    {
-                        if (touchable != null)
-                        {
-                            touchable.OnTouchUp();
-                            touchable = null;
-                        }
-                        canInteract = true;
-                    }
+            else if (Input.touchCount == 0)//No esta tocando
+            {
+                if (touchable != null)
+                {
+                    touchable.OnTouchUp();
+                    touchable = null;
+                }
+                canInteract = true;
+            }
 #endif
 
         }
