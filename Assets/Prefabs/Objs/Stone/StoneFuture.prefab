@@ -148,6 +148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 2
   order: 5
-  shouldChangeLayers: 0
+  shouldChangeLayers: 1
   layerToexist: 0
   NormalType: 0

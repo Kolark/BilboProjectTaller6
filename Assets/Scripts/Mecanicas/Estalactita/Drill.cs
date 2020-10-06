@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class Drill : MonoBehaviour
 {
+    TimeOBJ timeOBJ;
+    private void Awake()
+    {
+        timeOBJ = GetComponent<TimeOBJ>();
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        IDrillable estalactitaDrill = collision.transform.GetComponent<IDrillable>();
-        if (estalactitaDrill != null)
+        if (timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
-            estalactitaDrill.Drill();
+            IDrillable estalactitaDrill = collision.transform.GetComponent<IDrillable>();
+            if (estalactitaDrill != null)
+            {
+                estalactitaDrill.Drill();
+            }
         }
+       
     }
 }
 public interface IDrillable

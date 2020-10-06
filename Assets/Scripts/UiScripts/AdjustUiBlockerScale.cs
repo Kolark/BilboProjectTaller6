@@ -23,7 +23,12 @@ public class AdjustUiBlockerScale : MonoBehaviour
 
     public void Adjust()
     {
-        Invoke("DoAdjust", 0.75f);
+        //Invoke("DoAdjust", 1f);
+    }
+
+    private void Update()
+    {
+        DoAdjust();
     }
     void DoAdjust()
     {

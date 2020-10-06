@@ -18,6 +18,10 @@ public class RockPool : MonoBehaviour, IPool<Rock>
         {
             rocks.Add(Instantiate(rock, PlaceToStore));
         }
+        for (int i = 0; i < rocks.Count; i++)
+        {
+            rocks[i].FreeZeState();
+        }
         
     }
 

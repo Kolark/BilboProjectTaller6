@@ -17,12 +17,15 @@ public class DrillableRock : MonoBehaviour,IDrillable
         rockPool = GetComponentInParent<RockPool>();
     }
 
-    
-    
+
+
 
     public void Drill()
     {
-        SpawnRock();
+        if (timeOBJ.TimeToExist == TimeChange.CurrentTime)
+        {
+            SpawnRock();
+        }
     }
 
     void SpawnRock()

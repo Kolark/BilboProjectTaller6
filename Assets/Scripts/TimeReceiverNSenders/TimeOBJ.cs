@@ -87,7 +87,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
         TimeToExist = tiempo;
         GetComponent<Rigidbody2D>().bodyType = type;
         GetComponent<Collider2D>().isTrigger = istrigger;
-        GetComponent<SpriteRenderer>().enabled = rend;
+        GetComponent<Renderer>().enabled = rend;
     }
 
     public void SetRenderOn(){

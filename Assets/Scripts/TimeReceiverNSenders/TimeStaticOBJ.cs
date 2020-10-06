@@ -9,11 +9,11 @@ public class TimeStaticOBJ : MonoBehaviour,ICurrentState
     /// Se encarga de los objetos que poseen collider diferente para cada tiempo.
     /// </summary>
    
-    Collider2D[] colliders = new Collider2D[3];
-    Renderer[] spriteRenderers = new Renderer[3];
+    protected Collider2D[] colliders = new Collider2D[3];
+    protected Renderer[] spriteRenderers = new Renderer[3];
 
     [SerializeField]
-    int order = 0;
+    protected int order = 0;
     //[SerializeField]
     //Material inside2d;
     //[SerializeField]
@@ -26,16 +26,23 @@ public class TimeStaticOBJ : MonoBehaviour,ICurrentState
 
     private void Awake()
     {
+        GetComponents();
+        GetEvents();
+    }
+    protected virtual void GetComponents()
+    {
         for (int i = 0; i < colliders.Length; i++)
         {
             colliders[i] = transform.GetChild(i).GetComponent<Collider2D>();
         }
         spriteRenderers = transform.GetComponentsInChildren<Renderer>();
+    }
+    void GetEvents()
+    {
         TimeChange.StartTimeChange += UpdateObjs;
         TimeChange.EndTimeChange += UpdateObjs;
-        TimeChange.MiniUpdate += UpdateObjs;  
+        TimeChange.MiniUpdate += UpdateObjs;
     }
-
     private void Start()
     {
         UpdateObjs();
@@ -75,7 +82,7 @@ public class TimeStaticOBJ : MonoBehaviour,ICurrentState
         }
     }
 
-    void Dissapear(int index)
+    protected void Dissapear(int index)
     {
         spriteRenderers[index].sortingOrder = -250;
         spriteRenderers[index].material = null;
@@ -87,17 +94,9 @@ public class TimeStaticOBJ : MonoBehaviour,ICurrentState
     bool isclamped(float n)
     {
         return n >= 0;
-        //if(n >= 0)
-        //{
-        //    return true;
-        //}
-        //else
-        //{
-        //    return false;
-        //}
     }
 
-    void SetState(int i,ObjState state)
+    protected virtual void SetState(int i,ObjState state)
     {
         spriteRenderers[i].sortingOrder = state.SortingOrder + order;
         spriteRenderers[i].material = state.SpriteMaterial;

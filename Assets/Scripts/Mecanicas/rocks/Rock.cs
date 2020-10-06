@@ -10,7 +10,7 @@ public class Rock : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         col2d = GetComponent<Collider2D>();
-        FreeZeState();
+        //FreeZeState();
     }
     public void FreeZeState()
     {
