@@ -108,7 +108,7 @@ public class HUDChanger : MonoBehaviour
     {
         Time.timeScale = 1;
         isPaused = false;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
     #endregion
 
