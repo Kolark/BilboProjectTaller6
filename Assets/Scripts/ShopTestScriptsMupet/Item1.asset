@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c5ce3fe25a9204aba973bd4241cca5, type: 3}
   m_Name: Item1
   m_EditorClassIdentifier: 
-  Image: {fileID: 21300000, guid: 4e3c25b28dcf8fb46b0f52d292641af6, type: 3}
-  price: 10
+  Image: {fileID: 21300000, guid: f03c0f2b5c54c324187ea0912a006da2, type: 3}
+  price: 15
   JumpButton: {fileID: 3889950160943916959, guid: f05e418b7d5b0b24ebd271e5b1894566,
     type: 3}
   SwitchMove: {fileID: -3136334020933608099, guid: f05e418b7d5b0b24ebd271e5b1894566,

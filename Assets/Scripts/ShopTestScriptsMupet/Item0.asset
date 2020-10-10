@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88c5ce3fe25a9204aba973bd4241cca5, type: 3}
   m_Name: Item0
   m_EditorClassIdentifier: 
-  Image: {fileID: 21300000, guid: 4e3c25b28dcf8fb46b0f52d292641af6, type: 3}
+  Image: {fileID: 21300000, guid: 2196cb8782fe5064ebe149e251d46e32, type: 3}
   price: 0
   JumpButton: {fileID: 1794676181059704814, guid: 9050bd5c45395fe43a9577a077904588,
     type: 3}
