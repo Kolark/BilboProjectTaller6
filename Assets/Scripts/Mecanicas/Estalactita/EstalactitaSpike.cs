@@ -26,20 +26,23 @@ public class EstalactitaSpike : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!HasFallen)
-        {
-        if(collision.transform.GetComponent<IDestroyable>() != null)
-        {
-            collision.transform.GetComponent<IDestroyable>().ActivateDestroy();
-        }
-        else if (collision.transform.CompareTag("Ground"))
-        {
-            col2d.isTrigger = false;
-            HasFallen = true;
-            Destroy(SpikeHazard);
-            rb2d.bodyType = RigidbodyType2D.Static;
-        }
+            {
+            if (collision.transform.CompareTag("Ground"))
+            {
+                HasFallen = true;
 
-        }
+                //col2d.isTrigger = true;
+                rb2d.bodyType = RigidbodyType2D.Static;
+                Destroy(SpikeHazard);
+                
+            }
+            else if (collision.transform.GetComponent<DestroyableFence>() != null)
+            {
+                Debug.Log("Alo");
+                collision.transform.GetComponent<IDestroyable>().ActivateDestroy();
+            }
+
+            }
     }
 
 }
