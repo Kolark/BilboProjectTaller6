@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: PresenteGround2Tutorial
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 21300000, guid: 4e3c25b28dcf8fb46b0f52d292641af6, type: 3}
+  m_DefaultSprite: {fileID: -8370909530857772808, guid: 2076c83f2dbddb645b2cd67572f44e0c,
+    type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_TilingRules:
