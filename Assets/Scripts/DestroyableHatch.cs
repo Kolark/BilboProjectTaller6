@@ -28,6 +28,7 @@ public class DestroyableHatch : MonoBehaviour
                     rock.FreeZeState();
                     ren2d.sprite = spRend[c];
                     c++;
+                    Destroy(collision.gameObject);
                 }
                 else
                 {

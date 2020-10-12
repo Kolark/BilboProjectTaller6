@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: PisoMinaFuturo
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: -5023054337072615619, guid: 91d63d05a6e4d154c8be7bff6d91b480,
+  m_DefaultSprite: {fileID: 5289466890744648791, guid: b5c518adb986df94baf6eb05ec5208ce,
     type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1

@@ -6,6 +6,7 @@ public class RockPool : MonoBehaviour, IPool<Rock>
 {
     [SerializeField] Rock rock;
     [SerializeField] Transform PlaceToStore;
+    [SerializeField] int numeroRocas;
     private List<Rock> rocks = new List<Rock>();
     private void Awake()
     {
@@ -14,7 +15,7 @@ public class RockPool : MonoBehaviour, IPool<Rock>
 
     public void Fill()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < numeroRocas; i++)
         {
             rocks.Add(Instantiate(rock, PlaceToStore));
         }

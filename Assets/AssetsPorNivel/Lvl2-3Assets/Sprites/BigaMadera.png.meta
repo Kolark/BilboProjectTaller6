@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 31d18ac29f9bd8847917671929f81477
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7632313485712842037
+    second: BigaMadera_0
+  - first:
+      213: 690993601593331693
+    second: BigaMadera_1
+  - first:
+      213: -7227586436080281824
+    second: BigaMadera_2
+  - first:
+      213: -217024823855895744
+    second: BigaMadera_3
+  - first:
+      213: 4958614989174798380
+    second: BigaMadera_4
+  - first:
+      213: 7215499527466457879
+    second: BigaMadera_5
+  - first:
+      213: 19804140661249373
+    second: BigaMadera_6
+  - first:
+      213: -8808509057625775075
+    second: BigaMadera_7
+  - first:
+      213: -488311137308384773
+    second: BigaMadera_8
+  - first:
+      213: -4652860887385294848
+    second: BigaMadera_9
+  - first:
+      213: -5617077894208296863
+    second: BigaMadera_10
+  - first:
+      213: -9173444205207843215
+    second: BigaMadera_11
+  - first:
+      213: 3671806103353608289
+    second: BigaMadera_12
+  - first:
+      213: -569697191865037565
+    second: BigaMadera_13
+  - first:
+      213: -6441077048057289139
+    second: BigaMadera_14
+  - first:
+      213: 5186112650253587356
+    second: BigaMadera_15
+  - first:
+      213: 136997376944923508
+    second: BigaMadera_16
+  - first:
+      213: -1566883582143085076
+    second: BigaMadera_17
+  - first:
+      213: 1446975452816162176
+    second: BigaMadera_18
+  - first:
+      213: 4027076147780762895
+    second: BigaMadera_19
+  - first:
+      213: -8232405272882498952
+    second: BigaMadera_20
+  - first:
+      213: -3448145461979957961
+    second: BigaMadera_21
+  - first:
+      213: -6182307290753154742
+    second: BigaMadera_22
+  - first:
+      213: 7497795145904398758
+    second: BigaMadera_23
+  - first:
+      213: 3509352165632100602
+    second: BigaMadera_24
+  - first:
+      213: 6418641337187443792
+    second: BigaMadera_25
+  - first:
+      213: -4857332694265910761
+    second: BigaMadera_26
+  - first:
+      213: -4076206159999427278
+    second: BigaMadera_27
+  - first:
+      213: 5828416858214713873
+    second: BigaMadera_28
+  - first:
+      213: -879478391340621525
+    second: BigaMadera_29
+  - first:
+      213: 519352635361343971
+    second: BigaMadera_30
+  - first:
+      213: 3965388254799313980
+    second: BigaMadera_31
+  - first:
+      213: -2108656715377737090
+    second: BigaMadera_32
+  - first:
+      213: -791311982077814891
+    second: BigaMadera_33
+  - first:
+      213: -8379730178800650221
+    second: BigaMadera_34
+  - first:
+      213: -6586195607016609414
+    second: BigaMadera_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigaMadera_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 288
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2a9ad8253941690800000000000000
+      internalID: -7632313485712842037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigaMadera_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 288
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defc9050507e69900800000000000000
+      internalID: 690993601593331693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigaMadera_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 288
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027d0060e6472bb90800000000000000
+      internalID: -7227586436080281824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigaMadera_3
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 288
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ba0a29219fcfcf0800000000000000
+      internalID: -217024823855895744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
