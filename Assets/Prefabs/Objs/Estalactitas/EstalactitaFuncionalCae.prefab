@@ -10,14 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 8513910638714332461}
   - component: {fileID: 8513910638714332452}
-  - component: {fileID: 8513910638714332451}
   - component: {fileID: 8513910638714332449}
   - component: {fileID: 8513910638714332448}
   - component: {fileID: 8513910638714332463}
+  - component: {fileID: 8513910638714332451}
   - component: {fileID: 8513910638714332462}
   - component: {fileID: 8513910638714332450}
+  - component: {fileID: 4988360146052054735}
   m_Layer: 17
-  m_Name: EstalactitaFuncional
+  m_Name: EstalactitaFuncionalCae
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,18 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8513910638714332451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8513910638714332460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eb05795b9a671c41a2a1b5888a2bee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &8513910638714332449
 Rigidbody2D:
   serializedVersion: 4
@@ -107,7 +96,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8513910638714332460}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -149,7 +138,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   length: 40
-  TimeDependant: 0
+  TimeDependant: 1
+--- !u!114 &8513910638714332451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513910638714332460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eb05795b9a671c41a2a1b5888a2bee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropForce: 1
 --- !u!114 &8513910638714332462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,3 +197,20 @@ PolygonCollider2D:
       - {x: 1, y: -2}
       - {x: 0.78507984, y: -1.1190578}
       - {x: 0.5359855, y: -0.37079102}
+--- !u!114 &4988360146052054735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8513910638714332460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeToExist: 1
+  order: 7
+  shouldChangeLayers: 0
+  layerToexist: 0
+  NormalType: 2

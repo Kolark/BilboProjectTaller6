@@ -7,7 +7,7 @@ public class EstalactitaSpike : MonoBehaviour
     Rigidbody2D rb2d;
     Collider2D col2d;
     SpikeHazard SpikeHazard;
-
+    [SerializeField] int dropForce = 1;
     bool HasFallen = false;
     private void Awake()
     {
@@ -21,28 +21,24 @@ public class EstalactitaSpike : MonoBehaviour
         col2d.isTrigger = false;
         rb2d.bodyType = RigidbodyType2D.Dynamic;
         rb2d.AddForce(-Vector2.up * 1, ForceMode2D.Impulse);
-        rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rb2d.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!HasFallen)
-            {
+        {
             if (collision.transform.CompareTag("Ground"))
             {
                 HasFallen = true;
-
-                //col2d.isTrigger = true;
                 rb2d.bodyType = RigidbodyType2D.Static;
                 Destroy(SpikeHazard);
-                
             }
             else if (collision.transform.GetComponent<DestroyableFence>() != null)
             {
-                Debug.Log("Alo");
                 collision.transform.GetComponent<IDestroyable>().ActivateDestroy();
             }
 
-            }
+        }
     }
 
 }

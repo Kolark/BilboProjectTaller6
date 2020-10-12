@@ -7,5 +7,6 @@ public class EstalactitaDrill : Estalactita, IDrillable
     public void Drill()
     {
         base.DropSpike();
+        Destroy(this);
     }
 }

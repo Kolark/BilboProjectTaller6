@@ -54,7 +54,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
             spRend.enabled = false;
             if (shouldChangeLayers) { gameObject.layer = ignore; }
-
+            
         }
     }
     public void EndTC()

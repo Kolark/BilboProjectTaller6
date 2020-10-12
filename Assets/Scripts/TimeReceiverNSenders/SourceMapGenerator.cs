@@ -14,7 +14,7 @@ public class SourceMapGenerator
 
     List<TilemapRenderer> tileMapRenderers = new List<TilemapRenderer>();
     List<Tilemap> Tilemaps = new List<Tilemap>();
-    List<Collider2D> TilemapsColliders = new List<Collider2D>();
+    //List<Collider2D> TilemapsColliders = new List<Collider2D>();
     
     //public int size { get => TilemapsObjs.Count;}
     
@@ -27,11 +27,11 @@ public class SourceMapGenerator
         TilemapsObjs.Add(Future);
     }
 
-    public void AddOtherComponents(Tilemap _tilemap,TilemapRenderer _tlRend,Collider2D _col2d)
+    public void AddOtherComponents(Tilemap _tilemap,TilemapRenderer _tlRend/*,Collider2D _col2d*/)
     {
         Tilemaps.Add(_tilemap);
         tileMapRenderers.Add(_tlRend);
-        TilemapsColliders.Add(_col2d);
+        //TilemapsColliders.Add(_col2d);
     }
     public void SetLayers()
     {

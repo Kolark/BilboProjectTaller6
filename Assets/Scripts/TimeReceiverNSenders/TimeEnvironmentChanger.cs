@@ -26,6 +26,11 @@ public class TimeEnvironmentChanger : MonoBehaviour
         {
             GameObject pastMap = Instantiate(SOURCEMAPS[i].SourceMap, grid);
             GameObject futureMap = Instantiate(SOURCEMAPS[i].SourceMap, grid);
+            if (pastMap.GetComponent<Collider2D>())
+            {
+                Destroy(pastMap.GetComponent<Collider2D>());
+                Destroy(futureMap.GetComponent<Collider2D>());
+            }
             SOURCEMAPS[i].SourceMap.name += "Presente";
             pastMap.name += "Pasado";
             futureMap.name += "Futuro";
@@ -34,8 +39,8 @@ public class TimeEnvironmentChanger : MonoBehaviour
             {
                 SOURCEMAPS[i].AddOtherComponents(
                     SOURCEMAPS[i].TilemapsObjs[u].GetComponent<Tilemap>(),
-                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<TilemapRenderer>(),
-                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<Collider2D>());
+                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<TilemapRenderer>()/*,
+                    SOURCEMAPS[i].TilemapsObjs[u].GetComponent<Collider2D>()*/);
             }
             SOURCEMAPS[i].SetLayers();
             SOURCEMAPS[i].Swaptiles();
