@@ -6,13 +6,15 @@ public class RockInvoker : MonoBehaviour
 {
     RockPool rockPool;
     [SerializeField] Transform SpawnArea;
-    WaitForSeconds second = new WaitForSeconds(3);
+    [SerializeField] int secondsperRock;
+    WaitForSeconds second;
     [SerializeField] int timeToExist;
     [SerializeField] int amountToSpawn;
     int spawned = 0;
 
     private void Awake()
     {
+        second = new WaitForSeconds(secondsperRock);
         rockPool = GetComponentInParent<RockPool>();
         TimeChange.EndTimeChange += spawnRocks;
     }
