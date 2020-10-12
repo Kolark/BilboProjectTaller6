@@ -505,7 +505,7 @@ MonoBehaviour:
   collisionRadius: 0.25
   groundLayer:
     serializedVersion: 2
-    m_Bits: 141313
+    m_Bits: 10241
   fallMultiplier: 5
   lowJumpMultiplier: 2
   layersToCheck:
