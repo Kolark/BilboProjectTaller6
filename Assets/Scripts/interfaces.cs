@@ -18,5 +18,5 @@ public interface IPool<T>
 
     T GetObject();
 
-    void Recycle(T poolObject);
+    void Recycle(T poolObject,int index);
 }

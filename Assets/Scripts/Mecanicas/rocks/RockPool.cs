@@ -41,7 +41,7 @@ public class RockPool : MonoBehaviour, IPool<Rock>
         return _rock;
     }
 
-    public void Recycle(Rock poolObject)
+    public void Recycle(Rock poolObject,int index = 1)
     {
         poolObject.FreeZeState();
         poolObject.transform.position = PlaceToStore.position;
