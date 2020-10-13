@@ -20,7 +20,7 @@ public class EstalactitaSpike : MonoBehaviour
         col2d.enabled = true;
         col2d.isTrigger = false;
         rb2d.bodyType = RigidbodyType2D.Dynamic;
-        rb2d.AddForce(-Vector2.up * 1, ForceMode2D.Impulse);
+        rb2d.AddForce(-Vector2.up * 2, ForceMode2D.Impulse);
         rb2d.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
     }
     private void OnCollisionEnter2D(Collision2D collision)

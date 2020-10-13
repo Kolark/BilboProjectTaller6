@@ -20,4 +20,16 @@ public class Rock : MonoBehaviour
     {
         rb2d.bodyType = RigidbodyType2D.Dynamic;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            ResetPlayer();
+        }
+    }
+    void ResetPlayer()
+    {
+        Movement2D.Instance.transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
+    }
 }
