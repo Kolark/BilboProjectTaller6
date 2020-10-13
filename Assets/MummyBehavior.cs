@@ -10,7 +10,11 @@ public class MummyBehavior : MonoBehaviour
 
     Transform target;
     Animator animator;
-
+    TimeOBJ timeOBJ;
+    private void Awake()
+    {
+        timeOBJ = GetComponent<TimeOBJ>();
+    }
     private void Start()
     {
         target = Movement2D.Instance.transform;
@@ -19,7 +23,8 @@ public class MummyBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector2.Distance(transform.position, target.position) < visionDistance)
+
+        if (Vector2.Distance(transform.position, target.position) < visionDistance && timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
             Vector2 dir = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             dir.y = transform.position.y;

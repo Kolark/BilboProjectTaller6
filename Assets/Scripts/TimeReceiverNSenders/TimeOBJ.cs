@@ -20,7 +20,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
     [SerializeField] int layerToexist;
     int teleport = 10;
     int ignore = 11;
-
+    [SerializeField] bool NormalTrigger = false;
     [SerializeField] RigidbodyType2D NormalType;
 
     private void Awake()
@@ -63,7 +63,8 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
             spRend.material = GameInfo.Instance.Inside2d;
             spRend.sortingOrder = TimeChange.layersIDS[0] + order;
             rb2d.bodyType = NormalType;//Fix
-            col2d.isTrigger = false;
+            //col2d.isTrigger = false;
+            col2d.isTrigger = NormalTrigger;
             if (shouldChangeLayers) { gameObject.layer = layerToexist; }
         }
         else{
