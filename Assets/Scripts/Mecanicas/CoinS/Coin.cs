@@ -15,7 +15,11 @@ public class Coin : MonoBehaviour
     {
         this.id = id;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+       
+    //}
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player" && timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
@@ -24,6 +28,5 @@ public class Coin : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
 
 }

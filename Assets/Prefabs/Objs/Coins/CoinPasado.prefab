@@ -64,6 +64,7 @@ MonoBehaviour:
   order: 6
   shouldChangeLayers: 1
   layerToexist: 13
+  NormalTrigger: 1
   NormalType: 2
 --- !u!212 &2509381727438152771
 SpriteRenderer:

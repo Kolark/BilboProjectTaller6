@@ -108,6 +108,13 @@ public class TimeChange : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    private void OnDestroy()
+    {
+        currentTime = 1;
+        timetoGo = 2;
+        leftOutTime = 0;
+    }
 }
 enum TimeState
 {

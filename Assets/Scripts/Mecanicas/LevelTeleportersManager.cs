@@ -13,7 +13,7 @@ public class LevelTeleportersManager : MonoBehaviour
     [SerializeField]
     Text text;
     [SerializeField]
-    //CinemachineVirtualCamera cam;
+    CinemachineVirtualCamera cam;
     private void Awake()
     {
         LevelTeleporters = new GameObject[transform.childCount];
@@ -45,17 +45,17 @@ public class LevelTeleportersManager : MonoBehaviour
         //Propenso a tirar error si no hay mas de 1 nivel
         redButtons[GameInfo.LevelsUnlocked].SetActive();
         redButtons[GameInfo.LevelsUnlocked].ChangeColor(Color.red);
-        //cam.Follow = LevelTeleporters[GameInfo.LevelsUnlocked].transform;
-        //StartCoroutine(initcam());
+        cam.Follow = LevelTeleporters[GameInfo.LevelsUnlocked].transform;
+        StartCoroutine(initcam());
     }
 
-    //IEnumerator initcam()
-    //{
-    //    cam.Priority = 11;
-        
-    //    yield return second;
-    //    cam.Priority = 9;
-    //}
+    IEnumerator initcam()
+    {
+        cam.Priority = 11;
+
+        yield return second;
+        cam.Priority = 9;
+    }
 
 
 }
