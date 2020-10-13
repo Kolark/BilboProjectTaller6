@@ -86,9 +86,27 @@ public class Ui_MainControls : MonoBehaviour
                 break;
             default:
                 break;
-
         }
     }
+
+    public void ControlsOut(config config)
+    {
+        switch (config)
+        {
+            case config.JumpButton:
+                jumpButton.DOAnchorPos(jumpButton.anchoredPosition - Vector2.up * 500, 0.5f, false);
+                break;
+            case config.Switch:
+                Switch.DOAnchorPos(Switch.anchoredPosition - Vector2.up * 500, 0.5f, false);
+                break;
+            case config.TimeJumpButtons:
+                timeJumpButtons.DOAnchorPos(timeJumpButtons.anchoredPosition + Vector2.right * 500, 0.5f, false);
+                break;
+            default:
+                break;
+        }
+    }
+
 
     public void HUDupdate()
     {

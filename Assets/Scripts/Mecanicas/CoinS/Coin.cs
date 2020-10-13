@@ -7,6 +7,7 @@ public class Coin : MonoBehaviour
     TimeOBJ timeOBJ;
     //Simple Script de Colleccionable
     int id;
+    bool cangivecoin = true;
     private void Awake()
     {
         timeOBJ = GetComponent<TimeOBJ>();
@@ -21,8 +22,9 @@ public class Coin : MonoBehaviour
     //}
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && timeOBJ.TimeToExist == TimeChange.CurrentTime)
+        if (collision.gameObject.tag == "Player" && timeOBJ.TimeToExist == TimeChange.CurrentTime && cangivecoin)
         {
+            cangivecoin = false;
             Wallet.instance.coins += 1;
             CoinSpawner.Instance.AddCoin(id);
             Destroy(this.gameObject);

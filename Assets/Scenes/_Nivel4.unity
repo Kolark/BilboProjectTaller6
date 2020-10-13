@@ -93355,21 +93355,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 986435050161418617, guid: 092f79382eb12f6449ded1e02cad017d,
-        type: 3}
-      propertyPath: TimeToExist
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404059096441731248, guid: 092f79382eb12f6449ded1e02cad017d,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404059096441731251, guid: 092f79382eb12f6449ded1e02cad017d,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5404059096441731261, guid: 092f79382eb12f6449ded1e02cad017d,
         type: 3}
       propertyPath: m_Name
@@ -93429,11 +93414,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5404059096441731263, guid: 092f79382eb12f6449ded1e02cad017d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 092f79382eb12f6449ded1e02cad017d, type: 3}
