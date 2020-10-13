@@ -1822,6 +1822,10 @@ MonoBehaviour:
   shootingSpeed: 50
   fireRate: 1
   countDown: 0
+  shootingRange: 25
+  deactivation: 0
+  timeToStop: 25
+  canShoot: 1
   min: 0
   max: 0
 --- !u!212 &404205485
@@ -1918,7 +1922,7 @@ Transform:
   m_Children:
   - {fileID: 1635258797}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452808371
 GameObject:
@@ -2107,7 +2111,7 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -5686,7 +5690,7 @@ PrefabInstance:
     - target: {fileID: 8678429044209639613, guid: c7795540508293046bd218ff766c626a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8678429044209639613, guid: c7795540508293046bd218ff766c626a,
         type: 3}
@@ -5849,7 +5853,7 @@ Transform:
   - {fileID: 776278309541318693}
   - {fileID: 4341724730350447963}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1934606879
 GameObject:
@@ -5895,7 +5899,7 @@ Transform:
   - {fileID: 938231191}
   - {fileID: 209906207}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1970053821 stripped
 Transform:
@@ -6445,7 +6449,7 @@ PrefabInstance:
     - target: {fileID: 5404059096441731262, guid: 092f79382eb12f6449ded1e02cad017d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5404059096441731262, guid: 092f79382eb12f6449ded1e02cad017d,
         type: 3}

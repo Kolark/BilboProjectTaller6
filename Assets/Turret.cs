@@ -14,6 +14,10 @@ public class Turret : MonoBehaviour
     [SerializeField]float shootingSpeed = 100f;
     [SerializeField]float fireRate = 10f;
     [SerializeField]float countDown = 0;
+    [SerializeField]float shootingRange = 25f;
+    [SerializeField] float deactivation = 0;
+    [SerializeField] float timeToStop = 25f;
+    [SerializeField] bool canShoot = true;
     [SerializeField, Range(-180, 180)] float min;
     [SerializeField, Range(-180, 180)] float max;
     float angle;
@@ -25,10 +29,11 @@ public class Turret : MonoBehaviour
 
     void Update()
     {
-        if(timeOBJ.TimeToExist == TimeChange.CurrentTime && !TimeChange.IsTimeTraveling)
+        if(timeOBJ.TimeToExist == TimeChange.CurrentTime && !TimeChange.IsTimeTraveling && Vector2.Distance(transform.position, Movement2D.Instance.transform.position) < shootingRange)
         {
-        Aim(Movement2D.Instance.transform.position);
-        CountDown();
+            Deactivate();
+            Aim(Movement2D.Instance.transform.position);
+            CountDown();
         }
     }
 
@@ -44,7 +49,7 @@ public class Turret : MonoBehaviour
     void CountDown()
     {
         countDown += Time.deltaTime;
-        if (countDown >= fireRate)
+        if (countDown >= fireRate && canShoot)
         {
             Shoot();
             countDown = 0;
@@ -69,5 +74,11 @@ public class Turret : MonoBehaviour
         float radN = transform.localEulerAngles.z * Mathf.Deg2Rad;
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + new Vector2(Mathf.Cos(radN), Mathf.Sin(radN)));
+    }
+
+    void Deactivate()
+    {
+        deactivation += Time.deltaTime;
+        if (deactivation >= timeToStop) canShoot = false;
     }
 }
