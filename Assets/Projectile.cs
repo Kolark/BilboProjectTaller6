@@ -65,6 +65,10 @@ public class Projectile : MonoBehaviour
             TimeChange.StartTimeChange -= onStartchange;
             TimeChange.EndTimeChange -= onEndChange;
         }
+        if (collision.transform.CompareTag("Player"))
+        {
+            ResetPlayer();
+        }
     }
     private void OnDestroy()
     {
@@ -73,5 +77,10 @@ public class Projectile : MonoBehaviour
             TimeChange.StartTimeChange -= onStartchange;
             TimeChange.EndTimeChange -= onEndChange;
         }
+    }
+
+    void ResetPlayer()
+    {
+        Movement2D.Instance.transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
     }
 }

@@ -9,6 +9,7 @@ public class Turret : MonoBehaviour
     Transform projectileSpawner;
     public Vector3 offset;
 
+    [SerializeField]float bulletSpeed = 5f;
     [SerializeField]float rotationSpeed = 5f;
     [SerializeField]float shootingSpeed = 100f;
     [SerializeField]float fireRate = 10f;
@@ -53,7 +54,7 @@ public class Turret : MonoBehaviour
     void Shoot()
     {
         Projectile projectile = ProjectilePool.Instance.GetObject();
-        projectile.Shoot(projectileSpawner.position,angle, 5);
+        projectile.Shoot(projectileSpawner.position,angle, bulletSpeed);
     }
     private void OnDrawGizmos()
     {
