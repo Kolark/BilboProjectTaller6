@@ -21,15 +21,19 @@ public class PopText : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        text.transform.DOLocalMoveY(UpPos, timingUp, false);
-        DOTween.Sequence()
-           .Append(DOTween.To(() => text.alpha, x => text.alpha = x,1, timingUp).SetEase(Ease.InSine));
+        if (collision.transform.CompareTag("Player"))
+        {
+            text.transform.DOLocalMoveY(UpPos, timingUp, false);
+            DOTween.Sequence()
+               .Append(DOTween.To(() => text.alpha, x => text.alpha = x, 1, timingUp).SetEase(Ease.InSine));
+        }
+        
 
 
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (ShouldGoDown)
+        if (ShouldGoDown && collision.transform.CompareTag("Player"))
         {
             text.transform.DOLocalMoveY(DownPos, timingDown, false);
             DOTween.Sequence()
