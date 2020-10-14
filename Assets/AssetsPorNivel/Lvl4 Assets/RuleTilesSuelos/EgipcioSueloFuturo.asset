@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: EgipcioSueloFuturo
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 116210538307647084, guid: 549c10e9be258eb47ac261255fb494bd,
+  m_DefaultSprite: {fileID: -6520132150114119726, guid: 549c10e9be258eb47ac261255fb494bd,
     type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
