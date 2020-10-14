@@ -19,11 +19,11 @@ public class SliderGrabObj : GrabObject
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere((Vector2)PivotPos, 1f);
+        Gizmos.DrawWireSphere((Vector2)transform.position, 1f);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)PivotPos + Vector2.right* freemovement, 1f);
+        Gizmos.DrawWireSphere((Vector2)transform.position + Vector2.right* freemovement, 1f);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere((Vector2)PivotPos - Vector2.right * freemovement, 1f);
+        Gizmos.DrawWireSphere((Vector2)transform.position - Vector2.right * freemovement, 1f);
     }
 
 }
