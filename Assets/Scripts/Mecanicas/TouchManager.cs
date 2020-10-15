@@ -28,12 +28,17 @@ public class TouchManager : MonoBehaviour
         }
         instance = this;
         #endregion 
+        EventSystem.current.IsPointerOverGameObject(0);
     }
     private void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject(0)) { Debug.Log("encimaaaaaaaaaa");}
+
         if (!TimeChange.IsTimeTraveling)
         {
 #if UNITY_EDITOR
+            if (EventSystem.current.IsPointerOverGameObject(0)) {
+            #region logic
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
                 if(touchable != null)
@@ -50,6 +55,7 @@ public class TouchManager : MonoBehaviour
                         if (hit2D.collider.GetComponent<ITouchable>() != null)
                         {
                             touchable = hit2D.collider.GetComponent<ITouchable>();
+                            HUDChanger.Instance.HideUnhideALL(true);
                         }
                     }
                 }
@@ -58,9 +64,12 @@ public class TouchManager : MonoBehaviour
             //No esta tocando
                 if (touchable != null){
                     touchable.OnTouchUp();
+                    HUDChanger.Instance.HideUnhideALL(false);
                     touchable = null;
                 }
                 canInteract = true;
+            }
+            #endregion
             }
 #elif UNITY_ANDROID
 
@@ -81,6 +90,7 @@ public class TouchManager : MonoBehaviour
                         if (hit2D.collider.GetComponent<ITouchable>() != null)
                         {
                             touchable = hit2D.collider.GetComponent<ITouchable>();
+                            HUDChanger.Instance.HideUnhideALL(true);
                         }
                     }
                 }
@@ -90,6 +100,7 @@ public class TouchManager : MonoBehaviour
                 if (touchable != null)
                 {
                     touchable.OnTouchUp();
+                    HUDChanger.Instance.HideUnhideALL(false);
                     touchable = null;
                 }
                 canInteract = true;

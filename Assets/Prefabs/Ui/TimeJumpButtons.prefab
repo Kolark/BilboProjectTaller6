@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4017977302442997883}
   - component: {fileID: 4017977302442997880}
+  - component: {fileID: 1615838783082328681}
   m_Layer: 5
   m_Name: TimeJumpButtons
   m_TagString: Untagged
@@ -51,6 +52,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800f3d554cb3314498e305da35096437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1615838783082328681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017977302442997882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9935a2e0516f0c444925a2a0e3fe3290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalPos: {x: 0, y: 0}
 --- !u!1 &4017977303514261072
 GameObject:
   m_ObjectHideFlags: 0

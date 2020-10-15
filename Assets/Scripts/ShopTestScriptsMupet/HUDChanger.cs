@@ -37,8 +37,7 @@ public class HUDChanger : MonoBehaviour
         ui_MainControls = GetComponentInChildren<Ui_MainControls>();
 
 
-          canvas = GetComponent<RectTransform>();
-
+        canvas = GetComponent<RectTransform>();
         kAnchura = 3000;
 
         shopPanel.anchoredPosition = new Vector2(kAnchura, 0);
@@ -65,6 +64,22 @@ public class HUDChanger : MonoBehaviour
         ui_MainControls.ControlsEnter(config);
     }
 
+    public void Hideunhide(config config,bool boolean)
+    {
+        ui_MainControls.HideUnhideSpecificUi(config, boolean);
+    }
+    public void HideUnhideALL(bool hide)
+    {
+        if (hide)
+        {
+            ui_MainControls.HideAllUI();
+
+        }
+        else
+        {
+            ui_MainControls.Unhide_UI();
+        }
+    }
     #endregion
 
     #region ShopMethods
@@ -86,7 +101,7 @@ public class HUDChanger : MonoBehaviour
             isPaused = !isPaused;
             if (isPaused)
             {
-                ui_MainControls.Hide_UI(() => {
+                ui_MainControls.HideAllUI(() => {
                     pausePanel.DOAnchorPos(new Vector2(0, 0), 0.5f, false).OnComplete(() =>
                     {
                         Time.timeScale = 0;

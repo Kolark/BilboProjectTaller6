@@ -7,20 +7,6 @@ using System;
 using DG.Tweening;
 public class Ui_MainControls : MonoBehaviour
 {
-
-
-    [SerializeField] RectTransform panel;
-    [SerializeField] RectTransform jumpButton;
-    [SerializeField] RectTransform Joystick;
-    [SerializeField] RectTransform coins;
-    [SerializeField] RectTransform Switch;
-    [Space]
-    [Header("Panels")]
-    [SerializeField] RectTransform pauseButton_Rect;
-    Button pauseButton;
-    [SerializeField] RectTransform timeJumpButtons;
-    [SerializeField] RectTransform panelControls;
-
     [Space]
     [Header("Scripts")]
     [SerializeField] Joystick joystick;
@@ -35,14 +21,14 @@ public class Ui_MainControls : MonoBehaviour
     [SerializeField] Image jumpSprite;
     [SerializeField] TextMeshProUGUI coinsText;
 
-    UiMainConfig config;
-    private void Awake()
-    {
-        pauseButton = pauseButton_Rect.GetComponent<Button>();
-    }
+
+    [SerializeField] UIWidgetTweeningConfig[] widgets;
+
+    UiMainConfig _configclass;
+
     public void INIT(UiMainConfig config)
     {
-        this.config = config;
+        this._configclass = config;
         SetConfig();
         if (Movement2D.Instance != null)
         {
@@ -53,61 +39,36 @@ public class Ui_MainControls : MonoBehaviour
     }
     void SetConfig()
     {
-        if (!config.JumpButton)
+        if (!_configclass.JumpButton)
         {
-            jumpButton.anchoredPosition -= Vector2.up * 500;
+            widgets[(int)config.JumpButton].SetOut();
         }
-        if (!config.Switch)
+        if (!_configclass.Switch)
         {
-            Switch.anchoredPosition -= Vector2.up * 500;
+            widgets[(int)config.Switch].SetOut();
         }
-        if (!config.TimeJumpButtons)
+        if (!_configclass.TimeJumpButtons)
         {
-            timeJumpButtons.anchoredPosition += Vector2.right * 500;
+            widgets[(int)config.TimeJumpButtons].SetOut();
         }
-        if (!config.Coins)
+        if (!_configclass.Coins)
         {
-            coins.anchoredPosition += Vector2.up * 500;
+            widgets[(int)config.Coin].SetOut();
         }
     }
 
     public void ControlsEnter(config config)
     {
-        switch (config)
-        {
-            case config.JumpButton:
-                jumpButton.DOAnchorPos(jumpButton.anchoredPosition + Vector2.up* 500, 0.5f, false);
-                break;
-            case config.Switch:
-                Switch.DOAnchorPos(Switch.anchoredPosition + Vector2.up * 500, 0.5f, false);
-                break;
-            case config.TimeJumpButtons:
-                timeJumpButtons.DOAnchorPos(timeJumpButtons.anchoredPosition - Vector2.right * 500, 0.5f, false);
-                break;
-            default:
-                break;
-        }
+        widgets[(int)config].Enter();
     }
 
     public void ControlsOut(config config)
     {
-        switch (config)
-        {
-            case config.JumpButton:
-                jumpButton.DOAnchorPos(jumpButton.anchoredPosition - Vector2.up * 500, 0.5f, false);
-                break;
-            case config.Switch:
-                Switch.DOAnchorPos(Switch.anchoredPosition - Vector2.up * 500, 0.5f, false);
-                break;
-            case config.TimeJumpButtons:
-                timeJumpButtons.DOAnchorPos(timeJumpButtons.anchoredPosition + Vector2.right * 500, 0.5f, false);
-                break;
-            default:
-                break;
-        }
+        widgets[(int)config].Exit();
     }
 
-
+    //cambia sprites respecto a la tienda
+    #region shopmethods
     public void HUDupdate()
     {
         SetEquipedHUD(GameInfo.Instance.ShopItemsList[GameInfo.ItemEquiped]);
@@ -130,7 +91,7 @@ public class Ui_MainControls : MonoBehaviour
         }
 
     }
-
+    #endregion
     /// <summary>
     /// Actualiza el texto de las monedas
     /// </summary>
@@ -165,39 +126,48 @@ public class Ui_MainControls : MonoBehaviour
 
     }
 
-    private void OnValidate()
-    {
-        if(Joystick != null)
-        {
-            rightArrowSprite = Joystick.GetChild(0).GetComponent<Image>();
-            leftArrowSprite = Joystick.GetChild(1).GetComponent<Image>();
-        }
-        if(jumpButton != null)
-        {
-            jumpSprite = jumpButton.GetComponent<Image>();
-        }
-        if(coins != null)
-        {
-            coinsText = coins.GetChild(0).GetComponent<TextMeshProUGUI>();
-        }
-    }
+    //private void OnValidate()
+    //{
+    //    if(Joystick != null)
+    //    {
+    //        rightArrowSprite = Joystick.GetChild(0).GetComponent<Image>();
+    //        leftArrowSprite = Joystick.GetChild(1).GetComponent<Image>();
+    //    }
+    //    if(jumpButton != null)
+    //    {
+    //        jumpSprite = jumpButton.GetComponent<Image>();
+    //    }
+    //    if(coins != null)
+    //    {
+    //        coinsText = coins.GetChild(0).GetComponent<TextMeshProUGUI>();
+    //    }
+    //}
 
-    public void Hide_UI(Action toDoOnComplete)
+    public void HideAllUI(Action toDoOnComplete = null)
     {
-        pauseButton.interactable = false;
-        timeJumpButtons.DOAnchorPos(new Vector2(300, 0), 0.5f, false);
-        pauseButton_Rect.DOAnchorPos(new Vector2(pauseButton_Rect.anchoredPosition.x, pauseButton_Rect.anchoredPosition.y + 300), 0.5f, false);
-        panelControls.DOAnchorPos(new Vector2(0, -500), 0.5f, false).OnComplete(() =>
+        for (int i = 0; i < widgets.Length-1; i++)
         {
-            toDoOnComplete();
-        });
+            widgets[i].Exit();
+        }
+        widgets[widgets.Length-1].Exit(toDoOnComplete);
     }
     public void Unhide_UI()
     {
-        pauseButton.interactable = true;
-        panelControls.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
-        timeJumpButtons.DOAnchorPos(new Vector2(0, 0), 0.5f, false);
-        pauseButton_Rect.DOAnchorPos(new Vector2(pauseButton_Rect.anchoredPosition.x, pauseButton_Rect.anchoredPosition.y - 300), 0.5f, false);
+        for (int i = 0; i < widgets.Length; i++)
+        {
+            widgets[i].Enter();
+        }
+    }
+    public void HideUnhideSpecificUi(config config,bool hide)
+    {
+        if (hide)
+        {
+            widgets[(int)config].Exit();
+        }
+        else
+        {
+            widgets[(int)config].Enter();
+        }
     }
 }
 [Serializable]
@@ -226,5 +196,8 @@ public enum config
 {
     TimeJumpButtons,
     JumpButton,
-    Switch
+    Switch,
+    Arrows,
+    Coin,
+    Pause
 }
