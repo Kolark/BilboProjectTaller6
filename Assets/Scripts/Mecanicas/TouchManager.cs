@@ -30,51 +30,57 @@ public class TouchManager : MonoBehaviour
         #endregion 
         EventSystem.current.IsPointerOverGameObject(0);
     }
+
     private void Update()
     {
-        if (EventSystem.current.IsPointerOverGameObject(0)) { Debug.Log("encimaaaaaaaaaa");}
+        if (EventSystem.current.IsPointerOverGameObject()) { Debug.Log("encimaaaaaaaaaa");}
+        else { Debug.Log("noencima"); }
 
         if (!TimeChange.IsTimeTraveling)
         {
 #if UNITY_EDITOR
-            if (EventSystem.current.IsPointerOverGameObject(0)) {
+            
             #region logic
             if (Input.GetMouseButton(0) && canInteract)//Esta tocando
             {
-                if(touchable != null)
-                {
-                    touchable.touch(POSinScreen());
-                }
-                else
-                {
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
-                    
-                    if (hit2D.collider != null)
+                if (!EventSystem.current.IsPointerOverGameObject()) {
+                    if(touchable != null)
                     {
-                        if (hit2D.collider.GetComponent<ITouchable>() != null)
+                        touchable.touch(POSinScreen());
+                    }
+                    else
+                    {
+                        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                        RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
+                    
+                        if (hit2D.collider != null)
                         {
-                            touchable = hit2D.collider.GetComponent<ITouchable>();
-                            HUDChanger.Instance.HideUnhideALL(true);
+                            if (hit2D.collider.GetComponent<ITouchable>() != null)
+                            {
+                                touchable = hit2D.collider.GetComponent<ITouchable>();
+                                HUDChanger.Instance.HideUnhideALL(true);
+                            }
                         }
                     }
                 }
+                else
+                {
+                    noLongerTouchable();
+                }
             }
             else if (!Input.GetMouseButton(0)){
-            //No esta tocando
-                if (touchable != null){
-                    touchable.OnTouchUp();
-                    HUDChanger.Instance.HideUnhideALL(false);
-                    touchable = null;
-                }
-                canInteract = true;
+                //No esta tocando
+                noLongerTouchable();
             }
             #endregion
-            }
+
 #elif UNITY_ANDROID
 
             if (Input.touchCount > 0 && canInteract)//Esta tocando
             {
+
+            if (!EventSystem.current.IsPointerOverGameObject()) 
+            {
                 if (touchable != null)
                 {
                     touchable.touch(POSinScreen());
@@ -95,15 +101,15 @@ public class TouchManager : MonoBehaviour
                     }
                 }
             }
+            else
+            {
+                noLongerTouchable();
+            }
+
+            }
             else if (Input.touchCount == 0)//No esta tocando
             {
-                if (touchable != null)
-                {
-                    touchable.OnTouchUp();
-                    HUDChanger.Instance.HideUnhideALL(false);
-                    touchable = null;
-                }
-                canInteract = true;
+               noLongerTouchable();
             }
 #endif
 
@@ -122,32 +128,18 @@ public class TouchManager : MonoBehaviour
         pos.z = 0;
         return pos;
     }
-
+    void noLongerTouchable()
+    {
+        if (touchable != null)
+        {
+            touchable.OnTouchUp();
+            HUDChanger.Instance.HideUnhideALL(false);
+            touchable = null;
+        }
+        canInteract = true;
+    }
     public void eraseReference()
     {
         touchable = null;
     }
 }
-    //public bool isPointerOverUI()
-    //{
-    //    List<RaycastResult> raycastResults = new List<RaycastResult>();
-    //    EventSystem.current.RaycastAll()
-    //    return false;
-    //}
-//Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-//RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
-
-//                            if (hit2D.collider != null)
-//                            {
-//                                if(touchable != null)
-//                                {
-//                                    touchable.touch(POSinScreen());
-//                                }
-//                                else
-//                                {
-//                                    if (hit2D.collider.GetComponent<ITouchable>() != null)
-//                                    {
-//                                        touchable = hit2D.collider.GetComponent<ITouchable>();
-//                                    }
-//                                }
-//                            }
