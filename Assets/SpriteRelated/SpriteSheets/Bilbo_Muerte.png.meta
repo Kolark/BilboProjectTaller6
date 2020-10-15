@@ -1,0 +1,500 @@
+fileFormatVersion: 2
+guid: 02a366a360fa2574ba5cb3e1e7985aeb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8073498413807492432
+    second: Bilbo_Muerte_0
+  - first:
+      213: -3778616292008369191
+    second: Bilbo_Muerte_1
+  - first:
+      213: -4008920064201056856
+    second: Bilbo_Muerte_2
+  - first:
+      213: 9121746512345682892
+    second: Bilbo_Muerte_3
+  - first:
+      213: 3232065662846321391
+    second: Bilbo_Muerte_4
+  - first:
+      213: -8491844325104475183
+    second: Bilbo_Muerte_5
+  - first:
+      213: -3067902732002123835
+    second: Bilbo_Muerte_6
+  - first:
+      213: 4141747288055564869
+    second: Bilbo_Muerte_7
+  - first:
+      213: -1166815048317936603
+    second: Bilbo_Muerte_8
+  - first:
+      213: -8671533156653226691
+    second: Bilbo_Muerte_9
+  - first:
+      213: -3806400912453528793
+    second: Bilbo_Muerte_10
+  - first:
+      213: -6355537852536547829
+    second: Bilbo_Muerte_11
+  - first:
+      213: -6647442864527671543
+    second: Bilbo_Muerte_12
+  - first:
+      213: 540475227949224809
+    second: Bilbo_Muerte_13
+  - first:
+      213: 1909035473143663264
+    second: Bilbo_Muerte_14
+  - first:
+      213: 5950483978227606365
+    second: Bilbo_Muerte_15
+  - first:
+      213: 1454458958656915186
+    second: Bilbo_Muerte_16
+  - first:
+      213: -7130903568111968063
+    second: Bilbo_Muerte_17
+  - first:
+      213: 6515454897102971520
+    second: Bilbo_Muerte_18
+  - first:
+      213: -6560256684579973438
+    second: Bilbo_Muerte_19
+  - first:
+      213: 7532819560873834095
+    second: Bilbo_Muerte_20
+  - first:
+      213: -9132532986116376742
+    second: Bilbo_Muerte_21
+  - first:
+      213: -3861827002960244548
+    second: Bilbo_Muerte_22
+  - first:
+      213: 6361827051402977150
+    second: Bilbo_Muerte_23
+  - first:
+      213: -1229120006413967510
+    second: Bilbo_Muerte_24
+  - first:
+      213: -8700507422543397001
+    second: Bilbo_Muerte_25
+  - first:
+      213: -5385682744760118291
+    second: Bilbo_Muerte_26
+  - first:
+      213: 9078672533836809771
+    second: Bilbo_Muerte_27
+  - first:
+      213: 2810928680666144717
+    second: Bilbo_Muerte_28
+  - first:
+      213: 4570762493509760079
+    second: Bilbo_Muerte_29
+  - first:
+      213: 1576851044542374194
+    second: Bilbo_Muerte_30
+  - first:
+      213: -7411084434072446156
+    second: Bilbo_Muerte_31
+  - first:
+      213: -7625693027508710706
+    second: Bilbo_Muerte_32
+  - first:
+      213: 8131428879902490678
+    second: Bilbo_Muerte_33
+  - first:
+      213: 6995946884528730069
+    second: Bilbo_Muerte_34
+  - first:
+      213: 6597011690011801382
+    second: Bilbo_Muerte_35
+  - first:
+      213: -4727992474681630144
+    second: Bilbo_Muerte_36
+  - first:
+      213: 1016750963194519661
+    second: Bilbo_Muerte_37
+  - first:
+      213: 8124115624556211865
+    second: Bilbo_Muerte_38
+  - first:
+      213: -4804508559171265891
+    second: Bilbo_Muerte_39
+  - first:
+      213: 6174845712315791316
+    second: Bilbo_Muerte_40
+  - first:
+      213: -3112058500524733556
+    second: Bilbo_Muerte_41
+  - first:
+      213: 7773174067330722889
+    second: Bilbo_Muerte_42
+  - first:
+      213: 2960651553622764910
+    second: Bilbo_Muerte_43
+  - first:
+      213: 5483997308888925890
+    second: Bilbo_Muerte_44
+  - first:
+      213: 8742964836344423689
+    second: Bilbo_Muerte_45
+  - first:
+      213: 523379626965317654
+    second: Bilbo_Muerte_46
+  - first:
+      213: 6275485840893279682
+    second: Bilbo_Muerte_47
+  - first:
+      213: -3445062881745277575
+    second: Bilbo_Muerte_48
+  - first:
+      213: 7933333570673791889
+    second: Bilbo_Muerte_49
+  - first:
+      213: -8137884832077309333
+    second: Bilbo_Muerte_50
+  - first:
+      213: 1714001251532013384
+    second: Bilbo_Muerte_51
+  - first:
+      213: -1244995622004816
+    second: Bilbo_Muerte_52
+  - first:
+      213: 6277727442434892562
+    second: Bilbo_Muerte_53
+  - first:
+      213: 7443896632358260625
+    second: Bilbo_Muerte_54
+  - first:
+      213: -9142134843500141013
+    second: Bilbo_Muerte_55
+  - first:
+      213: -5021219071624337304
+    second: Bilbo_Muerte_56
+  - first:
+      213: -7349214474575243491
+    second: Bilbo_Muerte_57
+  - first:
+      213: -6279506217321051714
+    second: Bilbo_Muerte_58
+  - first:
+      213: -2145424598610651038
+    second: Bilbo_Muerte_59
+  - first:
+      213: -5734961299314048098
+    second: Bilbo_Muerte_60
+  - first:
+      213: 3120900043842997710
+    second: Bilbo_Muerte_61
+  - first:
+      213: 6596754759108263426
+    second: Bilbo_Muerte_62
+  - first:
+      213: 2171566092444655872
+    second: Bilbo_Muerte_63
+  - first:
+      213: 6429930816590332249
+    second: Bilbo_Muerte_64
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bilbo_Muerte_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ddca93804da0070800000000000000
+      internalID: 8073498413807492432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3665c9088af8bc0800000000000000
+      internalID: -3778616292008369191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad1c5811747d58c0800000000000000
+      internalID: -4008920064201056856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3d587bf14f69e70800000000000000
+      internalID: 9121746512345682892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe241bc989a9adc20800000000000000
+      internalID: 3232065662846321391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d32b3af398e62a80800000000000000
+      internalID: -8491844325104475183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf109d38be9c65d0800000000000000
+      internalID: -3067902732002123835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a4dfde6317a7930800000000000000
+      internalID: 4141747288055564869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bilbo_Muerte_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cdd6645e3aecfe0800000000000000
+      internalID: -1166815048317936603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,6 +14,7 @@ public class Movement2D : MonoBehaviour
     [SerializeField] int speed = 12;
     public int jumpNumber = 0;
     bool facingRight = true;
+    bool canMove = true;
 
     [Header("Components")]
     Rigidbody2D rb;
@@ -60,21 +61,28 @@ public class Movement2D : MonoBehaviour
 
     private void Update()
     {
-        if (rb.velocity.y < 0)
-        {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        if (canMove){
+            if (rb.velocity.y < 0)
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            }
+            onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
         }
-        onGround = Physics2D.OverlapCircle(GroundCheckPos.position, collisionRadius, groundLayer);
+        
     }
 
     void FixedUpdate()
     {
-        float x = joystick.Horizontal;
-        Vector2 dir = new Vector2(x, 0);
-        Walk(dir);
-        animator.SetFloat("Speed", Mathf.Abs(x));
-        animator.SetFloat("Fall", rb.velocity.y);
-        AnimatorReseter();
+        if (canMove)
+        {
+            float x = joystick.Horizontal;
+            Vector2 dir = new Vector2(x, 0);
+            Walk(dir);
+            animator.SetFloat("Speed", Mathf.Abs(x));
+            animator.SetFloat("Fall", rb.velocity.y);
+            AnimatorReseter();
+        }
+        
 
     }
 
@@ -96,15 +104,19 @@ public class Movement2D : MonoBehaviour
 
     public void Jump()
     {
-        if (onGround && Math.Abs(rb.velocity.y) < 0.1f)
+        if (canMove)
         {
-            AudioManager.instance.Play("BilboJump");
-            animator.SetBool("IsJumping", true);
-            rb.velocity = new Vector2(rb.velocity.x, 15);
-            //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            Invoke("AfterJump", .25f);
+            if (onGround && Math.Abs(rb.velocity.y) < 0.1f)
+            {
+                AudioManager.instance.Play("BilboJump");
+                animator.SetBool("IsJumping", true);
+                rb.velocity = new Vector2(rb.velocity.x, 15);
+                //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                Invoke("AfterJump", .25f);
+            }
+            jumpNumber++;
         }
-        jumpNumber++;
+        
     }
     void AfterJump()
     {
@@ -168,5 +180,23 @@ public class Movement2D : MonoBehaviour
         }
         
     }
+
+    public void Death()
+    {
+        animator.SetTrigger("Dead");
+        canMove = false;
+       
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
+    }
+
+    public void OnDeathAnimationEnd()
+    {
+        canMove = true;
+    }
+
 
 }

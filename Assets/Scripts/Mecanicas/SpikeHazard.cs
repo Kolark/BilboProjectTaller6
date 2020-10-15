@@ -15,11 +15,10 @@ public class SpikeHazard : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            ResetPlayer();
+            Movement2D.Instance.Death();
+            Debug.Log("Tocado");
         }
     }
-    void ResetPlayer()
-    {
-        Movement2D.Instance.transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
-    }
+  
+    
 }
