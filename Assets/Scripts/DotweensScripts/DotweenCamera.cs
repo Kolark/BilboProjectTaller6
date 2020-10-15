@@ -43,15 +43,12 @@ public class DotweenCamera : MonoBehaviour
     {
         _camera = Default_camera;
         noise = Default_noise;
-
-        AdjustUiBlockerScale.Instance.Adjust();//Solución pocha
     }
 
     public void SetCamera(CinemachineVirtualCamera cam, CinemachineBasicMultiChannelPerlin noise)
     {
         _camera = cam;
         this.noise = noise;
-        AdjustUiBlockerScale.Instance.Adjust();//Solución pocha
     }
 
 }
