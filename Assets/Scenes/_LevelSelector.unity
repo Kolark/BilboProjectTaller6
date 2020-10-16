@@ -19230,6 +19230,9 @@ MonoBehaviour:
   LM:
     serializedVersion: 2
     m_Bits: 768
+  block:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &307417445
 GameObject:
   m_ObjectHideFlags: 0

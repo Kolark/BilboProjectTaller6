@@ -1915,6 +1915,9 @@ MonoBehaviour:
   LM:
     serializedVersion: 2
     m_Bits: 8704
+  block:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!4 &467765659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5964798384862463158, guid: 80705673305f18a4fbe77648f6f618a2,
