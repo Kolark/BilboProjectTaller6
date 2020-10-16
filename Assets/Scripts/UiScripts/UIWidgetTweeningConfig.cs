@@ -20,6 +20,13 @@ public class UIWidgetTweeningConfig : MonoBehaviour
     {
         rectTransform.DOAnchorPos(normalPos, 0.5f, false);
     }
+    public void Enter(Action toDoOncomplete)
+    {
+        rectTransform.DOAnchorPos(normalPos, 0.5f, false).OnComplete(() =>
+        {
+            toDoOncomplete?.Invoke();
+        });
+    }
     public void Exit()
     {
         rectTransform.DOAnchorPos(normalPos + finalPos, 0.5f, false);

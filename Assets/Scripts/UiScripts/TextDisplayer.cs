@@ -10,33 +10,36 @@ public class TextDisplayer : MonoBehaviour
     TextMeshProUGUI text;
     private static TextDisplayer instance;
     public static TextDisplayer Instance { get => instance; }
-    private Animator animator;
+    UIWidgetTweeningConfig tweeningConfig;
     bool isDisplaying = false;
     string toShowNext = null;
     private void Awake()
     {
         text = GetComponentInChildren<TextMeshProUGUI>();
-        animator = GetComponent<Animator>();
+        tweeningConfig = GetComponent<UIWidgetTweeningConfig>();
         if (instance != null)
         {
             Destroy(this);
         }
         instance = this;
     }
-
-
+    private void Start()
+    {
+        tweeningConfig.SetOut();
+    }
     public void DisplayText(string _text)
     {
         if (!isDisplaying)
         {
             text.text = _text;
-            animator.SetBool("isOpen", true);
+            tweeningConfig.Enter();
+            OnClose();
             isDisplaying = true;
         }
         else
         {
             StopCoroutine(WaitToclose());
-            animator.SetBool("isOpen", false);
+            tweeningConfig.Exit(EndDisplay);
             toShowNext = _text;
         }
 
@@ -52,8 +55,8 @@ public class TextDisplayer : MonoBehaviour
         {
             yield return second;
         }
-        animator.SetBool("isOpen", false);
-        
+        tweeningConfig.Exit();
+
     }
 
     public void EndDisplay()
