@@ -9,24 +9,23 @@ public class Spear : MonoBehaviour
     [SerializeField] float speedDown = 5f;
     [SerializeField] float distanceUp = 1f;
     [SerializeField] float distanceDown = 1f;
-    Vector2 toPosition1;
-    Vector2 toPosition2;
+    Vector2 initPos;
+    private void Awake()
+    {
+        initPos = (Vector2)transform.position;
+    }
     private void Start()
     {
-        toPosition1 = Vector2.up * distanceUp;
-        toPosition1.x = transform.position.x;
-        toPosition2 = Vector2.down * distanceDown;
-        toPosition2.x = transform.position.x;
         Raise();
     }
 
     void Raise()
     {
-        transform.DOMove(toPosition1, 1/speedUp, false).OnComplete(() => { Down(); });
+        transform.DOMove(initPos+Vector2.up*distanceUp, 1/speedUp, false).OnComplete(() => { Down(); });
     }
 
     void Down()
     {
-        transform.DOMove(toPosition2, 1/speedDown, false).OnComplete(() => { Raise(); });
+        transform.DOMove(initPos, 1/speedDown, false).OnComplete(() => { Raise(); });
     }
 }
