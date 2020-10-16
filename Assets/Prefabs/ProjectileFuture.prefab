@@ -84,6 +84,7 @@ MonoBehaviour:
   order: 7
   shouldChangeLayers: 0
   layerToexist: 0
+  NormalTrigger: 0
   NormalType: 2
 --- !u!212 &7897532571074605553
 SpriteRenderer:
@@ -124,8 +125,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 75
-  m_Sprite: {fileID: 21300000, guid: 4e3c25b28dcf8fb46b0f52d292641af6, type: 3}
-  m_Color: {r: 0.9981711, g: 0.2216981, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1e504b20dc01f46459bb547a9b66e8c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
