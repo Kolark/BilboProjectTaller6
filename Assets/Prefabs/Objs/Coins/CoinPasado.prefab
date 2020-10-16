@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8950661276294400476}
   - component: {fileID: 9097134708856577017}
   - component: {fileID: 248772644258132384}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CoinPasado
   m_TagString: Untagged
   m_Icon: {fileID: 0}

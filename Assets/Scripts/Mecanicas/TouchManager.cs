@@ -105,6 +105,7 @@ public class TouchManager : MonoBehaviour
             touchable.touch(POSinScreen());
             if (Physics2D.OverlapCircle(POSinScreen(), 0.25f, block))
             {
+                Debug.Log("Algo " + Physics2D.OverlapCircle(POSinScreen(), 0.25f, block).transform.name);
                 noLongerTouchable();
             }
         }
@@ -134,9 +135,16 @@ public class TouchManager : MonoBehaviour
         }
         canInteract = true;
     }
+    
     public void eraseReference()
     {
         touchable = null;
         HUDChanger.Instance.HideUnhideALL(false);
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(POSinScreen(), 0.25f);
     }
 }

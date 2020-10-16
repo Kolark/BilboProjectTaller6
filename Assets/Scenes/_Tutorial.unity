@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 133894114}
   - component: {fileID: 133894113}
   - component: {fileID: 133894112}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,12 +1179,12 @@ PrefabInstance:
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 206.06
+      value: 203.77
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6
+      value: -2.61
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -1504,7 +1504,7 @@ GameObject:
   - component: {fileID: 410527260}
   - component: {fileID: 410527259}
   - component: {fileID: 410527258}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2299,12 +2299,12 @@ PrefabInstance:
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 208.27484
+      value: 209.29
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5836506
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 5665947243947622932, guid: 699a50c7bcf16e847ae99efc17d5f236,
         type: 3}
@@ -57622,7 +57622,7 @@ GameObject:
   - component: {fileID: 641306671}
   - component: {fileID: 641306670}
   - component: {fileID: 641306669}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58229,7 +58229,7 @@ GameObject:
   - component: {fileID: 785105983}
   - component: {fileID: 785105985}
   - component: {fileID: 785105984}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58310,12 +58310,12 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.64
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -58469,7 +58469,7 @@ GameObject:
   - component: {fileID: 825962936}
   - component: {fileID: 825962938}
   - component: {fileID: 825962937}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58721,7 +58721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.00162, y: -8.138061, z: -9.268555}
+  m_LocalPosition: {x: 11.2616205, y: -7.9380603, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -59588,7 +59588,7 @@ GameObject:
   - component: {fileID: 1122891970}
   - component: {fileID: 1122891969}
   - component: {fileID: 1122891968}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60094,7 +60094,7 @@ GameObject:
   - component: {fileID: 1204754320}
   - component: {fileID: 1204754319}
   - component: {fileID: 1204754318}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60961,7 +60961,7 @@ GameObject:
   - component: {fileID: 1443640611}
   - component: {fileID: 1443640613}
   - component: {fileID: 1443640612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61048,12 +61048,12 @@ PrefabInstance:
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 192.4
+      value: 187.29
       objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.73
+      value: -5.75
       objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
@@ -61439,7 +61439,7 @@ PrefabInstance:
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.799731
+      value: -5.68
       objectReference: {fileID: 0}
     - target: {fileID: 7580819407358006590, guid: a0f87593079d3544e9f74e0dc9561399,
         type: 3}
@@ -61582,7 +61582,7 @@ GameObject:
   - component: {fileID: 1606879849}
   - component: {fileID: 1606879851}
   - component: {fileID: 1606879850}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61659,7 +61659,7 @@ GameObject:
   - component: {fileID: 1642337501}
   - component: {fileID: 1642337503}
   - component: {fileID: 1642337502}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62411,7 +62411,7 @@ GameObject:
   - component: {fileID: 2026869193}
   - component: {fileID: 2026869192}
   - component: {fileID: 2026869191}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62709,7 +62709,7 @@ GameObject:
   - component: {fileID: 2091514985}
   - component: {fileID: 2091514984}
   - component: {fileID: 2091514983}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8274525200363952406}
   - component: {fileID: 8132836855993109299}
   - component: {fileID: 977833832579228010}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CoinPresente
   m_TagString: Untagged
   m_Icon: {fileID: 0}

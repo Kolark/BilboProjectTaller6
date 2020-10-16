@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7076090018831525807}
   - component: {fileID: 6934402898092193162}
   - component: {fileID: 2123341694134624211}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CoinFuturo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
