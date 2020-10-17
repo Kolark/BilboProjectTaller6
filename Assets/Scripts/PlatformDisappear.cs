@@ -62,7 +62,11 @@ public class PlatformDisappear : MonoBehaviour
     }
     public void Reappear()//Reaparecen componentes//llamado por evento de animación
     {
-        col2d.isTrigger = false;
+        if(timeOBJ.TimeToExist == TimeChange.CurrentTime)
+        {
+            col2d.isTrigger = false;
+            
+        }
         Active = true;
     }
 

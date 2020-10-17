@@ -46,6 +46,7 @@ public class LevelTeleportersManager : MonoBehaviour
         redButtons[GameInfo.LevelsUnlocked].SetActive();
         redButtons[GameInfo.LevelsUnlocked].ChangeColor(Color.red);
         cam.Follow = LevelTeleporters[GameInfo.LevelsUnlocked].transform;
+        Movement2D.Instance.transform.position = LevelTeleporters[GameInfo.LevelsUnlocked].transform.position;
         StartCoroutine(initcam());
     }
 

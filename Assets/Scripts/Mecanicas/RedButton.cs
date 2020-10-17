@@ -35,7 +35,7 @@ public class RedButton : MonoBehaviour, ITouchable
     {
         if (isActive)
         {
-            axis += Time.deltaTime / 3;
+            axis += Time.deltaTime / 1.25f;
             axis = Mathf.Clamp(axis, 0, 1);
             stencil.position = OriginalPos + Vector3.up * curve.Evaluate(axis) * 1.85f;
             if (axis > 0.8)

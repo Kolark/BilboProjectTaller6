@@ -63,7 +63,7 @@ public class TouchManager : MonoBehaviour
             if (Input.touchCount > 0 && canInteract)//Esta tocando
             {
 
-                if (!EventSystem.current.IsPointerOverGameObject()) 
+                if (!EventSystem.current.IsPointerOverGameObject(0)) 
                 {
                     TouchLogic();
                 }

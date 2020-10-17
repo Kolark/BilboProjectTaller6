@@ -344,7 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 2
   order: 8
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
@@ -78951,7 +78951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
@@ -79127,7 +79127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 0
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
   NormalType: 2
@@ -83007,7 +83007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 0
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
@@ -84978,7 +84978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 0
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
   NormalType: 2
@@ -85082,7 +85082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: -1
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
   NormalType: 2
@@ -123615,7 +123615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 8
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
@@ -126140,7 +126140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
@@ -126915,7 +126915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: -1
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
   NormalType: 2
@@ -126988,7 +126988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
@@ -127808,32 +127808,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0009765625
       objectReference: {fileID: 0}
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00024414062
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874113478303526759, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874113478303526759, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874113478303526759, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874113478303526759, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3616479869588570520, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
@@ -127895,56 +127875,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: $hHud
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572236630732181249, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572236630732181249, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572236630732181249, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572236630732181249, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4572236630732181249, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6464471779713600499, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6464471779713600499, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6464471779713600499, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6464471779713600499, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6464471779713600499, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ba8f2e9e82281248a0b04db8a2b9f19, type: 3}
@@ -128804,6 +128734,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 986435050161418617, guid: 092f79382eb12f6449ded1e02cad017d,
+        type: 3}
+      propertyPath: canBeTeleported
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5404059096441731248, guid: 092f79382eb12f6449ded1e02cad017d,
         type: 3}
       propertyPath: m_BodyType
