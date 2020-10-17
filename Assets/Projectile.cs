@@ -67,7 +67,7 @@ public class Projectile : MonoBehaviour
         }
         if (collision.transform.CompareTag("Player"))
         {
-            Movement2D.Instance.Death();
+            ResetPlayer();
         }
     }
     private void OnDestroy()

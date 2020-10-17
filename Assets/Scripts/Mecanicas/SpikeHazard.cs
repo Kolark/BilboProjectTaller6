@@ -16,6 +16,7 @@ public class SpikeHazard : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Movement2D.Instance.Death();
+            Debug.Log("Tocado");
         }
     }
   
