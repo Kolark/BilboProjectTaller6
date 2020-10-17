@@ -15,7 +15,7 @@ public class Movement2D : MonoBehaviour
     public int jumpNumber = 0;
     bool facingRight = true;
     bool canMove = true;
-
+    public bool CanMove { get => canMove; }
     [Header("Components")]
     Rigidbody2D rb;
     Animator animator;
@@ -162,13 +162,13 @@ public class Movement2D : MonoBehaviour
         if (objtotp != null)
         {
             //Hay un objeto detras y no puede hacer tp
-            Debug.Log("Obj: " + objtotp.name);
+
             return true;
         }
         else
         {
             //No hay ningun objeto detras y puede hacer tp
-            Debug.Log("Falso");
+
             return false;
         }
     }
@@ -185,7 +185,7 @@ public class Movement2D : MonoBehaviour
     {
         animator.SetTrigger("Dead");
         canMove = false;
-       
+        HUDChanger.Instance.HideUnhideALL(true);
     }
 
     public void ResetPosition()
@@ -196,6 +196,7 @@ public class Movement2D : MonoBehaviour
     public void OnDeathAnimationEnd()
     {
         canMove = true;
+        HUDChanger.Instance.HideUnhideALL(false);
     }
 
 

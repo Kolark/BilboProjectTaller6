@@ -106,22 +106,25 @@ public class Ui_MainControls : MonoBehaviour
     /// <param name="time"></param>
     public void TimeButton(int time)
     {
-        AudioManager.instance.Play("ButtonJump");
-        TimeChange.Instance.StartChangeTime(time);
-        if (TimeChange.IsTimeTraveling)
+        if (Movement2D.Instance.CanMove)
         {
-            timeChangeManager.SetInteractableFalse();
-
-            if (Movement2D.Instance != null)
+            AudioManager.instance.Play("ButtonJump");
+            TimeChange.Instance.StartChangeTime(time);
+            if (TimeChange.IsTimeTraveling)
             {
-                Movement2D.Instance.TimeTravelAnimation();
+                timeChangeManager.SetInteractableFalse();
+
+                if (Movement2D.Instance != null)
+                {
+                    Movement2D.Instance.TimeTravelAnimation();
+                }
             }
-        }
-        else
-        {
-            //CAMERA SHAKE
-            DotweenCamera.Instance.DoCameraShake();
-            TextDisplayer.Instance.DisplayText("Hay un obstaculo!");
+            else
+            {
+                //CAMERA SHAKE
+                DotweenCamera.Instance.DoCameraShake();
+                TextDisplayer.Instance.DisplayText("Hay un obstaculo!");
+            }
         }
 
     }
@@ -149,6 +152,7 @@ public class Ui_MainControls : MonoBehaviour
         {
             widgets[i].Exit();
         }
+
         widgets[widgets.Length-1].Exit(toDoOnComplete);
     }
     public void Unhide_UI()

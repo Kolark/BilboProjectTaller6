@@ -12,11 +12,12 @@ public class PlatformDisappear : MonoBehaviour
     Animator anim;
     TimeOBJ timeOBJ;
     Collider2D col2d;
-
+    Rigidbody2D rb2d;
     bool Active = true;
 
     private void Awake()
     {
+        rb2d = GetComponent<Rigidbody2D>();
         timeOBJ = GetComponent<TimeOBJ>();
         col2d = GetComponent<Collider2D>();
         Disappear_time = new WaitForSeconds(secondsToDisappear);
