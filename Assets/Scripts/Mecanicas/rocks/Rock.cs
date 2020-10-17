@@ -34,13 +34,13 @@ public class Rock : MonoBehaviour
     //{
     //    rb2d.AddTorque(1.5f, ForceMode2D.Impulse);
     //}
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.CompareTag("Player"))
-        {
-            ResetPlayer();
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.transform.CompareTag("Player"))
+    //    {
+    //        ResetPlayer();
+    //    }
+    //}
     void ResetPlayer()
     {
         Movement2D.Instance.transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;

@@ -16,7 +16,7 @@ public class RockInvoker : MonoBehaviour
     {
         second = new WaitForSeconds(secondsperRock);
         rockPool = GetComponentInParent<RockPool>();
-        TimeChange.EndTimeChange += spawnRocks;
+        //TimeChange.EndTimeChange += spawnRocks;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,10 +26,10 @@ public class RockInvoker : MonoBehaviour
         {
             currentRocks--;
             rockPool.Recycle(rock);
-            if(currentRocks < amountToSpawn)
-            {
-                //Spawn();
-            }
+            //if(currentRocks < amountToSpawn)
+            //{
+            //    //Spawn();
+            //}
             
         }
     }
@@ -39,33 +39,33 @@ public class RockInvoker : MonoBehaviour
         InvokeRepeating("Spawn", 0,secondsperRock);
     }
 
-    void spawnRocks()
-    {
-        if (timeToExist == TimeChange.CurrentTime)
-        {
-            StartCoroutine(spawnRoutine());
-        }
-        else
-        {
-            StopCoroutine(spawnRoutine());
-        }
+    //void spawnRocks()
+    //{
+    //    if (timeToExist == TimeChange.CurrentTime)
+    //    {
+    //        StartCoroutine(spawnRoutine());
+    //    }
+    //    else
+    //    {
+    //        StopCoroutine(spawnRoutine());
+    //    }
         
-    }
-    IEnumerator spawnRoutine()
-    {
-        for (int i = spawned; i < amountToSpawn; i++)
-        {
-            if(timeToExist == TimeChange.CurrentTime)
-            {
-                Spawn();
+    //}
+    //IEnumerator spawnRoutine()
+    //{
+    //    for (int i = spawned; i < amountToSpawn; i++)
+    //    {
+    //        if(timeToExist == TimeChange.CurrentTime)
+    //        {
+    //            Spawn();
                 
-                spawned++;
+    //            spawned++;
 
-                yield return second;
-            }
-        }
+    //            yield return second;
+    //        }
+    //    }
 
-    }
+    //}
 
     public void Spawn()
     {
