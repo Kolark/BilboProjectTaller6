@@ -11,7 +11,7 @@ public class RockInvoker : MonoBehaviour
     [SerializeField] int timeToExist;
     [SerializeField] int amountToSpawn;
     int spawned = 0;
-    int currentRocks = 0;
+
     private void Awake()
     {
         second = new WaitForSeconds(secondsperRock);
@@ -24,19 +24,13 @@ public class RockInvoker : MonoBehaviour
         Rock rock = collision.GetComponent<Rock>();
         if(rock != null)
         {
-            currentRocks--;
             rockPool.Recycle(rock);
-            if(currentRocks < amountToSpawn)
-            {
-                //Spawn();
-            }
-            
+            Spawn();
         }
     }
     private void Start()
     {
-        //spawnRocks();
-        InvokeRepeating("Spawn", 0,secondsperRock);
+        spawnRocks();
     }
 
     void spawnRocks()
@@ -60,7 +54,7 @@ public class RockInvoker : MonoBehaviour
                 Spawn();
                 
                 spawned++;
-
+                Debug.Log(spawned + "i : " + i);
                 yield return second;
             }
         }
@@ -69,12 +63,8 @@ public class RockInvoker : MonoBehaviour
 
     public void Spawn()
     {
-        if(currentRocks < amountToSpawn && timeToExist == TimeChange.CurrentTime)
-        {
-            currentRocks++;
-            Rock rock = rockPool.GetObject();
-            rock.transform.position = SpawnArea.position;
-            rock.NormalState();
-        }
+        Rock rock = rockPool.GetObject();
+        rock.transform.position = SpawnArea.position;
+        rock.NormalState();
     }
 }

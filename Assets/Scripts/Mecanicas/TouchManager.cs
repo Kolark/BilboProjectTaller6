@@ -37,6 +37,9 @@ public class TouchManager : MonoBehaviour
     //}
     private void FixedUpdate()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) { Debug.Log("encimaaaaaaaaaa");}
+        else { Debug.Log("noencima"); }
+
         if (!TimeChange.IsTimeTraveling)
         {
 #if UNITY_EDITOR

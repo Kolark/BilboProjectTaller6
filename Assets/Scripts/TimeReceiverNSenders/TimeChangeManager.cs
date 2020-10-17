@@ -35,14 +35,6 @@ public class TimeChangeManager : MonoBehaviour
         objs[TimeChange.CurrentTime].interactable = false;
     }
 
-    public void EnabledAll()
-    {
-
-    }
-    public void DisabledAll()
-    {
-
-    }
     
     private void OnDestroy()
     {

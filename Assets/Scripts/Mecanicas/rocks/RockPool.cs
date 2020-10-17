@@ -8,9 +8,6 @@ public class RockPool : MonoBehaviour, IPool<Rock>
     [SerializeField] Transform PlaceToStore;
     [SerializeField] int numeroRocas;
     private List<Rock> rocks = new List<Rock>();
-
-    public List<Rock> Rocks { get => rocks;}
-    
     private void Awake()
     {
         Fill();
@@ -20,11 +17,11 @@ public class RockPool : MonoBehaviour, IPool<Rock>
     {
         for (int i = 0; i < numeroRocas; i++)
         {
-            Rocks.Add(Instantiate(rock, PlaceToStore));
+            rocks.Add(Instantiate(rock, PlaceToStore));
         }
-        for (int i = 0; i < Rocks.Count; i++)
+        for (int i = 0; i < rocks.Count; i++)
         {
-            Rocks[i].FreeZeState();
+            rocks[i].FreeZeState();
         }
         
     }
@@ -32,10 +29,10 @@ public class RockPool : MonoBehaviour, IPool<Rock>
     public Rock GetObject()
     {
         Rock _rock;
-        if(Rocks.Count > 0)
+        if(rocks.Count > 0)
         {
-            _rock = Rocks[0];
-            Rocks.RemoveAt(0);
+            _rock = rocks[0];
+            rocks.RemoveAt(0);
         }
         else
         {
@@ -48,6 +45,6 @@ public class RockPool : MonoBehaviour, IPool<Rock>
     {
         poolObject.FreeZeState();
         poolObject.transform.position = PlaceToStore.position;
-        Rocks.Add(poolObject);
+        rocks.Add(poolObject);
     }
 }

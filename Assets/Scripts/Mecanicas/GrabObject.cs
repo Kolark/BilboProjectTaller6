@@ -11,13 +11,11 @@ public class GrabObject : MonoBehaviour, ITouchable
     int Ignore = 11;
     int Grab = 13;
     TimeOBJ timeOBJ;
-    Rigidbody2D rb2d;
-    
+
     bool Locked = false;
 
     protected virtual void Awake()
     {
-        rb2d = GetComponent<Rigidbody2D>();
         timeOBJ = GetComponent<TimeOBJ>();
         TeleportManager.IsTpActive += ChangeLayer;
         
@@ -41,15 +39,12 @@ public class GrabObject : MonoBehaviour, ITouchable
 
     public void OnTouchUp()
     {
-        rb2d.velocity = Vector2.zero;
+        
     }
 
     public virtual void touch(Vector3 pos)
     {
-        if (timeOBJ.TimeToExist == TimeChange.CurrentTime)
-        {
-            transform.position = pos;
-        }
+        transform.position = pos;
     }
 
     private void OnDestroy()
