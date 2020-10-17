@@ -123,13 +123,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inside2d: {fileID: 2100000, guid: 3d10cfd6f6a9eee4c8a54ea2dd956dab, type: 2}
-  inside2dv2: {fileID: 2100000, guid: 89e6fcb9b35c73d4db77b7cc2e106be9, type: 2}
-  SprDefault: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   TimeToExist: 1
   order: 5
   shouldChangeLayers: 1
-  layerToexist: 0
+  layerToexist: 13
+  NormalTrigger: 0
   NormalType: 0
 --- !u!50 &7805371583004473813
 Rigidbody2D:

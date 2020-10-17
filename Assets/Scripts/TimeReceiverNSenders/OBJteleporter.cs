@@ -79,7 +79,6 @@ public class OBJteleporter : MonoBehaviour
         growing = false; //Para que closeanim lo cierre
         if (locked)
         {
-
             Collider2D[] objtotp = Physics2D.OverlapCircleAll(transform.position, 8f, LM);
             if (objtotp != null)
             {
@@ -90,21 +89,14 @@ public class OBJteleporter : MonoBehaviour
                     tObj[i] = objtotp[i].transform.GetComponent<TimeOBJ>();
                     tObj[i].SetRenderOn();
                 }
-
             }
-
             locked = false;
         }
     }
 
-
-
-
-
     public void GGG(Vector3 pos)
     {
         float lx = pos.x - transform.position.x; //Para Swapear los tiempos
-
         Swap(lx);
         growing = true;
         if (!hasPlayed)
@@ -112,7 +104,6 @@ public class OBJteleporter : MonoBehaviour
             AudioManager.instance.Play("Portal");
             hasPlayed = true;
         }
-
         xaxis1 += Time.deltaTime;
         transform.localScale = Vector3.one * 20 * scaleUp.Evaluate(xaxis1);
         if (scaleUp.Evaluate(xaxis1) > 0.9)

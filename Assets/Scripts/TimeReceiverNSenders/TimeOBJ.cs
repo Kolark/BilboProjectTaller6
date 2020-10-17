@@ -15,11 +15,11 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
     public int TimeToExist = 1;
     public int order = 1;
     int c = 0;
-    [Header("Layers")]
-    [SerializeField] bool shouldChangeLayers;
-    [SerializeField] int layerToexist;
     int teleport = 10;
     int ignore = 11;
+    [Header("Layers")]
+    [SerializeField] bool canBeTeleported;
+    [SerializeField] int layerToexist;
     [SerializeField] bool NormalTrigger = false;
     [SerializeField] RigidbodyType2D NormalType;
 
@@ -42,9 +42,11 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
         OnMiniupdate();
     }
     public void StartTC(){
+        rb2d.bodyType = RigidbodyType2D.Static;
         if (TimeToExist == TimeChange.TimetoGo){
             //Voy a existir en la segunda iteración. Asegurarse de tener render prendido y layer correcta para aparecer 
             //en la animación del grow
+            Debug.Log(transform.name + ": static ");
             spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
@@ -53,7 +55,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
             spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
             spRend.enabled = false;
-            if (shouldChangeLayers) { gameObject.layer = ignore; }
+            if (canBeTeleported) { gameObject.layer = ignore; }
             
         }
     }
@@ -65,7 +67,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
             rb2d.bodyType = NormalType;//Fix
             //col2d.isTrigger = false;
             col2d.isTrigger = NormalTrigger;
-            if (shouldChangeLayers) { gameObject.layer = layerToexist; }
+            if (canBeTeleported) { gameObject.layer = layerToexist; }
         }
         else{
             rb2d.bodyType = RigidbodyType2D.Static;
@@ -73,13 +75,13 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
             if (TimeToExist == TimeChange.TimetoGo){
                 spRend.material = GameInfo.Instance.Inside2dv2;
                 spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-                if (shouldChangeLayers) { gameObject.layer = teleport;}
+                if (canBeTeleported) { gameObject.layer = teleport;}
             }
             else if (TimeToExist == TimeChange.LeftOutTime){
                 spRend.material = GameInfo.Instance.Inside2dv2;
                 spRend.sortingOrder = TimeChange.layersIDS[2] + order;
                 spRend.enabled = false;
-                if (shouldChangeLayers) { gameObject.layer = ignore;}
+                if (canBeTeleported) { gameObject.layer = ignore;}
             }
         }
     }
@@ -100,6 +102,8 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
         rb2d.bodyType = NormalType;
         spRend.material = GameInfo.Instance.Inside2d;
         TimeToExist = TimeChange.CurrentTime;
+        gameObject.layer = layerToexist;
+        Debug.Log("endanim");
     }
 
     public void OnMiniupdate(){
@@ -107,13 +111,13 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
             spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
-            if (shouldChangeLayers) { gameObject.layer = teleport; }
+            if (canBeTeleported) { gameObject.layer = teleport; }
         }
         else if (TimeToExist == TimeChange.LeftOutTime){
             spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = false;
             spRend.sortingOrder = TimeChange.layersIDS[2] + order;
-            if (shouldChangeLayers) { gameObject.layer = ignore; }
+            if (canBeTeleported) { gameObject.layer = ignore; }
         }
     }
 

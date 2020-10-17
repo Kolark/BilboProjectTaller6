@@ -31,9 +31,7 @@ public class TeleportManager : MonoBehaviour, ITouchable
     private void Start()
     {
         IsTpActive?.Invoke(col2d.enabled);
-        //IsTpActive(col2d.enabled);
     }
-
 
     public void OnTouchUp()
     {
@@ -49,14 +47,11 @@ public class TeleportManager : MonoBehaviour, ITouchable
     public void Switch()
     {   
         col2d.enabled = !col2d.enabled;
-        //IsTpActive(col2d.enabled);
         IsTpActive?.Invoke(col2d.enabled);
-        Debug.Log("Switch");
     }
 
     void updatetpStatus()
     {
-        //IsTpActive(col2d.enabled);
         IsTpActive?.Invoke(col2d.enabled);
     }
     private void OnDestroy()
