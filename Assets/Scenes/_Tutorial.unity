@@ -2079,7 +2079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478656453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 481.74, y: -5.97, z: 0}
+  m_LocalPosition: {x: 494.01, y: 1.39, z: 0}
   m_LocalScale: {x: 1.242045, y: 1.242045, z: 1.242045}
   m_Children: []
   m_Father: {fileID: 428066230}
@@ -58442,12 +58442,12 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2
+      value: 4.3
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -58853,7 +58853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.561621, y: -7.9380603, z: -9.268555}
+  m_LocalPosition: {x: 11.661621, y: -8.438061, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -59469,7 +59469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031605460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 508.18, y: 2.64, z: 0}
+  m_LocalPosition: {x: 496.63, y: 2.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 128280175}
@@ -60203,7 +60203,7 @@ MonoBehaviour:
   config:
     TimeJumpButtons: 0
     JumpButton: 0
-    Switch: 1
+    Switch: 0
     Coins: 1
 --- !u!4 &1197044905
 Transform:
