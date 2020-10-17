@@ -37,6 +37,7 @@ public class TouchManager : MonoBehaviour
     //}
     private void FixedUpdate()
     {
+        
         if (!TimeChange.IsTimeTraveling)
         {
 #if UNITY_EDITOR
@@ -100,13 +101,13 @@ public class TouchManager : MonoBehaviour
         if (touchable != null)
         {
             touchable.touch(POSinScreen());
-            if (Physics2D.OverlapCircle(POSinScreen(), 0.25f, block))
+            if (checkBlockLayer())
             {
                 Debug.Log("Algo " + Physics2D.OverlapCircle(POSinScreen(), 0.25f, block).transform.name);
                 noLongerTouchable();
             }
         }
-        else
+        else if(!checkBlockLayer())
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray, 20, LM);//Detecto el hit en las layer indicadas
@@ -133,6 +134,9 @@ public class TouchManager : MonoBehaviour
         canInteract = true;
     }
     
+    bool checkBlockLayer() {
+        return Physics2D.OverlapCircle(POSinScreen(), 0.25f, block);
+    }
     public void eraseReference()
     {
         touchable = null;
