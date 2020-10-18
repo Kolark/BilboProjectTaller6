@@ -29,7 +29,7 @@ public class TimeChange : MonoBehaviour
     public static Action EndTimeChange;
 
     public static Action MiniUpdate;
-    Animator stencilGrowerAnim;
+    TimeExecute timeExecute;
    
     private void Awake()
     {
@@ -43,7 +43,7 @@ public class TimeChange : MonoBehaviour
     }
     private void Start()
     {
-        stencilGrowerAnim = Movement2D.Instance.StencilGrowerAnim;
+        timeExecute = Movement2D.Instance.transform.GetChild(0).GetComponent<TimeExecute>();
     }
 
     public void StartChangeTime(int setTime)//1er paso
@@ -65,10 +65,8 @@ public class TimeChange : MonoBehaviour
                 leftOutTime = timetoGo;
                 timetoGo = setTime;
             }
+            timeExecute.DoAnimation();
             StartTimeChange();
-            stencilGrowerAnim.transform.localScale = Vector3.zero;
-            stencilGrowerAnim.gameObject.SetActive(true);
-            stencilGrowerAnim.SetTrigger("ExGrowAnim");
         }
         else
         {

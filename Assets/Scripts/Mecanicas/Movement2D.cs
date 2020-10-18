@@ -35,14 +35,11 @@ public class Movement2D : MonoBehaviour
 
     //----------------------------------------------------------
     public bool OnLadder = false;
-    Animator stencilGrowerAnim;
-    public Animator StencilGrowerAnim { get => stencilGrowerAnim;}
     //----------------------------------------------------------
 
 
     void Awake()
     {
-        stencilGrowerAnim = transform.GetChild(0).GetComponent<Animator>();
         rb = GetComponentInChildren<Rigidbody2D>();
         animator = GetComponent<Animator>();
 
