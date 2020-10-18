@@ -20958,7 +20958,9 @@ MonoBehaviour:
     TimeJumpButtons: 0
     JumpButton: 1
     Switch: 0
+    Arrows: 1
     Coins: 0
+    Pause: 1
 --- !u!4 &1120317244
 Transform:
   m_ObjectHideFlags: 0
@@ -21508,6 +21510,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 125046641845494552, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 125046642445128832, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_AnchoredPosition.y

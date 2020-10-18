@@ -80470,7 +80470,9 @@ MonoBehaviour:
     TimeJumpButtons: 1
     JumpButton: 1
     Switch: 1
+    Arrows: 1
     Coins: 1
+    Pause: 1
 --- !u!4 &482407128
 Transform:
   m_ObjectHideFlags: 0

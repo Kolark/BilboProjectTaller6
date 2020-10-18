@@ -39,27 +39,20 @@ public class Ui_MainControls : MonoBehaviour
     }
     void SetConfig()
     {
-        if (!_configclass.JumpButton)
+        for (int i = 0; i < _configclass.uilist.Length; i++)
         {
-            widgets[(int)config.JumpButton].SetOut();
-        }
-        if (!_configclass.Switch)
-        {
-            widgets[(int)config.Switch].SetOut();
-        }
-        if (!_configclass.TimeJumpButtons)
-        {
-            widgets[(int)config.TimeJumpButtons].SetOut();
-        }
-        if (!_configclass.Coins)
-        {
-            widgets[(int)config.Coin].SetOut();
+            if (!_configclass.uilist[i])
+            {
+                widgets[i].SetOut();
+            }
         }
     }
 
     public void ControlsEnter(config config)
     {
+        _configclass.SetBoolTrue((int)config);
         widgets[(int)config].Enter();
+        
     }
 
     public void ControlsOut(config config)
@@ -150,6 +143,7 @@ public class Ui_MainControls : MonoBehaviour
     {
         for (int i = 0; i < widgets.Length-1; i++)
         {
+            
             widgets[i].Exit();
         }
 
@@ -159,7 +153,10 @@ public class Ui_MainControls : MonoBehaviour
     {
         for (int i = 0; i < widgets.Length; i++)
         {
-            widgets[i].Enter();
+            if (_configclass.uilist[i])
+            {
+                widgets[i].Enter();
+            }
         }
     }
     public void HideUnhideSpecificUi(config config,bool hide)
@@ -183,24 +180,34 @@ public class UiMainConfig
     public bool Arrows;
     public bool Coins;
     public bool Pause;
-
-    public bool[] uilist;
-    public UiMainConfig()
+    [HideInInspector]
+    public bool[] uilist { get { return new bool[] { TimeJumpButtons, JumpButton, Switch, Arrows, Coins, Pause }; } }
+    
+    public void SetBoolTrue(int index)
     {
-        this.TimeJumpButtons = true;
-        this.JumpButton = true;
-        this.Switch = true;
-        
-    }
-    public UiMainConfig(bool timeJumpButtons, bool jumpButton, bool _switch,bool _arrows,bool _coins,bool _pause)
-    {
-        this.TimeJumpButtons = timeJumpButtons;
-        this.JumpButton = jumpButton;
-        this.Switch = _switch;
-        this.Arrows = _arrows;
-        this.Coins = _coins;
-        this.Pause = _pause;
-        uilist = new bool[]{TimeJumpButtons,JumpButton,Switch,Arrows,Coins,Pause};
+        switch (index)
+        {
+            case 0:
+                this.TimeJumpButtons = true;
+                break;
+            case 1:
+                this.JumpButton = true;
+                break;
+            case 2:
+                this.Switch = true;
+                break;
+            case 3:
+                this.Arrows = true;
+                break;
+            case 4:
+                this.Coins = true;
+                break;
+            case 5:
+                this.Pause = true;
+                break;
+            default:
+                break;
+        }
     }
 }
 

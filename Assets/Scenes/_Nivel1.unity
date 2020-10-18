@@ -76983,7 +76983,7 @@ PrefabInstance:
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5708618
+      value: 0.00012207031
       objectReference: {fileID: 0}
     - target: {fileID: 3616479869588570520, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
@@ -77674,7 +77674,9 @@ MonoBehaviour:
     TimeJumpButtons: 1
     JumpButton: 1
     Switch: 1
+    Arrows: 1
     Coins: 1
+    Pause: 1
 --- !u!4 &1721219072
 Transform:
   m_ObjectHideFlags: 0
