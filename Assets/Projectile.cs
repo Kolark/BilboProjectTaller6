@@ -42,6 +42,7 @@ public class Projectile : MonoBehaviour
         {
             TimeChange.StartTimeChange += onStartchange;
             TimeChange.EndTimeChange += onEndChange;
+            Debug.Log("se unio al eventoend : " + this.name);
         }
         Active = true;
         transform.position = pos;

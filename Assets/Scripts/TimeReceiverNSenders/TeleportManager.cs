@@ -25,6 +25,7 @@ public class TeleportManager : MonoBehaviour, ITouchable
         #endregion
         col2d = GetComponent<Collider2D>();
         TimeChange.EndTimeChange += updatetpStatus;
+        //Debug.Log("se unio al eventoend : " + this.name);
     }
 
 
@@ -53,6 +54,7 @@ public class TeleportManager : MonoBehaviour, ITouchable
     void updatetpStatus()
     {
         IsTpActive?.Invoke(col2d.enabled);
+        //Debug.Log("terminolanimacion : " + this.name);
     }
     private void OnDestroy()
     {

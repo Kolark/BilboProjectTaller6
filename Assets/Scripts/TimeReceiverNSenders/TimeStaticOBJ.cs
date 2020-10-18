@@ -41,6 +41,7 @@ public class TimeStaticOBJ : MonoBehaviour,ICurrentState
     {
         TimeChange.StartTimeChange += UpdateObjs;
         TimeChange.EndTimeChange += UpdateObjs;
+        //Debug.Log("se unio al eventoend : " + this.name);
         TimeChange.MiniUpdate += UpdateObjs;
     }
     private void Start()
@@ -80,6 +81,7 @@ public class TimeStaticOBJ : MonoBehaviour,ICurrentState
         {
             Dissapear(indexLeftOut + 3);
         }
+        //Debug.Log("terminolanimacion : " + this.name);
     }
 
     protected void Dissapear(int index)

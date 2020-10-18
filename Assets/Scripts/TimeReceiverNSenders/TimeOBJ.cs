@@ -35,6 +35,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
 
         TimeChange.StartTimeChange += StartTC;
         TimeChange.EndTimeChange += EndTC;
+        //Debug.Log("se unio al eventoend : " + this.name);
         TimeChange.MiniUpdate += OnMiniupdate;
     }
     private void Start()
@@ -46,7 +47,6 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
         if (TimeToExist == TimeChange.TimetoGo){
             //Voy a existir en la segunda iteración. Asegurarse de tener render prendido y layer correcta para aparecer 
             //en la animación del grow
-            Debug.Log(transform.name + ": static ");
             spRend.material = GameInfo.Instance.Inside2dv2;
             spRend.enabled = true;
             spRend.sortingOrder = TimeChange.layersIDS[1] + order;
@@ -84,6 +84,7 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
                 if (canBeTeleported) { gameObject.layer = ignore;}
             }
         }
+        //Debug.Log("terminolanimacion : " + this.name);
     }
 
     public void CambiarTiempo(int tiempo,RigidbodyType2D type,bool istrigger,bool rend){
@@ -103,7 +104,6 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
         spRend.material = GameInfo.Instance.Inside2d;
         TimeToExist = TimeChange.CurrentTime;
         gameObject.layer = layerToexist;
-        Debug.Log("endanim");
     }
 
     public void OnMiniupdate(){

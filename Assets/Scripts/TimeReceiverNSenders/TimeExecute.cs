@@ -11,16 +11,18 @@ public class TimeExecute : MonoBehaviour
     /// 
     public void DoAnimation()
     {
-        transform.gameObject.SetActive(true);
-        Debug.Log("doinanimg");
-        transform.DOScale(50,0.35f).SetEase(Ease.InBounce).OnComplete(()=> { endAnim(); });
+        //transform.gameObject.SetActive(true);
+        transform.DOScale(50,1.25f).SetEase(Ease.InBounce).SetUpdate(true).OnComplete(()=> {
+            
+ endAnim(); });
     }
 
     public void endAnim()//2ndo Paso
     {
         transform.localScale = Vector3.zero;
         TimeChange.Instance.EndChangeTime();
-        transform.gameObject.SetActive(false);
+        
+        //transform.gameObject.SetActive(false);
     }
 
     

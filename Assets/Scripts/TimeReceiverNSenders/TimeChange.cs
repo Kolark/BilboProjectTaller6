@@ -48,6 +48,7 @@ public class TimeChange : MonoBehaviour
 
     public void StartChangeTime(int setTime)//1er paso
     {
+        Debug.Log("start");
         if (setTime == leftOutTime)
         {
             leftOutTime = timetoGo;
@@ -80,9 +81,20 @@ public class TimeChange : MonoBehaviour
         timetoGo = currentTime;
         currentTime = Temp;
         //StartTimeChange();
-        EndTimeChange();
+        
+        try
+        {
+            EndTimeChange();
+        }
+        catch (Exception E)
+        {
+
+            throw E;
+        }
+        Debug.Log("terminolanimacion : " + this.name);
         isTimeTraveling = false;
         NormalTime();
+        
     }
 
     public static void Swap()
@@ -105,6 +117,7 @@ public class TimeChange : MonoBehaviour
     void NormalTime()
     {
         Time.timeScale = 1;
+        Debug.Log("endtime");
     }
 
     private void OnDestroy()

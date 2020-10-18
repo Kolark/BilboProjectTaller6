@@ -9,6 +9,7 @@ public class DestroyableHatch : MonoBehaviour
     Collider2D col2d;
     SpriteRenderer ren2d;
     TimeOBJ timeOBJ;
+    [SerializeField] RockPool rockpool;
     int c = 0;
     private void Awake()
     {
@@ -25,10 +26,10 @@ public class DestroyableHatch : MonoBehaviour
             {
                 if (c < spRend.Length)
                 {
-                    rock.FreeZeState();
+                    rockpool.Recycle(rock);
                     ren2d.sprite = spRend[c];
                     c++;
-                    Destroy(collision.gameObject);
+                    //Destroy(collision.gameObject);
                 }
                 else
                 {

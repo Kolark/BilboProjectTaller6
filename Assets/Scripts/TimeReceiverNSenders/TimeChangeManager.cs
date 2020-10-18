@@ -13,10 +13,12 @@ public class TimeChangeManager : MonoBehaviour
     private void Awake()
     {
         objs = GetComponentsInChildren<Button>();
+        TimeChange.EndTimeChange += MakeActiveAgain; //tiene que estar obligatoriamente en el start
+        //Debug.Log("se unio al eventoend : " + this.name);
     }
     private void Start()
     {
-        TimeChange.EndTimeChange += MakeActiveAgain; //tiene que estar obligatoriamente en el start
+        
     }
     public void SetInteractableFalse()
     {
@@ -26,13 +28,15 @@ public class TimeChangeManager : MonoBehaviour
         }
     }
 
-    void MakeActiveAgain()
+    public void MakeActiveAgain()
     {
+        
         for (int i = 0; i < objs.Length; i++)
         {
             objs[i].interactable = true;
         }
         objs[TimeChange.CurrentTime].interactable = false;
+        //Debug.Log("terminolanimacion : " + this.name);
     }
 
     public void EnabledAll()

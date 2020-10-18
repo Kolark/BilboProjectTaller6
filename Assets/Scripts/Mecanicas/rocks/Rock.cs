@@ -14,6 +14,7 @@ public class Rock : MonoBehaviour
         col2d = GetComponent<Collider2D>();
         timeOBJ = GetComponent<TimeOBJ>();
         TimeChange.EndTimeChange += NormalState;
+        //Debug.Log("se unio al eventoend : " + this.name);
         //FreeZeState();
     }
     public void FreeZeState()
@@ -29,6 +30,7 @@ public class Rock : MonoBehaviour
             rb2d.velocity = velocity;
             //Invoke("addtorq", Time.deltaTime);
         }
+        //Debug.Log("terminolanimacion : " + this.name);
     }
     //void addtorq()
     //{
@@ -44,5 +46,9 @@ public class Rock : MonoBehaviour
     void ResetPlayer()
     {
         Movement2D.Instance.transform.position = CheckPointManager.Instance.CurrentCheckPoint.position;
+    }
+    private void OnDestroy()
+    {
+        TimeChange.EndTimeChange -= NormalState;
     }
 }

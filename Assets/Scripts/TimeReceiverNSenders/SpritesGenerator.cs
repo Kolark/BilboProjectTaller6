@@ -33,6 +33,7 @@ public class SpritesGenerator : MonoBehaviour
         }
         TimeChange.StartTimeChange += UpdateSprites;
         TimeChange.EndTimeChange += UpdateSprites;
+        //Debug.Log("se unio al eventoend : " + this.name);
         TimeChange.MiniUpdate += UpdateSprites;
         UpdateSprites();
     }
@@ -44,6 +45,7 @@ public class SpritesGenerator : MonoBehaviour
             spritesTimeChangers[i].UpdateSprite();
             spritesTimeChangers[i].UpdateMaterials(inside2d, inside2dv2);
         }
+        //Debug.Log("terminolanimacion : " + this.name);
     }
 
     private void OnDestroy()

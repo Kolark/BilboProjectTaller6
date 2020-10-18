@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1040048245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 1364381649}
   m_Father: {fileID: 8157975595048385677}
@@ -273,7 +273,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8157975595048385677}
   - component: {fileID: 8157975595048385676}
-  - component: {fileID: 8157975595048385666}
   - component: {fileID: 8157975595048385667}
   m_Layer: 0
   m_Name: StencilGrower
@@ -347,25 +346,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &8157975595048385666
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8157975595048385679}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9ae8e8555eb234f40806b461ecbd0962, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 2
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &8157975595048385667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,7 +433,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 31
+  m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: aa23af8bd22112d4d9ecae1204909acd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

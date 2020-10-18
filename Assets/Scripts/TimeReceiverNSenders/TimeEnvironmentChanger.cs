@@ -47,6 +47,7 @@ public class TimeEnvironmentChanger : MonoBehaviour
         }
         TimeChange.StartTimeChange += UpdateLayers;
         TimeChange.EndTimeChange += UpdateLayers;
+        //Debug.Log("se unio al eventoend : " + this.name);
         TimeChange.MiniUpdate += UpdateLayers;
         UpdateLayers();
     }
@@ -59,6 +60,7 @@ public class TimeEnvironmentChanger : MonoBehaviour
             SOURCEMAPS[i].UpdateLayers();
             SOURCEMAPS[i].UpdateMaterials(inside2d, inside2dv2);
         }
+        //Debug.Log("terminolanimacion : " + this.name);
     }
 
     private void OnDestroy()

@@ -103,7 +103,6 @@ public class TouchManager : MonoBehaviour
             touchable.touch(POSinScreen());
             if (checkBlockLayer())
             {
-                Debug.Log("Algo " + Physics2D.OverlapCircle(POSinScreen(), 0.25f, block).transform.name);
                 noLongerTouchable();
             }
         }
