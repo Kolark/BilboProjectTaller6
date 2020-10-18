@@ -24,7 +24,7 @@ public class MummyBehavior : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (Vector2.Distance(transform.position, target.position) < visionDistance && timeOBJ.TimeToExist == TimeChange.CurrentTime)
+        if (Vector2.Distance(transform.position, target.position) < visionDistance && timeOBJ.TimeToExist == TimeChange.CurrentTime && !TimeChange.IsTimeTraveling)
         {
             Vector2 dir = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             dir.y = transform.position.y;

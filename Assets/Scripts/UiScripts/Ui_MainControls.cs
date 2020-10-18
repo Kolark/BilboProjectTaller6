@@ -180,19 +180,27 @@ public class UiMainConfig
     public bool TimeJumpButtons;
     public bool JumpButton;
     public bool Switch;
+    public bool Arrows;
     public bool Coins;
+    public bool Pause;
+
+    public bool[] uilist;
     public UiMainConfig()
     {
         this.TimeJumpButtons = true;
         this.JumpButton = true;
         this.Switch = true;
+        
     }
-    public UiMainConfig(bool timeJumpButtons, bool jumpButton, bool _switch,bool _coins)
+    public UiMainConfig(bool timeJumpButtons, bool jumpButton, bool _switch,bool _arrows,bool _coins,bool _pause)
     {
         this.TimeJumpButtons = timeJumpButtons;
         this.JumpButton = jumpButton;
         this.Switch = _switch;
+        this.Arrows = _arrows;
         this.Coins = _coins;
+        this.Pause = _pause;
+        uilist = new bool[]{TimeJumpButtons,JumpButton,Switch,Arrows,Coins,Pause};
     }
 }
 
