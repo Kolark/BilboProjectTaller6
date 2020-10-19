@@ -7,7 +7,9 @@ public class Turret : MonoBehaviour
     TimeOBJ timeOBJ;
     [SerializeField] Projectile projectile;
     Transform projectileSpawner;
+    [SerializeField]GeneratorAni generator;
     public Vector3 offset;
+    public bool hasGenerator = false;
 
     [SerializeField]float bulletSpeed = 5f;
     [SerializeField]float rotationSpeed = 5f;
@@ -31,9 +33,14 @@ public class Turret : MonoBehaviour
     {
         if(timeOBJ.TimeToExist == TimeChange.CurrentTime && !TimeChange.IsTimeTraveling && Vector2.Distance(transform.position, Movement2D.Instance.transform.position) < shootingRange)
         {
-            Deactivate();
+            if(generator != null) generator.AniSpeed(timeToStop);
+            if (hasGenerator) Deactivate();
             Aim(Movement2D.Instance.transform.position);
             CountDown();
+        }
+        else if (generator != null && Vector2.Distance(transform.position, Movement2D.Instance.transform.position) > shootingRange)
+        {
+            generator.SpeedReset();
         }
     }
 

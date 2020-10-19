@@ -100,11 +100,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 333344914195410206, guid: b04ac0201a49d7042ba6a85d0fb6bfaa,
     type: 3}
+  generator: {fileID: 0}
   offset: {x: 0, y: 3, z: 0}
+  hasGenerator: 0
+  bulletSpeed: 5
   rotationSpeed: 5
   shootingSpeed: 50
   fireRate: 1
   countDown: 0
+  shootingRange: 25
+  deactivation: 0
+  timeToStop: 25
+  canShoot: 1
   min: -110
   max: 82
 --- !u!114 &6514397139572687828
@@ -121,8 +128,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 6
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 11
+  NormalTrigger: 0
   NormalType: 2
 --- !u!50 &6514397139572687831
 Rigidbody2D:
