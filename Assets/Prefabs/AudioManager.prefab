@@ -75,8 +75,8 @@ MonoBehaviour:
   - name: TimeTravel
     clip: {fileID: 8300000, guid: 14a316e606046614da3fc218bd925aab, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.1
-    pitch: 2
+    volume: 0.3
+    pitch: 0.8
     loop: 0
     source: {fileID: 0}
   - name: Swap
