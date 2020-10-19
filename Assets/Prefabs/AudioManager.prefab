@@ -83,7 +83,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c08331b7ed8d250449a448425db50532, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
     volume: 1
-    pitch: 0.5
+    pitch: 0.35
     loop: 0
     source: {fileID: 0}
   - name: Muerte
@@ -125,7 +125,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: f5257de6d1115ed4ebbce450d2589c0f, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
     volume: 0.3
-    pitch: 0.5
+    pitch: 0.4
     loop: 0
     source: {fileID: 0}
   - name: Carta
@@ -274,4 +274,11 @@ MonoBehaviour:
     volume: 0.4
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: CerrarPortal
+    clip: {fileID: 8300000, guid: 871af04592bf4e248a2bbbb9cf34395d, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.6
+    pitch: 0.8
+    loop: 0
     source: {fileID: 0}

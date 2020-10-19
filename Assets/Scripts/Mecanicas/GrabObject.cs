@@ -10,6 +10,7 @@ public class GrabObject : MonoBehaviour, ITouchable
     /// </summary>
     int Ignore = 11;
     int Grab = 13;
+    bool HasPlayed = false;
     TimeOBJ timeOBJ;
     Rigidbody2D rb2d;
     
@@ -41,6 +42,7 @@ public class GrabObject : MonoBehaviour, ITouchable
 
     public void OnTouchUp()
     {
+        HasPlayed = false;
         rb2d.velocity = Vector2.zero;
     }
 
@@ -48,6 +50,11 @@ public class GrabObject : MonoBehaviour, ITouchable
     {
         if (timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
+            if (HasPlayed == false)
+            {
+                AudioManager.instance.Play("AgarrarObjeto");
+                HasPlayed = true;
+            }
             transform.position = pos;
         }
     }

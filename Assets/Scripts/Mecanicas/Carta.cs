@@ -11,6 +11,7 @@ public class Carta : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            AudioManager.instance.Play("Carta");
             PuertaFinal.Instance.canEnd = true;
             TextDisplayer.Instance.DisplayText(text);
             Destroy(this.gameObject);
