@@ -12,7 +12,6 @@ public class JumpButton : MonoBehaviour
 
     public void OnPointerDown()
     {
-        AudioManager.instance.Play("ButtonJump");
         onClick.Invoke();
         Hold = true;
     }

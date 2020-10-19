@@ -180,6 +180,7 @@ public class Movement2D : MonoBehaviour
 
     public void Death()
     {
+        AudioManager.instance.Play("Muerte");
         animator.SetTrigger("Dead");
         canMove = false;
         HUDChanger.Instance.HideUnhideALL(true);

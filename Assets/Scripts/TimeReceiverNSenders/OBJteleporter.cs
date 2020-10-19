@@ -53,7 +53,8 @@ public class OBJteleporter : MonoBehaviour
         if (hasPlayed)
         {
             hasPlayed = false;
-            AudioManager.instance.StopPlaying("Portal");
+            AudioManager.instance.StopPlaying("AbrirPortal");
+            AudioManager.instance.Play("CerrarPortal");
         }
         xaxis2 += Time.deltaTime;
         transform.localScale = actualScale * scaleDown.Evaluate(xaxis2);
@@ -101,7 +102,7 @@ public class OBJteleporter : MonoBehaviour
         growing = true;
         if (!hasPlayed)
         {
-            AudioManager.instance.Play("Portal");
+            AudioManager.instance.Play("AbrirPortal");
             hasPlayed = true;
         }
         xaxis1 += Time.deltaTime;

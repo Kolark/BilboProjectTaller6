@@ -24,6 +24,7 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && timeOBJ.TimeToExist == TimeChange.CurrentTime && cangivecoin)
         {
+            AudioManager.instance.Play("CogerMoneda");
             cangivecoin = false;
             Wallet.instance.coins += 1;
             CoinSpawner.Instance.AddCoin(id);
