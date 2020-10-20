@@ -30,11 +30,13 @@ public class HorizontalDoor : MonoBehaviour
 
     void openDoor()
     {
+        AudioManager.instance.Play("CompuertaEgipcia");
         transform.DOMove((Vector2)transform.position + finalPos, 2f, false);
         transform.DORotate(new Vector3(0, 0, finalRotation), 2f, RotateMode.Fast);
     }
     void closeDoor()
     {
+        AudioManager.instance.Play("CompuertaEgipcia");
         transform.DOMove(initPos, 2f, false);
         transform.DORotate(new Vector3(0, 0, initialRotation), 2f, RotateMode.Fast);
     }

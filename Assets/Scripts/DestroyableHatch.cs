@@ -26,6 +26,7 @@ public class DestroyableHatch : MonoBehaviour
             {
                 if (c < spRend.Length)
                 {
+                    AudioManager.instance.Play("RocaMadera");
                     rockpool.Recycle(rock);
                     ren2d.sprite = spRend[c];
                     c++;

@@ -16,6 +16,10 @@ public class Drill : MonoBehaviour
             IDrillable estalactitaDrill = collision.transform.GetComponent<IDrillable>();
             if (estalactitaDrill != null)
             {
+                if(AudioManager.instance.isPlaying("Taladro") == false)
+                {
+                    AudioManager.instance.Play("Taladro");
+                }
                 estalactitaDrill.Drill();
             }
         }

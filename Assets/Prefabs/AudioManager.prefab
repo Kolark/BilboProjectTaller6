@@ -138,14 +138,14 @@ MonoBehaviour:
   - name: PlataformaDesmoronandose
     clip: {fileID: 8300000, guid: 90ec35262b90aef4d890134c93bb0df9, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.3
-    pitch: 1
+    volume: 0.25
+    pitch: 1.5
     loop: 0
     source: {fileID: 0}
   - name: EstalactitaDesprendiendose
     clip: {fileID: 8300000, guid: ff39c6570accaab42b6344d14e2560a9, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
+    volume: 0.05
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   - name: CercaRompiendose
     clip: {fileID: 8300000, guid: af924e2135b417845936a9ad3e4d17b2, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
+    volume: 0.7
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -180,35 +180,35 @@ MonoBehaviour:
   - name: RocaMetal
     clip: {fileID: 8300000, guid: b8ee8de454c7be94f9fbf73018861614, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
-    pitch: 1
+    volume: 1
+    pitch: 0.2
     loop: 0
     source: {fileID: 0}
   - name: PlacaEgipcia
     clip: {fileID: 8300000, guid: 0ac5b0f47861fec40a49ee1f0c399b5f, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
+    volume: 0.2
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: CompuertaEgipcia
     clip: {fileID: 8300000, guid: 93de74636a076b946b62eda42f6cf91f, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
-    pitch: 1
+    volume: 0.3
+    pitch: 3
     loop: 0
     source: {fileID: 0}
   - name: MomiaActiva
     clip: {fileID: 8300000, guid: a01be8b24d9e41743827b9f97804e772, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Lanza
     clip: {fileID: 8300000, guid: 4d215e5ad56b4bb49901225030f463ff, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.4
+    volume: 0.2
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -273,5 +273,12 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
     volume: 0.6
     pitch: 0.8
+    loop: 0
+    source: {fileID: 0}
+  - name: Taladro
+    clip: {fileID: 8300000, guid: 67d86416421f210469e1265ac8a2c605, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.3
+    pitch: 1
     loop: 0
     source: {fileID: 0}

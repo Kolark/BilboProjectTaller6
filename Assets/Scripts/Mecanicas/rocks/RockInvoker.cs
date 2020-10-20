@@ -24,6 +24,7 @@ public class RockInvoker : MonoBehaviour
         Rock rock = collision.GetComponent<Rock>();
         if(rock != null)
         {
+
             currentRocks--;
             rockPool.Recycle(rock);
             //if(currentRocks < amountToSpawn)

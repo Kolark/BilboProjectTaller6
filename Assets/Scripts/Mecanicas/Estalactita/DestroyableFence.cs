@@ -15,6 +15,7 @@ public class DestroyableFence : MonoBehaviour,IDestroyable
     }
     public void ActivateDestroy()
     {
+        AudioManager.instance.Play("CercaRompiendose");
         sprRend.sprite = ToChange;
         col2d.isTrigger = true;
     }

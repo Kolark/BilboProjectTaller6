@@ -8,6 +8,7 @@ public class Rock : MonoBehaviour
     Collider2D col2d;
     TimeOBJ timeOBJ;
     Vector2 velocity;
+    public bool HasPlayed = false;
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -32,6 +33,14 @@ public class Rock : MonoBehaviour
         }
         //Debug.Log("terminolanimacion : " + this.name);
     }
+
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.transform.CompareTag("Ground"))
+    //    {
+    //        AudioManager.instance.Play("RocaCae");
+    //    }
+    //}
     //void addtorq()
     //{
     //    rb2d.AddTorque(1.5f, ForceMode2D.Impulse);

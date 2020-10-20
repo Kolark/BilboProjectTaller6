@@ -19,6 +19,7 @@ public class RockDestroyer : MonoBehaviour
             Rock rock = collision.gameObject.GetComponent<Rock>();
             if(rock != null)
             {
+                AudioManager.instance.Play("RocaMetal");
                 rock.FreeZeState();
                 rockPool.Recycle(rock);
             }

@@ -11,6 +11,7 @@ public class MummyBehavior : MonoBehaviour
     Transform target;
     Animator animator;
     TimeOBJ timeOBJ;
+    bool isPlaying = false;
     private void Awake()
     {
         timeOBJ = GetComponent<TimeOBJ>();
@@ -26,12 +27,20 @@ public class MummyBehavior : MonoBehaviour
 
         if (Vector2.Distance(transform.position, target.position) < visionDistance && timeOBJ.TimeToExist == TimeChange.CurrentTime && !TimeChange.IsTimeTraveling)
         {
+            if(isPlaying == false) { AudioManager.instance.Play("MomiaActiva");
+                isPlaying = true;
+            }
             Vector2 dir = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             dir.y = transform.position.y;
             transform.position = dir;
             animator.SetFloat("Speed", Mathf.Abs(dir.x - target.position.x));
             if (dir.x - target.position.x > 0 && !facingRight) Flip();
             else if (dir.x - target.position.x < 0 && facingRight) Flip();
+        }
+        else
+        {
+            AudioManager.instance.StopPlaying("MomiaActiva");
+            isPlaying = false;
         }
     }
 

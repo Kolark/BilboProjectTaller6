@@ -21,7 +21,8 @@ public class Plaque : MonoBehaviour
     {
         if (timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
-            transform.DOMoveY(transform.position.y - lengthToDrop, 0.5f, false);
+            AudioManager.instance.Play("PlacaEgipcia");
+            transform.DOMoveY(transform.position.y - lengthToDrop, 0.8f, false);
             active = true;
             onInteraction?.Invoke(active);
         }
@@ -30,7 +31,7 @@ public class Plaque : MonoBehaviour
     {
         if (anyUses)
         {
-            transform.DOMoveY(originalY,0.5f, false);
+            transform.DOMoveY(originalY,0.8f, false);
             active = false;
             onInteraction?.Invoke(active);
         }
