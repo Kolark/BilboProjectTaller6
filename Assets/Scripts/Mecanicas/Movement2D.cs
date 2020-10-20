@@ -173,6 +173,7 @@ public class Movement2D : MonoBehaviour
     {
         if (OnLadder)
         {
+
             rb.velocity = Vector2.up * 8;
         }
         

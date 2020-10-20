@@ -131,14 +131,7 @@ MonoBehaviour:
   - name: Carta
     clip: {fileID: 8300000, guid: f9edcfb931dd3a24fa2e94a94ffbc92e, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.6
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: SubirEscaleras
-    clip: {fileID: 8300000, guid: 528aa99a39edec441b3aa92903fe6edb, type: 3}
-    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.3
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}

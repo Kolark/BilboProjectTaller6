@@ -43,6 +43,7 @@ public class PlatformDisappear : MonoBehaviour
 
     IEnumerator DisappearSequence()
     {
+        AudioManager.instance.Play("PlataformaDesmoronandose");
         yield return Disappear_time;//Disappear
         
         anim.SetTrigger("startFade");//Empieza Animación   
@@ -56,6 +57,8 @@ public class PlatformDisappear : MonoBehaviour
     }
     IEnumerator reverseSequence()//ReverseAnimation
     {
+        AudioManager.instance.StopPlaying("PlataformaDesmoronandose");
+        AudioManager.instance.Play("PlataformaDesmoronandose");
         if (TimeChange.IsTimeTraveling) yield return wait;
         yield return Reappear_time;  //Reappear
         anim.SetTrigger("reverseFade");
