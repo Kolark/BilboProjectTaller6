@@ -82,7 +82,7 @@ MonoBehaviour:
   - name: Muerte
     clip: {fileID: 8300000, guid: f7548168d6bc8654c9401fce4eaa0d0a, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
-    volume: 0.5
+    volume: 0.8
     pitch: 0.4
     loop: 0
     source: {fileID: 0}

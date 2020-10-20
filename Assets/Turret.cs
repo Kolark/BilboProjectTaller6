@@ -33,6 +33,7 @@ public class Turret : MonoBehaviour
     {
         if(timeOBJ.TimeToExist == TimeChange.CurrentTime && !TimeChange.IsTimeTraveling && Vector2.Distance(transform.position, Movement2D.Instance.transform.position) < shootingRange)
         {
+
             if(generator != null) generator.AniSpeed(timeToStop);
             if (hasGenerator) Deactivate();
             Aim(Movement2D.Instance.transform.position);
@@ -40,6 +41,7 @@ public class Turret : MonoBehaviour
         }
         else if (generator != null && Vector2.Distance(transform.position, Movement2D.Instance.transform.position) > shootingRange)
         {
+            AudioManager.instance.StopPlaying("AlmacenadorEnergia");
             generator.SpeedReset();
         }
     }
@@ -65,6 +67,7 @@ public class Turret : MonoBehaviour
 
     void Shoot()
     {
+        AudioManager.instance.Play("DisparoTorreta");
         Projectile projectile = ProjectilePool.Instance.GetObject();
         projectile.Shoot(projectileSpawner.position,angle, bulletSpeed);
     }
@@ -85,6 +88,7 @@ public class Turret : MonoBehaviour
 
     void Deactivate()
     {
+        AudioManager.instance.StopPlaying("TorretaActivandose");
         deactivation += Time.deltaTime;
         if (deactivation >= timeToStop) canShoot = false;
     }

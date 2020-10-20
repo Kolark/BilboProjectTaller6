@@ -19,6 +19,7 @@ public class Barril : MonoBehaviour
     {
         if (!HasBeenActivated)
         {
+            AudioManager.instance.Play("ExplosionBarril");
             HasBeenActivated = true;
             Collider2D[] interaccion = Physics2D.OverlapCircleAll(transform.position, radius, layersToCheck);
             if(interaccion != null)

@@ -18,6 +18,7 @@ public class GeneratorAni : MonoBehaviour
     {
         if (!speedSet)
         {
+            AudioManager.instance.Play("AlmacenadorEnergia");
             speed = 1/(2 * _speed);
             animator.speed = speed;
             speedSet = true;
@@ -26,8 +27,14 @@ public class GeneratorAni : MonoBehaviour
 
     public void SpeedReset()
     {
+        AudioManager.instance.StopPlaying("AlmacenadorEnergia");
         speed = 0;
         animator.speed = speed;
         speedSet = false;
+    }
+
+    public void EndAnim()
+    {
+        AudioManager.instance.StopPlaying("AlmacenadorEnergia");
     }
 }
