@@ -17,7 +17,10 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
     int c = 0;
     int teleport = 10;
     int ignore = 11;
+
+
     [Header("Layers")]
+    [SerializeField] bool canBeDestroyed = true;
     [SerializeField] bool canBeTeleported;
     [SerializeField] int layerToexist;
     [SerializeField] bool NormalTrigger = false;
@@ -152,6 +155,9 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
 
     public void ActivateDestroy()
     {
+        if (canBeDestroyed)
+        {
         Destroy(gameObject);
+        }
     }
 }

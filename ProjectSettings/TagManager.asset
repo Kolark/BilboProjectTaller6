@@ -9,6 +9,7 @@ TagManager:
   - Ladder
   - EstalactitaDrill
   - Rock
+  - Barril
   layers:
   - Default
   - TransparentFX

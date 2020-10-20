@@ -137,7 +137,7 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 1
-  length: 40
+  length: -40
   TimeDependant: 1
 --- !u!114 &8513910638714332451
 MonoBehaviour:
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 7
-  shouldChangeLayers: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2

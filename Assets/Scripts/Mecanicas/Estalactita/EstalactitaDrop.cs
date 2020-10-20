@@ -11,8 +11,15 @@ public class EstalactitaDrop : Estalactita
     {
         base.Awake();
         rayActivatedEvent = GetComponent<RayActivatedEvent>();
-        rayActivatedEvent.EventToActivate += base.DropSpike;
+        rayActivatedEvent.EventToActivate += _DropSpike;
         
     }
 
+    void _DropSpike(RaycastHit2D hit)
+    {
+        if (hit.transform.CompareTag("Player") && !base.HasDropped)
+        {
+            base.DropSpike();
+        }
+    }
 }

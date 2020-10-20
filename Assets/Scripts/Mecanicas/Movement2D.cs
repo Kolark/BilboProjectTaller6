@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement2D : MonoBehaviour
+public class Movement2D : MonoBehaviour,IDestroyable
 {
     //Script que se encarga del movimiento en 2d del personaje, esto es Movimiento en el eje x como el salto.
     private static Movement2D instance;
@@ -198,5 +198,8 @@ public class Movement2D : MonoBehaviour
         HUDChanger.Instance.HideUnhideALL(false);
     }
 
-
+    public void ActivateDestroy()
+    {
+        Death();
+    }
 }
