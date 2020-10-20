@@ -20961,7 +20961,28 @@ MonoBehaviour:
     Arrows: 1
     Coins: 0
     Pause: 1
-  sonidos: []
+  sonidos:
+  - name: BGLvlSelector
+    clip: {fileID: 8300000, guid: 750dbdeed8549fd4ca00af058a3540ea, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BotonLvlSelector
+    clip: {fileID: 8300000, guid: b83fea686c9b2f44c87aa8276075a15b, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: FinCargaBarrita
+    clip: {fileID: 8300000, guid: 7c84a5f21d3184c40a1b0632607edf26, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1120317244
 Transform:
   m_ObjectHideFlags: 0
@@ -21116,7 +21137,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.01
+  orthographic size: 4.17
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21140,7 +21161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.643448, y: 5.419933, z: -10}
+  m_LocalPosition: {x: -43.66162, y: -0.061939716, z: -90.354195}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 42750941}
