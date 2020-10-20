@@ -72731,6 +72731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 8
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -73727,7 +73728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6616201, y: 5.16194, z: -9.268555}
+  m_LocalPosition: {x: 3.6616204, y: 5.16194, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -75768,6 +75769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 2
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -76296,7 +76298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.76499, y: 17.996595, z: -10}
+  m_LocalPosition: {x: 10.760101, y: 17.996595, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 42750941}
@@ -76549,14 +76551,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365038382}
-  m_LocalRotation: {x: -0.0052359584, y: 0, z: 0, w: 0.9999863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 190.97, y: -26.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1523192994}
   m_Father: {fileID: 1105483311}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -0.6, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1365038384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77096,6 +77098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -77275,6 +77278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -82342,6 +82346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -82450,6 +82455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0

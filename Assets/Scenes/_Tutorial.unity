@@ -2038,6 +2038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 13
   NormalTrigger: 0
@@ -2137,6 +2138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 9
   NormalTrigger: 0
@@ -58993,6 +58995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 13
   NormalTrigger: 0
@@ -59215,6 +59218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 9
   NormalTrigger: 0
@@ -60096,7 +60100,7 @@ MonoBehaviour:
     TimeJumpButtons: 0
     JumpButton: 0
     Switch: 0
-    Arrows: 0
+    Arrows: 1
     Coins: 1
     Pause: 1
   sonidos:
@@ -60105,14 +60109,14 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
     volume: 0.2
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Carta
     clip: {fileID: 8300000, guid: f9edcfb931dd3a24fa2e94a94ffbc92e, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
     volume: 0.5
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!4 &1197044905
 Transform:
@@ -60564,7 +60568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.633528, y: 5.014744, z: -10}
+  m_LocalPosition: {x: 10.628641, y: 5.014719, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1040813627727820987}
@@ -61386,6 +61390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 5
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 9
   NormalTrigger: 0
