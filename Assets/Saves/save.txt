@@ -1,7 +1,10 @@
 {
-    "gameInfoObj": "{\"levelsUnlocked\":2,\"itemEquiped\":0,\"shopItemsUnlocked\":[0],\"coins\":19}",
+    "gameInfoObj": "{\"levelsUnlocked\":5,\"itemEquiped\":3,\"shopItemsUnlocked\":[0,3],\"coins\":29}",
     "levelCoins": [
+        "{\"coins\":[false,false,false,false,false,true,false,false,false,false]}",
+        "{\"coins\":[false,false,false,false,false,false,false,true,false,false]}",
         "{\"coins\":[false,false,false,false,false,false,false,false,false,false]}",
-        "{\"coins\":[false,false,false,false,false,false,false,true,false,false]}"
+        "{\"coins\":[false,false,false,false,false,true,false,false,false,true]}",
+        "{\"coins\":[true,false,false,false,false,false,false,false,false,true]}"
     ]
 }

@@ -21,7 +21,7 @@ public class Spear : MonoBehaviour
 
     void Raise()
     {
-        AudioManager.instance.Play("Lanza");
+        //AudioManager.instance.Play("Lanza");
         transform.DOMove(initPos+Vector2.up*distanceUp, 1/speedUp, false).OnComplete(() => { Down(); });
     }
 
