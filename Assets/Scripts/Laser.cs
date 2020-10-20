@@ -8,8 +8,10 @@ public class Laser : MonoBehaviour
     LineRenderer lineRend;
     [SerializeField] float length;
     BoxCollider2D col2d;
+    TimeOBJ timeOBJ;
     private void Awake()
     {
+        timeOBJ = GetComponent<TimeOBJ>();
         lineRend = GetComponent<LineRenderer>();
         col2d = GetComponent<BoxCollider2D>();
     }
@@ -28,11 +30,20 @@ public class Laser : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Barril"))
+        if(timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
-            Barril barril = collision.GetComponent<Barril>();
-            barril.Explode();
+            if (collision.CompareTag("Barril"))
+            {
+                Barril barril = collision.GetComponent<Barril>();
+                barril.Explode();
+            }
+            else if (collision.CompareTag("Player"))
+            {
+                Movement2D.Instance.Death();
+            }
         }
+
+
     }
     private void OnDrawGizmos()
     {
