@@ -101,7 +101,7 @@ public class Ui_MainControls : MonoBehaviour
     {
         if (Movement2D.Instance.CanMove)
         {
-            AudioManager.instance.Play("ButtonJump");
+            AudioManager.instance.Play("TimeTravel");
             TimeChange.Instance.StartChangeTime(time);
             if (TimeChange.IsTimeTraveling)
             {

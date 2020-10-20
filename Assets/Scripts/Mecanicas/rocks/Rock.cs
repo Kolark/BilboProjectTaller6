@@ -41,6 +41,8 @@ public class Rock : MonoBehaviour
     //        AudioManager.instance.Play("RocaCae");
     //    }
     //}
+
+
     //void addtorq()
     //{
     //    rb2d.AddTorque(1.5f, ForceMode2D.Impulse);

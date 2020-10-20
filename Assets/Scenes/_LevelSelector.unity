@@ -20961,6 +20961,7 @@ MonoBehaviour:
     Arrows: 1
     Coins: 0
     Pause: 1
+  sonidos: []
 --- !u!4 &1120317244
 Transform:
   m_ObjectHideFlags: 0
@@ -21115,7 +21116,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.17
+  orthographic size: 8.01
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21139,7 +21140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.66162, y: -0.061939716, z: -90.354195}
+  m_LocalPosition: {x: -38.643448, y: 5.419933, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 42750941}

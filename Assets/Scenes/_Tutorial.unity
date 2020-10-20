@@ -58334,7 +58334,7 @@ PrefabInstance:
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 8157975595984585998, guid: 5529dce4f689c64498e733e36f462633,
         type: 3}
@@ -58745,7 +58745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908633891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.86162, y: -8.33806, z: -9.268555}
+  m_LocalPosition: {x: 11.16162, y: -8.33806, z: -9.268555}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 954060913}
@@ -60093,12 +60093,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   config:
-    TimeJumpButtons: 1
-    JumpButton: 1
-    Switch: 1
-    Arrows: 1
+    TimeJumpButtons: 0
+    JumpButton: 0
+    Switch: 0
+    Arrows: 0
     Coins: 1
     Pause: 1
+  sonidos:
+  - name: BG1
+    clip: {fileID: 8300000, guid: 268aeffd737348d44a146e47df1041a3, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Carta
+    clip: {fileID: 8300000, guid: f9edcfb931dd3a24fa2e94a94ffbc92e, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &1197044905
 Transform:
   m_ObjectHideFlags: 0

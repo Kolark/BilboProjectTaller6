@@ -77574,6 +77574,14 @@ MonoBehaviour:
     Arrows: 1
     Coins: 1
     Pause: 1
+  sonidos:
+  - name: BG2
+    clip: {fileID: 8300000, guid: 268aeffd737348d44a146e47df1041a3, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &1721219072
 Transform:
   m_ObjectHideFlags: 0

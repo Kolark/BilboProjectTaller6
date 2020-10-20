@@ -528,6 +528,11 @@ MonoBehaviour:
     backgroundColor: {r: 1, g: 1, b: 1, a: 0.16078432}
     backgroundStyle: 0
     backgroundMode: 0
+  - gameObject: {fileID: 482407126}
+    useBackground: 1
+    backgroundColor: {r: 1, g: 0, b: 0.908308, a: 0.4745098}
+    backgroundStyle: 1
+    backgroundMode: 0
 --- !u!4 &69812973
 Transform:
   m_ObjectHideFlags: 17
@@ -80542,6 +80547,42 @@ MonoBehaviour:
     Arrows: 1
     Coins: 1
     Pause: 1
+  sonidos:
+  - name: BG5
+    clip: {fileID: 8300000, guid: d1e7ecf2411bb1b4698255e7920dc45a, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: PlacaEgipcia
+    clip: {fileID: 8300000, guid: 0ac5b0f47861fec40a49ee1f0c399b5f, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.4
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CompuertaEgipcia
+    clip: {fileID: 8300000, guid: 93de74636a076b946b62eda42f6cf91f, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.2
+    pitch: 3
+    loop: 0
+    source: {fileID: 0}
+  - name: MomiaActiva
+    clip: {fileID: 8300000, guid: a01be8b24d9e41743827b9f97804e772, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PlataformaDesmoronandose
+    clip: {fileID: 8300000, guid: 90ec35262b90aef4d890134c93bb0df9, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &482407128
 Transform:
   m_ObjectHideFlags: 0
