@@ -34,6 +34,8 @@ public class DestroyableHatch : MonoBehaviour
                 }
                 else
                 {
+                    AudioManager.instance.Play("RocaMadera");
+                    rockpool.Recycle(rock);
                     Destroy(timeOBJ);
                     Destroy(col2d);
                     ren2d.color = Color.black * 0;
