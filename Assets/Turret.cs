@@ -88,7 +88,6 @@ public class Turret : MonoBehaviour
 
     void Deactivate()
     {
-        AudioManager.instance.StopPlaying("TorretaActivandose");
         deactivation += Time.deltaTime;
         if (deactivation >= timeToStop) canShoot = false;
     }
