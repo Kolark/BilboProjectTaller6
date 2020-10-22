@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 7
-  canBeDestroyed: 1
+  canBeDestroyed: 0
   canBeTeleported: 1
   layerToexist: 13
   NormalTrigger: 0

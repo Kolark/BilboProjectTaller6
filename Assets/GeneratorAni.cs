@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class GeneratorAni : MonoBehaviour
 {
     float speed = 0;
     bool speedSet = false;
     Animator animator;
-
+    public Action OnEndAnim;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -36,5 +36,6 @@ public class GeneratorAni : MonoBehaviour
     public void EndAnim()
     {
         AudioManager.instance.StopPlaying("AlmacenadorEnergia");
+        OnEndAnim?.Invoke();
     }
 }
