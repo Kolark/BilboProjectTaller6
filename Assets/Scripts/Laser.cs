@@ -9,7 +9,7 @@ public class Laser : MonoBehaviour
     [SerializeField] float length;
     BoxCollider2D col2d;
     TimeOBJ timeOBJ;
-    private void Awake()
+    protected virtual void Awake()
     {
         timeOBJ = GetComponent<TimeOBJ>();
         lineRend = GetComponent<LineRenderer>();
@@ -20,7 +20,7 @@ public class Laser : MonoBehaviour
         SetLinePoints();
     }
 
-    void SetLinePoints()
+    protected void SetLinePoints()
     {
         lineRend.SetPosition(0, transform.position);
         lineRend.SetPosition(1, transform.position -transform.up*length);
@@ -32,14 +32,15 @@ public class Laser : MonoBehaviour
     {
         if(timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
-            if (collision.CompareTag("Barril"))
+            IDestroyable[] destroyable = collision.GetComponents<IDestroyable>();
+            if (destroyable != null)
             {
-                Barril barril = collision.GetComponent<Barril>();
-                barril.Explode();
-            }
-            else if (collision.CompareTag("Player"))
-            {
-                Movement2D.Instance.Death();
+                for (int i = 0; i < destroyable.Length; i++)
+                {
+                    destroyable[i].ActivateDestroy();
+                }
+                
+                Debug.Log("collision " + collision.name);
             }
         }
 
@@ -51,7 +52,6 @@ public class Laser : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, 1f);
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(transform.position, transform.position - transform.up * length);
-        
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position - transform.up*length, 1f);
     }

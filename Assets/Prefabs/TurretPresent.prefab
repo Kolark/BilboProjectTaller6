@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 1319728288802499573}
   - component: {fileID: 1319728288802499574}
   - component: {fileID: 1319728288802499575}
+  - component: {fileID: -8606704945163370872}
+  - component: {fileID: 5510783721253812436}
+  - component: {fileID: 5528359655100965491}
   m_Layer: 0
   m_Name: TurretPresent
   m_TagString: Untagged
@@ -28,7 +31,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319728288802499571}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.89, y: 7.39, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
@@ -98,22 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3944bfa0ea880fa48a3660001b5ec5a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 333344914195410206, guid: b04ac0201a49d7042ba6a85d0fb6bfaa,
-    type: 3}
-  generator: {fileID: 0}
   offset: {x: 0, y: 3, z: 0}
-  hasGenerator: 0
-  bulletSpeed: 5
-  rotationSpeed: 5
-  shootingSpeed: 50
   fireRate: 1
-  countDown: 0
   shootingRange: 25
-  deactivation: 0
-  timeToStop: 25
-  canShoot: 1
-  min: -110
-  max: 82
 --- !u!114 &1319728288802499573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 6
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 11
   NormalTrigger: 0
@@ -179,6 +170,49 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.6955285}
   m_EdgeRadius: 0
+--- !u!114 &-8606704945163370872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319728288802499571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf55170ac345c844f9df505e0b1f56ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  min: -180
+  max: 180
+  rotationSpeed: 5
+--- !u!114 &5510783721253812436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319728288802499571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1af793afc3adfd469ea6dea602be401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpeed: 5
+--- !u!114 &5528359655100965491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319728288802499571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3944bfa0ea880fa48a3660001b5ec5a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0, z: 0}
+  fireRate: 10
+  shootingRange: 25
 --- !u!1 &1319728289095241434
 GameObject:
   m_ObjectHideFlags: 0

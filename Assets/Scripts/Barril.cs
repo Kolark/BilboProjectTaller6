@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Barril : MonoBehaviour
+public class Barril : MonoBehaviour,IDestroyable
 {
     [SerializeField] float radius;
     [SerializeField] LayerMask layersToCheck;
@@ -21,26 +21,32 @@ public class Barril : MonoBehaviour
         {
             AudioManager.instance.Play("ExplosionBarril");
             HasBeenActivated = true;
+            TouchManager.Instance.eraseReference();
+            Destroy(grabObject);
+            anim.SetTrigger("Explode");
+
             Collider2D[] interaccion = Physics2D.OverlapCircleAll(transform.position, radius, layersToCheck);
-            if(interaccion != null)
+            if (interaccion != null)
             {
                 for (int i = 0; i < interaccion.Length; i++)
                 {
-                    IDestroyable destroyable = interaccion[i].GetComponent<IDestroyable>();
-                    if(destroyable != null)
+                    IDestroyable[] destroyable = interaccion[i].GetComponents<IDestroyable>();
+
+                    if (destroyable != null)
                     {
-                        destroyable.ActivateDestroy();
-                        TouchManager.Instance.eraseReference();
-                        Destroy(grabObject);
+                        for (int u = 0; u < destroyable.Length; u++)
+                        {
+                         destroyable[u].ActivateDestroy();
+                        }
                     }
                 }
             }
-            anim.SetTrigger("Explode");
+
+
         }
     }
     public void onExplodeEnd()
     {
-        
         Destroy(gameObject);
     }
 
@@ -48,5 +54,10 @@ public class Barril : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, radius);
+    }
+
+    public void ActivateDestroy()
+    {
+        Explode();
     }
 }
