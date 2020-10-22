@@ -7,6 +7,7 @@ public class EstalactitaSpike : MonoBehaviour
     Rigidbody2D rb2d;
     Collider2D col2d;
     SpikeHazard SpikeHazard;
+    bool hasPlayedOnce;
     [SerializeField] int dropForce = 1;
     bool HasFallen = false;
     private void Awake()
@@ -23,7 +24,10 @@ public class EstalactitaSpike : MonoBehaviour
         rb2d.bodyType = RigidbodyType2D.Dynamic;
         rb2d.AddForce(-Vector2.up * 2, ForceMode2D.Impulse);
         rb2d.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;
-        AudioManager.instance.Play("EstalactitaDesprendiendose");
+        if (!hasPlayedOnce) { AudioManager.instance.Play("EstalactitaDesprendiendose");
+            hasPlayedOnce = true;
+        }
+       
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
