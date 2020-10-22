@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System;
 public class BossBehaviour : MonoBehaviour,IDestroyable
 {
+    bool Activated = false;
     [SerializeField] float phase1;
     [SerializeField] float phase2;
     [SerializeField] float phase3;
@@ -13,33 +15,76 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     [SerializeField] Transform stencilpos;
 
     [SerializeField] int Vida;
-
+    SpriteRenderer sprite;
     TimeExecute timeExecute;
 
+    private void Awake()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+    }
 
 
-    
     public void ActivateDestroy()
     {
-        
+        sprite.DOColor(sprite.color - new Color(0,1,1,0) * 0.65f, 0.25f).OnComplete(() => {
+            sprite.DOColor(sprite.color + new Color(0, 1, 1, 0) * 0.65f, 0.25f);
+        });
+        Debug.Log("done");
     }
 
     private void Start()
     {
         timeExecute = Movement2D.Instance.transform.GetChild(0).GetComponent<TimeExecute>();
-        Invoke("Startfight", 5f);
-
-    }
-
-
-    void Startfight()
-    {
-        turret.DoShootingSequence(() => { laser.DoBossPhase(()=> { test(); }); });
-    }
-    void test() {
         timeExecute.transform.SetParent(stencilpos);
         timeExecute.transform.position = stencilpos.position;
-        TimeChange.Instance.StartChangeTime(2);
+        ConnectPhases();
+        Invoke("ActivateTurret", 5);
+
     }
 
+    void ConnectPhases()
+    {
+        turret.onEnd += ActivateLaser;
+        laser.onEnd += Hiatus;
+    }
+    void ActivateTurret()
+    {
+        turret.DoBossPhase(phase1);
+    }
+    void ActivateLaser()
+    {
+        laser.DoBossPhase(phase2);
+    }
+    void Hiatus()
+    {
+        timeExecute.transform.SetParent(Movement2D.Instance.transform);
+        timeExecute.transform.localPosition = Vector3.zero;
+        HUDChanger.Instance.UiAnimEnter(config.TimeJumpButtons);
+
+        DOVirtual.DelayedCall(phase3 - 4, () => { HUDChanger.Instance.Hideunhide(config.TimeJumpButtons, true);});
+        DOVirtual.DelayedCall(phase3, () =>
+        {
+
+            timeExecute.transform.SetParent(stencilpos);
+            timeExecute.transform.position = stencilpos.position;
+            if (TimeChange.CurrentTime != 1)
+            {
+                TimeChange.Instance.StartChangeTime(1);
+            }
+
+        });
+        DOVirtual.DelayedCall(phase3+5, () => { ActivateTurret(); });
+    }
+
+
+
+    void test() {
+        
+        
+        
+    }
+
+}
+interface IBossPhase{
+    void DoBossPhase(float Duration);
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     
-    LineRenderer lineRend;
+    protected LineRenderer lineRend;
     [SerializeField] float length;
     BoxCollider2D col2d;
     TimeOBJ timeOBJ;
@@ -15,7 +15,7 @@ public class Laser : MonoBehaviour
         lineRend = GetComponent<LineRenderer>();
         col2d = GetComponent<BoxCollider2D>();
     }
-    private void Start()
+    protected virtual void Start()
     {
         SetLinePoints();
     }

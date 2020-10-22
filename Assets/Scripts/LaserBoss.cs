@@ -3,35 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using DG.Tweening;
-public class LaserBoss : Laser
+public class LaserBoss : Laser , IBossPhase
 {
-    [SerializeField] float followDuration;
     [SerializeField] GeneratorAni generator;
     Aim aim;
+    public Action onEnd;
     protected override void Awake()
     {
         base.Awake();
         aim = GetComponentInParent<Aim>();
     }
-    public void DoBossPhase(Action onEnd = null)
+    protected override void Start()
+    {
+        base.Start();
+        _DesactivateLaser();
+    }
+    public void _DesactivateLaser()
+    {
+        gameObject.layer = 11;
+        base.lineRend.enabled = false;
+    }
+    public void _ActivateLaser()
+    {
+        transform.parent.rotation = Quaternion.AngleAxis(0, Vector3.forward); ;
+        gameObject.layer = 0;
+        base.lineRend.enabled = true;
+    }
+    public void DoBossPhase(float followDuration)
     {
         //transform.DOLookAt()
-     
+        _ActivateLaser();
         
         generator.AniSpeed(followDuration);
         DOVirtual.DelayedCall(followDuration, () => {}).OnUpdate(() => {
             aim.doAim(Movement2D.Instance.transform.position);
             base.SetLinePoints();
-        }).OnComplete(() => { onEnd?.Invoke(); });
-
-
-        
-        //transform.DOMove(transform.position, followDuration)
-        //    .OnUpdate(() => {
-        //        
-
-        //    }).OnComplete(() => { onEnd?.Invoke(); });
-        //transform.DORotate(Vector3.forward * -360, followDuration, RotateMode.LocalAxisAdd).OnUpdate(() => { base.SetLinePoints(); }).OnComplete(() => { onEnd?.Invoke(); });
+        }).OnComplete(() => { onEnd?.Invoke(); _DesactivateLaser();});
     }
 
 
