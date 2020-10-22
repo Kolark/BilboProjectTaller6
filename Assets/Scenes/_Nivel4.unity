@@ -344,6 +344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 2
   order: 8
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -79868,6 +79869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -80044,6 +80046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
@@ -83893,6 +83896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 0
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -85864,6 +85868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
@@ -85968,6 +85973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: -1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
@@ -86702,6 +86708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CheckPoint (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110484257116939569, guid: 6d80637189aa1d64fa2c06cc7f235b79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d80637189aa1d64fa2c06cc7f235b79, type: 3}
@@ -122008,6 +122019,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9110484257116939569, guid: 6d80637189aa1d64fa2c06cc7f235b79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d80637189aa1d64fa2c06cc7f235b79, type: 3}
 --- !u!1 &1331095668 stripped
@@ -124501,6 +124517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 0
   order: 8
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -124695,6 +124712,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CheckPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 9110484257116939569, guid: 6d80637189aa1d64fa2c06cc7f235b79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d80637189aa1d64fa2c06cc7f235b79, type: 3}
 --- !u!4 &1529431847 stripped
@@ -124784,6 +124806,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CheckPoint (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110484257116939569, guid: 6d80637189aa1d64fa2c06cc7f235b79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d80637189aa1d64fa2c06cc7f235b79, type: 3}
@@ -127026,6 +127053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
@@ -127801,6 +127829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: -1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 1
@@ -127874,6 +127903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 1
+  canBeDestroyed: 1
   canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
