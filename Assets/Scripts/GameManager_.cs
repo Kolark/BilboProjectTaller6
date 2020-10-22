@@ -16,8 +16,8 @@ public class GameManager_ : MonoBehaviour
             HUDChanger = HUDChanger.Instance;
             HUDChanger.__INIT(config);
         }
-        
-        
+        HUDChanger.Instance.UpdateHud();
+
     }
 
     private void OnDestroy()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using UnityEngine.SceneManagement;
 public class BossBehaviour : MonoBehaviour,IDestroyable
 {
     bool Activated = false;
@@ -29,7 +30,7 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         sprite.DOColor(sprite.color - new Color(0,1,1,0) * 0.65f, 0.25f).OnComplete(() => {
             sprite.DOColor(sprite.color + new Color(0, 1, 1, 0) * 0.65f, 0.25f);
         });
-        Debug.Log("done");
+        Vida--;
     }
 
     private void Start()
@@ -39,6 +40,7 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         timeExecute.transform.position = stencilpos.position;
         ConnectPhases();
         Invoke("ActivateTurret", 5);
+        Activated = true;
 
     }
 
@@ -75,15 +77,21 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         });
         DOVirtual.DelayedCall(phase3+5, () => { ActivateTurret(); });
     }
-
-
-
-    void test() {
-        
-        
+    private void Update()
+    {
+        if(Vida <= 0 && Activated)
+        {
+            Activated = false;
+            HUDChanger.Instance.ExitScene(loadScene);
+            Destroy(gameObject);
+            
+        }
         
     }
-
+    void loadScene()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
 interface IBossPhase{
     void DoBossPhase(float Duration);

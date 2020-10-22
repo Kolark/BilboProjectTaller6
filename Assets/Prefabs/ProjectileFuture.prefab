@@ -82,7 +82,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeToExist: 1
   order: 7
-  shouldChangeLayers: 0
+  canBeDestroyed: 0
+  canBeTeleported: 0
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 2
