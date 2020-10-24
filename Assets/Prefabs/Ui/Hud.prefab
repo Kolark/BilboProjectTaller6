@@ -522,7 +522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -225.09998, y: 134.4}
+  m_AnchoredPosition: {x: -225, y: 134.5}
   m_SizeDelta: {x: 450.1167, y: 268.83618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1978284166534811838
@@ -1026,7 +1026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 191.2998, y: 95.299805}
+  m_AnchoredPosition: {x: 191, y: 95}
   m_SizeDelta: {x: 382.59705, y: 190.60867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2093092270484226171
@@ -1533,7 +1533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 103.299805, y: -11}
+  m_AnchoredPosition: {x: 103, y: -11}
   m_SizeDelta: {x: 206.61353, y: 484.35925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6513493019561306631
@@ -2080,7 +2080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -235.29, y: 143.41}
+  m_AnchoredPosition: {x: -235, y: 143.5}
   m_SizeDelta: {x: 459.80957, y: 286.8207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &424422002701649060
@@ -2318,7 +2318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6391330979479277064, guid: e7ce506188646904d8f861877f003033,
+  m_Sprite: {fileID: 4234091955647946545, guid: de98112f636ae5145b5210db85ce8274,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2358,7 +2358,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 7675988499890814590, guid: e7ce506188646904d8f861877f003033,
+    m_PressedSprite: {fileID: -1308723984136218291, guid: de98112f636ae5145b5210db85ce8274,
       type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}

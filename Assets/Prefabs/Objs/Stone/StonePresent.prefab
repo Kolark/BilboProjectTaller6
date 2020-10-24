@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 8827842805213055910}
   - component: {fileID: 8827842805213055909}
   - component: {fileID: 3690635325265175933}
+  - component: {fileID: 6684264543254107963}
+  - component: {fileID: 3319538580354925596}
+  - component: {fileID: 9003529625026396792}
   m_Layer: 0
   m_Name: StonePresent
   m_TagString: Ground
@@ -119,9 +122,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01, y: -0.09}
+  m_Offset: {x: 0.00999999, y: -0.018669765}
   serializedVersion: 2
-  m_Radius: 1.1857961
+  m_Radius: 1.2571265
 --- !u!114 &8827842805213055909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,3 +157,44 @@ MonoBehaviour:
   layerToexist: 0
   NormalTrigger: 0
   NormalType: 0
+--- !u!114 &6684264543254107963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827842805213055908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9938c21fa582da64d80771395ec583d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathID: 41
+--- !u!58 &3319538580354925596
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827842805213055908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
+--- !u!114 &9003529625026396792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827842805213055908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed14e44fc83a31549bf69f331ed0b114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
