@@ -2052,8 +2052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ceedd65eb484a458ccef1dec72b901, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "Ya sabes todo lo necesario para tu viaje Bilbo, tienes grandes desaf\xEDos
-    por venir!"
+  text: You know everything you need for your journey Bilbo, good luck
 --- !u!1 &492916758
 GameObject:
   m_ObjectHideFlags: 0
@@ -61523,7 +61522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b39eb4663509e43bceb64c6a58f958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  msg: You can grab more than boxes, try it out!
+  msg: You can grab more than boxes, try it out in the past!
   UpPos: 13
   DownPos: 13
   timingUp: 1
@@ -62351,7 +62350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can grab more than boxes, try it out!
+  m_text: You can grab more than boxes, try it out in the past!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -62420,10 +62419,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2026869191}
-    characterCount: 41
+    characterCount: 53
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 11
+    wordCount: 12
     linkCount: 0
     lineCount: 2
     pageCount: 1
