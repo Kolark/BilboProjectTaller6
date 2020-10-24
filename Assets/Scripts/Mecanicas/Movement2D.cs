@@ -31,7 +31,7 @@ public class Movement2D : MonoBehaviour,IDestroyable
     public float lowJumpMultiplier = 2f;
 
     public LayerMask layersToCheck;
-
+    bool isDead = false;
 
     //----------------------------------------------------------
     public bool OnLadder = false;
@@ -181,10 +181,15 @@ public class Movement2D : MonoBehaviour,IDestroyable
 
     public void Death()
     {
-        AudioManager.instance.Play("Muerte");
-        animator.SetTrigger("Dead");
-        canMove = false;
-        HUDChanger.Instance.HideUnhideALL(true);
+        if (!isDead)
+        {
+            AudioManager.instance.Play("Muerte");
+            animator.SetTrigger("Dead");
+            canMove = false;
+            HUDChanger.Instance.HideUnhideALL(true);
+            isDead = true;
+        }
+
     }
 
     public void ResetPosition()
@@ -196,6 +201,7 @@ public class Movement2D : MonoBehaviour,IDestroyable
     {
         canMove = true;
         HUDChanger.Instance.HideUnhideALL(false);
+        isDead = false;
     }
 
     public void ActivateDestroy()

@@ -62,7 +62,7 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         timeExecute.transform.SetParent(Movement2D.Instance.transform);
         timeExecute.transform.localPosition = Vector3.zero;
         HUDChanger.Instance.UiAnimEnter(config.TimeJumpButtons);
-
+        HUDChanger.Instance.UiAnimEnter(config.Switch);
         DOVirtual.DelayedCall(phase3 - 4, () => { HUDChanger.Instance.Hideunhide(config.TimeJumpButtons, true);});
         DOVirtual.DelayedCall(phase3, () =>
         {
