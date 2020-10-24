@@ -59415,7 +59415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canEnd: 0
-  text: "Necesitar\xE1s la carta para seguir tu viaje Bilbo"
+  text: You will need the letter, visit the present
   levelUnlocked: 1
 --- !u!61 &1106527079
 BoxCollider2D:
@@ -63138,6 +63138,11 @@ PrefabInstance:
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3616479869588570520, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,

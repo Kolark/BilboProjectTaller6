@@ -19863,7 +19863,7 @@ GameObject:
   - component: {fileID: 410527260}
   - component: {fileID: 410527259}
   - component: {fileID: 410527258}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22261,7 +22261,7 @@ GameObject:
   - component: {fileID: 1642337501}
   - component: {fileID: 1642337503}
   - component: {fileID: 1642337502}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUpTexto (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22580,7 +22580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957378819}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PopUps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
