@@ -116,7 +116,7 @@ public class Ui_MainControls : MonoBehaviour
             {
                 //CAMERA SHAKE
                 DotweenCamera.Instance.DoCameraShake();
-                TextDisplayer.Instance.DisplayText("Hay un obstaculo!");
+                TextDisplayer.Instance.DisplayText("There's an obstacle!");
             }
         }
 
