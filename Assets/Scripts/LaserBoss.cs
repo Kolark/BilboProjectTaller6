@@ -8,10 +8,13 @@ public class LaserBoss : Laser , IBossPhase
     [SerializeField] GeneratorAni generator;
     Aim aim;
     public Action onEnd;
+    [SerializeField] AnimationCurve decreaseCurve;
     protected override void Awake()
     {
         base.Awake();
         aim = GetComponentInParent<Aim>();
+        currentLength = 0;
+        base.SetLinePoints();
     }
     protected override void Start()
     {
@@ -33,10 +36,12 @@ public class LaserBoss : Laser , IBossPhase
     {
         //transform.DOLookAt()
         _ActivateLaser();
-        
+        float c = 0;
         generator.AniSpeed(followDuration);
         DOVirtual.DelayedCall(followDuration, () => {}).OnUpdate(() => {
             aim.doAim(Movement2D.Instance.transform.position);
+            c += Time.deltaTime;
+            base.currentLength = base.length * decreaseCurve.Evaluate(c/followDuration);
             base.SetLinePoints();
         }).OnComplete(() => { onEnd?.Invoke(); _DesactivateLaser();});
     }

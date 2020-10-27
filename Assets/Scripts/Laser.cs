@@ -5,14 +5,16 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     
-    protected LineRenderer lineRend;
-    [SerializeField] float length;
+    protected SpriteRenderer lineRend;
+    [SerializeField]protected float length;
+    protected float currentLength;
     BoxCollider2D col2d;
     TimeOBJ timeOBJ;
     protected virtual void Awake()
     {
+        currentLength = length;
         timeOBJ = GetComponent<TimeOBJ>();
-        lineRend = GetComponent<LineRenderer>();
+        lineRend = GetComponent<SpriteRenderer>();
         col2d = GetComponent<BoxCollider2D>();
     }
     protected virtual void Start()
@@ -22,10 +24,8 @@ public class Laser : MonoBehaviour
 
     protected void SetLinePoints()
     {
-        lineRend.SetPosition(0, transform.position);
-        lineRend.SetPosition(1, transform.position -transform.up*length);
-        col2d.size = new Vector2(1,length);
-        col2d.offset = new Vector2(0, -length / 2);
+        transform.localScale = new Vector2(1, currentLength);
+        transform.localPosition = new Vector2(currentLength / 2, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

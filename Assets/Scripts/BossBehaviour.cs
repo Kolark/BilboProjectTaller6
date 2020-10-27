@@ -38,8 +38,8 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         timeExecute = Movement2D.Instance.transform.GetChild(0).GetComponent<TimeExecute>();
         timeExecute.transform.SetParent(stencilpos);
         timeExecute.transform.position = stencilpos.position;
-        ConnectPhases();
-        Invoke("ActivateTurret", 5);
+ 
+        Invoke("ActivateLaser", 5);
         Activated = true;
 
     }

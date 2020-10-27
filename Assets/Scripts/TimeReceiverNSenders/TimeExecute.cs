@@ -14,7 +14,7 @@ public class TimeExecute : MonoBehaviour
         //transform.gameObject.SetActive(true);
         transform.DOScale(50,1.25f).SetEase(Ease.InBounce).SetUpdate(true).OnComplete(()=> {
             
- endAnim(); });
+        endAnim(); });
     }
 
     public void endAnim()//2ndo Paso
@@ -25,5 +25,8 @@ public class TimeExecute : MonoBehaviour
         //transform.gameObject.SetActive(false);
     }
 
-    
+    public void SetParent(Transform p, Vector3 localpos)
+    {
+
+    }
 }
