@@ -1,0 +1,2372 @@
+fileFormatVersion: 2
+guid: 10183e75ce517614d831bdecea765858
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1582092001372863480
+    second: TheRealTimeTravelEN_0
+  - first:
+      213: -2652630889713730169
+    second: TheRealTimeTravelEN_1
+  - first:
+      213: 2677876961206533797
+    second: TheRealTimeTravelEN_2
+  - first:
+      213: 1878754523179023059
+    second: TheRealTimeTravelEN_3
+  - first:
+      213: -540384307064709864
+    second: TheRealTimeTravelEN_4
+  - first:
+      213: -789344427154931584
+    second: TheRealTimeTravelEN_5
+  - first:
+      213: 8308410235980449490
+    second: TheRealTimeTravelEN_6
+  - first:
+      213: -8396288720512895057
+    second: TheRealTimeTravelEN_7
+  - first:
+      213: -7699068886725591938
+    second: TheRealTimeTravelEN_0
+  - first:
+      213: -5580846650780467251
+    second: TheRealTimeTravelEN_1
+  - first:
+      213: -6067889745714994328
+    second: TheRealTimeTravelEN_2
+  - first:
+      213: -5893530235178932340
+    second: TheRealTimeTravelEN_3
+  - first:
+      213: -5467574679109489206
+    second: TheRealTimeTravelEN_4
+  - first:
+      213: 2435404967029832052
+    second: TheRealTimeTravelEN_5
+  - first:
+      213: 24784311910817538
+    second: TheRealTimeTravelEN_6
+  - first:
+      213: 9140487175809374998
+    second: TheRealTimeTravelEN_7
+  - first:
+      213: 5519717159570244834
+    second: TheRealTimeTravelEN_8
+  - first:
+      213: 5404290117042700530
+    second: TheRealTimeTravelEN_9
+  - first:
+      213: 6269323764962097842
+    second: TheRealTimeTravelEN_10
+  - first:
+      213: 390240480511250847
+    second: TheRealTimeTravelEN_11
+  - first:
+      213: -7636202144602999453
+    second: TheRealTimeTravelEN_12
+  - first:
+      213: 3140465458357986292
+    second: TheRealTimeTravelEN_13
+  - first:
+      213: -4057667527264440756
+    second: TheRealTimeTravelEN_14
+  - first:
+      213: 470087195183271539
+    second: TheRealTimeTravelEN_15
+  - first:
+      213: -1259781363682103622
+    second: TheRealTimeTravelEN_16
+  - first:
+      213: -6471836730938014076
+    second: TheRealTimeTravelEN_17
+  - first:
+      213: -6710993773479085701
+    second: TheRealTimeTravelEN_18
+  - first:
+      213: -6392500434532623042
+    second: TheRealTimeTravelEN_19
+  - first:
+      213: 4191058400838358944
+    second: TheRealTimeTravelEN_20
+  - first:
+      213: 8451650006953820734
+    second: TheRealTimeTravelEN_21
+  - first:
+      213: 3518056453648938914
+    second: TheRealTimeTravelEN_22
+  - first:
+      213: -5571057245712039023
+    second: TheRealTimeTravelEN_23
+  - first:
+      213: 7030812770702044837
+    second: TheRealTimeTravelEN_24
+  - first:
+      213: 1919066326871082404
+    second: TheRealTimeTravelEN_25
+  - first:
+      213: -6176031706185433693
+    second: TheRealTimeTravelEN_26
+  - first:
+      213: -1288361452701623731
+    second: TheRealTimeTravelEN_27
+  - first:
+      213: -6436188971593957941
+    second: TheRealTimeTravelEN_28
+  - first:
+      213: 5593952002507337104
+    second: TheRealTimeTravelEN_29
+  - first:
+      213: -7864926920761527619
+    second: TheRealTimeTravelEN_30
+  - first:
+      213: -2977052669988698869
+    second: TheRealTimeTravelEN_31
+  - first:
+      213: -1629849651529023575
+    second: TheRealTimeTravelEN_32
+  - first:
+      213: -1932408633134110606
+    second: TheRealTimeTravelEN_33
+  - first:
+      213: 743172518296158771
+    second: TheRealTimeTravelEN_34
+  - first:
+      213: 1530254843041487943
+    second: TheRealTimeTravelEN_35
+  - first:
+      213: -8057281709817211220
+    second: TheRealTimeTravelEN_36
+  - first:
+      213: -4275834212843173273
+    second: TheRealTimeTravelEN_37
+  - first:
+      213: 1746031721208342857
+    second: TheRealTimeTravelEN_38
+  - first:
+      213: 2269195096733047688
+    second: TheRealTimeTravelEN_39
+  - first:
+      213: -2655427879019005982
+    second: TheRealTimeTravelEN_40
+  - first:
+      213: 8512461190380477548
+    second: TheRealTimeTravelEN_41
+  - first:
+      213: -578301808463046763
+    second: TheRealTimeTravelEN_42
+  - first:
+      213: -3358418332428625147
+    second: TheRealTimeTravelEN_43
+  - first:
+      213: -6121115759379288089
+    second: TheRealTimeTravelEN_44
+  - first:
+      213: 9021314231537007856
+    second: TheRealTimeTravelEN_45
+  - first:
+      213: -4537750130328418047
+    second: TheRealTimeTravelEN_46
+  - first:
+      213: 1582892995909116300
+    second: TheRealTimeTravelEN_47
+  - first:
+      213: 7624479572280535226
+    second: TheRealTimeTravelEN_48
+  - first:
+      213: -8002922360752574457
+    second: TheRealTimeTravelEN_49
+  - first:
+      213: -7479524282705712837
+    second: TheRealTimeTravelEN_50
+  - first:
+      213: 3220650419554103286
+    second: TheRealTimeTravelEN_51
+  - first:
+      213: 3055150504998553970
+    second: TheRealTimeTravelEN_52
+  - first:
+      213: -6663939551522913233
+    second: TheRealTimeTravelEN_53
+  - first:
+      213: -3271314857887988982
+    second: TheRealTimeTravelEN_54
+  - first:
+      213: 3538105124963536215
+    second: TheRealTimeTravelEN_55
+  - first:
+      213: -1515723696280354913
+    second: TheRealTimeTravelEN_56
+  - first:
+      213: 5473207460504914269
+    second: TheRealTimeTravelEN_57
+  - first:
+      213: -7007895117935445332
+    second: TheRealTimeTravelEN_58
+  - first:
+      213: 194798983531862503
+    second: TheRealTimeTravelEN_59
+  - first:
+      213: 4077731426120383876
+    second: TheRealTimeTravelEN_60
+  - first:
+      213: 7648309179159492111
+    second: TheRealTimeTravelEN_61
+  - first:
+      213: 5753039394235337787
+    second: TheRealTimeTravelEN_62
+  - first:
+      213: 7698789164853275416
+    second: TheRealTimeTravelEN_63
+  - first:
+      213: 1052751018610791252
+    second: TheRealTimeTravelEN_64
+  - first:
+      213: 5254962439266249903
+    second: TheRealTimeTravelEN_65
+  - first:
+      213: -7139706919860317568
+    second: TheRealTimeTravelEN_66
+  - first:
+      213: -601676505897364154
+    second: TheRealTimeTravelEN_67
+  - first:
+      213: 1517446406527298654
+    second: TheRealTimeTravelEN_68
+  - first:
+      213: -5409117643592498266
+    second: TheRealTimeTravelEN_69
+  - first:
+      213: -9121007725690007712
+    second: TheRealTimeTravelEN_70
+  - first:
+      213: -426114048139562239
+    second: TheRealTimeTravelEN_71
+  - first:
+      213: 1550409732109650610
+    second: TheRealTimeTravelEN_72
+  - first:
+      213: -1339330245681332562
+    second: TheRealTimeTravelEN_73
+  - first:
+      213: -8691062616689485368
+    second: TheRealTimeTravelEN_74
+  - first:
+      213: -5430785572117621875
+    second: TheRealTimeTravelEN_75
+  - first:
+      213: 3650492476875587033
+    second: TheRealTimeTravelEN_76
+  - first:
+      213: -6436044405357052936
+    second: TheRealTimeTravelEN_77
+  - first:
+      213: 8728423168570554021
+    second: TheRealTimeTravelEN_78
+  - first:
+      213: -3258692597226115354
+    second: TheRealTimeTravelEN_79
+  - first:
+      213: -1019987461522637559
+    second: TheRealTimeTravelEN_80
+  - first:
+      213: 124003128834619061
+    second: TheRealTimeTravelEN_81
+  - first:
+      213: -5866286466716747919
+    second: TheRealTimeTravelEN_82
+  - first:
+      213: -913933171602720996
+    second: TheRealTimeTravelEN_83
+  - first:
+      213: -6506304565037023699
+    second: TheRealTimeTravelEN_84
+  - first:
+      213: 4930423623194671389
+    second: TheRealTimeTravelEN_85
+  - first:
+      213: -629018007987311716
+    second: TheRealTimeTravelEN_86
+  - first:
+      213: -5420027404090046958
+    second: TheRealTimeTravelEN_87
+  - first:
+      213: -8529626041953266487
+    second: TheRealTimeTravelEN_88
+  - first:
+      213: 4815315453433096601
+    second: TheRealTimeTravelEN_89
+  - first:
+      213: -5384540724088829912
+    second: TheRealTimeTravelEN_90
+  - first:
+      213: 1667784447217716221
+    second: TheRealTimeTravelEN_91
+  - first:
+      213: 115354185543460406
+    second: TheRealTimeTravelEN_92
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c757193a9672590800000000000000
+      internalID: -7699068886725591938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf3d4a2a89dc82b0800000000000000
+      internalID: -5580846650780467251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8632c62ec668acba0800000000000000
+      internalID: -6067889745714994328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87a223f979f53ea0800000000000000
+      internalID: -5893530235178932340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd22cc3cc54f14b0800000000000000
+      internalID: -5467574679109489206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479f8080aeb4cc120800000000000000
+      internalID: 2435404967029832052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_6
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f527b433d085000800000000000000
+      internalID: 24784311910817538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1320
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b912478a889de70800000000000000
+      internalID: 9140487175809374998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e400dc0389f99c40800000000000000
+      internalID: 5519717159570244834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f00c717a35effa40800000000000000
+      internalID: 5404290117042700530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_10
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bafa787fbc110750800000000000000
+      internalID: 6269323764962097842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_11
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91d9d146a96a6500800000000000000
+      internalID: 390240480511250847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_12
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365bcd99b92c60690800000000000000
+      internalID: -7636202144602999453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_13
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3efca02bc259b20800000000000000
+      internalID: 3140465458357986292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_14
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ee3c4e1e440b7c0800000000000000
+      internalID: -4057667527264440756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_15
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1200
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ecb5a30d5168600800000000000000
+      internalID: 470087195183271539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe221b368b548ee0800000000000000
+      internalID: -1259781363682103622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_17
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4864d1058ca6f26a0800000000000000
+      internalID: -6471836730938014076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_18
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79bbe928b2cdd2a0800000000000000
+      internalID: -6710993773479085701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_19
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d172549b64947a0800000000000000
+      internalID: -6392500434532623042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_20
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a713ee0961a92a30800000000000000
+      internalID: 4191058400838358944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_21
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32096e07ea4a4570800000000000000
+      internalID: 8451650006953820734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_22
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7f38384b5a2d030800000000000000
+      internalID: 3518056453648938914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_23
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1080
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193c7f5a3f0afa2b0800000000000000
+      internalID: -5571057245712039023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aea9ffc6f6729160800000000000000
+      internalID: 7030812770702044837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_25
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5809918a4e1aa10800000000000000
+      internalID: 1919066326871082404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_26
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad744f92e35a4aa0800000000000000
+      internalID: -6176031706185433693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_27
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ad965b512de1ee0800000000000000
+      internalID: -1288361452701623731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_28
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdfad01b301ea6a0800000000000000
+      internalID: -6436188971593957941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_29
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09de80055b5b1ad40800000000000000
+      internalID: 5593952002507337104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_30
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db23a9fb2aa2ad290800000000000000
+      internalID: -7864926920761527619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_31
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 960
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0502b7ae526fa6d0800000000000000
+      internalID: -2977052669988698869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af7153906c9169e0800000000000000
+      internalID: -1629849651529023575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_33
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278a4252694be25e0800000000000000
+      internalID: -1932408633134110606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_34
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33200e7c777405a00800000000000000
+      internalID: 743172518296158771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_35
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c1f4f0cae8c3510800000000000000
+      internalID: 1530254843041487943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_36
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6d71769f8ce2090800000000000000
+      internalID: -8057281709817211220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_37
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a4501107f29a4c0800000000000000
+      internalID: -4275834212843173273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_38
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949ef2d79962b3810800000000000000
+      internalID: 1746031721208342857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_39
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 840
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88bd4d2faeccd7f10800000000000000
+      internalID: 2269195096733047688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e73760c966062bd0800000000000000
+      internalID: -2655427879019005982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_41
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c5de80a56522670800000000000000
+      internalID: 8512461190380477548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_42
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5971895b19579f7f0800000000000000
+      internalID: -578301808463046763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_43
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b9e6002508461d0800000000000000
+      internalID: -3358418332428625147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_44
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efe62dd5ad6d0ba0800000000000000
+      internalID: -6121115759379288089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_45
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc70f12f75223d70800000000000000
+      internalID: 9021314231537007856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_46
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109ca4a6c4ca601c0800000000000000
+      internalID: -4537750130328418047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_47
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 720
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81ed921bc097f510800000000000000
+      internalID: 1582892995909116300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8e00756c79fc960800000000000000
+      internalID: 7624479572280535226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_49
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700ff42a388efe090800000000000000
+      internalID: -8002922360752574457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_50
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39ea680b44633890800000000000000
+      internalID: -7479524282705712837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_51
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff2c3b2e7c02bc20800000000000000
+      internalID: 3220650419554103286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_52
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2794bc98233166a20800000000000000
+      internalID: 3055150504998553970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_53
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f240dc2f84ee483a0800000000000000
+      internalID: -6663939551522913233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_54
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03012b0874f992d0800000000000000
+      internalID: -3271314857887988982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_55
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 600
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dc07f8ddfd91130800000000000000
+      internalID: 3538105124963536215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f3191345117fae0800000000000000
+      internalID: -1515723696280354913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_57
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59c961ef2db4fb40800000000000000
+      internalID: 5473207460504914269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_58
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa73480584febe90800000000000000
+      internalID: -7007895117935445332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_59
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e91608b4a014b200800000000000000
+      internalID: 194798983531862503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_60
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d3a579023079830800000000000000
+      internalID: 4077731426120383876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_61
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06392c0da0442a60800000000000000
+      internalID: 7648309179159492111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_62
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cc93029d6e6df40800000000000000
+      internalID: 5753039394235337787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_63
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 480
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ba4bb94f797da60800000000000000
+      internalID: 7698789164853275416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4531a35497f1c9e00800000000000000
+      internalID: 1052751018610791252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_65
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac2c7c1f706de840800000000000000
+      internalID: 5254962439266249903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_66
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082d359526aaaec90800000000000000
+      internalID: -7139706919860317568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_67
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6451a4cd76a66a7f0800000000000000
+      internalID: -601676505897364154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_68
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ca0ca877d0f0510800000000000000
+      internalID: 1517446406527298654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_69
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a30f517924fee4b0800000000000000
+      internalID: -5409117643592498266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_70
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f47a47ccbab6180800000000000000
+      internalID: -9121007725690007712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_71
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 360
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10376d6e783261af0800000000000000
+      internalID: -426114048139562239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba44badf69248510800000000000000
+      internalID: 1550409732109650610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_73
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae3a35dc3eb96de0800000000000000
+      internalID: -1339330245681332562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_74
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9db8be894236780800000000000000
+      internalID: -8691062616689485368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_75
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83dc92bb49f1a4b0800000000000000
+      internalID: -5430785572117621875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_76
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddb76b019729a230800000000000000
+      internalID: 3650492476875587033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_77
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb7d0486b39ea6a0800000000000000
+      internalID: -6436044405357052936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_78
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6ffeb60a6912970800000000000000
+      internalID: 8728423168570554021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_79
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 240
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee642e195cc6c2d0800000000000000
+      internalID: -3258692597226115354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d3790dec648d1f0800000000000000
+      internalID: -1019987461522637559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_81
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6793d403c88b100800000000000000
+      internalID: 124003128834619061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_82
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177baa81a83c69ea0800000000000000
+      internalID: -5866286466716747919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_83
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c177c266f9e0153f0800000000000000
+      internalID: -913933171602720996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_84
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e37705876f4b5a0800000000000000
+      internalID: -6506304565037023699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_85
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1976bca9226c6440800000000000000
+      internalID: 4930423623194671389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_86
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ba79454774547f0800000000000000
+      internalID: -629018007987311716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_87
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 120
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2168452eac138c4b0800000000000000
+      internalID: -5420027404090046958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c454768e4ea0a980800000000000000
+      internalID: -8529626041953266487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_89
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999245b64ef63d240800000000000000
+      internalID: 4815315453433096601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_90
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8288f0e6db44645b0800000000000000
+      internalID: -5384540724088829912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_91
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb45525e19252710800000000000000
+      internalID: 1667784447217716221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TheRealTimeTravelEN_92
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 190
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6362ca44502d99100800000000000000
+      internalID: 115354185543460406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
