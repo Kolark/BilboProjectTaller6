@@ -152,7 +152,10 @@ public class TimeOBJ : MonoBehaviour,ICurrentState,IDestroyable
     {
         return TimeToExist == TimeChange.CurrentTime;
     }
-
+    public void ChangeNormalTrigger(bool val)
+    {
+        NormalTrigger = val;
+    }
     public void ActivateDestroy()
     {
         if (canBeDestroyed)

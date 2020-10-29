@@ -43,6 +43,8 @@ public class EstalactitaSpike : MonoBehaviour
             }
             else if (collision.transform.GetComponent<DestroyableFence>() != null)
             {
+                TimeOBJ fencetimeobj = collision.transform.GetComponent<TimeOBJ>();
+                fencetimeobj.ChangeNormalTrigger(true);
                 collision.transform.GetComponent<IDestroyable>().ActivateDestroy();
             }
 

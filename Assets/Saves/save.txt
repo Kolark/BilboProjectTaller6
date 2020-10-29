@@ -1,0 +1,6 @@
+{
+    "gameInfoObj": "{\"levelsUnlocked\":0,\"itemEquiped\":0,\"shopItemsUnlocked\":[0],\"coins\":0}",
+    "levelCoins": [
+        "{\"coins\":[true,true,true,true,true,true,true,true,true,true]}"
+    ]
+}
