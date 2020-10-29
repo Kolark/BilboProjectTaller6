@@ -9,7 +9,7 @@ public class PuertaFinal : MonoBehaviour
     public bool canEnd = false; //Script externos seran los que dictaran si puede terminar
     [SerializeField]
     string text;
-    int sceneIndex = (int)ScenesIndex.LevelSelector;
+    [SerializeField] ScenesIndex sceneIndex = ScenesIndex.LevelSelector;
     [SerializeField]
     int levelUnlocked;
     private static PuertaFinal instance;
@@ -48,7 +48,7 @@ public class PuertaFinal : MonoBehaviour
 
     void loadScene()
     {
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene((int)sceneIndex);
     }
 
 }
