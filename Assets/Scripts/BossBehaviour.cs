@@ -40,12 +40,15 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     private void Start()
     {
         timeExecute = Movement2D.Instance.transform.GetChild(0).GetComponent<TimeExecute>();
-
         ConnectPhases();
+    }
+
+    public void ActivateBoss()
+    {
         Invoke("ActivateTurret", 5);
         Activated = true;
-
     }
+
 
     void ConnectPhases()
     {

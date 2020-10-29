@@ -5,20 +5,19 @@ using UnityEngine;
 public class ProximityDoor : MonoBehaviour
 {
     Animator animator;
-    [SerializeField]float radius = 10f;
+    [SerializeField]protected float radius = 10f;
     Collider2D collider;
-
     void Start()
     {
         animator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (Vector2.Distance(transform.position, Movement2D.Instance.transform.position) < radius)
         {
-            Open();
+            Open();   
         }
         else
         {
@@ -26,13 +25,13 @@ public class ProximityDoor : MonoBehaviour
         }
     }
 
-    void Open()
+    protected void Open()
     {
         animator.SetBool("inRange", true);
         collider.enabled = false;
     }
 
-    void Close()
+    public void Close()
     {
         animator.SetBool("inRange", false);
         collider.enabled = true;
