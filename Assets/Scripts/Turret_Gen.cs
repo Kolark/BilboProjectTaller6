@@ -7,6 +7,7 @@ public class Turret_Gen : NormalTurret
     [SerializeField] GeneratorAni generator;
     [SerializeField] float deactivation = 0;
     [SerializeField] float timeToStop = 25f;
+    [SerializeField] GameObject[] onEndDisable;
     protected override void Awake()
     {
         base.Awake();
@@ -32,6 +33,10 @@ public class Turret_Gen : NormalTurret
     void Deactivate()
     {
         deactivation += Time.deltaTime;
-        if (deactivation >= timeToStop) canShoot = false;
+        if (deactivation >= timeToStop)
+        {
+            canShoot = false;
+            
+        } 
     }
 }

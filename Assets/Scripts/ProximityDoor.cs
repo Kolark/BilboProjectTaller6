@@ -7,6 +7,7 @@ public class ProximityDoor : MonoBehaviour
     Animator animator;
     [SerializeField]protected float radius = 10f;
     Collider2D collider;
+    [SerializeField] bool canBeClosedByitself = true;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -19,7 +20,7 @@ public class ProximityDoor : MonoBehaviour
         {
             Open();   
         }
-        else
+        else if(canBeClosedByitself)
         {
             Close();
         }
