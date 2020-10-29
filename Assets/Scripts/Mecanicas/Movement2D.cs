@@ -36,7 +36,7 @@ public class Movement2D : MonoBehaviour,IDestroyable
     //----------------------------------------------------------
     public bool OnLadder = false;
     //----------------------------------------------------------
-
+    public Action onDeath;
 
     void Awake()
     {
@@ -188,6 +188,7 @@ public class Movement2D : MonoBehaviour,IDestroyable
             canMove = false;
             HUDChanger.Instance.HideUnhideALL(true);
             isDead = true;
+            onDeath?.Invoke();
         }
 
     }

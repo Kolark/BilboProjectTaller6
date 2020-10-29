@@ -6,7 +6,7 @@ using Cinemachine;
 public class LevelTeleportersManager : MonoBehaviour
 {
     GameObject[] LevelTeleporters;
-    public int[] Scenes;
+    public ScenesIndex[] Scenes;
     //List<RedButton> redButtons = new List<RedButton>();
     RedButton[]  redButtons;
     WaitForSeconds second = new WaitForSeconds(1f);
@@ -14,6 +14,9 @@ public class LevelTeleportersManager : MonoBehaviour
     Text text;
     [SerializeField]
     CinemachineVirtualCamera cam;
+
+    [SerializeField] Sprite unlocked;
+    [SerializeField] Sprite done;
     private void Awake()
     {
         LevelTeleporters = new GameObject[transform.childCount];
@@ -40,11 +43,11 @@ public class LevelTeleportersManager : MonoBehaviour
         for (int i = 0; i < GameInfo.LevelsUnlocked; i++)
         {
             redButtons[i].SetActive();
-            redButtons[i].ChangeColor(Color.green);
+            redButtons[i].ChangeSprite(done,Color.white);
         }
         //Propenso a tirar error si no hay mas de 1 nivel
         redButtons[GameInfo.LevelsUnlocked].SetActive();
-        redButtons[GameInfo.LevelsUnlocked].ChangeColor(Color.red);
+        redButtons[GameInfo.LevelsUnlocked].ChangeSprite(unlocked,Color.white);
         cam.Follow = LevelTeleporters[GameInfo.LevelsUnlocked].transform;
         Movement2D.Instance.transform.position = LevelTeleporters[GameInfo.LevelsUnlocked].transform.position;
         StartCoroutine(initcam());

@@ -8,7 +8,7 @@ public class RedButton : MonoBehaviour, ITouchable
     float axis = 0;
 
 
-    public int SceneToLoad;
+    public ScenesIndex SceneToLoad;
 
     [SerializeField]
     Transform stencil;
@@ -51,7 +51,8 @@ public class RedButton : MonoBehaviour, ITouchable
                 Collider2D colission = Physics2D.OverlapBox(BoxPos.position, new Vector2(1.5f, 2f), 0);
                 if (colission != null)
                 {
-                    SceneManager.LoadScene(SceneToLoad);
+                    //SceneManager.LoadScene(SceneToLoad);
+                    LoadScreenParameters.LoadScene(SceneToLoad);
                 }
                 else
                 {
@@ -66,8 +67,9 @@ public class RedButton : MonoBehaviour, ITouchable
     {
         isActive = true;
     }
-    public void ChangeColor(Color color)
+    public void ChangeSprite(Sprite _sprite,Color color)
     {
+        Light.sprite = _sprite;
         Light.color = color;
     }
 

@@ -9,16 +9,19 @@ public class TimeChangeManager : MonoBehaviour
     /// Se encarga de activar y desactivar los botones de cambiar el tiempo.
     /// </summary>
     Button[] objs;
-
+    private static TimeChangeManager instance;
+    public static TimeChangeManager Instance { get => instance; }
+    bool canReactivate = true;
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(this);
+        }
+        instance = this;
         objs = GetComponentsInChildren<Button>();
         TimeChange.EndTimeChange += MakeActiveAgain; //tiene que estar obligatoriamente en el start
         //Debug.Log("se unio al eventoend : " + this.name);
-    }
-    private void Start()
-    {
-        
     }
     public void SetInteractableFalse()
     {
@@ -30,12 +33,15 @@ public class TimeChangeManager : MonoBehaviour
 
     public void MakeActiveAgain()
     {
-        
-        for (int i = 0; i < objs.Length; i++)
+        if (canReactivate)
         {
-            objs[i].interactable = true;
+            for (int i = 0; i < objs.Length; i++)
+            {
+                objs[i].interactable = true;
+            }
+            objs[TimeChange.CurrentTime].interactable = false;
         }
-        objs[TimeChange.CurrentTime].interactable = false;
+
         //Debug.Log("terminolanimacion : " + this.name);
     }
 
@@ -47,7 +53,10 @@ public class TimeChangeManager : MonoBehaviour
     {
 
     }
-    
+    public void changeReactivate(bool val)
+    {
+        canReactivate = val;
+    }
     private void OnDestroy()
     {
         TimeChange.EndTimeChange -= MakeActiveAgain;

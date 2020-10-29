@@ -21,7 +21,9 @@ public class Ui_MainControls : MonoBehaviour
     [SerializeField] Image jumpSprite;
     [SerializeField] TextMeshProUGUI coinsText;
 
-
+    [Space]
+    [SerializeField] Image[] timeJumpBlockers;
+    [SerializeField] Image switchBlocker;
     [SerializeField] UIWidgetTweeningConfig[] widgets;
 
     UiMainConfig _configclass;
@@ -36,6 +38,7 @@ public class Ui_MainControls : MonoBehaviour
             jumpButtonScript.onClick.AddListener(() => Movement2D.Instance.Jump());
             jumpButtonScript.onHold.AddListener(() => Movement2D.Instance.Climb());
         }
+        Enable_DisableBlocks(false);
     }
     void SetConfig()
     {
@@ -122,22 +125,6 @@ public class Ui_MainControls : MonoBehaviour
 
     }
 
-    //private void OnValidate()
-    //{
-    //    if(Joystick != null)
-    //    {
-    //        rightArrowSprite = Joystick.GetChild(0).GetComponent<Image>();
-    //        leftArrowSprite = Joystick.GetChild(1).GetComponent<Image>();
-    //    }
-    //    if(jumpButton != null)
-    //    {
-    //        jumpSprite = jumpButton.GetComponent<Image>();
-    //    }
-    //    if(coins != null)
-    //    {
-    //        coinsText = coins.GetChild(0).GetComponent<TextMeshProUGUI>();
-    //    }
-    //}
 
     public void HideAllUI(Action toDoOnComplete = null)
     {
@@ -170,6 +157,27 @@ public class Ui_MainControls : MonoBehaviour
             widgets[(int)config].Enter();
         }
     }
+
+
+
+    public void Enable_DisableBlocks(bool val)
+    {
+        for (int i = 0; i < timeJumpBlockers.Length; i++)
+        {
+            timeJumpBlockers[i].gameObject.SetActive(val);
+        }
+        switchBlocker.gameObject.SetActive(val);
+        switchImage.Enable_disableButton(!val);
+        if (val)
+        {
+            timeChangeManager.SetInteractableFalse();
+        }
+        else
+        {
+            timeChangeManager.MakeActiveAgain();
+        }
+    }
+
 }
 [Serializable]
 public class UiMainConfig

@@ -27,6 +27,7 @@ public class TimeExecute : MonoBehaviour
 
     public void SetParent(Transform p, Vector3 localpos)
     {
-
+        transform.SetParent(p);
+        transform.localPosition = localpos;
     }
 }

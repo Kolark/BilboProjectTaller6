@@ -8,9 +8,11 @@ public class SwitchImage : MonoBehaviour
     public Sprite Teleport;
     bool move = true;
     Image image;
+    Button button;
     private void Awake()
     {
         image = GetComponent<Image>();
+        button = GetComponent<Button>();
     }
 
     public void Switch()
@@ -30,5 +32,10 @@ public class SwitchImage : MonoBehaviour
         {
             image.sprite = Teleport;
         }
+    }
+
+    public void Enable_disableButton(bool val)
+    {
+        button.interactable = val;
     }
 }

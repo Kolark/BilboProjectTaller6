@@ -19,6 +19,10 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     SpriteRenderer sprite;
     TimeExecute timeExecute;
 
+    [SerializeField] GameObject blockPortal;
+    [SerializeField] GameObject virtualCamOBJ;
+    [SerializeField] GeneratorBossAnim turretGen;
+    [SerializeField] GeneratorBossAnim laserGen;
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -36,10 +40,9 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     private void Start()
     {
         timeExecute = Movement2D.Instance.transform.GetChild(0).GetComponent<TimeExecute>();
-        timeExecute.transform.SetParent(stencilpos);
-        timeExecute.transform.position = stencilpos.position;
- 
-        Invoke("ActivateLaser", 5);
+
+        ConnectPhases();
+        Invoke("ActivateTurret", 5);
         Activated = true;
 
     }
@@ -52,30 +55,58 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     void ActivateTurret()
     {
         turret.DoBossPhase(phase1);
+        turretGen.StartDischarging(phase1);
     }
     void ActivateLaser()
     {
+        turretGen.stop();
         laser.DoBossPhase(phase2);
+        laserGen.StartDischarging(phase2);
     }
+
     void Hiatus()
     {
-        timeExecute.transform.SetParent(Movement2D.Instance.transform);
-        timeExecute.transform.localPosition = Vector3.zero;
-        HUDChanger.Instance.UiAnimEnter(config.TimeJumpButtons);
-        HUDChanger.Instance.UiAnimEnter(config.Switch);
-        DOVirtual.DelayedCall(phase3 - 4, () => { HUDChanger.Instance.Hideunhide(config.TimeJumpButtons, true);});
+        //Se le da al jugador control del tiempo
+        turretGen.stop();
+        playerControl();
+
+        //Se retoma el control a la maquina
+        DOVirtual.DelayedCall(phase3 - 4, () => 
+        {
+            blockPortal.SetActive(true);
+            //virtualCamOBJ.SetActive(true);
+            //Se vuelve a bloquear
+        });
         DOVirtual.DelayedCall(phase3, () =>
         {
-
-            timeExecute.transform.SetParent(stencilpos);
-            timeExecute.transform.position = stencilpos.position;
+            TimeChangeManager.Instance.changeReactivate(false);
+            timeExecute.SetParent(stencilpos, Vector3.zero);
             if (TimeChange.CurrentTime != 1)
             {
                 TimeChange.Instance.StartChangeTime(1);
             }
-
+            else
+            {
+                
+            }
+            turretGen.StartCharging(5);
+            laserGen.StartCharging(5);
         });
-        DOVirtual.DelayedCall(phase3+5, () => { ActivateTurret(); });
+        DOVirtual.DelayedCall(phase3+5, () => {
+            ActivateTurret();
+
+        })
+        ;
+        
+    }
+
+    void playerControl()
+    {
+        timeExecute.SetParent(Movement2D.Instance.transform, Vector3.zero);
+        blockPortal.SetActive(false);
+        //virtualCamOBJ.SetActive(false);
+        TimeChangeManager.Instance.changeReactivate(true);
+        TimeChangeManager.Instance.MakeActiveAgain();
     }
     private void Update()
     {

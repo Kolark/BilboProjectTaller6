@@ -14,11 +14,11 @@ public class ButtonLoadScene : MonoBehaviour
     {
         if (GameInfo.LevelsUnlocked > 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene((int)ScenesIndex.LevelSelector);
         }
         else
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene((int)ScenesIndex.Tutorial);
         }
     }
 }

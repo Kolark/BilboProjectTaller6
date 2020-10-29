@@ -5,10 +5,11 @@ using System;
 using DG.Tweening;
 public class LaserBoss : Laser , IBossPhase
 {
-    [SerializeField] GeneratorAni generator;
+    //[SerializeField] GeneratorAni generator;
     Aim aim;
     public Action onEnd;
     [SerializeField] AnimationCurve decreaseCurve;
+    
     protected override void Awake()
     {
         base.Awake();
@@ -37,13 +38,16 @@ public class LaserBoss : Laser , IBossPhase
         //transform.DOLookAt()
         _ActivateLaser();
         float c = 0;
-        generator.AniSpeed(followDuration);
+        //generator.AniSpeed(followDuration);
         DOVirtual.DelayedCall(followDuration, () => {}).OnUpdate(() => {
             aim.doAim(Movement2D.Instance.transform.position);
             c += Time.deltaTime;
             base.currentLength = base.length * decreaseCurve.Evaluate(c/followDuration);
             base.SetLinePoints();
-        }).OnComplete(() => { onEnd?.Invoke(); _DesactivateLaser();});
+        }).OnComplete(() => {
+            //generator.SpeedReset();
+            onEnd?.Invoke();
+            _DesactivateLaser();});
     }
 
 

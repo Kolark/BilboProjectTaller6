@@ -80,6 +80,10 @@ public class HUDChanger : MonoBehaviour
             ui_MainControls.Unhide_UI();
         }
     }
+    public void Enable_Disabledblocks(bool val)
+    {
+        ui_MainControls.Enable_DisableBlocks(val);
+    }
     #endregion
 
     #region ShopMethods
@@ -123,7 +127,7 @@ public class HUDChanger : MonoBehaviour
     {
         Time.timeScale = 1;
         isPaused = false;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene((int)ScenesIndex.LevelSelector);
     }
     #endregion
 
