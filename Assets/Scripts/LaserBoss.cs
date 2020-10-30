@@ -53,5 +53,11 @@ public class LaserBoss : Laser , IBossPhase
         });
     }
 
+    protected override void OnTriggerEnter2D(Collider2D collision)
+    {
+        AudioManager.instance.StopPlaying("Laser");
+        base.OnTriggerEnter2D(collision);
+    }
+
 
 }

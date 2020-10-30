@@ -32,7 +32,7 @@ public class Laser : MonoBehaviour
         //col2d.offset = new Vector2(currentLength / 2, 0);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if(timeOBJ.TimeToExist == TimeChange.CurrentTime)
         {
