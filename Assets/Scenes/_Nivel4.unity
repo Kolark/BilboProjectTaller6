@@ -83974,6 +83974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canEnd: 1
   text: -----
+  sceneIndex: 1
   levelUnlocked: 5
 --- !u!1 &692505405
 GameObject:

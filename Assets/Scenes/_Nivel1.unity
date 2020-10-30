@@ -75675,6 +75675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canEnd: 1
   text: -------------
+  sceneIndex: 1
   levelUnlocked: 2
 --- !u!61 &1111313507
 BoxCollider2D:
@@ -77457,7 +77458,7 @@ GameObject:
   - component: {fileID: 1721219072}
   - component: {fileID: 1721219071}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManagerasdasd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -65,6 +65,7 @@ public class AudioManager : MonoBehaviour
     public void StopPlaying(string name)
     {
         //Sound s = Array.Find(sounds, item => item.name == sound);
+        Debug.Log("nm : " + name);
         Sound s = sounds[name];
         if (s == null)
         {
@@ -94,7 +95,9 @@ public class AudioManager : MonoBehaviour
     {
             for (int i = 0; i < s.Length; i++)
         {
+            Debug.Log("Removing Sound" + s[i].name);
             sounds.Remove(s[i].name);
+            Debug.Log("Done Removing");
         }
     }
 }

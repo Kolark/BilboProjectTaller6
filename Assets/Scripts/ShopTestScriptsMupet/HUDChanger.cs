@@ -151,6 +151,14 @@ public class HUDChanger : MonoBehaviour
     //    .Append(DOTween.To(() => LoadCircle.color, x => LoadCircle.color = x, new Color(0, 0, 0, 0), 2f).SetEase(Ease.OutSine));
     }
     #endregion
+
+    public void ResetLevelBoss()
+    {
+        GameInfo.Instance.ReloadScene();
+        Time.timeScale = 1;
+        isPaused = false;
+    }
+
     private void OnDestroy()
     {
         DOTween.KillAll(false);

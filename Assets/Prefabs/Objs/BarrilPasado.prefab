@@ -200,4 +200,4 @@ MonoBehaviour:
   radius: 4
   layersToCheck:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 2097153

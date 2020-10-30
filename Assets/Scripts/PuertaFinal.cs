@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System;
 public class PuertaFinal : MonoBehaviour
 {
 
@@ -15,6 +15,9 @@ public class PuertaFinal : MonoBehaviour
     private static PuertaFinal instance;
     public static PuertaFinal Instance { get => instance; }
     public int LevelUnlocked { get => levelUnlocked;}
+    //public static Action onLevelEnd
+
+    bool HasBeenDone = false;
 
     private void Awake()
     {
@@ -26,24 +29,30 @@ public class PuertaFinal : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D player)
     {
-        if (player.gameObject.tag == "Player")
+        if (!HasBeenDone)
         {
-            if (canEnd)
+            if (player.gameObject.tag == "Player")
             {
-                if(LevelUnlocked > GameInfo.LevelsUnlocked)
+                if (canEnd)
                 {
-                    GameInfo.LevelsUnlocked = LevelUnlocked;
+                    if (LevelUnlocked > GameInfo.LevelsUnlocked)
+                    {
+                        GameInfo.LevelsUnlocked = LevelUnlocked;
+                    }
+
+                    SaveNLoadHandler.saveGame();
+                    HUDChanger.Instance.ExitScene(loadScene);
+                    //onLevelEnd?.Invoke();
+                    //onLevelEnd = null;
                 }
-                
-                SaveNLoadHandler.saveGame();
-                HUDChanger.Instance.ExitScene(loadScene);
-                
-            }
-            else
-            {
-                TextDisplayer.Instance.DisplayText(text);
+                else
+                {
+                    TextDisplayer.Instance.DisplayText(text);
+                }
+                HasBeenDone = true;
             }
         }
+        
     }
 
     void loadScene()

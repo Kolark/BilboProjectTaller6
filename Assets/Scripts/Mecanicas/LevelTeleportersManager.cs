@@ -46,10 +46,23 @@ public class LevelTeleportersManager : MonoBehaviour
             redButtons[i].ChangeSprite(done,Color.white);
         }
         //Propenso a tirar error si no hay mas de 1 nivel
-        redButtons[GameInfo.LevelsUnlocked].SetActive();
-        redButtons[GameInfo.LevelsUnlocked].ChangeSprite(unlocked,Color.white);
-        cam.Follow = LevelTeleporters[GameInfo.LevelsUnlocked].transform;
-        Movement2D.Instance.transform.position = LevelTeleporters[GameInfo.LevelsUnlocked].transform.position;
+        //Debug.Log("redbuttons: " +redButtons.Length);
+        //Debug.Log("debug: " + GameInfo.LevelsUnlocked);
+        int index = GameInfo.LevelsUnlocked;
+        if (GameInfo.LevelsUnlocked >= redButtons.Length)
+        {
+            index = redButtons.Length - 1;
+            redButtons[index].SetActive();
+            redButtons[index].ChangeSprite(done, Color.white);
+        }
+        else
+        {
+            redButtons[index].SetActive();
+            redButtons[index].ChangeSprite(unlocked, Color.white);
+            
+        }
+        cam.Follow = LevelTeleporters[index].transform;
+        Movement2D.Instance.transform.position = LevelTeleporters[index].transform.position;
         StartCoroutine(initcam());
     }
 

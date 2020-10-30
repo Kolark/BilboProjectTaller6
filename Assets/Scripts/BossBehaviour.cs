@@ -6,6 +6,7 @@ using System;
 using UnityEngine.SceneManagement;
 public class BossBehaviour : MonoBehaviour,IDestroyable
 {
+    int hits = 0;
     bool Activated = false;
     [SerializeField] float phase1;
     [SerializeField] float phase2;
@@ -23,6 +24,8 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     [SerializeField] GameObject virtualCamOBJ;
     [SerializeField] GeneratorBossAnim turretGen;
     [SerializeField] GeneratorBossAnim laserGen;
+
+    [SerializeField] Sprite[] vidasSprites;
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -31,10 +34,9 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
 
     public void ActivateDestroy()
     {
-        sprite.DOColor(sprite.color - new Color(0,1,1,0) * 0.65f, 0.25f).OnComplete(() => {
-            sprite.DOColor(sprite.color + new Color(0, 1, 1, 0) * 0.65f, 0.25f);
-        });
         Vida--;
+        sprite.sprite = vidasSprites[hits];
+        hits++;
     }
 
     private void Start()
@@ -77,7 +79,7 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         DOVirtual.DelayedCall(phase3 - 4, () => 
         {
             blockPortal.SetActive(true);
-            //virtualCamOBJ.SetActive(true);
+            virtualCamOBJ.SetActive(true);
             //Se vuelve a bloquear
         });
         DOVirtual.DelayedCall(phase3, () =>
@@ -98,16 +100,14 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         DOVirtual.DelayedCall(phase3+5, () => {
             ActivateTurret();
 
-        })
-        ;
-        
+        });
     }
 
     void playerControl()
     {
         timeExecute.SetParent(Movement2D.Instance.transform, Vector3.zero);
         blockPortal.SetActive(false);
-        //virtualCamOBJ.SetActive(false);
+        virtualCamOBJ.SetActive(false);
         TimeChangeManager.Instance.changeReactivate(true);
         TimeChangeManager.Instance.MakeActiveAgain();
     }
@@ -117,7 +117,7 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
         {
             Activated = false;
             HUDChanger.Instance.ExitScene(loadScene);
-            Destroy(gameObject);
+            Destroy(this);
             
         }
         
