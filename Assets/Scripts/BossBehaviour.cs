@@ -115,7 +115,9 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     {
         if(Vida <= 0 && Activated)
         {
+            
             Activated = false;
+            AudioManager.instance.Play("MuerteBoss");
             HUDChanger.Instance.ExitScene(loadScene);
             Destroy(this);
             

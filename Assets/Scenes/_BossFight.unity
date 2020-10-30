@@ -63094,6 +63094,63 @@ MonoBehaviour:
   layerToexist: 0
   NormalTrigger: 1
   NormalType: 2
+--- !u!1 &1237361110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237361112}
+  - component: {fileID: 1237361111}
+  m_Layer: 0
+  m_Name: ParedInvisible
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1237361111
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237361110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.10681915}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 11.468147}
+  m_EdgeRadius: 0
+--- !u!4 &1237361112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237361110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 55.78, y: -3.7, z: -47.471134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1249676871
 GameObject:
   m_ObjectHideFlags: 0
@@ -63137,11 +63194,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -324.5807, y: 87.13806}
-      - {x: -465.52872, y: 88.25452}
-      - {x: -467.95157, y: 15.878153}
-      - {x: -221.18282, y: 17.75637}
-      - {x: -222.96156, y: 90.40575}
+    - - {x: -286.85767, y: 65.41325}
+      - {x: -287.15646, y: 81.26481}
+      - {x: -325.0489, y: 81.285645}
+      - {x: -359.67087, y: 81.18756}
+      - {x: -360.0047, y: 62.779724}
+      - {x: -445.79376, y: 63.89039}
+      - {x: -444.8697, y: 26.931444}
+      - {x: -226.05927, y: 25.233593}
+      - {x: -226.53763, y: 64.072914}
 --- !u!50 &1249676874
 Rigidbody2D:
   serializedVersion: 4
@@ -63553,7 +63614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323959115}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 69.3, y: -3.1000004, z: -10}
+  m_LocalPosition: {x: 69.31119, y: -1.6582575, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1813647229}
@@ -64936,6 +64997,20 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ExplosionBarril
     clip: {fileID: 8300000, guid: f623ad77d8e59d44f865a640036fc09f, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Laser
+    clip: {fileID: 8300000, guid: e8c4625b3fa69e34786733e60a74dc29, type: 3}
+    group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
+    volume: 0.1
+    pitch: 0.6
+    loop: 1
+    source: {fileID: 0}
+  - name: MuerteBoss
+    clip: {fileID: 8300000, guid: b6bfc543c8a5db64c8f9b1cd11670b39, type: 3}
     group: {fileID: 24300002, guid: 408276d3074c09d4396d24a91b831506, type: 2}
     volume: 0.25
     pitch: 1
@@ -124960,7 +125035,7 @@ PrefabInstance:
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3616479869588570520, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}

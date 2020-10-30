@@ -37,6 +37,7 @@ public class LaserBoss : Laser , IBossPhase
     {
         //transform.DOLookAt()
         _ActivateLaser();
+        AudioManager.instance.Play("Laser");
         float c = 0;
         //generator.AniSpeed(followDuration);
         DOVirtual.DelayedCall(followDuration, () => {}).OnUpdate(() => {
@@ -47,7 +48,9 @@ public class LaserBoss : Laser , IBossPhase
         }).OnComplete(() => {
             //generator.SpeedReset();
             onEnd?.Invoke();
-            _DesactivateLaser();});
+            _DesactivateLaser();
+            AudioManager.instance.StopPlaying("Laser");
+        });
     }
 
 
