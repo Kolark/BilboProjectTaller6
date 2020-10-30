@@ -84074,7 +84074,6 @@ GameObject:
   - component: {fileID: 697026912}
   - component: {fileID: 697026916}
   - component: {fileID: 697026915}
-  - component: {fileID: 697026914}
   - component: {fileID: 697026913}
   m_Layer: 0
   m_Name: Puerta2
@@ -84118,25 +84117,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &697026914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697026911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d178696bff4bd0047a15998cb17bcac0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TimeToExist: 1
-  order: 0
-  canBeDestroyed: 1
-  canBeTeleported: 0
-  layerToexist: 0
-  NormalTrigger: 0
-  NormalType: 2
 --- !u!61 &697026915
 BoxCollider2D:
   m_ObjectHideFlags: 0
