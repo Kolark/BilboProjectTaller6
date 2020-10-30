@@ -62424,6 +62424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canEnd: 1
   text: -------------
+  sceneIndex: 1
   levelUnlocked: 1
 --- !u!61 &1111313507
 BoxCollider2D:
@@ -63170,7 +63171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phase1: 12
   phase2: 8
-  phase3: 10
+  phase3: 15
   turret: {fileID: 8174591343660461850}
   laser: {fileID: 767632205}
   stencilpos: {fileID: 538741948}
@@ -124260,7 +124261,7 @@ PrefabInstance:
     - target: {fileID: 125046643426413168, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2874113478303526759, guid: 3ba8f2e9e82281248a0b04db8a2b9f19,
         type: 3}
@@ -125020,6 +125021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 10
+  canBeClosedByitself: 1
 --- !u!1001 &3078801008399581447
 PrefabInstance:
   m_ObjectHideFlags: 0
