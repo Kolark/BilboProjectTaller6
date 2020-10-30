@@ -15,6 +15,7 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     [SerializeField] TurretBoss turret;
     [SerializeField] LaserBoss laser;
     [SerializeField] Transform stencilpos;
+    [SerializeField] GameObject finaldoor;
 
     [SerializeField] int Vida;
     SpriteRenderer sprite;
@@ -35,7 +36,10 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
     public void ActivateDestroy()
     {
         Vida--;
+        if (Vida >=0)
+        {
         sprite.sprite = vidasSprites[hits];
+        }
         hits++;
     }
 
@@ -118,7 +122,13 @@ public class BossBehaviour : MonoBehaviour,IDestroyable
             
             Activated = false;
             AudioManager.instance.Play("MuerteBoss");
-            HUDChanger.Instance.ExitScene(loadScene);
+            Destroy(turret);
+            Destroy(laser.transform.parent.gameObject);
+            Destroy(blockPortal.gameObject);
+            //HUDChanger.Instance.ExitScene(loadScene);
+            DOTween.KillAll();
+            Destroy(finaldoor);
+            virtualCamOBJ.SetActive(false);
             Destroy(this);
             
         }

@@ -13,5 +13,6 @@ public enum ScenesIndex
     Nivel4,
     Nivel5,
     BossFight,
-    LoadScreen
+    LoadScreen,
+    FinalScene
 }
