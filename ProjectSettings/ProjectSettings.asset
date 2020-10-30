@@ -244,8 +244,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: Key.keystore'
-  AndroidKeyaliasName: mupet
+  AndroidKeystoreName: '{inproject}: mkey.keystore'
+  AndroidKeyaliasName: mkey
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
