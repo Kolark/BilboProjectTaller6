@@ -83913,6 +83913,7 @@ GameObject:
   - component: {fileID: 674705640}
   - component: {fileID: 674705639}
   - component: {fileID: 674705641}
+  - component: {fileID: 674705642}
   m_Layer: 0
   m_Name: TpFinal
   m_TagString: Untagged
@@ -83976,6 +83977,18 @@ MonoBehaviour:
   text: -----
   sceneIndex: 1
   levelUnlocked: 5
+--- !u!114 &674705642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674705638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6968adddb9c6bc842ae3df7e3fd2881e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &692505405
 GameObject:
   m_ObjectHideFlags: 0
