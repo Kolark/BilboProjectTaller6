@@ -43,7 +43,7 @@
   </files>
   <settings>
     <setting name="androidAbis" value="armeabi-v7a" />
-    <setting name="bundleId" value="projectTaller6.BilbosPlan" />
+    <setting name="bundleId" value="projectTaller6v22.BilboProjectTaller6" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradlePropertiesTemplateEnabled" value="False" />
